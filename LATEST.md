@@ -1,8 +1,8 @@
-# Winjit Daily TI Digest — 2026-10-18
+# Winjit Daily TI Digest — 2026-10-19
 
-_Auto-generated. Window: last ~24h. Fetched at 2026-10-18T07:53:34.080966+00:00Z_
+_Auto-generated. Window: last ~24h. Fetched at 2026-10-19T08:39:00.013730+00:00Z_
 
-**At a glance:** 0 new KEV · 29 new HIGH/CRITICAL CVEs · 25 new GitHub advisories · 20 new ransomware victims posted
+**At a glance:** 0 new KEV · 17 new HIGH/CRITICAL CVEs · 25 new GitHub advisories · 20 new ransomware victims posted
 _Note: CISA KEV, NVD, GitHub Advisories and ransomware.live are genuinely "new since yesterday." The IOC blocklists below (Spamhaus DROP, blocklist.de, CINS Army, IPsum, SSL Blacklist, Feodo Tracker) are current full-list snapshots from each provider, not day-over-day diffs -- expect a lot of overlap with yesterday's report there, that's expected, not a bug._
 
 ## CISA KEV — newly added actively-exploited CVEs
@@ -12,161 +12,149 @@ _No new KEV entries in this window._
 _Sorted by CVSS (highest first). EPSS = probability of real-world exploitation in the next 30 days (FIRST.org)._
 | CVE | CVSS | EPSS | Description |
 |---|---|---|---|
-| CVE-2026-104736 | 9.8 | n/a | The LearnPress plugin for WordPress is vulnerable to PHP Object Injection in versions up to, and including, 4.4.10 via deserialization of untrusted input from the 'checkout-email' request parameter du |
-| CVE-2026-111911 | 9.8 | n/a | phpMyFAQ 4.0.0 before 4.1.9 contains an authentication bypass vulnerability where WebAuthn registration endpoints attach credentials to any account without authentication or challenge validation. Atta |
-| CVE-2026-110653 | 9.1 | n/a | The Appointment Booking Plugin – LatePoint | Calendar & Scheduling for WordPress plugin for WordPress is vulnerable to Authentication Bypass via Race Condition in all versions up to, and including, 5. |
-| CVE-2026-111884 | 8.3 | n/a | phpMyFAQ before 4.1.9 and 4.2.0-alpha before 4.2.0-beta does not require the current password when changing an account e-mail in the user control panel (UserController::updateData, api/user/data/updat |
-| CVE-2026-111908 | 8.3 | n/a | phpMyFAQ 4.0.0 before 4.1.9 and 4.2.0-alpha before 4.2.0-beta contains a broken object-level authorization vulnerability in the PUT /api/v3.1/faq/update endpoint, which checks only the global edit_faq |
-| CVE-2026-92798 | 8.1 | n/a | The User Registration & Membership plugin for WordPress is vulnerable to Arbitrary Shortcode Execution in versions up to, and including, 5.2.8 This is due to insufficient input sanitization in the 're |
-| CVE-2026-111882 | 8.1 | n/a | phpMyFAQ 3.2.0-alpha before 4.1.9 and 4.2.0-alpha before 4.2.0-beta contains an authentication bypass vulnerability that allows IdP-authenticated users to skip TOTP two-factor authentication through t |
-| CVE-2026-111909 | 8.1 | n/a | phpMyFAQ before 4.1.9 contains a missing authorization vulnerability in the deleteUser() API that allows authenticated non-superadmin users with delete_user permission to delete superadmin accounts. A |
-| CVE-2026-111927 | 7.7 | n/a | Coder before 2.29.20, 2.33.0 before 2.33.12, 2.34.0 before 2.34.8, and 2.35.0 before 2.35.4 contains an improper hostname validation flaw in GetWorkspaceProxyByHostname whose SIMILAR TO pattern perfor |
-| CVE-2026-111881 | 7.6 | n/a | FreeRDP from 3.14.1 before 3.32.0 contains an integer underflow in the WinPR BMP writer, where a mismatched stride calculation passes SIZE_MAX - 3 to Stream_Zero for sub-byte images. A malicious RDP c |
-| CVE-2026-107762 | 7.5 | n/a | The Kirki – Freeform Page Builder, Website Builder & Customizer plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 6.3.2 via the 'context' par |
-| CVE-2026-108123 | 7.5 | n/a | The WP Booking System – Booking Calendar plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 2.1.0.3 This is due to the plugin not properly verifying that  |
-| CVE-2026-111898 | 7.5 | n/a | phpMyFAQ 4.2.0-alpha before 4.2.0-beta contains an authentication bypass vulnerability that allows Keycloak users to take over local accounts by matching preferred_username or email. Attackers control |
-| CVE-2026-111901 | 7.5 | n/a | phpMyFAQ 4.2.0-alpha before 4.2.0-beta contains an uncontrolled resource consumption vulnerability in the unauthenticated faqs and search API endpoints. Attackers can send concurrent GET requests that |
-| CVE-2026-111923 | 7.5 | n/a | Fleet before 4.89.0 contains an unbounded recursion vulnerability in Apple MDM enrollment property list parsing that allows unauthenticated attackers to crash the server. Attackers can send a crafted  |
-| CVE-2026-111924 | 7.5 | n/a | Fleet before 4.83.0 contains a denial of service vulnerability that allows unauthenticated attackers to exhaust server memory by sending gzip-compressed request bodies. Attackers can send small, highl |
-| CVE-2026-111880 | 7.4 | n/a | FreeRDP versions from 2.0.0 before 3.32.0 contain a heap out-of-bounds write in the server hash-callback NTLM path that fails to validate the MIC offset. Unauthenticated attackers can send a crafted A |
-| CVE-2026-111866 | 7.3 | n/a | A weakness has been identified in nemoTyrant manong up to 7c9e5228e133b9267ad3a415833bc9bb53193bb4. This impacts the function cache/del_cache/arr2sql of the file func.php. This manipulation causes sql |
-| CVE-2026-111871 | 7.3 | n/a | A weakness has been identified in itsmeravitejak Online-Examination-System up to e6208e630b14657999bbfe4c9912302d2a1e2449. The impacted element is an unknown function of the file qsdb/usersdb/brandb/t |
-| CVE-2026-111872 | 7.3 | n/a | A security vulnerability has been detected in itsmeravitejak Online-Examination-System up to e6208e630b14657999bbfe4c9912302d2a1e2449. This affects the function MySQLDB::valid/MySQLDB::getresults/MySQ |
-| CVE-2026-111873 | 7.3 | n/a | A vulnerability was detected in itsmeravitejak Online-Examination-System up to e6208e630b14657999bbfe4c9912302d2a1e2449. This impacts the function MySQLDB::topicslist of the file exammanger.php of the |
-| CVE-2026-104734 | 7.2 | n/a | The Kirki – Freeform Page Builder, Website Builder & Customizer plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 6.3.2 via deserialization of untrusted  |
-| CVE-2026-109208 | 7.2 | n/a | The LearnPress – WordPress LMS Plugin for Create and Sell Online Courses plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'quantity (REST) / order_comments (checkout)' paramet |
-| CVE-2026-103899 | 7.2 | n/a | The EU VAT Assistant for WooCommerce plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'vat_number' parameter in all versions up to, and including, 2.1.30.260413 due to insuffi |
-| CVE-2026-96660 | 7.2 | n/a | The User Registration & Membership – Free & Paid Memberships, Subscriptions, Content Restriction, User Profile, Custom User Registration & Login Builder plugin for WordPress is vulnerable to Stored Cr |
-| CVE-2026-100316 | 7.2 | n/a | The European VAT Compliance Assistant for WooCommerce plugin for WordPress is vulnerable to Stored Cross-Site Scripting via CF-IPCountry Header in all versions up to, and including, 1.36.10 due to ins |
-| CVE-2026-111110 | 7.2 | n/a | The Payment forms, Buy now buttons, and Invoicing System | GetPaid plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'mmdwqzpoxadd' parameter in all versions up to, and includi |
-| CVE-2026-111897 | 7.1 | n/a | phpMyFAQ 4.2.0-alpha before 4.2.0-beta contains an authorization bypass vulnerability that allows category-restricted editors to manage attachments of FAQs outside their categories by supplying arbitr |
-| CVE-2026-111907 | 7.1 | n/a | phpMyFAQ 4.0.0 before 4.1.9 contains a cross-site request forgery vulnerability in the POST /admin/api/update-database endpoint, which executes database migrations without validating a CSRF token. Att |
+| CVE-2026-111998 | 9.8 | n/a | Vanus 0.8.0 through 0.9.0 contains a default credentials vulnerability that allows unauthenticated remote attackers to gain cluster-admin access by using the hardcoded admin token. Attackers can send  |
+| CVE-2026-16487 | 8.1 | n/a | A flaw was found in bootc when operating with the default containers signature policy. Automatic or manual upgrades of a mutable image tag may apply unsigned content for registries that fall through t |
+| CVE-2026-112005 | 7.7 | n/a | WhoDB 0.104.0 before 0.135.0 contains a path traversal vulnerability that allows remote attackers to read and write arbitrary host files by running DuckDB filesystem functions through the query editor |
+| CVE-2026-112000 | 7.6 | n/a | Vanus 0.8.0 through 0.9.0 contains a missing authorization vulnerability in the gateway that allows any authenticated user to call Subscribe, Ack, and unregistered methods without permission checks. A |
+| CVE-2026-111999 | 7.5 | n/a | Vanus 0.8.0 through 0.9.0 contains a missing authentication vulnerability that allows unauthenticated remote attackers to publish events to any eventbus through the gateway CloudEvents HTTP receiver.  |
+| CVE-2026-112021 | 7.5 | n/a | snac2 before 2.93 contains a heap-based buffer overflow vulnerability in _xs_json_load_lexer() that allows unauthenticated remote attackers to corrupt heap memory by sending JSON strings containing a  |
+| CVE-2026-112082 | 7.5 | n/a | A vulnerability was identified in sgl-project SGLang up to 0.5.19. This impacts the function Scheduler.expert_distribution_handle of the file python/sglang/srt/eplb/expert_distribution.py of the compo |
+| CVE-2026-16460 | 7.4 | n/a | A flaw was found in bootc and ostree. Already-staged deployments are finalized without revalidating the deployment's container image against the current containers signature policy. Unsigned OS conten |
+| CVE-2026-111866 | 7.3 | 0.4% | A weakness has been identified in nemoTyrant manong up to 7c9e5228e133b9267ad3a415833bc9bb53193bb4. This impacts the function cache/del_cache/arr2sql of the file func.php. This manipulation causes sql |
+| CVE-2026-111871 | 7.3 | 0.3% | A weakness has been identified in itsmeravitejak Online-Examination-System up to e6208e630b14657999bbfe4c9912302d2a1e2449. The impacted element is an unknown function of the file qsdb/usersdb/brandb/t |
+| CVE-2026-111872 | 7.3 | 0.3% | A security vulnerability has been detected in itsmeravitejak Online-Examination-System up to e6208e630b14657999bbfe4c9912302d2a1e2449. This affects the function MySQLDB::valid/MySQLDB::getresults/MySQ |
+| CVE-2026-111873 | 7.3 | 0.3% | A vulnerability was detected in itsmeravitejak Online-Examination-System up to e6208e630b14657999bbfe4c9912302d2a1e2449. This impacts the function MySQLDB::topicslist of the file exammanger.php of the |
+| CVE-2026-111990 | 7.3 | n/a | A weakness has been identified in kishan0725 Hospital Management System up to 777fda46b77a820977a5ba616283dbfbc40bf7e1. This affects the function mysqli_query of the file admin-panel.php of the compon |
+| CVE-2026-112025 | 7.3 | n/a | A weakness has been identified in light0011 cms c774dce31c6df0055568a8d5c53d964d99be199d/f72cf46f601efb2a0618c3814cc2f61380b38930. This impacts an unknown function of the file App/Home/Controller/User |
+| CVE-2026-112044 | 7.3 | n/a | A security vulnerability has been detected in dotnet eShop up to 913acea66708a59595351174cee9b29f37179d29. The affected element is the function AddApplicationServices of the file src/Catalog.API/Exten |
+| CVE-2026-112001 | 7.2 | n/a | ProjectSend 2.0.0 before 2.7.0 contains an incorrect authorization vulnerability that allows restricted API token holders to change the token owner's credentials via PATCH /api/v1/users/{user}. Attack |
+| CVE-2026-112018 | 7.0 | n/a | cgltf through 1.15 contains a heap out-of-bounds write vulnerability in cgltf_accessor_unpack_floats() that allows attackers to write outside the output buffer via unchecked sparse accessor indices. A |
 
 ## GitHub Security Advisories — new since yesterday
 | GHSA | CVE | Severity | Summary |
 |---|---|---|---|
-| GHSA-cwj3-qffg-4fm2 | CVE-2026-111875 | low | A vulnerability has been found in David-Crty Databasement up to 1.8.1. Affected by this... |
-| GHSA-84pv-hx2c-786x | CVE-2026-111876 | low | A vulnerability was found in alexpasmantier television up to 0.15.9. Affected by this issue is... |
-| GHSA-4m5j-grw9-w64h | CVE-2026-111874 | low | A flaw has been found in OpenCATS 0.10.0. Affected is the function processLogin of the file... |
-| GHSA-7q5v-v72h-cwh3 | CVE-2026-111873 | medium | A vulnerability was detected in itsmeravitejak Online-Examination-System up to... |
-| GHSA-76c2-f3p3-xq8x | CVE-2026-111872 | medium | A security vulnerability has been detected in itsmeravitejak Online-Examination-System up to... |
-| GHSA-xxqh-978p-7hqv | CVE-2026-111870 | medium | A security flaw has been discovered in itsmeravitejak Online-Examination-System up to... |
-| GHSA-2qc2-gvjr-chrr | CVE-2026-111871 | medium | A weakness has been identified in itsmeravitejak Online-Examination-System up to... |
-| GHSA-frrj-xjh4-92p7 | CVE-2026-111869 | medium | A vulnerability was identified in makeplane plane up to 1.4.2. Impacted is an unknown function of... |
-| GHSA-rp78-2737-x9fc | CVE-2026-111868 | low | A vulnerability was determined in datastax pulsar-jms up to 9.0.3. This issue affects the... |
-| GHSA-p3hm-x653-5rc6 | CVE-2026-111997 | medium | ip-address before 10.7.4 allows a denial of service (CPU consumption from quadratic complexity,... |
-| GHSA-x58p-mp77-7rf8 | CVE-2023-1706 | unknown | Rejected reason: This candidate is unused by its CNA. |
-| GHSA-mpfx-gr32-m9c9 | CVE-2022-3404 | unknown | Rejected reason: This candidate is unused by its CNA. |
-| GHSA-q6ph-39c8-3p2p | CVE-2022-1550 | unknown | Rejected reason: DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was... |
-| GHSA-hx9m-q84f-fgfc | CVE-2022-4463 | unknown | Rejected reason: This candidate is unused by its CNA. |
-| GHSA-p249-6rmc-99jm | CVE-2019-0206 | unknown | Rejected reason: DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was... |
-| GHSA-g93p-xr45-m7xc | CVE-2019-0208 | unknown | Rejected reason: DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was... |
-| GHSA-8qg7-2f9j-6cvc | CVE-2026-111866 | medium | A weakness has been identified in nemoTyrant manong up to... |
-| GHSA-hq78-gpjr-752h | CVE-2026-105391 | unknown | Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority. |
-| GHSA-72hj-xr2x-9xp8 | CVE-2026-107274 | unknown | Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority. |
-| GHSA-j43p-993c-mr3f | CVE-2026-108117 | unknown | Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority. |
-| GHSA-j6g8-ff8p-ffx2 | CVE-2026-107345 | unknown | Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority. |
-| GHSA-5g4f-pq6q-922r | CVE-2026-107772 | unknown | Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority. |
-| GHSA-xh3j-g4r6-rg5h | CVE-2014-8113 | unknown | Rejected reason: DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was... |
-| GHSA-2f6g-93v9-pcfq | CVE-2014-7854 | unknown | Rejected reason: DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was... |
-| GHSA-c2cv-ghmm-xf62 | CVE-2014-3918 | unknown | Rejected reason: DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was... |
+| GHSA-5ch2-2phm-jp6x | CVE-2026-91046 | unknown | The ElementsReady Addons for Elementor WordPress plugin through 6.7.2 does not perform... |
+| GHSA-3mqp-qxqh-qqq6 | CVE-2026-89286 | unknown | The FormFlow for GoHighLevel (GHL)  WordPress plugin through 1.0.0 does not restrict access to a... |
+| GHSA-9cr7-6wq5-54c2 | CVE-2026-91047 | unknown | The ElementsReady Addons for Elementor WordPress plugin through 6.7.2 does not properly restrict... |
+| GHSA-qrcf-6rx9-2mwc | CVE-2026-94273 | unknown | The Snap Finance WordPress plugin through 3.11.0 does not verify that the payment provider's... |
+| GHSA-g4wc-qgxw-hw24 | CVE-2026-112081 | low | A vulnerability was determined in hankcs HanLP up to 2.1.0-beta.64. This affects the function... |
+| GHSA-hqw5-mw82-chh2 | CVE-2026-112083 | medium | A security flaw has been discovered in sgl-project SGLang up to 0.5.19. Affected is the function... |
+| GHSA-4pfr-64r8-wffh | CVE-2026-76739 | medium | A potential security vulnerability in HPE Compute Scale-up Server 3200 and 3250 platforms and... |
+| GHSA-j823-x22q-54wf | CVE-2026-112082 | high | A vulnerability was identified in sgl-project SGLang up to 0.5.19. This impacts the function... |
+| GHSA-753r-w3pv-4492 | CVE-2026-106933 | unknown | The Blaze Demo Importer WordPress plugin before 1.0.17 does not sanitize uploaded SVG files and... |
+| GHSA-v5q2-hr9p-q4jv | CVE-2026-112086 | low | A vulnerability was found in ESPnet up to 202610.post2. This affects the function build_model of... |
+| GHSA-66j5-6c8v-q8pj | CVE-2026-16487 | high | A flaw was found in bootc when operating with the default containers signature policy. Automatic... |
+| GHSA-3mcp-jg87-j7wj | CVE-2026-106028 | unknown | The ActiveTrail for WooCommerce WordPress plugin through 1.2.6 does not perform any authorization... |
+| GHSA-x2f6-pg54-586w | CVE-2026-112077 | medium | A vulnerability was detected in radareorg radare2 6.2.0/6.2.2. This issue affects the function... |
+| GHSA-2pfr-4hx7-3p8p | CVE-2026-108121 | medium | Brian Mariani from DigitalCanion SA has discovered a  vulnerability in the domain creation... |
+| GHSA-4573-j266-gqm9 | CVE-2026-106014 | unknown | The Gateway for Vantiv on WC WordPress plugin through 1.0.1 does not verify the authenticity of... |
+| GHSA-fmj9-5fq7-mvjg | CVE-2026-112075 | low | A weakness has been identified in unslothai unsloth up to 0.1.501-beta. This affects the function... |
+| GHSA-wj5h-2j88-93vj | CVE-2026-108120 | high | Brian Mariani from DigitalCanion SA has discovered a path traversal vulnerability in the View... |
+| GHSA-g899-4284-8gqj | CVE-2026-112076 | low | A security vulnerability has been detected in alexta69 MeTube up to 2026.09.28. This... |
+| GHSA-2p28-j54x-gv38 | CVE-2026-112080 | low | A vulnerability was found in LlamaChinese Llama-Chinese up to... |
+| GHSA-q7j8-9vmr-j8qv | CVE-2026-112079 | low | A vulnerability has been found in hankcs HanLP up to 2.1.0-beta.64. The affected element is the... |
+| GHSA-mgjw-qc2q-q7rc | CVE-2026-112078 | low | A flaw has been found in RVC-Project Retrieval-based-Voice-Conversion-WebUI up to 2.3.260718.... |
+| GHSA-8m72-m8r9-85xc | CVE-2026-112074 | low | A security flaw has been discovered in Tencent ncnn up to... |
+| GHSA-65cq-6v82-827q | CVE-2026-112045 | low | A vulnerability was detected in donetick up to 0.1.82. The impacted element is the function... |
+| GHSA-fx59-v8wm-992x | CVE-2026-112073 | low | A vulnerability was identified in Tencent ncnn up to 44b02dabdcf97499281a4692ebd65bad73dcf8b6.... |
+| GHSA-4fmq-r5rm-vvmw | CVE-2026-111440 | high | 在 openGauss-connector-jdbc 的 pgjdbc/src/main/java/org/postgresql/log/LogFactory.java 中，LogFactory... |
 
 ## Ransomware — new leak-site victim postings (ransomware.live)
 | Victim | Group | Country | Date |
 |---|---|---|---|
+| American Campus | Helix | US | 2026-10-19T02:23:57.872260+00:00 |
+| Finzly Corp | N0n | US | 2026-10-19T01:23:07.372995+00:00 |
+| Company #93 | N0n | US | 2026-10-19T00:22:49.507679+00:00 |
+| Amagi Media Labs | N0n | US | 2026-10-18T22:24:38.779390+00:00 |
+| Belcorp | qilin | PE | 2026-10-18T21:05:22.505062+00:00 |
+| Company #92 | N0n | KR | 2026-10-18T20:25:29.647385+00:00 |
+| ********rta.ch | cloak | CH | 2026-10-18T19:06:57.588367+00:00 |
+| dac********er.de | cloak | DE | 2026-10-18T19:06:17.465564+00:00 |
+| Telecom Egypt | N0n | EG | 2026-10-18T17:29:31.228669+00:00 |
+| All Business Technologies (Fox Hill bookkeeping and tax practice) | N0n |  | 2026-10-18T17:28:49.429792+00:00 |
+| SMIC US Company (Sunnyvale, CA — US arm of Semiconductor Manufacturing International Corpo... | N0n | US | 2026-10-18T16:27:05.221579+00:00 |
+| Llano Independent School District | qilin | US | 2026-10-18T13:49:38.734560+00:00 |
+| mckenneys | iah6477 | US | 2026-10-18T12:37:04.785040+00:00 |
+| Pengurusan Aset Air Berhad | qilin | MY | 2026-10-18T09:47:41.943906+00:00 |
+| Company #91 | N0n | US | 2026-10-18T08:54:33.702640+00:00 |
+| Southwire | Helix | US | 2026-10-18T07:51:55.572286+00:00 |
+| Luzco Ilumination | emperador |  | 2026-10-18T06:52:23.198824+00:00 |
+| Company #90 | N0n | US | 2026-10-18T05:53:23.391515+00:00 |
+| Company #89 | N0n | US | 2026-10-18T05:52:48.574994+00:00 |
 | Quikrete | Helix | US | 2026-10-18T02:51:45.862874+00:00 |
-| Solid Trading B.V. | N0n | NL | 2026-10-18T01:26:57.708293+00:00 |
-| ECO USA | N0n | US | 2026-10-18T01:26:16.619915+00:00 |
-| SQA Services Inc | N0n |  | 2026-10-18T01:25:36.179500+00:00 |
-| Personify Health | Helix | US | 2026-10-17T22:23:45.502451+00:00 |
-| Bay Alarm | Helix | US | 2026-10-17T22:23:24.581079+00:00 |
-| Smith Douglas Homes | Helix | US | 2026-10-17T22:23:03.451277+00:00 |
-| Company #88 | N0n | US | 2026-10-17T19:24:26.787601+00:00 |
-| Rheem Global | Helix | US | 2026-10-17T18:22:04.862943+00:00 |
-| Company #86 | N0n | US | 2026-10-17T06:53:37.963927+00:00 |
-| Company #85 | N0n | US | 2026-10-17T05:25:56.633167+00:00 |
-| Company #84 | N0n | US | 2026-10-17T05:25:20.201640+00:00 |
-| Chugoku Bend | everest |  | 2026-10-17T03:07:09.380455+00:00 |
-| Taekwang Network | everest | KR | 2026-10-17T03:06:33.600895+00:00 |
-| Brenner Base Tunnel | everest | AT | 2026-10-17T03:05:58.919242+00:00 |
-| PART2 Global AirFreight International | Eclipse | SG | 2026-10-17T22:21:40.458651+00:00 |
-| First Brothers Co., Ltd | qilin | TH | 2026-10-17T20:16:07.976121+00:00 |
-| Decorolala - 500 Line Sample | BYOD |  | 2026-10-17T16:52:04.161325+00:00 |
-| Prafesta Ind. e Com. de Embalagens Ltda | N0n | BR | 2026-10-16T21:53:44.751763+00:00 |
-| WSBI-ESBG | play | BE | 2026-10-16T20:40:40.050274+00:00 |
 
 ## IOCs
 ### ThreatFox (recent, abuse.ch)
 | Indicator | Type | Malware |
 |---|---|---|
-| https://us.9nawin.org/nk/ | url | win.vidar |
-| https://us.9nawin.org/ln/ | url | win.vidar |
-| https://us.9nawin.org/lo/ | url | win.vidar |
-| https://us.9nawin.org/yb/ | url | win.vidar |
-| https://us.9nawin.org/zo/ | url | win.vidar |
-| http://192.162.199.249/cf7jcx5ttx7uw21f | url | osx.amos |
-| 89a25311145ada1664428064bc5b4ae16ec3e322b1399f3d4e753de8aba3ea06 | sha256_hash | osx.amos |
-| https://us.9nawin.org/yo/ | url | win.vidar |
-| https://us.9nawin.org/zq/ | url | win.vidar |
-| https://us.9nawin.org/lq/ | url | win.vidar |
-| https://us.9nawin.org/b4/ | url | win.vidar |
-| xawipo.workers.dev | domain | php.shin_webshell |
-| 111.170.148.132:10011 | ip:port | unknown |
-| 111.170.148.132:10012 | ip:port | unknown |
-| https://ba.9nawin.org/m0/ | url | win.vidar |
-| https://ba.9nawin.org/xx/ | url | win.vidar |
-| 47ce866bc6022d4e2a791d73cff0a71ec37fa327646dd9099d38701135c5b9b6 | sha256_hash | unknown_loader |
-| 79470e722fcc76b61df510b3053dc645bdd7715ff719dbfab79e4f51511f278f | sha256_hash | elf.mirai |
-| 8c934318b8a5dae64d98dbefa3a968954fc63c2f6fdff51045e1ba921407ee91 | sha256_hash | elf.mirai |
-| 0efb47bf881a6a1f80ea168eef41aa7a27164072c3a6025733bc085b7b03ee13 | sha256_hash | elf.mirai |
+| f0924944e502148d001e043b96981c621a65f0d4ea0c68cef26355936ae48340 | sha256_hash | osx.amos |
+| 8c0137506ab7d5fc2ab411acdbc8f729399027568c5fc892371e5d89edb6897d | sha256_hash | osx.amos |
+| c77e8254819e19bf277948537724fdd2fa90f45fbc81d342c688432228282b89 | sha256_hash | osx.amos |
+| 2aba880c132444d0a53e56ea03bdeede3aec3272d233cb33497a1f556a52cbe5 | sha256_hash | osx.amos |
+| 23.132.164.15:14641 | ip:port | win.remcos |
+| ceec6321dc3dbf2e1515bb53602bc278afa47b472f260f9bcdd109c5ad0052d4 | sha256_hash | osx.amos |
+| google-proxy-66-249-88-66.google.com | domain | php.shin_webshell |
+| e0f6754b62b957cda8188934366f173aa9bb8ed2beda8f3d668f9c881835a5e8 | sha256_hash | osx.amos |
+| 9f9260dee736434e780d2fa6b6651c3c057b3df5 | sha1_hash | win.quasar_rat |
+| 155553264e98d58b0eaa075b1c3087f6 | md5_hash | win.quasar_rat |
+| 6163e1ca729d7127b4aa03d14ae02a8002da7aad | sha1_hash | osx.electro_rat |
+| 1cf92442d8c4a6cc5535f8b450cf988f | md5_hash | osx.electro_rat |
+| 8a442fc7e166b0af2eb74fad903cfb85151c5b8f86e994c037692a7b5b298049 | sha256_hash | win.quasar_rat |
+| 6042742e42d85ca13bbd59fbab8837decc03bf2e | sha1_hash | win.quantloader |
+| 1469bd018fe2f6a6cd975ba9c5e071e4 | md5_hash | win.quantloader |
+| 63a58a8d5cce2d17a2818f47e8c23ac080b6d4314369b56f31f2ad65f09384cf | sha256_hash | osx.electro_rat |
+| 983ae998708cc2fe3c553d09cd79cbf9c6b47ad5 | sha1_hash | elf.elevator |
+| be5be4192d2df4114d39001d35f7c11f | md5_hash | elf.elevator |
+| 0059a3866d1902467dd4fe64108aefd5c7fd2856a794a251c2b28004a92257b9 | sha256_hash | win.quantloader |
+| 81202b83f9feb76cb7923c1a70a3da35 | md5_hash | win.quantloader |
 
 ### URLhaus (recent malicious URLs, abuse.ch)
 | URL | Threat | Status |
 |---|---|---|
-| http://220.161.160.148:39073/i | malware_download | online |
-| http://219.157.254.40:41021/i | malware_download | online |
-| http://42.230.39.96:47720/bin.sh | malware_download | online |
-| http://61.53.135.200:51468/bin.sh | malware_download | online |
-| http://61.53.135.200:51468/i | malware_download | online |
-| http://112.226.204.29:59814/i | malware_download | online |
-| http://59.180.135.152:41296/i | malware_download | online |
-| http://59.97.251.59:46282/i | malware_download | online |
-| http://113.231.8.253:35628/i | malware_download | online |
-| http://221.14.39.83:55219/bin.sh | malware_download | online |
-| http://123.9.218.23:59961/i | malware_download | online |
-| http://45.172.218.181:50780/i | malware_download | online |
-| http://113.53.69.133:47548/i | malware_download | online |
-| http://125.44.33.3:57068/i | malware_download | online |
-| http://59.97.251.59:46282/bin.sh | malware_download | online |
-| http://113.205.156.227:58929/i | malware_download | online |
-| http://45.153.34.235:8765/bins/dlr.mpsl | malware_download | online |
-| https://gitlab.com/brisslands/decode/-/raw/main/XHP3.exe | malware_download | online |
-| https://gitlab.com/brisslands/decode/-/raw/main/y0Xc9Og1lghX.exe | malware_download | online |
-| https://gitlab.com/brisslands/decode/-/raw/main/S8D70IPCZNAA.exe | malware_download | online |
+| http://115.62.156.114:34880/i | malware_download | online |
+| http://110.186.231.245:41695/i | malware_download | online |
+| http://103.210.144.11/jireyrsdnf/bestwegot.sh | malware_download | offline |
+| http://110.186.231.245:41695/bin.sh | malware_download | online |
+| http://59.96.136.108:46282/bin.sh | malware_download | online |
+| http://182.119.199.112:45841/i | malware_download | online |
+| http://182.113.195.83:60679/i | malware_download | online |
+| http://42.5.58.30:49850/i | malware_download | online |
+| http://42.233.211.139:32917/i | malware_download | online |
+| http://103.171.168.74:45242/i | malware_download | online |
+| http://115.53.209.120:41356/bin.sh | malware_download | online |
+| http://125.43.125.69:42510/i | malware_download | online |
+| http://115.48.151.23:49308/bin.sh | malware_download | online |
+| http://23.160.56.123/1531 | malware_download | offline |
+| http://27.216.174.183:52609/bin.sh | malware_download | online |
+| http://23.160.56.223/p.sh | malware_download | offline |
+| http://27.216.174.183:52609/i | malware_download | online |
+| http://123.4.251.57:35535/i | malware_download | online |
+| http://42.55.63.35:56286/i | malware_download | offline |
+| http://42.58.166.36:55052/i | malware_download | online |
 
 ### MalwareBazaar (recent samples, abuse.ch)
 | SHA256 | File type | Signature |
 |---|---|---|
-| 72f9d45b38670c740f156f1db4d9b50fbf62f343e1af3f48c454be3ebea7b534 | whack_sh | n/a |
-| d34ff5a34fd3e4263052ad6834fdd7389024afa35d9d731aac8c04acc0d4a317 | abuse_ch | Mirai |
-| 1f7a31315c822ea415d628c73a24bae47c191b1a933e3672bc7d7eec46fdc98b | abuse_ch | Mirai |
-| 599f3c673a8c330be34e6bc676fc6a8f8f98c84e43bb4875ee40e6ca29c27da4 | abuse_ch | n/a |
-| 0587e8365e2d416b727d7fc274f93566ce17cd9adbf097ea69bd55ac35284620 | abuse_ch | Mirai |
-| 18d46c6383ead81b7ba287f642958e6cd8341f3825d3bc498f7fbc868f26ccab | abuse_ch | Mirai |
-| 99d6881553218afeef61ea5408c16598d699c958e36f56effc8827638c44d4eb | whack_sh | n/a |
-| 89a25311145ada1664428064bc5b4ae16ec3e322b1399f3d4e753de8aba3ea06 | whack_sh | n/a |
-| ec25ee7e4e802306ae1c9deda02b252082b10dc5cee4efdf8dc7d8f671e300de | abuse_ch | n/a |
-| 4ad7a5f20c04017770ed3ab3d1df906e0c5768b8fa20eb7a7fdd43f9057a0726 | whack_sh | n/a |
-| 6976c75310991d14cdb739b1d826d4dabd850cda0794a928c9b23c71bbf0f2a3 | whack_sh | n/a |
-| d85508e7e10f702bd83e1baf01ff85820015666cd5da72add0802fbd30ccaff4 | Bitsight | CoinMiner |
-| 83da0e8a179cf390198e2576f2c2a0046367e8f5b5bfa02835ba9cdaca50be97 | whack_sh | RustyStealer |
-| 603a4b05c524e163c615ae754d3ea4cecac983e2e0226d6835c3a1526ead6e48 | abuse_ch | Mirai |
-| 5e0cd322a30013dba5df58e22e1648fa79959056fc5c91daf2182cc517ecdc24 | abuse_ch | Mirai |
-| 110d904351efe79beca610456380380c833cbc39289f76eb48247f29ae7e3dea | whack_sh | n/a |
-| e1deea1ed7bb74a68f6fefedc1859ee7aeb8f5a0565bd6b749fe06f1f4bf8be8 | whack_sh | n/a |
-| b6f944550a36ae0fd6d6e2edc8d23466badbfc2633672bca9675e67c8ccb42cb | whack_sh | n/a |
-| a8b8317307adfc657c8554fca1a9c67572bba33bc7a08dbfc6e58d3ba97ab130 | abuse_ch | n/a |
-| 4c3b517c1f9cfdf83b2bba8ea5fa0d756d4fe943cbbf42d2404c8328e2f9f6b9 | abuse_ch | n/a |
+| 3db1e114a5585f371b675171657d6d4fcb7c0fe78ee1ce7e8af8819b34516dcd | adrian__luca | AgentTesla |
+| 52f1da7d0119637e2e62f336bae62b192fdd1a35b6c3001f8d1beec47d035920 | abuse_ch | Mirai |
+| 964f99b5118c28d52119909a3d803dd61c8634b1703d817e0b66829839d65990 | abuse_ch | Mirai |
+| 757aa87619f7780f889b7fb0b5b03498d34db882d792c7ac92e597ec578efcc9 | abuse_ch | Mirai |
+| 565cc01c993cdf753154593f16c104e5729f436243649237d1a36cf2100a74e2 | abuse_ch | Mirai |
+| 191c0859e16a94f0188276105ba5d1c07d3db578a994da12f4f876a66dc150b8 | abuse_ch | Mirai |
+| 5286d2946cd32d3901b683496ee882a3970ae6ad5d63c14d36a148b6c03aeaf9 | abuse_ch | Mirai |
+| 642f8c1786ad5ad90542790446775c890afccdd5978847713c414bb2bae167b7 | abuse_ch | Mirai |
+| 8350c2b1da86f0169b4287b2d218554861da87de82a364032526ec2fc1f30691 | abuse_ch | Mirai |
+| 3c29dd311a4332e0c03a0b7bc8cd0435b18c6638bf84017760140a5ac7dfda93 | abuse_ch | Mirai |
+| 000764ec08dd7412613a6335337696010bdd7026ef61b26dd19ea5ac6cb7d7e4 | abuse_ch | Mirai |
+| 03533af22a257dfcfe0794b6dbe677ad2a256a51c78fb68f7cc5621b8a18617d | abuse_ch | Mirai |
+| f499984e4bf2f7786856f6a9626b44aed69556a0fd9a770b16284838968140fa | abuse_ch | Mirai |
+| b95cc683d9ce6c0d07d80f43de9759166c82953f609441295d0e5eeaaacdd05a | abuse_ch | Mirai |
+| e6a15e5f010724f81d9aa69acfac0b276b9d6c86559015e0ef728dbeb064cd58 | lowmal3 | n/a |
+| 6fa54d4dc7eb1d7cf034498613f23e670d19a2e02f813fccdda65f41d84a9860 | smica83 | n/a |
+| d2a09961631b1cddfc8a6295039d59ec4d322ccced724f26fcc7b81a7fc2fc4b | adrian__luca | n/a |
+| 630446fe1613b6ae61d515d35bc9dee937f454d3e8ee27bb5802982160812936 | adrian__luca | n/a |
+| 98077e229b4f5b475383f5d30217423d72c35427dd83d95d3ac5ad9dd7e95664 | adrian__luca | Formbook |
+| 151355d4e162afc65c8f9569e78c02fa071d84041cc0253cfaf98ad5a9e96435 | adrian__luca | AgentTesla |
 
 ### Feodo Tracker (active botnet C2 IPs, abuse.ch)
 | IP | Malware |
@@ -180,96 +168,96 @@ _Sorted by CVSS (highest first). EPSS = probability of real-world exploitation i
 ### IPsum (IPs flagged by 5+ independent blocklists)
 | IP | Lists flagging it |
 |---|---|
-| 77.90.185.20 | 10 |
-| 152.32.225.117 | 10 |
-| 202.155.18.56 | 10 |
-| 45.148.10.141 | 9 |
+| 45.148.10.240 | 10 |
+| 107.150.123.48 | 10 |
+| 196.189.236.67 | 10 |
+| 2.57.122.238 | 9 |
+| 3.129.187.38 | 9 |
+| 18.218.118.203 | 9 |
+| 45.148.10.152 | 9 |
+| 45.153.34.117 | 9 |
+| 46.151.178.14 | 9 |
+| 66.132.172.43 | 9 |
+| 66.132.172.142 | 9 |
+| 66.132.172.182 | 9 |
+| 66.132.195.115 | 9 |
+| 66.132.224.233 | 9 |
+| 80.82.77.33 | 9 |
+| 93.152.221.37 | 9 |
 | 94.154.43.223 | 9 |
-| 103.159.2.113 | 9 |
-| 130.12.180.32 | 9 |
-| 167.94.146.52 | 9 |
-| 167.94.146.59 | 9 |
-| 196.189.236.67 | 9 |
-| 2.57.122.168 | 8 |
-| 2.57.122.238 | 8 |
-| 3.129.187.38 | 8 |
-| 14.17.59.195 | 8 |
-| 31.184.195.246 | 8 |
-| 35.237.94.18 | 8 |
-| 45.148.10.152 | 8 |
-| 45.148.10.157 | 8 |
-| 45.148.10.240 | 8 |
-| 45.172.152.74 | 8 |
+| 119.28.84.193 | 9 |
+| 130.12.182.223 | 9 |
+| 144.225.6.182 | 9 |
 
 ### OpenPhish (live phishing URLs)
-- http://roblox.com.et/users/7999205213/profile
-- http://danaid.httpz.biz.id/
-- https://vinted-check.com/238874013
-- https://intokken.com/
-- https://rbcode.net/v/4cfdcf48ff6172d39bd47d7e28a8c7d0
-- http://stone15-nest.pages.dev/
-- https://www.roblox.ly/games/17625359962/RIVALS?privateServerLinkCode=92963367821158724662057277604387
-- http://www.c5e2eebc14e3af5a3ec7a62e74c65e93.vercel.app/
-- https://coppermingle.shop/meet/zoom/Iphone/
-- https://coppermingle.shop/meet/zoom/Iphone/invite.php
-- https://coppermingle.shop/meet/zoom
-- http://my-robux10000.blogspot.com/
-- https://www.roblox.com.ml/games/93377007303268/UPDATE-Job-Application-Tower?privateServerLinkCode=384328757637766641742433182819
-- https://www.alldomainsept-two.vercel.app/
-- https://trustledgeraml.vercel.app/
-- http://prime-asset-recovery.com/
-- http://super-duper-octo-eureka--tsccoeste.replit.app/
-- https://www.roblox.com.bn/users/499206237787/profile
-- http://alldomainsept-two.vercel.app/
-- http://1najrn1.pages.dev/
+- http://andresh155.github.io/exzamen
+- http://sd-hope.org/wpp
+- http://delta-root49.pages.dev/
+- http://menuuu-aktivasi.kruer.web.id/
+- http://sp10ct10-evarnak-biz-qavero.pages.dev/
+- http://sp10ct10-ravvek-biz-lureni.pages.dev/
+- http://sp10ct10-rulvek-biz-qavari.pages.dev/
+- http://sp10ct10-gurvak-biz-rumeko.pages.dev/
+- http://sp10ct10-murvek-biz-rumeni.pages.dev/
+- http://sp10ct10-sarnak-biz-rumaro.pages.dev/
+- https://meramaskloginyc.gitbook.io/
+- https://lnk.ink/R4OsW
+- https://www.roblox.com.et/users/8294879321/profile
+- http://mum.lxf.temporary.site/pdolf/fg
+- https://zd.lc/n5hsB
+- http://goo.su/emQzHd
+- https://helpus-treiozor.gitbook.io/
+- https://naman-gudhka-1912.github.io/amazon-clone/checkout.html
+- http://australianvouchers-ks502.ink/qLm7Ra
+- https://www.roblox.com.pt/games/114574503491412/Anime-Zero-SOLAR-RADIANCE?privateServerLinkCode=33904598587074146790476626474920&game_id=114574503491412&game_name=Anime-Zero-SOLAR-RADIANCE
 
 ### PhishStats (recent phishing/malicious URLs, scored)
 | Score | URL |
 |---|---|
-| N/A | http://43.156.0.130/v3/signin/identifier?amp%3Bfollowup=https%3A%2F%2Faccounts.google.com&amp%3Bifkv=ASKXGp0_nbFzdHoBsG_d6znGlWE063OUXUJ-liVgQNfJJB3wA_mip4wV6In-9Cchxtm7MSHwtubxoQ&amp%3Bpassive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AWt06SSW5RcrdFO7z4ZELZjz0PKrlwuvtAlRfXio8W00qQ8FW3hTMwEYfpMEtbjVflvZkj12v7dCHg&dsh=S-1138847246%3A1792309886707540 |
-| N/A | https://flat-bread-04ca.cloudflareaccess.com/cdn-cgi/access/login/vertiv-command-center.pages.dev?kid=617efb6eb0445e77d08421b7c2075c08ed7302463271c62a28d702c82772462a&meta=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEyY2U5NjlmMDk3YjUyNjliNjllZjA0N2EwMjBiZGI2NGMwMTc5NjMwNzE3MzJhMWJjODg2NjJiNGUxYzJjY2IifQ.eyJ0eXBlIjoibWV0YSIsImF1ZCI6IjYxN2VmYjZlYjA0NDVlNzdkMDg0MjFiN2MyMDc1YzA4ZWQ3MzAyNDYzMjcxYzYyYTI4ZDcwMmM4Mjc3MjQ2MmEiLCJob3N0bmFtZSI6InZlcnRpdi1jb21tYW5kLWNlbnRlci5wYWdlcy5kZXYiLCJyZWRpcmVjdF91cmwiOiIvIiwic2VydmljZV90b2tlbl9zdGF0dXMiOmZhbHNlLCJpc193YXJwIjpmYWxzZSwiaXNfZ2F0ZXdheSI6ZmFsc2UsImV4cCI6MTc5MjMwOTM0MywibmJmIjoxNzkyMzA5MDQzLCJpYXQiOjE3OTIzMDkwNDMsImF1dGhfc3RhdHVzIjoiTk9ORSIsIm10bHNfYXV0aCI6eyJjZXJ0X2lzc3Vlcl9kbiI6IiIsImNlcnRfc2VyaWFsIjoiIiwiY2VydF9pc3N1ZXJfc2tpIjoiIiwiY2VydF9wcmVzZW50ZWQiOmZhbHNlLCJjb21tb25fbmFtZSI6IiIsImF1dGhfc3RhdHVzIjoiTk9ORSJ9LCJyZWFsX2NvdW50cnkiOiJVUyIsImFwcF9zZXNzaW9uX2hhc2giOiJlNTIzNTBjNGU3ZTYzNmIzODQ2ZGIyZTdmOTI1ODg3YTk0MGRjNDZhYjcwMzkzZTYzYTM2ODY5MDQyNGI5MDgzIn0.DxUZeOOTvYLx8_x7iHN0tQj74VVP8cEhnO81m4ZKLy-jPTdA8KzmGiBKWy1V-h_DSfcr6tHABwtZP8WbIXHyN87tLXbNVI0XZjMOgtPQXEiwO-TfaajWn1yThCyOksftVaDRh3fMnCb3kJZqW1OZ96Z8hjFnHPp3tPYi_NK1VW_H-wO3OmrMWS-WeBzXv6IpPJkUVc9fDJ8D6S5iDkmfwii5B1lrJpF3KMg1e90x9iQDYzWeqen8I__D1qnUkS2AUtxvgXmpFQzPS_Q345EO8LDeF4qi9GNp-f5r_EOl57FbJS3Nm5gemgOLEi2E6QpYJqRMZ-Y1hXaotMlfaYhntA&redirect_url=%2F |
-| N/A | https://away.vk.ru/away.php?rh=66a79829-5200-48f5-b604-0a200fd052b9 |
-| N/A | http://allegro.1290h9ikk4fgj.pics/ |
-| N/A | https://away.vk.ru/away.php?rh=204df661-2862-42f8-9e22-f2f62deb0f1e |
-| N/A | http://49.51.43.12/v3/signin/identifier?amp%3Bfollowup=https%3A%2F%2Faccounts.google.com&amp%3Bifkv=AWnogHe_pDujLaO-hl3d_3DQFjS6PW6JGM3LRrD13mxmiaQWTJuHz9b6nwmaSIh76M5SMOelnJex7g&amp%3Bpassive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AWt06STDomFW_-7HWdWWTZKkd4M5cTrQxmYSfadvt_O2Hm17PEJi8-BT7vhLz2TkP5_b2-OSzC_LMA&dsh=S-971696013%3A1792306700530179 |
-| N/A | http://away.vk.ru/away.php?rh=64d6c50f-a55f-4e93-b4c7-f29748caa049 |
-| N/A | https://allegro-lokalnie.oneseekmonsoon.cfd/ |
-| N/A | https://id.superhuman.com/signin?oauth_client_type=MEDIATED_WEB&correlation_id=9oAkVmfI1PQ3oUZrCtBKWg&version=v4&client_id=superhumanDocs |
-| N/A | https://away.vk.ru/away.php?rh=746f3d97-3c04-4c7a-a695-4d347ff1df15 |
-| N/A | https://away.vk.ru/away.php?rh=c6768d98-1016-440f-be49-800523fcdb18 |
-| N/A | http://43.156.0.130/v3/signin/identifier?amp;continue=https://accounts.google.com/&amp;followup=https://accounts.google.com&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1274665134:1792305094956433 |
-| N/A | https://away.vk.ru/away.php?rh=4033c2a9-7bfe-4e41-8f77-5ddd38cf7b78 |
-| N/A | https://away.vk.ru/away.php?rh=2a028588-04f7-4ecf-a645-9aaab7b31aef |
-| N/A | https://b8376mghi5d.jp.larksuite.com/share/base/form/shrjpMwk5KEz3wmsdPQjPPcLjqh?auth_token=U7CK1RF-bcej7fa1-4cd5-4d2d-aa82-22e60ethi0eq-NN5W4 |
-| N/A | https://away.vk.ru/away.php?rh=664c4cb5-eca4-484c-9d61-4550c4df4e64 |
-| N/A | https://app-cz9x.glide.page/dl/a189fc |
-| N/A | http://43.156.0.130/v3/signin/identifier?amp%3Bfollowup=https%3A%2F%2Faccounts.google.com%2F&amp%3Bifkv=AaSxoQyQEeCdGiNQploah5nAij7vrMqrlVIHby1Q4v_ARx9kttGkmffM4ARVCnkvjXQyGpUqW4kQNA&amp%3Bpassive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AWt06SSinG5GpchZox0SpsrMMp_JjUpMz9fOOvR-42kuFjlHPrBAoTTwP6p_m9Nb5whlvoyOfBmL&dsh=S571796493%3A1792304001008367 |
-| N/A | https://www.att.com/activearmorapp?_branch_match_id=1640248425591061547&utm_source=AT%26T%20App&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT0wuySxLTSzKzS%2FSzS%2FKTM%2FM00ssKdFLzs%2FV9wtL8U6KLCzzMUqyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAZUf3KkgAAAA%3D |
-| N/A | https://away.vk.ru/away.php?rh=5005658b-374c-4adf-b38f-92ea705a80d8 |
+| N/A | https://b8376mghi5d.jp.larksuite.com/share/base/form/shrjpMwk5KEz3wmsdPQjPPcLjqh?auth_token=U7CK1RF-adbr2d53-7534-4db6-ad01-37d4cfkil49j-NN5W4 |
+| N/A | https://portal-kucoin-login-info.typedream.app/ |
+| N/A | https://away.vk.ru/away.php?rh=94f413f2-1658-47b1-afed-91a809537933 |
+| N/A | http://43.156.0.130/v3/signin/identifier?amp%3Bfollowup=https%3A%2F%2Faccounts.google.com&amp%3Bifkv=ASKXGp0_nbFzdHoBsG_d6znGlWE063OUXUJ-liVgQNfJJB3wA_mip4wV6In-9Cchxtm7MSHwtubxoQ&amp%3Bpassive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AWt06SQqhMajONZP3qlWoFudyHWj1IpuSU41f-xF_5wj_QQwPgy_Rdh89_e-9EQmoY1k8SYEMcUeAw&dsh=S-1189047650%3A1792398408883554 |
+| N/A | https://allegro-lokalnie.zoomarea.sbs/ |
+| N/A | http://49.51.43.12/v3/signin/identifier?amp%3Bfollowup=https%3A%2F%2Faccounts.google.com%2F&amp%3Bifkv=AQMjQ7QyROPzn0qaqnYvX4_aw7qH8RajahyDV4UI8mo2Mw7SaNi-z6QQG4MH4pDlzJ2gDPTt_nm2&amp%3Bpassive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AWt06STlw3UgxTqZm9fFdYyeEw4FIqMMph10ib-e0t61d71VDBWTTkAvDqvwwxNEpiMndS29gZpwFg&dsh=S-181863207%3A1792398112573013 |
+| N/A | https://morojames1789900170014.0690011.misitiohostgator.com/t1/page/index.php |
+| N/A | https://allegro.covevictory286.sbs/ |
+| N/A | https://away.vk.ru/away.php?rh=5fc898c2-c69c-4e36-92e3-dcc06805b0aa |
+| N/A | https://allegro.agjab.sbs/ |
+| N/A | https://skinsmonkey.com?referrer=pid%3D1%26af_tranid%3DMTQ1NDI4MDMyMzI3NzE5MTUyNDA%3D |
+| N/A | https://away.vk.ru/away.php?rh=fa7fc048-cb42-4bfc-82cb-764f1b0a9c71 |
+| N/A | https://vercel.com/login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Finterface-uniswap.vercel.app%252F%26nonce%3D8de762e0c0ae94f2f927be192e3384aa52b4c9eb9704c6e7b9b62f4bc8ad246c |
+| N/A | https://www.att.com/activearmorapp?_branch_match_id=1640634546218058340&utm_source=AT%26T%20App&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT0wuySxLTSzKzS%2FSzS%2FKTM%2FM00ssKdFLzs%2FV9wtL8U6KLCzzMUqyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAZUf3KkgAAAA%3D |
+| N/A | https://qhqgcy.com |
+| N/A | https://yandex.ru/showcaptcha?cc=1&form-fb-hint=2.1&mt=E80A620491D52BA3C83729885D4DA85536DB2CE75AE9999EB04BF8E2F16F835832CF59A4C858D1B32DAA8F3B8B8240B9D8217897F1685E720D14248DDB1FFF5050023540F3BED6C3C2C43146FA00553921227AD0F2A1F896BD1A32E73B6793CE30E2116B72E9A3166E5B925B081EB714A422961C7DB8A97D7A4E674E6FB4D0673491A6785DFC77D5D2&retpath=aHR0cHM6Ly95YW5kZXgucnUvc2VhcmNoP3RleHQ9MjExNjg3MTc%2C_9e32ea590f1152ceb4677b92f96f1e0c&t=2%252F1792395133%252Fd406100f3f90c9cc9643fbc89da9c4f4&u=9605136785862044437&s=c00272df8d88e2aab95431d6261dc46e |
+| N/A | https://theprintking.co.za/index.php/ |
+| 8.1 | http://49.51.43.12/v3/signin/identifier?amp%3Bfollowup=https%3A%2F%2Faccounts.google.com&amp%3Bifkv=AWnogHe_pDujLaO-hl3d_3DQFjS6PW6JGM3LRrD13mxmiaQWTJuHz9b6nwmaSIh76M5SMOelnJex7g&amp%3Bpassive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AWt06SRSHW0G5WguGK8-r2occD8usZKN-Rc72eTQO5eKIwvT5eJA8w-_-sOwIzjIcG5LdU6GKRxrvg&dsh=S1394160346%3A1792394898707282 |
+| N/A | https://login.ksszxmy.com/verify/3e4e234f?host=login.ksszxmy.com&redirect=%2F%3FNH3nYUfgFMgr3QQ122VVx9Pe |
+| N/A | https://away.vk.ru/away.php?rh=e2578df2-d117-4da7-99bd-a3e3985ecb83 |
 
 ### SSL Blacklist (abuse.ch — certs tied to malware/botnet C2)
 | SHA1 | Info |
 |---|---|
-| 7ef960d6cfa5bae388a927a5e20f9238bcb22f92 | Vidar C&C |
-| 0922f0b5df139ddc07c5f43fea6d84c885ecc833 | Vidar C&C |
-| 09545cca9c36c76f4982c4b648041a1606799b53 | Vidar C&C |
-| d333c0b7e380afd2f156555b8110c00177b62e5d | Vidar C&C |
-| e6c0468f46efe40f3127d33641bfc3df8b2e5c7d | PureLogsStealer C&C |
-| 4664c47d412c00bf067a325ffa9790db75efbe75 | PureLogsStealer C&C |
-| b3c1e060a727e4db1cf6131f1eb6e9bcca2ffb5d | PureRAT C&C |
-| 11cfb1e85c316e9b9785c6778bc077bb04093dfd | PureLogsStealer C&C |
-| c389945d4fc75250b291953e0abad0662dd9ce7d | Vidar C&C |
-| 24ec954313877b212b522682aef606180ff6f343 | OffLoader C&C |
-| 515574d4dc4957fbd0043d3a4269485384e504e7 | Vidar C&C |
-| 51f9d6339bfdb9321630392913941e04d921cf7d | Vidar C&C |
-| 9d4574e66ed485ca617fe78078a7dba674937bb3 | Vidar C&C |
-| 629700c6fb58a48ce5c34e9e830225fad3e62634 | DCAgentRMM C&C |
-| 6ae4974b641caa8b6aae8d3392e7fb4f8c7e3577 | DCAgentRMM C&C |
-| 245f189a60a8b20a5dc562134b3d55d6539ac186 | Vidar C&C |
-| ab1d61a4f4692b105daa345a7185119f0d29cb79 | Vidar C&C |
-| 9769dce57ee77a6da94da9c824cd923cb9599892 | Vidar C&C |
-| d621cfc19f287afe3b53ee95f4463732d2de342f | Malware C&C |
-| 929b3729b42dabeb68077b03b2802e5b53ceade7 | ConnectWise C&C |
+| 38151a6b2438b2b645a27a891e1e15786f11a783 | PureLogsStealer C&C |
+| eaefd82da94ee8839666b2a42d24dcc412d7de3c | Malware C&C |
+| e2234aa66c80b118b69211f6e8f4efbd578a7587 | PureLogsStealer C&C |
+| e2dbc11a546d739d12e547c38cdb4fd6cfacd4c4 | PureLogsStealer C&C |
+| b97f1ae860fce04e1aae480e10b884da9826b17b | PureLogsStealer C&C |
+| 97001686e56437dda319c71d5b0deeb8647de6e3 | QuasarRAT C&C |
+| ad71014e839f794407e155508ce8ba98bf9556f7 | PureRAT C&C |
+| 565ad03c4f04a685db081954cc9e5b1b210849e9 | OffLoader C&C |
+| 3aa254a14d2bfefa3f3645be8f87a814edcf3109 | OffLoader C&C |
+| a1fe9a509cdbfa8cc81db2a1f2216a96b32b2e55 | ACRStealer C&C |
+| d4c2969ae8a878031ece0d67457d419eab16358f | ACRStealer C&C |
+| 20e506ba84f2b1e681674fed4f44d72024f18cb2 | WARDENStealer C&C |
+| 5758a152f5bc1f96581c6530488f830766c45c96 | QuasarRAT C&C |
+| b6e98fa780d26472b70284be1abf84e7cf2bb152 | Malware C&C |
+| 6dc0b07b0666b932f43af624460a79c98d5d17bb | ConnectWise C&C |
+| 28c47a169d83c0017b5db95a0ae29973cf21d13b | ConnectWise C&C |
+| a36fb193d41fdff5259ef4902ef4b33de38f768b | DCAgentRMM C&C |
+| c7a0310a47eec71976fbd7a4ac1dbd0aa4b7a7c1 | PureRAT C&C |
+| ff59f65a5b8f0f847ed3c0ac1f140dc28de2f720 | OffLoader C&C |
+| 4fcc8c0172b376ebfc85d644c5f64f7cd60321a5 | Vidar C&C |
 
 ### Spamhaus DROP (hijacked/leased malicious netblocks)
 - 1.10.16.0/20
@@ -294,13 +282,12 @@ _Sorted by CVSS (highest first). EPSS = probability of real-world exploitation i
 - 5.188.236.0/23
 
 ### blocklist.de (recent SSH/mail/web attack sources)
-- 1.117.72.220
+- 1.10.176.3
 - 1.14.240.247
-- 1.159.54.33
 - 1.178.216.211
-- 1.179.232.194
-- 1.187.160.37
-- 1.20.187.52
+- 1.179.209.26
+- 1.187.76.29
+- 1.20.172.244
 - 1.20.230.31
 - 1.20.88.78
 - 1.212.225.99
@@ -308,53 +295,54 @@ _Sorted by CVSS (highest first). EPSS = probability of real-world exploitation i
 - 1.215.233.74
 - 1.222.42.237
 - 1.227.228.131
+- 1.234.21.73
 - 1.234.23.83
 - 1.235.14.41
 - 1.235.183.146
+- 1.237.155.150
 - 1.238.106.229
-- 1.24.16.95
 - 1.242.33.13
 
 ### CINS Army (poorly-rated IPs)
-- 1.117.58.215
-- 1.12.229.231
+- 1.117.61.172
+- 1.117.68.141
 - 1.14.149.30
-- 1.192.129.106
+- 1.15.14.29
+- 1.214.29.155
 - 1.215.138.43
-- 1.24.16.102
-- 1.24.16.104
-- 1.24.16.106
-- 1.24.16.123
-- 1.24.16.133
-- 1.24.16.146
-- 1.24.16.153
-- 1.24.16.163
-- 1.24.16.167
-- 1.24.16.171
-- 1.24.16.180
-- 1.24.16.182
-- 1.24.16.187
-- 1.24.16.188
-- 1.24.16.195
+- 1.221.65.174
+- 1.24.16.150
+- 1.24.16.154
+- 1.24.16.166
+- 1.24.16.17
+- 1.24.16.179
+- 1.24.16.183
+- 1.24.16.2
+- 1.24.16.42
+- 1.24.16.5
+- 1.24.16.53
+- 1.24.16.6
+- 1.24.16.61
+- 1.24.16.74
 
 ## News (last ~36h, across outlets)
 ### The Hacker News
-- [MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon](https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html)
-- [Hackers Use Compromised ConnectWise Credential to Sign In to 173 Microsoft 365 Tenants](https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html)
+- [Unpatched Broadcom Wi-Fi Flaw Lets Attackers in Range Run Code as Root on Routers](https://thehackernews.com/2026/10/unpatched-broadcom-wi-fi-flaw-lets.html)
+- [OpenCode Console Breach May Have Exposed OpenAI, Anthropic, and Google API Keys](https://thehackernews.com/2026/10/opencode-console-breach-may-have.html)
+- [ConnectWise Suspends Cloud Backup After Attackers Compromise Microsoft 365 Tenants](https://thehackernews.com/2026/10/connectwise-suspends-cloud-backup-after.html)
 
 ### BleepingComputer
-- [Hackers breach Microsoft 365 tenants via ConnectWise supply-chain attack](https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/)
-- [Drupal patches critical RCE flaws, warns exploits may emerge soon](https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaws-warns-exploits-may-emerge-soon/)
-- [Critical BlockStrap flaw lets hackers run code on Magento servers](https://www.bleepingcomputer.com/news/security/critical-blockstrap-flaw-lets-hackers-run-code-on-magento-servers/)
+- [Hackers exploit SiteGuard WAF flaw to run commands as admins](https://www.bleepingcomputer.com/news/security/hackers-exploit-siteguard-waf-flaw-to-run-commands-as-system-root/)
 
 ### Krebs on Security
 _No new items / feed unavailable this run._
 
 ### Dark Reading
-- [BeyondTrust Remote Support Zero-Day Continues Trend of Exploited Edge Bugs](https://www.darkreading.com/endpoint-security/beyondtrust-remote-support-exploited-edge-bugs)
+_No new items / feed unavailable this run._
 
 ### SecurityWeek
-- [Israeli Ad Firm Doubled as Candiru’s Zero-Click Spyware Delivery Channel](https://www.securityweek.com/israeli-ad-firm-doubled-as-candirus-zero-click-spyware-delivery-channel/)
+- [Anthropic Acquires Confidential AI Startup Opaque Systems](https://www.securityweek.com/anthropic-acquires-confidential-ai-startup-opaque-systems/)
+- [US Cybersecurity Job Postings Fall 26% as AI Security Engineer Demand Soars](https://www.securityweek.com/us-cybersecurity-job-postings-fall-26-as-ai-security-engineer-demand-soars/)
 
 ### The Record
 _No new items / feed unavailable this run._
@@ -363,7 +351,7 @@ _No new items / feed unavailable this run._
 _No new items / feed unavailable this run._
 
 ### CyberScoop
-- [Federal agencies recommend cyber controls, independent testing for frontier AI systems](https://cyberscoop.com/federal-ai-agent-sandbox-security-guidance/)
+_No new items / feed unavailable this run._
 
 ### Cisco Talos
 _No new items / feed unavailable this run._
@@ -378,7 +366,7 @@ _No new items / feed unavailable this run._
 _No new items / feed unavailable this run._
 
 ### SANS Internet Storm Center
-_No new items / feed unavailable this run._
+- [Orphaned VBA Projects Inside DWG Files: YARA Rule, (Sun, Oct 18th)](https://isc.sans.edu/diary/rss/33434)
 
 ### Securelist (Kaspersky)
 _No new items / feed unavailable this run._
