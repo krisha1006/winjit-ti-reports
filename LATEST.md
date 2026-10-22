@@ -1,692 +1,183 @@
-# Winjit Daily TI Digest — 2026-10-21
+# Winjit Daily TI Digest — 2026-10-22
 
-_Auto-generated. Window: last ~24h. Fetched at 2026-10-21T08:24:44.990679+00:00Z_
+_Auto-generated. Window: last ~24h. Fetched at 2026-10-22T08:26:31.775631+00:00Z_
 
-**At a glance:** 6 new KEV · 542 new HIGH/CRITICAL CVEs · 25 new GitHub advisories · 20 new ransomware victims posted
+**At a glance:** 0 new KEV · 103 new HIGH/CRITICAL CVEs · 25 new GitHub advisories · 20 new ransomware victims posted
 _Note: CISA KEV, NVD, GitHub Advisories and ransomware.live are genuinely "new since yesterday." The IOC blocklists below (Spamhaus DROP, blocklist.de, CINS Army, IPsum, SSL Blacklist, Feodo Tracker) are current full-list snapshots from each provider, not day-over-day diffs -- expect a lot of overlap with yesterday's report there, that's expected, not a bug._
 
 ## CISA KEV — newly added actively-exploited CVEs
-| CVE | Vendor | Product | Name | Ransomware use | Required action |
-|---|---|---|---|---|---|
-| CVE-2026-106931 | EG Secure Solutions | SiteGuard Server Edition | EG Secure Solutions SiteGuard Server Edition OS Command Injection Vulnerability | Unknown | Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. |
-| CVE-2026-96656 | Plex | Media Server | Plex Media Server External Control of File Name or Path Vulnerability | Unknown | Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. |
-| CVE-2026-96655 | Plex | Media Server | Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability | Unknown | Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. |
-| CVE-2026-96654 | Plex | Media Server | Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability | Unknown | Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. |
-| CVE-2026-96652 | Plex | Media Server | Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability | Unknown | Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. |
-| CVE-2026-110936 | Siemens | Software Center | Siemens Software Center Uncontrolled Search Path Element Vulnerability | Unknown | Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. |
+_No new KEV entries in this window._
 
 ## NVD — new HIGH/CRITICAL CVEs published
 _Sorted by CVSS (highest first). EPSS = probability of real-world exploitation in the next 30 days (FIRST.org)._
 | CVE | CVSS | EPSS | Description |
 |---|---|---|---|
-| CVE-2026-101809 | 10.0 | n/a | Vulnerability in the Workflow product of Oracle E-Business Suite (component: Workflow Notification Mailer).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability a |
-| CVE-2026-81212 | 10.0 | n/a | IBM DataStage on Cloud Pak for Data 5.4.0.0 allows an unauthenticated user to perform an arbitrary write into shared Redis under any tenant's key. This collapses the platform's credential-encryption b |
-| CVE-2026-87337 | 10.0 | n/a | Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploita |
-| CVE-2026-91216 | 10.0 | n/a | Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerabil |
-| CVE-2026-91221 | 10.0 | n/a | Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerabil |
-| CVE-2026-91231 | 10.0 | n/a | Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Adapters).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability  |
-| CVE-2026-91299 | 10.0 | n/a | Vulnerability in the JD Edwards EnterpriseOne Orchestrator product of Oracle JD Edwards (component: E1 IOT Orchestrator Security).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily ex |
-| CVE-2026-113744 | 10.0 | n/a | A security vulnerability has been detected in Tenda AC19 16.03.10.07. The impacted element is the function formSetFirewallCfg of the file /goform/SetFirewallCfg of the component httpd Web Management S |
-| CVE-2026-113390 | 9.9 | n/a | A flaw has been found in DrayTek Vigor2960 1.5.1.6 Revision 8218. Affected by this issue is the function sub_182B0 of the file /cgi-bin/mainfunction.cgi of the component CGI Interface. This manipulati |
-| CVE-2026-113678 | 9.9 | n/a | Froxlor before 2.3.15 contains a symlink following vulnerability in Statistics::makeChownWithNewStats that allows authenticated customers to take ownership of arbitrary host directories by abusing the |
-| CVE-2026-101446 | 9.9 | n/a | Vulnerability in the Siebel CRM Cloud Applications product of Oracle Siebel CRM (component: Siebel Cloud Manager).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability |
-| CVE-2026-101501 | 9.9 | n/a | Vulnerability in Oracle Trusted Answer Search (component: PLSQL package).   The supported version that is affected is 26.1. Easily exploitable vulnerability allows low privileged attacker with network |
-| CVE-2026-101503 | 9.9 | n/a | Vulnerability in Oracle Trusted Answer Search (component: PLSQL package).   The supported version that is affected is 26.1. Easily exploitable vulnerability allows low privileged attacker with network |
-| CVE-2026-101528 | 9.9 | n/a | Vulnerability in the Oracle Enterprise Manager for Oracle Database product of Oracle Enterprise Manager (component: Data Guard Management).  Supported versions that are affected are 13.5 and  24.1. Ea |
-| CVE-2026-101529 | 9.9 | n/a | Vulnerability in the Oracle Enterprise Manager for Oracle Database product of Oracle Enterprise Manager (component: Data Guard Management).  Supported versions that are affected are 13.5 and  24.1. Ea |
-| CVE-2026-91222 | 9.9 | n/a | Vulnerability in the Oracle Business Process Management Suite product of Oracle Fusion Middleware (component: Human Workflow (11g+)).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0 |
-| CVE-2026-91224 | 9.9 | n/a | Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerabil |
-| CVE-2026-91232 | 9.9 | n/a | Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerabil |
-| CVE-2026-91250 | 9.9 | n/a | Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Adapters).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability  |
-| CVE-2026-91251 | 9.9 | n/a | Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Adapters).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability  |
-| CVE-2026-91354 | 9.9 | n/a | Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that is affected is 8.5.8. Easily exploitable v |
-| CVE-2026-91637 | 9.9 | n/a | Vulnerability in Oracle Essbase (component: Security).   The supported version that is affected is 21.8.3.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via H |
-| CVE-2026-91638 | 9.9 | n/a | Vulnerability in Oracle Essbase (component: Security).   The supported version that is affected is 21.8.3.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via H |
-| CVE-2026-91658 | 9.9 | n/a | Vulnerability in Oracle Essbase (component: Security).   The supported version that is affected is 21.8.3.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via H |
-| CVE-2026-91663 | 9.9 | n/a | Vulnerability in Oracle Essbase (component: Security).   The supported version that is affected is 21.8.3.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via T |
-| CVE-2026-113802 | 9.8 | n/a | Wavlink WL-WN530BE1-A firmware through M30BE1_V251117 contains an OS command injection vulnerability in the sub_23B54 function of the ioos binary, which passes the unsanitized file_id parameter of /pr |
-| CVE-2026-101484 | 9.8 | n/a | Vulnerability in Oracle Secure Backup (component: Backup and Restore).  Supported versions that are affected are 19.1.0.0.0 and   19.1.0.1.0. Easily exploitable vulnerability allows unauthenticated at |
-| CVE-2026-101499 | 9.8 | n/a | Vulnerability in the Oracle WebCenter Sites product of Oracle Fusion Middleware (component: WebCenter Sites).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable v |
-| CVE-2026-101521 | 9.8 | n/a | Vulnerability in Oracle APEX (component: General).  Supported versions that are affected are 24.1.0-24.1.21, 24.2.0-24.2.20 and  26.1.0-26.1.4. Easily exploitable vulnerability allows unauthenticated  |
-| CVE-2026-101537 | 9.8 | n/a | Vulnerability in the Oracle Solaris product of Oracle Systems (component: Utility).   The supported version that is affected is 11.4. Easily exploitable vulnerability allows unauthenticated attacker w |
-| CVE-2026-101763 | 9.8 | n/a | Vulnerability in the Oracle Communications BRM - Elastic Charging Engine product of Oracle Communications (component: Cloud native deployment).  Supported versions that are affected are 15.0.0.0.0, 15 |
-| CVE-2026-101767 | 9.8 | n/a | Vulnerability in the Oracle Application Object Library product of Oracle E-Business Suite (component: Core).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability  |
-| CVE-2026-60432 | 9.8 | n/a | Vulnerability in the Oracle Solaris product of Oracle Systems (component: Image Packaging System).  Supported versions that are affected are 11.3 and  11.4. Easily exploitable vulnerability allows una |
-| CVE-2026-83396 | 9.8 | n/a | Vulnerability in the Oracle Data Integrator product of Oracle Fusion Middleware (component: Console / Repository Explorer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily |
-| CVE-2026-83397 | 9.8 | n/a | Vulnerability in the Oracle Data Integrator product of Oracle Fusion Middleware (component: Console / Repository Explorer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily |
-| CVE-2026-83399 | 9.8 | n/a | Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Easily  |
-| CVE-2026-87251 | 9.8 | n/a | Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploita |
-| CVE-2026-91214 | 9.8 | n/a | Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerabil |
-| CVE-2026-91220 | 9.8 | n/a | Vulnerability in the Oracle Business Process Management Suite product of Oracle Fusion Middleware (component: Human Workflow).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Eas |
-| CVE-2026-91233 | 9.8 | n/a | Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Enterprise Scheduling System).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploi |
-| CVE-2026-91234 | 9.8 | n/a | Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerabil |
-| CVE-2026-91235 | 9.8 | n/a | Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerabil |
-| CVE-2026-91236 | 9.8 | n/a | Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerabil |
-| CVE-2026-91323 | 9.8 | n/a | Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Easily  |
-| CVE-2026-91408 | 9.8 | n/a | Vulnerability in the Oracle Identity Manager product of Oracle Fusion Middleware (component: End User Self Service).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploi |
-| CVE-2026-91491 | 9.8 | n/a | Vulnerability in the Oracle Identity Manager Connector product of Oracle Fusion Middleware (component: LDAP Gateway).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily explo |
-| CVE-2026-91495 | 9.8 | n/a | Vulnerability in the Oracle WebCenter Content product of Oracle Fusion Middleware (component: Content Server).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable  |
-| CVE-2026-91665 | 9.8 | n/a | Vulnerability in Oracle Essbase (component: Security).   The supported version that is affected is 21.8.3.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via  |
-| CVE-2026-92559 | 9.8 | n/a | IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2 could allow a remote attacker to obtain sensitive information due to binding to an unrestricted IP address. |
-| CVE-2026-113736 | 9.8 | n/a | A vulnerability has been found in D-Link DHP-W610AV 1.02EUb03. The impacted element is the function login_prepare_hnap of the file etc/defnodes/defaultvalue.xml of the component HNAP Login. The manipu |
-| CVE-2026-114108 | 9.8 | n/a | HKUDS Vibe-Trading from 0.1.0 before 0.1.7 contains a missing authentication vulnerability that allows unauthenticated attackers to access the FastAPI surface because require_auth() returns early when |
-| CVE-2026-114119 | 9.8 | n/a | Best Practice Software Bp Premier before 1.14.1.1128 uses a hardcoded Microsoft SQL Server administrative password that is shared across all installations and cannot be changed without breaking the ap |
-| CVE-2026-101420 | 9.6 | n/a | Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: SQR).  Supported versions that are affected are 8.61-8.63. Easily exploitable vulnerability allows low p |
-| CVE-2026-87347 | 9.6 | n/a | Vulnerability in the Oracle HTTP Server product of Oracle Fusion Middleware (component: OSSL Module).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerabi |
-| CVE-2026-91218 | 9.6 | n/a | Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerabil |
-| CVE-2026-91243 | 9.6 | n/a | Vulnerability in the Oracle Business Process Management Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easil |
-| CVE-2026-91230 | 9.3 | n/a | Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerabil |
-| CVE-2026-91622 | 9.3 | n/a | Vulnerability in the Oracle Agile Product Lifecycle Management for Process product of Oracle Supply Chain (component: Product Quality Management).   The supported version that is affected is 6.2.4. Ea |
-| CVE-2026-91644 | 9.3 | n/a | Vulnerability in Oracle Essbase (component: Security).   The supported version that is affected is 21.8.3.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via  |
-| CVE-2026-10131 | 9.1 | n/a | An OS command injection vulnerability exists in the boa formPasswordSetup functionality of X2000R (version(s): TOTOLINK-X2000R-Gh-V1.0.0-B20250421.1327). A specially crafted HTTP request can lead to a |
-| CVE-2026-10132 | 9.1 | n/a | A stack-based buffer overflow vulnerability exists in the boa formIpQos mac functionality of X2000R (version(s): TOTOLINK-X2000R-Gh-V1.0.0-B20250421.1327). A specially crafted HTTP request can lead to |
-| CVE-2026-10133 | 9.1 | n/a | A stack-based buffer overflow vulnerability exists in the batchupg functionality of X2000R (version(s): TOTOLINK-X2000R-Gh-V1.0.0-B20250421.1327). A specially crafted HTTP request can lead to arbitrar |
-| CVE-2026-10135 | 9.1 | n/a | A OS command injection vulnerability exists in the batchupg functionality of X2000R (version(s): TOTOLINK-X2000R-Gh-V1.0.0-B20250421.1327). A specially crafted HTTP request can lead to arbitrary code  |
-| CVE-2026-10136 | 9.1 | n/a | A heap-based buffer overflow vulnerability exists in the boa formUpload() functionality of X2000R (version(s): TOTOLINK-X2000R-Gh-V1.0.0-B20250421.1327). A specially crafted HTTP request can lead to a |
-| CVE-2026-10137 | 9.1 | n/a | A stack-based buffer overflow vulnerability exists in the boa formUpload() functionality of X2000R (version(s): TOTOLINK-X2000R-Gh-V1.0.0-B20250421.1327). A specially crafted HTTP request can lead to  |
-| CVE-2026-10138 | 9.1 | n/a | A OS command injection vulnerability exists in the boa formUpload() functionality of X2000R (version(s): TOTOLINK-X2000R-Gh-V1.0.0-B20250421.1327). A specially crafted HTTP request can lead to arbitra |
-| CVE-2026-10139 | 9.1 | n/a | A stack-based buffer overflow vulnerability exists in the Mcli functionality of X2000R (version(s): TOTOLINK-X2000R-Gh-V1.0.0-B20250421.1327). A specially crafted HTTP request can lead to arbitrary co |
-| CVE-2026-10141 | 9.1 | n/a | A Unsigned Firmware vulnerability exists in the boa Firmware Update functionality of X2000R (version(s): TOTOLINK-X2000R-Gh-V1.0.0-B20250421.1327). A specially crafted firmware binary can lead to arbi |
-| CVE-2026-28763 | 9.1 | n/a | A stack-based buffer overflow vulnerability exists in the boa formMapDelDevice hostname functionality of X2000R (version(s): TOTOLINK-X2000R-Gh-V1.0.0-B20250421.1327). A specially crafted HTTP request |
-| CVE-2026-33568 | 9.1 | n/a | A OS command injection vulnerability exists in the boa formMapDelDevice macstr functionality of X2000R (version(s): TOTOLINK-X2000R-Gh-V1.0.0-B20250421.1327). A specially crafted HTTP request can lead |
-| CVE-2026-35499 | 9.1 | n/a | An os command injection vulnerability exists in the boa formWsc peerRptPin functionality of Totolink X2000R TOTOLINK-X2000R-Gh-V1.0.0-B20250421.1327. A specially crafted HTTP request can lead to arbit |
-| CVE-2026-40615 | 9.1 | n/a | A stack-based buffer overflow vulnerability exists in the boa formParentControl deviceName functionality of X2000R (version(s): TOTOLINK-X2000R-Gh-V1.0.0-B20250421.1327). A specially crafted HTTP requ |
-| CVE-2026-40627 | 9.1 | n/a | An os command injection vulnerability exists in the boa formWsc targetAPSsid functionality of Totolink X2000R TOTOLINK-X2000R-Gh-V1.0.0-B20250421.1327. A specially crafted HTTP request can lead to arb |
-| CVE-2026-41222 | 9.1 | n/a | A stack-based buffer overflow vulnerability exists in the boa formParentControl url functionality of X2000R (version(s): TOTOLINK-X2000R-Gh-V1.0.0-B20250421.1327). A specially crafted HTTP request can |
-| CVE-2026-41223 | 9.1 | n/a | A stack-based buffer overflow vulnerability exists in the boa formMapDelDevice macstr functionality of X2000R (version(s): TOTOLINK-X2000R-Gh-V1.0.0-B20250421.1327). A specially crafted HTTP request c |
-| CVE-2026-42019 | 9.1 | n/a | Multiple stack-based buffer overflow vulnerabilities exist in the boa formIpv6Setup pppoe functionality of Totolink X2000R TOTOLINK-X2000R-Gh-V1.0.0-B20250421.1327. A specially crafted HTTP request ca |
-| CVE-2026-42020 | 9.1 | n/a | Multiple stack-based buffer overflow vulnerabilities exist in the boa formIpv6Setup pppoe functionality of Totolink X2000R TOTOLINK-X2000R-Gh-V1.0.0-B20250421.1327. A specially crafted HTTP request ca |
-| CVE-2026-42021 | 9.1 | n/a | Multiple stack-based buffer overflow vulnerabilities exist in the boa formIpv6Setup static network configuration functionality of Totolink X2000R TOTOLINK-X2000R-Gh-V1.0.0-B20250421.1327. A specially  |
-| CVE-2026-42022 | 9.1 | n/a | Multiple stack-based buffer overflow vulnerabilities exist in the boa formIpv6Setup static network configuration functionality of Totolink X2000R TOTOLINK-X2000R-Gh-V1.0.0-B20250421.1327. A specially  |
-| CVE-2026-42023 | 9.1 | n/a | Multiple stack-based buffer overflow vulnerabilities exist in the boa formIpv6Setup static network configuration functionality of Totolink X2000R TOTOLINK-X2000R-Gh-V1.0.0-B20250421.1327. A specially  |
-| CVE-2026-42024 | 9.1 | n/a | Multiple stack-based buffer overflow vulnerabilities exist in the boa formIpv6Setup static network configuration functionality of Totolink X2000R TOTOLINK-X2000R-Gh-V1.0.0-B20250421.1327. A specially  |
-| CVE-2026-42025 | 9.1 | n/a | Multiple exploitable stack-based buffer overflow vulnerabilities exist in the boa formIpv6Setup dhcp_dns functionality of X2000R (version(s): TOTOLINK-X2000R-Gh-V1.0.0-B20250421.1327). A specially cra |
-| CVE-2026-42026 | 9.1 | n/a | Multiple exploitable stack-based buffer overflow vulnerabilities exist in the boa formIpv6Setup dhcp_dns functionality of X2000R (version(s): TOTOLINK-X2000R-Gh-V1.0.0-B20250421.1327). A specially cra |
-| CVE-2026-9659 | 9.1 | n/a | Multiple exploitable stack-based buffer overflow vulnerabilities exist in the boa formFilter functionality of X2000R (version(s): TOTOLINK-X2000R-Gh-V1.0.0-B20250421.1327). A specially crafted HTTP re |
-| CVE-2026-9660 | 9.1 | n/a | Multiple exploitable stack-based buffer overflow vulnerabilities exist in the boa formFilter functionality of X2000R (version(s): TOTOLINK-X2000R-Gh-V1.0.0-B20250421.1327). A specially crafted HTTP re |
-| CVE-2026-9814 | 9.1 | n/a | An OS command injection vulnerability exists in the boa formWizard newPass functionality of X2000R (version(s): TOTOLINK-X2000R-Gh-V1.0.0-B20250421.1327). A specially crafted HTTP request can lead to  |
-| CVE-2026-9817 | 9.1 | n/a | A stack-based buffer overflow vulnerability exists in the boa formUploadFile functionality of X2000R (version(s): TOTOLINK-X2000R-Gh-V1.0.0-B20250421.1327). A specially crafted HTTP request can lead t |
-| CVE-2026-9827 | 9.1 | n/a | A arbitrary file write vulnerability exists in the boa formUploadFile functionality of X2000R (version(s): TOTOLINK-X2000R-Gh-V1.0.0-B20250421.1327). A specially crafted HTTP request can lead to arbit |
-| CVE-2026-9869 | 9.1 | n/a | A stack-based buffer overflow vulnerability exists in the boa formTR069Config functionality of X2000R (version(s): TOTOLINK-X2000R-Gh-V1.0.0-B20250421.1327). A specially crafted HTTP request can lead  |
-| CVE-2026-101590 | 9.1 | n/a | Vulnerability in the Helidon product of Oracle Fusion Middleware (component: helidon-microprofile-security).  Supported versions that are affected are 4.0.0-4.5.5. Easily exploitable vulnerability all |
-| CVE-2026-101634 | 9.1 | n/a | Vulnerability in the Oracle Mobile Field Service product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulne |
-| CVE-2026-101765 | 9.1 | n/a | Vulnerability in the Oracle Communications Billing and Revenue Management product of Oracle Communications (component: BRM Server).  Supported versions that are affected are 15.0.0.0.0, 15.0.1.0.0, 15 |
-| CVE-2026-101808 | 9.1 | n/a | Vulnerability in the Oracle Product Workbench product of Oracle E-Business Suite (component: WebUI).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows u |
-| CVE-2026-87302 | 9.1 | n/a | Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Easily  |
-| CVE-2026-91225 | 9.1 | n/a | Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Adapters).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability  |
-| CVE-2026-91241 | 9.1 | n/a | Vulnerability in the Oracle Business Intelligence Enterprise Edition product of Oracle Analytics (component: Analytics Web Administration).  Supported versions that are affected are 8.2.0.0.0, 12.2.1. |
-| CVE-2026-91265 | 9.1 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Enterprise Infrastructure SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploita |
-| CVE-2026-91305 | 9.1 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Installation Security).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploitable vuln |
-| CVE-2026-91341 | 9.1 | n/a | Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that is affected is 8.5.8. Easily exploitable v |
-| CVE-2026-91490 | 9.1 | n/a | Vulnerability in the Oracle Identity Manager Connector product of Oracle Fusion Middleware (component: LDAP Gateway).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily explo |
-| CVE-2026-91624 | 9.1 | n/a | Vulnerability in the Oracle Agile Product Lifecycle Management for Process product of Oracle Supply Chain (component: Product Quality Management).   The supported version that is affected is 6.2.4. Ea |
-| CVE-2026-91655 | 9.1 | n/a | Vulnerability in Oracle Essbase (component: Security).   The supported version that is affected is 21.8.3.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via H |
-| CVE-2026-91656 | 9.1 | n/a | Vulnerability in Oracle Essbase (component: Federated Partitions).   The supported version that is affected is 21.8.3.0.0. Easily exploitable vulnerability allows low privileged attacker with network  |
-| CVE-2026-105949 | 8.8 | n/a | Cruise Control's Jetty ConstraintSecurityHandler registers security constraints on exact path specs without a catch-all wildcard constraint and without calling setDenyUncoveredHttpMethods(true). The s |
-| CVE-2026-100134 | 8.8 | n/a | Acrobat for Edge is affected by an out-of-bounds write vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interact |
-| CVE-2026-101457 | 8.8 | n/a | Vulnerability in the Siebel Apps - Life Sciences product of Oracle Siebel CRM (component: eDetailing).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows low  |
-| CVE-2026-101481 | 8.8 | n/a | Vulnerability in Oracle Secure Backup (component: Device Management and Support).  Supported versions that are affected are 19.1.0.0.0 and   19.1.0.1.0. Easily exploitable vulnerability allows low pri |
-| CVE-2026-101495 | 8.8 | n/a | Vulnerability in the Siebel CRM Development product of Oracle Siebel CRM (component: Siebel Approval Manager).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability all |
-| CVE-2026-101518 | 8.8 | n/a | Vulnerability in the Oracle Enterprise Manager Base Platform product of Oracle Enterprise Manager (component: Agent Next Gen).  Supported versions that are affected are 13.5 and  24.1. Easily exploita |
-| CVE-2026-101525 | 8.8 | n/a | Vulnerability in the Oracle Enterprise Manager for Siebel product of Oracle Enterprise Manager (component: Configuration Management).  Supported versions that are affected are 13.5 and  24.1. Easily e |
-| CVE-2026-101526 | 8.8 | n/a | Vulnerability in the Oracle Enterprise Manager for Siebel product of Oracle Enterprise Manager (component: Configuration Management).  Supported versions that are affected are 13.5 and  24.1. Easily e |
-| CVE-2026-101542 | 8.8 | n/a | Vulnerability in the Oracle Capacity product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability all |
-| CVE-2026-101557 | 8.8 | n/a | Vulnerability in the Oracle Purchasing product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability a |
-| CVE-2026-101567 | 8.8 | n/a | Vulnerability in the Oracle Cost Management product of Oracle E-Business Suite (component: Cost Planning).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability al |
-| CVE-2026-101594 | 8.8 | n/a | Vulnerability in the Oracle Agile Product Lifecycle Management for Process product of Oracle Supply Chain (component: Product Quality Management).   The supported version that is affected is 6.2.4. Ea |
-| CVE-2026-101596 | 8.8 | n/a | Vulnerability in the Oracle Agile Product Lifecycle Management for Process product of Oracle Supply Chain (component: Product Quality Management).   The supported version that is affected is 6.2.4. Ea |
-| CVE-2026-101635 | 8.8 | n/a | Vulnerability in the Oracle Mobile Field Service product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulne |
-| CVE-2026-101653 | 8.8 | n/a | Vulnerability in the Oracle Mobile Field Service product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulne |
-| CVE-2026-101654 | 8.8 | n/a | Vulnerability in the Oracle Mobile Field Service product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulne |
-| CVE-2026-101655 | 8.8 | n/a | Vulnerability in the Oracle Mobile Field Service product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulne |
-| CVE-2026-101656 | 8.8 | n/a | Vulnerability in the Oracle Mobile Field Service product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulne |
-| CVE-2026-101664 | 8.8 | n/a | Vulnerability in the Oracle Mobile Field Service product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulne |
-| CVE-2026-101685 | 8.8 | n/a | Vulnerability in the Oracle E-Business Suite Integrated SOA Gateway product of Oracle E-Business Suite (component: SOA Provider).  Supported versions that are affected are 12.2.3-12.2.15. Easily explo |
-| CVE-2026-101686 | 8.8 | n/a | Vulnerability in the Oracle E-Business Suite Integrated SOA Gateway product of Oracle E-Business Suite (component: SOA Provider).  Supported versions that are affected are 12.2.3-12.2.15. Easily explo |
-| CVE-2026-101692 | 8.8 | n/a | Vulnerability in the Oracle Mobile Field Service product of Oracle E-Business Suite (component: Admin UI).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability al |
-| CVE-2026-101742 | 8.8 | n/a | Vulnerability in the Oracle Applications Manager product of Oracle E-Business Suite (component: Diagnostics).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability |
-| CVE-2026-101781 | 8.8 | n/a | Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Server: Group Replication GCS).  Supported versions that are affected are MySQL Server: 8.4.0-8.4.12, 9.7.0-9.7.3,  |
-| CVE-2026-101813 | 8.8 | n/a | Vulnerability in the Oracle Engineering product of Oracle E-Business Suite (component: Change Management).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability al |
-| CVE-2026-101842 | 8.8 | n/a | Vulnerability in the Strategic Network Optimization product of Oracle E-Business Suite (component: Installation of SNO).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vu |
-| CVE-2026-101852 | 8.8 | n/a | Vulnerability in the Oracle Product Hub product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability  |
-| CVE-2026-101853 | 8.8 | n/a | Vulnerability in the Oracle Product Hub product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability  |
-| CVE-2026-101854 | 8.8 | n/a | Vulnerability in the Oracle Product Hub product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability  |
-| CVE-2026-47025 | 8.8 | n/a | Vulnerability in the Oracle Solaris product of Oracle Systems (component: Utility).  Supported versions that are affected are 11.3 and  11.4. Easily exploitable vulnerability allows low privileged att |
-| CVE-2026-76587 | 8.8 | n/a | IBM Planning Analytics 2.0 and 2.1 are vulnerable to a stack-based buffer overflow, caused by improper bounds checking. An attacker could overflow the buffer and execute arbitrary code on the system. |
-| CVE-2026-83363 | 8.8 | n/a | Vulnerability in the Oracle Contract Lifecycle Management for Public Sector product of Oracle E-Business Suite (component: Award/PO).  Supported versions that are affected are 12.2.3-12.2.15. Easily e |
-| CVE-2026-83402 | 8.8 | n/a | Vulnerability in the Oracle Identity Manager product of Oracle Fusion Middleware (component: OIM Legacy UI).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vu |
-| CVE-2026-83403 | 8.8 | n/a | Vulnerability in the Oracle Identity Manager product of Oracle Fusion Middleware (component: OIM Legacy UI).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vu |
-| CVE-2026-87263 | 8.8 | n/a | Vulnerability in the Oracle Business Intelligence Enterprise Edition product of Oracle Analytics (component: Analytics Server).  Supported versions that are affected are 8.2.0.0.0 and  26.01.0.0.0. Ea |
-| CVE-2026-87310 | 8.8 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Database and Comm SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploitable vuln |
-| CVE-2026-87313 | 8.8 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Interoperability SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploitable vulne |
-| CVE-2026-87351 | 8.8 | n/a | Vulnerability in Oracle GoldenGate (component: Admin Server Executable).  Supported versions that are affected are 19.1.0.0.0-19.32.0.0,   21.3-21.23 and   23.4-23.26.3.0.0. Easily exploitable vulnera |
-| CVE-2026-87359 | 8.8 | n/a | Vulnerability in the Oracle Service Bus product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability al |
-| CVE-2026-87364 | 8.8 | n/a | Vulnerability in the Oracle Service Bus product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability al |
-| CVE-2026-87397 | 8.8 | n/a | Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Core).   The supported version that is affected is 8.5.8. Easily exploitable vulnerability  |
-| CVE-2026-87419 | 8.8 | n/a | Vulnerability in the Oracle Service Bus product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability al |
-| CVE-2026-87420 | 8.8 | n/a | Vulnerability in the Oracle Service Bus product of Oracle Fusion Middleware (component: Core).   The supported version that is affected is 14.1.2.0.0. Easily exploitable vulnerability allows low privi |
-| CVE-2026-91213 | 8.8 | n/a | Vulnerability in the Oracle Business Process Management Suite product of Oracle Fusion Middleware (component: BPM Composer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easil |
-| CVE-2026-91215 | 8.8 | n/a | Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerabil |
-| CVE-2026-91223 | 8.8 | n/a | Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerabil |
-| CVE-2026-91239 | 8.8 | n/a | Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerabil |
-| CVE-2026-91259 | 8.8 | n/a | Vulnerability in the Oracle Identity Manager product of Oracle Fusion Middleware (component: OIM Legacy UI).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vu |
-| CVE-2026-91268 | 8.8 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Web Runtime SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploitable vulnerabil |
-| CVE-2026-91270 | 8.8 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Monitoring and Diagnostics SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploit |
-| CVE-2026-91295 | 8.8 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Enterprise Infrastructure SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploita |
-| CVE-2026-91296 | 8.8 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Enterprise Infrastructure SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploita |
-| CVE-2026-91303 | 8.8 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Installation Security).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploitable vuln |
-| CVE-2026-91310 | 8.8 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Installation SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploitable vulnerabi |
-| CVE-2026-91326 | 8.8 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Installation Security).  Supported versions that are affected are 9.2.0.0-9.2.26.4. Easily exploitable vuln |
-| CVE-2026-91340 | 8.8 | n/a | Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that is affected is 8.5.8. Easily exploitable v |
-| CVE-2026-91407 | 8.8 | n/a | Vulnerability in the Oracle Identity Manager product of Oracle Fusion Middleware (component: REST WebServices).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable |
-| CVE-2026-91442 | 8.8 | n/a | Vulnerability in the Siebel CRM Deployment product of Oracle Siebel CRM (component: Server Infrastructure).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows |
-| CVE-2026-91478 | 8.8 | n/a | Vulnerability in the PeopleSoft Enterprise SCM Strategic Sourcing product of Oracle PeopleSoft (component: Strategic Sourcing).   The supported version that is affected is 9.2. Easily exploitable vuln |
-| CVE-2026-91499 | 8.8 | n/a | Vulnerability in the RDBMS component of Oracle Database Server.  Supported versions that are affected are 23.4.0-23.26.3. Easily exploitable vulnerability allows low privileged attacker having DBMS_VE |
-| CVE-2026-91520 | 8.8 | n/a | Vulnerability in the Oracle Agile Product Lifecycle Management for Process product of Oracle Supply Chain (component: Product Quality Management).   The supported version that is affected is 6.2.4. Ea |
-| CVE-2026-91521 | 8.8 | n/a | Vulnerability in the Oracle Agile Product Lifecycle Management for Process product of Oracle Supply Chain (component: Product Quality Management).   The supported version that is affected is 6.2.4. Ea |
-| CVE-2026-91527 | 8.8 | n/a | Vulnerability in the Oracle ZFS Storage Appliance Kit product of Oracle Systems (component: Core).   The supported version that is affected is 8.8. Easily exploitable vulnerability allows low privileg |
-| CVE-2026-91532 | 8.8 | n/a | Vulnerability in the Oracle Applications Manager product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulne |
-| CVE-2026-91535 | 8.8 | n/a | Vulnerability in the Oracle Business Intelligence Enterprise Edition product of Oracle Analytics (component: BI Search).  Supported versions that are affected are 8.2.0.0.0, 12.2.1.4.0 and  26.01.0.0. |
-| CVE-2026-91550 | 8.8 | n/a | Vulnerability in the Oracle Agile Product Lifecycle Management for Process product of Oracle Supply Chain (component: Product Quality Management).   The supported version that is affected is 6.2.4. Ea |
-| CVE-2026-91563 | 8.8 | n/a | Vulnerability in the Oracle OLAP component of Oracle Database Server.  Supported versions that are affected are 19.3-19.32, 21.3-21.23 and  23.4.0-23.26.3. Easily exploitable vulnerability allows low  |
-| CVE-2026-91579 | 8.8 | n/a | Vulnerability in the Oracle BI Publisher product of Oracle Analytics (component: BI Platform Security).  Supported versions that are affected are 8.2.0.0.0, 12.2.1.4.0 and  26.01.0.0.0. Easily exploit |
-| CVE-2026-91610 | 8.8 | n/a | Vulnerability in Oracle REST Data Services (component: General).  Supported versions that are affected are 24.2.0-26.2.2. Easily exploitable vulnerability allows low privileged attacker with network a |
-| CVE-2026-91668 | 8.8 | n/a | Vulnerability in the Oracle Data Integrator product of Oracle Fusion Middleware (component: Dictionary Repository).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploit |
-| CVE-2026-114045 | 8.8 | n/a | FreeRDP before 3.32.1 contains a heap-based buffer overflow in the server-side rdpsnd channel because an integer wraparound in rdpsnd_server_select_format() DVI_ADPCM block-alignment arithmetic bypass |
-| CVE-2026-114089 | 8.8 | n/a | Trigger.dev before 4.5.2 contains a cross-site request forgery vulnerability in the CLI authorization-code flow because loading /account/authorization-code/<code> mints a Personal Access Token without |
-| CVE-2026-114094 | 8.8 | n/a | Dulwich before 1.2.9 fails to validate DOS drive letter prefixes in Git tree path elements on Windows, allowing arbitrary file write. Attackers can craft a malicious repository with a tree entry named |
-| CVE-2026-114107 | 8.8 | n/a | HKUDS Vibe-Trading from 0.1.0 before 0.1.7 contains an indirect prompt injection vulnerability that allows remote attackers to execute shell commands as root by planting instructions in documents or w |
-| CVE-2026-114109 | 8.8 | n/a | uv before 0.11.15 contains a path traversal vulnerability that allows malicious wheels to write files outside the scripts directory via crafted console_scripts or gui_scripts entry point names. Attack |
-| CVE-2026-82814 | 8.8 | n/a | The Duplicator and Duplicator Pro plugins for WordPress are vulnerable to PHP Object Injection in all versions up to, and including, 1.5.17 and 4.6.10, respectively, via deserialization of untrusted d |
-| CVE-2026-101431 | 8.7 | n/a | Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Test Framework).  Supported versions that are affected are 8.61-8.63. Easily exploitable vulnerability a |
-| CVE-2026-101451 | 8.7 | n/a | Vulnerability in the Siebel Life Sciences product of Oracle Siebel CRM (component: Web UI).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows low privileged  |
-| CVE-2026-101505 | 8.7 | n/a | Vulnerability in Oracle Trusted Answer Search (component: Application expert UI).   The supported version that is affected is 26.1. Easily exploitable vulnerability allows low privileged attacker with |
-| CVE-2026-101824 | 8.7 | n/a | Vulnerability in the Document Management and Collaboration product of Oracle E-Business Suite (component: Attachments).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vul |
-| CVE-2026-83379 | 8.7 | n/a | Vulnerability in the Oracle Weblogic Server Proxy Plug-in product of Oracle Fusion Middleware (component: WebLogic Server Proxy Plug-In for Third-Party Web Servers).  Supported versions that are affec |
-| CVE-2026-83426 | 8.7 | n/a | Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Difficult to ex |
-| CVE-2026-87300 | 8.7 | n/a | Vulnerability in the Oracle Weblogic Server Proxy Plug-in product of Oracle Fusion Middleware (component: WebLogic Server Proxy Plug-In for Third-Party Web Servers).  Supported versions that are affec |
-| CVE-2026-87346 | 8.7 | n/a | Vulnerability in the Oracle HTTP Server product of Oracle Fusion Middleware (component: Oracle Weblogic Server Proxy Plug-in for Oracle HTTP Server).  Supported versions that are affected are 12.2.1.4 |
-| CVE-2026-87408 | 8.7 | n/a | Vulnerability in the Oracle Applications Framework product of Oracle E-Business Suite (component: Personalization).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnera |
-| CVE-2026-91211 | 8.7 | n/a | Vulnerability in the Oracle Identity Manager Connector product of Oracle Fusion Middleware (component: Connectors and Connector Server).  Supported versions that are affected are 12.2.1.4.0 and  14.1. |
-| CVE-2026-91437 | 8.7 | n/a | Vulnerability in the Siebel CRM Deployment product of Oracle Siebel CRM (component: Server Infrastructure).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows |
-| CVE-2026-91492 | 8.7 | n/a | Vulnerability in the Oracle Identity Manager Connector product of Oracle Fusion Middleware (component: SAP ERP+).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Difficult to exp |
-| CVE-2026-101479 | 8.6 | n/a | Vulnerability in Oracle Secure Backup (component: Backup and Restore).  Supported versions that are affected are 19.1.0.0.0 and   19.1.0.1.0. Easily exploitable vulnerability allows unauthenticated at |
-| CVE-2026-101688 | 8.6 | n/a | Vulnerability in the Oracle E-Business Suite Integrated SOA Gateway product of Oracle E-Business Suite (component: SOA Provider).  Supported versions that are affected are 12.2.3-12.2.15. Easily explo |
-| CVE-2026-83407 | 8.6 | n/a | Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploita |
-| CVE-2026-87304 | 8.6 | n/a | Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Core).   The supported version that is affected is 8.5.8. Easily exploitable vulnerability  |
-| CVE-2026-91212 | 8.6 | n/a | Vulnerability in the Oracle Identity Manager Connector product of Oracle Fusion Middleware (component: Generic REST).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily explo |
-| CVE-2026-91217 | 8.6 | n/a | Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerabil |
-| CVE-2026-91219 | 8.6 | n/a | Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerabil |
-| CVE-2026-91267 | 8.6 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Interoperability SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploitable vulne |
-| CVE-2026-91273 | 8.6 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Object and Env Tech SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploitable vu |
-| CVE-2026-91343 | 8.6 | n/a | Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that is affected is 8.5.8. Easily exploitable v |
-| CVE-2026-91353 | 8.6 | n/a | Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that is affected is 8.5.8. Easily exploitable v |
-| CVE-2026-91534 | 8.6 | n/a | Vulnerability in the Oracle Business Intelligence Enterprise Edition product of Oracle Analytics (component: Analytics Web General).  Supported versions that are affected are 8.2.0.0.0, 12.2.1.4.0 and |
-| CVE-2026-93441 | 8.6 | n/a | IBM QRadar SIEM could allow a remote attacker to cause a denial of service due to uncontrolled resource consumption. |
-| CVE-2026-101534 | 8.5 | n/a | Vulnerability in the Oracle EDI Gateway product of Oracle E-Business Suite (component: EDI).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privi |
-| CVE-2026-83393 | 8.5 | n/a | Vulnerability in the Oracle Product Hub product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerabilit |
-| CVE-2026-91347 | 8.5 | n/a | Vulnerability in the iSupport product of Oracle E-Business Suite (component: Service Requests).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low pr |
-| CVE-2026-91651 | 8.5 | n/a | Vulnerability in Oracle Essbase (component: Essbase Web Platform).   The supported version that is affected is 21.8.3.0.0. Difficult to exploit vulnerability allows low privileged attacker with networ |
-| CVE-2026-91653 | 8.5 | n/a | Vulnerability in Oracle Essbase (component: Essbase Web Platform).   The supported version that is affected is 21.8.3.0.0. Easily exploitable vulnerability allows low privileged attacker with network  |
-| CVE-2026-101648 | 8.4 | n/a | Vulnerability in the Oracle Partner Management product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulne |
-| CVE-2026-101744 | 8.4 | n/a | Vulnerability in the Oracle Agile Engineering Data Management product of Oracle Supply Chain (component: Engineering Communication Interface).   The supported version that is affected is 6.2.1. Diffic |
-| CVE-2026-87301 | 8.4 | n/a | Vulnerability in the Oracle VM VirtualBox product of Oracle Virtualization (component: Core).   The supported version that is affected is 7.2.16. Easily exploitable vulnerability allows low privileged |
-| CVE-2026-87322 | 8.4 | n/a | Vulnerability in the Oracle VM VirtualBox product of Oracle Virtualization (component: Core).   The supported version that is affected is 7.2.20. Easily exploitable vulnerability allows high privilege |
-| CVE-2026-91266 | 8.4 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Monitoring and Diagnostics SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploit |
-| CVE-2026-91348 | 8.4 | n/a | Vulnerability in the Oracle Solaris product of Oracle Systems (component: Utility).  Supported versions that are affected are 11.3 and  11.4. Easily exploitable vulnerability allows unauthenticated at |
-| CVE-2026-91355 | 8.4 | n/a | Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that is affected is 8.5.8. Easily exploitable v |
-| CVE-2026-101459 | 8.3 | n/a | Vulnerability in the Siebel CRM Deployment product of Oracle Siebel CRM (component: Server Infrastructure).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows |
-| CVE-2026-101593 | 8.3 | n/a | Vulnerability in the Oracle Agile Product Lifecycle Management for Process product of Oracle Supply Chain (component: Product Quality Management).   The supported version that is affected is 6.2.4. Ea |
-| CVE-2026-101684 | 8.3 | n/a | Vulnerability in the Oracle E-Business Suite Integrated SOA Gateway product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easil |
-| CVE-2026-101785 | 8.3 | n/a | Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Server: JSON).  Supported versions that are affected are MySQL Server: 8.4.0-8.4.12, 9.7.0-9.7.3, 26.7.0-26.7.1; My |
-| CVE-2026-91597 | 8.3 | n/a | Vulnerability in the Oracle Business Intelligence Enterprise Edition product of Oracle Analytics (component: Platform Security).  Supported versions that are affected are 8.2.0.0.0 and  26.01.0.0.0. D |
-| CVE-2026-114068 | 8.3 | n/a | Trigger.dev before 4.6.0 contains a missing authorization vulnerability in the waitpoint token wait endpoint that allows authenticated attackers to block runs belonging to other organizations. Attacke |
-| CVE-2015-20128 | 8.2 | n/a | FooSun DotNetCMS 1.0 and 2.0 contains an SQL injection vulnerability that allows unauthenticated attackers to manipulate MSSQL queries through the CityId parameter. Attackers can send GET requests to  |
-| CVE-2026-101458 | 8.2 | n/a | Vulnerability in the Siebel CRM Deployment product of Oracle Siebel CRM (component: Server Infrastructure).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows |
-| CVE-2026-101640 | 8.2 | n/a | Vulnerability in the Oracle Marketing product of Oracle E-Business Suite (component: Audience).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows unauth |
-| CVE-2026-101690 | 8.2 | n/a | Vulnerability in the Oracle E-Business Suite Integrated SOA Gateway product of Oracle E-Business Suite (component: SOA Provider).  Supported versions that are affected are 12.2.3-12.2.15. Easily explo |
-| CVE-2026-101704 | 8.2 | n/a | Vulnerability in the Oracle Concurrent Processing product of Oracle E-Business Suite (component: Other).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allo |
-| CVE-2026-101758 | 8.2 | n/a | Vulnerability in the Oracle Communications Billing and Revenue Management product of Oracle Communications (component: BRM Server).  Supported versions that are affected are 15.0.0.0.0, 15.0.1.0.0, 15 |
-| CVE-2026-101841 | 8.2 | n/a | Vulnerability in the Global Order Promising product of Oracle E-Business Suite (component: Web Service).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability al |
-| CVE-2026-83398 | 8.2 | n/a | Vulnerability in the Oracle Data Integrator product of Oracle Fusion Middleware (component: Data Transforms).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable v |
-| CVE-2026-87394 | 8.2 | n/a | Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Core).   The supported version that is affected is 8.5.8. Easily exploitable vulnerability  |
-| CVE-2026-91252 | 8.2 | n/a | Vulnerability in the Oracle Solaris product of Oracle Systems (component: Services).   The supported version that is affected is 11.4. Easily exploitable vulnerability allows unauthenticated attacker  |
-| CVE-2026-91286 | 8.2 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Monitoring and Diagnostics SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploit |
-| CVE-2026-91342 | 8.2 | n/a | Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that is affected is 8.5.8. Easily exploitable v |
-| CVE-2026-91346 | 8.2 | n/a | Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that is affected is 8.5.8. Easily exploitable v |
-| CVE-2026-91358 | 8.2 | n/a | Vulnerability in the Oracle Business Process Management Suite product of Oracle Fusion Middleware (component: Case management  Service (11g+)).  Supported versions that are affected are 12.2.1.4.0 and |
-| CVE-2026-91445 | 8.2 | n/a | Vulnerability in the Siebel CRM End User product of Oracle Siebel CRM (component: Communications Panel/Dashboard).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability |
-| CVE-2026-91573 | 8.2 | n/a | Vulnerability in the Oracle Agile Product Lifecycle Management for Process product of Oracle Supply Chain (component: Product Quality Management).   The supported version that is affected is 6.2.4. Ea |
-| CVE-2026-91625 | 8.2 | n/a | Vulnerability in the Oracle Agile Product Lifecycle Management for Process product of Oracle Supply Chain (component: Product Quality Management).   The supported version that is affected is 6.2.4. Ea |
-| CVE-2026-93442 | 8.2 | n/a | IBM QRadar SIEM 7.6.0.0 through 7.6.0.4, and 7.5.0 through 7.5.0 Update Package 16 Interim Fix 001 could allow a remote attacker to cause a denial of service or obtain sensitive information due to an  |
-| CVE-2026-109440 | 8.1 | 0.4% | LangAlpha through 2026.09.07 contains an indirect prompt injection vulnerability that allows remote attackers to execute shell commands or Python by planting instructions in web content retrieved by t |
-| CVE-2026-113613 | 8.1 | n/a | FlexGet before 3.20.7 contains a path traversal vulnerability in the decompress plugin that allows remote attackers to write arbitrary files by supplying malicious archive member paths. Attackers can  |
-| CVE-2016-20101 | 8.1 | n/a | Issuu Panel plugin for WordPress before 1.6.6 contains a PHP file inclusion vulnerability that allows unauthenticated attackers to include remote or local files through the 'abspath' parameter. Attack |
-| CVE-2026-101390 | 8.1 | n/a | Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Business Interlink).  Supported versions that are affected are 8.61-8.63. Difficult to exploit vulnerabi |
-| CVE-2026-101411 | 8.1 | n/a | Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Business Interlink).  Supported versions that are affected are 8.61-8.63. Difficult to exploit vulnerabi |
-| CVE-2026-101422 | 8.1 | n/a | Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Report Distribution).  Supported versions that are affected are 8.61-8.63. Easily exploitable vulnerabil |
-| CVE-2026-101427 | 8.1 | n/a | Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Report Distribution).  Supported versions that are affected are 8.61-8.63. Easily exploitable vulnerabil |
-| CVE-2026-101473 | 8.1 | n/a | Vulnerability in the Oracle Agile Product Lifecycle Management for Process product of Oracle Supply Chain (component: Product Quality Management).   The supported version that is affected is 6.2.4. Di |
-| CVE-2026-101498 | 8.1 | n/a | Vulnerability in Oracle Trusted Answer Search (component: PLSQL package).   The supported version that is affected is 26.1. Difficult to exploit vulnerability allows unauthenticated attacker with netw |
-| CVE-2026-101665 | 8.1 | n/a | Vulnerability in the Oracle Mobile Field Service product of Oracle E-Business Suite (component: Admin UI).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability al |
-| CVE-2026-101672 | 8.1 | n/a | Vulnerability in the Oracle Call Center Technology product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit v |
-| CVE-2026-101700 | 8.1 | n/a | Vulnerability in the Oracle Application Object Library product of Oracle E-Business Suite (component: Core).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerabilit |
-| CVE-2026-101768 | 8.1 | n/a | Vulnerability in the MySQL Connectors product of Oracle MySQL (component: Connector/J).   The supported version that is affected is 26.7.0. Difficult to exploit vulnerability allows unauthenticated at |
-| CVE-2026-101770 | 8.1 | n/a | Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Client programs).  Supported versions that are affected are MySQL Server: 8.4.0-8.4.12, 9.7.0-9.7.3, 26.7.0-26.7.1; |
-| CVE-2026-101771 | 8.1 | n/a | Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Client programs).  Supported versions that are affected are MySQL Server: 8.4.0-8.4.12, 9.7.0-9.7.3, 26.7.0-26.7.1; |
-| CVE-2026-101772 | 8.1 | n/a | Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Client programs).  Supported versions that are affected are MySQL Server: 8.4.0-8.4.12, 9.7.0-9.7.3, 26.7.0-26.7.1; |
-| CVE-2026-101791 | 8.1 | n/a | Vulnerability in the Oracle Communications BRM - Elastic Charging Engine product of Oracle Communications (component: Security).   The supported version that is affected is 15.2.0.0.0. Easily exploita |
-| CVE-2026-101831 | 8.1 | n/a | Vulnerability in the Oracle Quality product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allo |
-| CVE-2026-101834 | 8.1 | n/a | Vulnerability in the Oracle Shipping Execution product of Oracle E-Business Suite (component: Workflow Events).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerabi |
-| CVE-2026-82891 | 8.1 | n/a | IBM Guardium Data Protection 12.1, and 12.2 could allow a remote attacker to obtain sensitive information due to use of a hard-coded cryptographic key. |
-| CVE-2026-83361 | 8.1 | n/a | Vulnerability in the Oracle Contract Lifecycle Management for Public Sector product of Oracle E-Business Suite (component: Award/PO).  Supported versions that are affected are 12.2.3-12.2.15. Easily e |
-| CVE-2026-83409 | 8.1 | n/a | Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Difficult to ex |
-| CVE-2026-87305 | 8.1 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Enterprise Infrastructure SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Difficult to ex |
-| CVE-2026-87306 | 8.1 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Interoperability SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploitable vulne |
-| CVE-2026-87309 | 8.1 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Package Build SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploitable vulnerab |
-| CVE-2026-91269 | 8.1 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Enterprise Infrastructure SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploita |
-| CVE-2026-91271 | 8.1 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Monitoring and Diagnostics SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploit |
-| CVE-2026-91287 | 8.1 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Enterprise Infrastructure SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploita |
-| CVE-2026-91313 | 8.1 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Installation Security).  Supported versions that are affected are 9.2.0.0-9.2.26.4. Difficult to exploit vu |
-| CVE-2026-91503 | 8.1 | n/a | Vulnerability in the VPD component of Oracle Database Server.  Supported versions that are affected are 19.3-19.32, 21.3-21.23 and  23.4.0-23.26.3. Easily exploitable vulnerability allows low privileg |
-| CVE-2026-91506 | 8.1 | n/a | Vulnerability in the Workflow product of Oracle E-Business Suite (component: Workflow Notification Mailer).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability |
-| CVE-2026-91546 | 8.1 | n/a | Vulnerability in the Oracle Business Intelligence Enterprise Edition product of Oracle Analytics (component: BI Foundation).   The supported version that is affected is 12.2.1.4.0. Difficult to exploi |
-| CVE-2026-91635 | 8.1 | n/a | Vulnerability in Oracle Essbase (component: Security).   The supported version that is affected is 21.8.3.0.0. Difficult to exploit vulnerability allows unauthenticated attacker with network access vi |
-| CVE-2026-91647 | 8.1 | n/a | Vulnerability in Oracle Essbase (component: Security).   The supported version that is affected is 21.8.3.0.0. Difficult to exploit vulnerability allows unauthenticated attacker with network access vi |
-| CVE-2026-114053 | 8.1 | n/a | vLLM from 0.7.3 before 0.31.0 forwards the request-supplied mm_processor_kwargs.code_revision to Transformers AutoProcessor.from_pretrained, letting clients select which revision of a model's dynamic  |
-| CVE-2026-114066 | 8.1 | n/a | Trigger.dev before 4.7.0 contains a missing authorization vulnerability that allows holders of unrestricted environment API keys to block runs they do not own by supplying a foreign parentRunId to bat |
-| CVE-2026-114069 | 8.1 | n/a | Trigger.dev before 4.6.0 contains an improper authorization vulnerability in the GET /api/v1/projects/:projectRef/envvars endpoint, which returns the environment's root API key as TRIGGER_SECRET_KEY f |
-| CVE-2026-114078 | 8.1 | n/a | Trigger.dev before 4.5.6 contains an authorization bypass vulnerability in DeleteTaskScheduleService and SetActiveOnTaskScheduleService that allows authenticated users to delete or disable other organ |
-| CVE-2026-114082 | 8.1 | n/a | Trigger.dev before 4.6.2 contains an authorization vulnerability that allows public-token holders with session write access to obtain environment-wide S2 stream credentials via session input initializ |
-| CVE-2026-114083 | 8.1 | n/a | Trigger.dev before 4.5.0-rc.3 contains a path traversal vulnerability in the api/v1/packets and api/v2/packets endpoints that allows authenticated tenants to escape their object key prefix through an  |
-| CVE-2026-114087 | 8.1 | n/a | Trigger.dev before 4.5.6 self-hosted Docker Compose deployments using the default secrets from hosting/docker/.env.example allow authentication bypass because the hardcoded MAGIC_LINK_SECRET lets anyo |
-| CVE-2026-101438 | 8.0 | n/a | Vulnerability in the Siebel CRM Cloud Applications product of Oracle Siebel CRM (component: Siebel Cloud Manager).  Supported versions that are affected are 22.3-26.9. Difficult to exploit vulnerabili |
-| CVE-2026-101602 | 8.0 | n/a | Vulnerability in the Oracle Agile Product Lifecycle Management for Process product of Oracle Supply Chain (component: Product Quality Management).   The supported version that is affected is 6.2.4. Ea |
-| CVE-2026-91517 | 8.0 | n/a | Vulnerability in the Oracle Management Pack for Oracle GoldenGate product of Oracle GoldenGate (component: EM Plugin).  Supported versions that are affected are 13.4.1.0.1-13.5.2.0.6. Easily exploitab |
-| CVE-2026-114085 | 7.9 | n/a | Trigger.dev through 4.7.6 contains a missing authentication vulnerability in the supervisor workload server that allows workloads to manipulate runs belonging to other deployments without ownership ve |
-| CVE-2026-101452 | 7.8 | n/a | Vulnerability in Oracle Autonomous Health Framework (component: AHF Instant Diagnostic Replay).  Supported versions that are affected are 26.3-26.8. Easily exploitable vulnerability allows low privile |
-| CVE-2026-101477 | 7.8 | n/a | Vulnerability in Oracle Autonomous Health Framework (component: Trace File Analyzer).  Supported versions that are affected are 26.3-26.8. Easily exploitable vulnerability allows low privileged attack |
-| CVE-2026-101478 | 7.8 | n/a | Vulnerability in Oracle Autonomous Health Framework (component: Trace File Analyzer).  Supported versions that are affected are 26.3-26.8. Easily exploitable vulnerability allows low privileged attack |
-| CVE-2026-101482 | 7.8 | n/a | Vulnerability in Oracle Secure Backup (component: Device Management and Support).  Supported versions that are affected are 19.1.0.0.0 and   19.1.0.1.0. Easily exploitable vulnerability allows low pri |
-| CVE-2026-101527 | 7.8 | n/a | Vulnerability in the Oracle Enterprise Manager Base Platform product of Oracle Enterprise Manager (component: Enterprise Manager Install).  Supported versions that are affected are 13.5 and  24.1. Eas |
-| CVE-2026-101549 | 7.8 | n/a | Vulnerability in Oracle Application Testing Suite (component: OpenScript).   The supported version that is affected is 13.3.0.1. Easily exploitable vulnerability allows low privileged attacker with lo |
-| CVE-2026-101566 | 7.8 | n/a | Vulnerability in the Oracle Application Object Library product of Oracle E-Business Suite (component: DB Privileges).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulne |
-| CVE-2026-101598 | 7.8 | n/a | Vulnerability in the Oracle VM VirtualBox product of Oracle Virtualization (component: Core).   The supported version that is affected is 7.2.20. Easily exploitable vulnerability allows low privileged |
-| CVE-2026-101676 | 7.8 | n/a | Vulnerability in the Oracle Concurrent Processing product of Oracle E-Business Suite (component: Other Issues).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerabili |
-| CVE-2026-101682 | 7.8 | n/a | Vulnerability in the Applications DBA product of Oracle E-Business Suite (component: AD Utilities).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows un |
-| CVE-2026-101757 | 7.8 | n/a | Vulnerability in the Oracle Application Object Library product of Oracle E-Business Suite (component: DB Privileges).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulne |
-| CVE-2026-60662 | 7.8 | n/a | Vulnerability in the Oracle Solaris product of Oracle Systems (component: Services).   The supported version that is affected is 11.4. Easily exploitable vulnerability allows low privileged attacker w |
-| CVE-2026-87316 | 7.8 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Enterprise Infrastructure SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploita |
-| CVE-2026-87356 | 7.8 | n/a | Vulnerability in the Applications Platform Engineering product of Oracle E-Business Suite (component: Valid Session).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulne |
-| CVE-2026-91253 | 7.8 | n/a | Vulnerability in the Oracle Solaris product of Oracle Systems (component: Kernel).   The supported version that is affected is 11.4. Easily exploitable vulnerability allows low privileged attacker wit |
-| CVE-2026-91304 | 7.8 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Installation Security).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploitable vuln |
-| CVE-2026-91306 | 7.8 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Installation Security).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploitable vuln |
-| CVE-2026-91311 | 7.8 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Installation Security).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploitable vuln |
-| CVE-2026-91314 | 7.8 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Installation Security).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploitable vuln |
-| CVE-2026-91315 | 7.8 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Installation Security).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploitable vuln |
-| CVE-2026-91328 | 7.8 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Deployment SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploitable vulnerabili |
-| CVE-2026-91419 | 7.8 | n/a | Vulnerability in the Oracle HTTP Server product of Oracle Fusion Middleware (component: OSSL Module).   The supported version that is affected is 12.2.1.4.0. Easily exploitable vulnerability allows lo |
-| CVE-2026-91457 | 7.8 | n/a | Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Image Export SDK).   The supported version that is affected is 8.5.8. Easily exploitable vu |
-| CVE-2026-91458 | 7.8 | n/a | Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Core).   The supported version that is affected is 8.5.8. Easily exploitable vulnerability  |
-| CVE-2026-91459 | 7.8 | n/a | Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Image Export SDK).   The supported version that is affected is 8.5.8. Easily exploitable vu |
-| CVE-2026-91460 | 7.8 | n/a | Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Image Export SDK).   The supported version that is affected is 8.5.8. Easily exploitable vu |
-| CVE-2026-91473 | 7.8 | n/a | Vulnerability in the Oracle HTTP Server product of Oracle Fusion Middleware (component: Web Listener).   The supported version that is affected is 12.2.1.4.0. Easily exploitable vulnerability allows l |
-| CVE-2026-91483 | 7.8 | n/a | Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Core).   The supported version that is affected is 8.5.8. Easily exploitable vulnerability  |
-| CVE-2026-91537 | 7.8 | n/a | Vulnerability in the Oracle Solaris product of Oracle Systems (component: Utility).   The supported version that is affected is 11.4. Easily exploitable vulnerability allows low privileged attacker wi |
-| CVE-2026-91539 | 7.8 | n/a | Vulnerability in the Oracle Business Intelligence Enterprise Edition product of Oracle Analytics (component: Presentation Services).   The supported version that is affected is 12.2.1.4.0. Easily expl |
-| CVE-2026-91545 | 7.8 | n/a | Vulnerability in the Oracle Business Intelligence Enterprise Edition product of Oracle Analytics (component: Platform Security).  Supported versions that are affected are 8.2.0.0.0 and  12.2.1.4.0. Ea |
-| CVE-2026-91549 | 7.8 | n/a | Vulnerability in the Oracle Business Intelligence Enterprise Edition product of Oracle Analytics (component: Analytics Server).  Supported versions that are affected are 8.2.0.0.0 and  12.2.1.4.0. Eas |
-| CVE-2026-91627 | 7.8 | n/a | Vulnerability in the Oracle Communications Billing and Revenue Management product of Oracle Communications (component: Platform).  Supported versions that are affected are 15.0.0.0.0, 15.0.1.0.0, 15.1 |
-| CVE-2026-93888 | 7.8 | n/a | IBM Sterling Connect Direct for Unix 6.4.0.0 through 6.4.0.6 and 6.3.0.0 through 6.3.0.7 apnotify utility is vulnerable to a code injection due to insufficient validation of user input. |
-| CVE-2026-114096 | 7.8 | n/a | Dulwich from 0.24.0 before 1.2.8 contains a symlink following vulnerability in porcelain.checkout(paths=[...]) that allows attackers to write arbitrary files by abusing raw os.open without O_NOFOLLOW. |
-| CVE-2026-114097 | 7.8 | n/a | Dulwich from 0.23.1 before 1.2.8 contains a path traversal vulnerability in CommitFilter._apply_index_filter() that allows attackers to write files outside the working directory via symlinks persistin |
-| CVE-2026-114098 | 7.8 | n/a | Dulwich from 0.22.5 before 1.2.8 contains a path traversal vulnerability in stash.py pop() that allows attackers to write arbitrary files outside the worktree through intermediate directory symlinks.  |
-| CVE-2026-105311 | 7.7 | n/a | The StreamsHub Console operator acts as a confused deputy: a Kubernetes tenant with permission to create a Console custom resource can set spec.kafkaClusters[].credentials.kafkaUser.namespace to any n |
-| CVE-2026-101494 | 7.7 | n/a | Vulnerability in Oracle REST Data Services (component: Core).  Supported versions that are affected are 24.2.0-26.2.2. Easily exploitable vulnerability allows low privileged attacker with network acce |
-| CVE-2026-101506 | 7.7 | n/a | Vulnerability in Oracle Trusted Answer Search (component: Application expert UI).   The supported version that is affected is 26.1. Easily exploitable vulnerability allows low privileged attacker with |
-| CVE-2026-101540 | 7.7 | n/a | Vulnerability in the Oracle Capacity product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability all |
-| CVE-2026-101541 | 7.7 | n/a | Vulnerability in the Oracle Capacity product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability all |
-| CVE-2026-101689 | 7.7 | n/a | Vulnerability in the Oracle E-Business Suite Integrated SOA Gateway product of Oracle E-Business Suite (component: SOA Provider).  Supported versions that are affected are 12.2.3-12.2.15. Easily explo |
-| CVE-2026-101705 | 7.7 | n/a | Vulnerability in the Oracle Common Applications product of Oracle E-Business Suite (component: Role Summary).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerabili |
-| CVE-2026-101818 | 7.7 | n/a | Vulnerability in the Oracle Product Hub product of Oracle E-Business Suite (component: Item Catalog).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability allow |
-| CVE-2026-101830 | 7.7 | n/a | Vulnerability in the Oracle Project Contracts product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerab |
-| CVE-2026-101837 | 7.7 | n/a | Vulnerability in the Oracle Shipping Execution product of Oracle E-Business Suite (component: Workflow Events).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerabi |
-| CVE-2026-91568 | 7.7 | n/a | Vulnerability in the RDBMS component of Oracle Database Server.  Supported versions that are affected are 23.4.0-23.26.3. Easily exploitable vulnerability allows low privileged attacker having Create  |
-| CVE-2026-91632 | 7.7 | n/a | Vulnerability in Oracle Essbase (component: Security).   The supported version that is affected is 21.8.3.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via H |
-| CVE-2026-91636 | 7.7 | n/a | Vulnerability in Oracle Essbase (component: Security).   The supported version that is affected is 21.8.3.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via H |
-| CVE-2026-91639 | 7.7 | n/a | Vulnerability in Oracle Essbase (component: Security).   The supported version that is affected is 21.8.3.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via H |
-| CVE-2026-91659 | 7.7 | n/a | Vulnerability in Oracle Essbase (component: Build).   The supported version that is affected is 21.8.3.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP |
-| CVE-2026-91661 | 7.7 | n/a | Vulnerability in Oracle Essbase (component: Security).   The supported version that is affected is 21.8.3.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via H |
-| CVE-2026-114081 | 7.7 | n/a | Trigger.dev before 4.5.6 contains an SQL injection vulnerability in the TSQL query compiler, which concatenates window-function names into generated ClickHouse SQL without allowlisting or escaping. Au |
-| CVE-2026-114084 | 7.7 | n/a | Trigger.dev before 4.5.6 contains an SQL injection vulnerability in the /realtime/v1/runs endpoint, which concatenates the unescaped tags query parameter into the ElectricSQL shape where clause and de |
-| CVE-2026-101387 | 7.6 | n/a | Vulnerability in the Oracle Capacity product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability all |
-| CVE-2026-101398 | 7.6 | n/a | Vulnerability in the Oracle Capacity product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability all |
-| CVE-2026-101434 | 7.6 | n/a | Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Database Server).  Supported versions that are affected are 8.61-8.63. Easily exploitable vulnerability  |
-| CVE-2026-101504 | 7.6 | n/a | Vulnerability in Oracle Trusted Answer Search (component: Application expert UI).   The supported version that is affected is 26.1. Easily exploitable vulnerability allows low privileged attacker with |
-| CVE-2026-101641 | 7.6 | n/a | Vulnerability in the Oracle Report Manager product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerabili |
-| CVE-2026-101815 | 7.6 | n/a | Vulnerability in the Assets product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low p |
-| CVE-2026-101833 | 7.6 | n/a | Vulnerability in the Oracle Shipping Execution product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnera |
-| CVE-2026-101849 | 7.6 | n/a | Vulnerability in the Installed Base product of Oracle E-Business Suite (component: Create Item Instance).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability all |
-| CVE-2012-20002 | 7.5 | n/a | TinyMCE Thumbnail Gallery plugin for WordPress before 1.1.0 contains a path traversal vulnerability that allows unauthenticated attackers to read arbitrary files via the href parameter. Attackers can  |
-| CVE-2014-125133 | 7.5 | n/a | NativeChurch theme for WordPress before 1.6.2 contains a path traversal vulnerability that allows unauthenticated attackers to download arbitrary files through the file parameter of download.php. Atta |
-| CVE-2014-125134 | 7.5 | n/a | ChurcHope theme for WordPress before 2.2 contains a path traversal vulnerability that allows unauthenticated attackers to download arbitrary files through the 'file' parameter of /wp-content/themes/ch |
-| CVE-2015-20123 | 7.5 | n/a | Aspose Doc Exporter plugin for WordPress before 2.0 contains a path traversal vulnerability that allows unauthenticated attackers to download arbitrary files by passing unsanitized paths to readfile() |
-| CVE-2015-20124 | 7.5 | n/a | Aspose Importer & Exporter plugin for WordPress before 3.0 contains a path traversal vulnerability that allows unauthenticated attackers to download arbitrary files via the unsanitized 'file' paramete |
-| CVE-2015-20125 | 7.5 | n/a | Aspose PDF Exporter plugin for WordPress before 2.0 contains a path traversal vulnerability that allows unauthenticated attackers to download files through the unsanitized 'file' parameter passed to r |
-| CVE-2016-20100 | 7.5 | n/a | Memphis Documents Library plugin for WordPress before 3.1.6 contains a path traversal vulnerability that allows unauthenticated attackers to read arbitrary files via the mdocs-img-preview parameter. A |
-| CVE-2016-20103 | 7.5 | n/a | Cherry Plugin for WordPress before 1.2.7 contains a path traversal vulnerability that allows unauthenticated attackers to download arbitrary files via the 'file' parameter. Attackers can send GET requ |
-| CVE-2016-20104 | 7.5 | n/a | EyeLock nano NXT 3.05.1193, 3.04.1108, 3.03.944, and 3.01.646 contain a path traversal vulnerability that allows unauthenticated attackers to read arbitrary files via the 'path' parameter. Attackers c |
-| CVE-2026-101409 | 7.5 | n/a | Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Report Distribution).  Supported versions that are affected are 8.61-8.63. Easily exploitable vulnerabil |
-| CVE-2026-101410 | 7.5 | n/a | Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Business Interlink).  Supported versions that are affected are 8.61-8.63. Difficult to exploit vulnerabi |
-| CVE-2026-101416 | 7.5 | n/a | Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: PsAdmin).  Supported versions that are affected are 8.61-8.63. Difficult to exploit vulnerability allows |
-| CVE-2026-101421 | 7.5 | n/a | Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: SQR).  Supported versions that are affected are 8.61-8.63. Easily exploitable vulnerability allows unaut |
-| CVE-2026-101428 | 7.5 | n/a | Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: SQR).  Supported versions that are affected are 8.61-8.63. Difficult to exploit vulnerability allows low |
-| CVE-2026-101460 | 7.5 | n/a | Vulnerability in the Siebel CRM Deployment product of Oracle Siebel CRM (component: Server Infrastructure).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows |
-| CVE-2026-101461 | 7.5 | n/a | Vulnerability in the Siebel CRM Deployment product of Oracle Siebel CRM (component: Server Infrastructure).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows |
-| CVE-2026-101463 | 7.5 | n/a | Vulnerability in the Siebel CRM End User product of Oracle Siebel CRM (component: UIF Open UI).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows unauthentic |
-| CVE-2026-101468 | 7.5 | n/a | Vulnerability in the Siebel CRM Deployment product of Oracle Siebel CRM (component: Cloud Gateway).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows unauthe |
-| CVE-2026-101469 | 7.5 | n/a | Vulnerability in the Oracle Product Lifecycle Analytics product of Oracle Supply Chain (component: Installation Issues).   The supported version that is affected is 3.6.1. Difficult to exploit vulnera |
-| CVE-2026-101508 | 7.5 | n/a | Vulnerability in the Siebel CRM Integration product of Oracle Siebel CRM (component: EAI).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows unauthenticated  |
-| CVE-2026-101520 | 7.5 | n/a | Vulnerability in the Oracle Global Lifecycle Management NextGen OUI Framework product of Oracle Fusion Middleware (component: NextGen Installer).  Supported versions that are affected are 12.2.1.4.0,  |
-| CVE-2026-101531 | 7.5 | n/a | Vulnerability in the Oracle Business Intelligence Enterprise Edition product of Oracle Analytics (component: Analytics Server).  Supported versions that are affected are 8.2.0.0.0 and  26.01.0.0.0. Ea |
-| CVE-2026-101535 | 7.5 | n/a | Vulnerability in the Oracle Sales Foundation product of Oracle E-Business Suite (component: Security API).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability  |
-| CVE-2026-101536 | 7.5 | n/a | Vulnerability in the Oracle Cost Management product of Oracle E-Business Suite (component: Cost Maintenance).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerabili |
-| CVE-2026-101543 | 7.5 | n/a | Vulnerability in the Oracle Capacity product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability a |
-| CVE-2026-101546 | 7.5 | n/a | Vulnerability in the Oracle Materials Requirement Planning product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to e |
-| CVE-2026-101551 | 7.5 | n/a | Vulnerability in the Oracle Applications Manager product of Oracle E-Business Suite (component: Oracle Diagnostics Interfaces).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploit |
-| CVE-2026-101552 | 7.5 | n/a | Vulnerability in the Oracle Application Object Library product of Oracle E-Business Suite (component: Flexfields).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulner |
-| CVE-2026-101554 | 7.5 | n/a | Vulnerability in the Oracle Payroll product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability al |
-| CVE-2026-101555 | 7.5 | n/a | Vulnerability in the Oracle Payroll product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability al |
-| CVE-2026-101556 | 7.5 | n/a | Vulnerability in the Oracle Payroll product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability al |
-| CVE-2026-101562 | 7.5 | n/a | Vulnerability in the Oracle Agile PLM product of Oracle Supply Chain (component: Acollect).   The supported version that is affected is 2.6. Easily exploitable vulnerability allows unauthenticated att |
-| CVE-2026-101572 | 7.5 | n/a | Vulnerability in the Helidon product of Oracle Fusion Middleware (component: helidon-webclient-http2).  Supported versions that are affected are 4.0.0-4.5.5 and 27.0.0. Easily exploitable vulnerabilit |
-| CVE-2026-101599 | 7.5 | n/a | Vulnerability in the Oracle VM VirtualBox product of Oracle Virtualization (component: Core).   The supported version that is affected is 7.2.20. Difficult to exploit vulnerability allows low privileg |
-| CVE-2026-101603 | 7.5 | n/a | Vulnerability in the Oracle Communications Unified Inventory Management product of Oracle Communications (component: Security).  Supported versions that are affected are 7.5.0, 7.5.1, 7.6.0, 7.7.0, 7. |
-| CVE-2026-101604 | 7.5 | n/a | Vulnerability in the Oracle Communications Unified Inventory Management product of Oracle Communications (component: Security).  Supported versions that are affected are 7.5.0, 7.5.1, 7.6.0, 7.7.0, 7. |
-| CVE-2026-101645 | 7.5 | n/a | Vulnerability in the Oracle iSetup product of Oracle E-Business Suite (component: General Ledger Update Transform, Reports).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to expl |
-| CVE-2026-101647 | 7.5 | n/a | Vulnerability in the Oracle iSetup product of Oracle E-Business Suite (component: General Ledger Update Transform, Reports).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to expl |
-| CVE-2026-101660 | 7.5 | n/a | Vulnerability in the Oracle Mobile Field Service product of Oracle E-Business Suite (component: Admin UI).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability al |
-| CVE-2026-101679 | 7.5 | n/a | Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Client programs).  Supported versions that are affected are MySQL Server: 8.4.0-8.4.12, 9.7.0-9.7.3, 26.7.0-26.7.1; |
-| CVE-2026-101687 | 7.5 | n/a | Vulnerability in the Oracle E-Business Suite Integrated SOA Gateway product of Oracle E-Business Suite (component: SOA Provider).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to |
-| CVE-2026-101698 | 7.5 | n/a | Vulnerability in the Oracle One-to-One Fulfillment product of Oracle E-Business Suite (component: Java Server Issues).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vu |
-| CVE-2026-101699 | 7.5 | n/a | Vulnerability in the Oracle One-to-One Fulfillment product of Oracle E-Business Suite (component: Documents).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerabili |
-| CVE-2026-101703 | 7.5 | n/a | Vulnerability in the Pasta product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability allows low  |
-| CVE-2026-101708 | 7.5 | n/a | Vulnerability in the Oracle Payroll product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability al |
-| CVE-2026-101712 | 7.5 | n/a | Vulnerability in the Oracle Payroll product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability al |
-| CVE-2026-101719 | 7.5 | n/a | Vulnerability in the Oracle Agile PLM product of Oracle Supply Chain (component: Application Server).   The supported version that is affected is 9.3.6. Difficult to exploit vulnerability allows unaut |
-| CVE-2026-101759 | 7.5 | n/a | Vulnerability in the Oracle Communications Billing and Revenue Management product of Oracle Communications (component: BRM Server).  Supported versions that are affected are 15.0.0.0.0, 15.0.1.0.0, 15 |
-| CVE-2026-101796 | 7.5 | n/a | Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Server: Replication).  Supported versions that are affected are MySQL Server: 8.4.0-8.4.12, 9.7.0-9.7.3, 26.7.0-26. |
-| CVE-2026-101797 | 7.5 | n/a | Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Client: mysqldump).  Supported versions that are affected are MySQL Server: 8.4.0-8.4.12, 9.7.0-9.7.3, 26.7.0-26.7. |
-| CVE-2026-101810 | 7.5 | n/a | Vulnerability in the MySQL Router product of Oracle MySQL (component: Router: General).   The supported version that is affected is 26.7.0. Easily exploitable vulnerability allows unauthenticated atta |
-| CVE-2026-101820 | 7.5 | n/a | Vulnerability in the Oracle General Ledger product of Oracle E-Business Suite (component: ADADMIN).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability allows  |
-| CVE-2026-101823 | 7.5 | n/a | Vulnerability in the Oracle Bills of Material product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulner |
-| CVE-2026-101825 | 7.5 | n/a | Vulnerability in the Oracle HCM Common Architecture product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit  |
-| CVE-2026-101826 | 7.5 | n/a | Vulnerability in the Oracle HCM Common Architecture product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit  |
-| CVE-2026-101835 | 7.5 | n/a | Vulnerability in the Oracle Shipping Execution product of Oracle E-Business Suite (component: Workflow Events).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerabili |
-| CVE-2026-101847 | 7.5 | n/a | Vulnerability in the Oracle Bills of Material product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulner |
-| CVE-2026-83370 | 7.5 | n/a | Vulnerability in the Sourcing product of Oracle E-Business Suite (component: Auctions).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability allows low privileg |
-| CVE-2026-83404 | 7.5 | n/a | Vulnerability in the MySQL Connectors product of Oracle MySQL (component: Connector/Python).   The supported version that is affected is 26.7.0. Easily exploitable vulnerability allows unauthenticated |
-| CVE-2026-87296 | 7.5 | n/a | Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploita |
-| CVE-2026-87312 | 7.5 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Enterprise Infrastructure SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Difficult to ex |
-| CVE-2026-87315 | 7.5 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Enterprise Infrastructure SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploita |
-| CVE-2026-87363 | 7.5 | n/a | Vulnerability in the Oracle Payroll product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability al |
-| CVE-2026-87369 | 7.5 | n/a | Vulnerability in the Oracle Service Bus product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability al |
-| CVE-2026-87395 | 7.5 | n/a | Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Core).   The supported version that is affected is 8.5.8. Easily exploitable vulnerability  |
-| CVE-2026-87398 | 7.5 | n/a | Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Core).   The supported version that is affected is 8.5.8. Easily exploitable vulnerability  |
-| CVE-2026-87404 | 7.5 | n/a | Vulnerability in the Pasta product of Oracle E-Business Suite (component: Printing Engine).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability allows low priv |
-| CVE-2026-87417 | 7.5 | n/a | Vulnerability in the Oracle Solaris product of Oracle Systems (component: Image Packaging System).   The supported version that is affected is 11.4. Easily exploitable vulnerability allows unauthentic |
-| CVE-2026-91226 | 7.5 | n/a | Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Difficult to exploit vulnerab |
-| CVE-2026-91227 | 7.5 | n/a | Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Difficult to exploit vulnerab |
-| CVE-2026-91229 | 7.5 | n/a | Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Difficult to exploit vulnerab |
-| CVE-2026-91237 | 7.5 | n/a | Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerabil |
-| CVE-2026-91254 | 7.5 | n/a | Vulnerability in the Oracle Solaris product of Oracle Systems (component: Kernel).   The supported version that is affected is 11.4. Easily exploitable vulnerability allows unauthenticated attacker wi |
-| CVE-2026-91255 | 7.5 | n/a | Vulnerability in the Oracle Solaris product of Oracle Systems (component: Kernel).   The supported version that is affected is 11.4. Easily exploitable vulnerability allows unauthenticated attacker wi |
-| CVE-2026-91307 | 7.5 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Installation Security).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploitable vuln |
-| CVE-2026-91308 | 7.5 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Installation Security).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploitable vuln |
-| CVE-2026-91321 | 7.5 | n/a | Vulnerability in the iProcurement product of Oracle E-Business Suite (component: Requisition Management).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability a |
-| CVE-2026-91325 | 7.5 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Installation Security).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploitable vuln |
-| CVE-2026-91327 | 7.5 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Installation Security).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Difficult to exploit vu |
-| CVE-2026-91344 | 7.5 | n/a | Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that is affected is 8.5.8. Easily exploitable v |
-| CVE-2026-91345 | 7.5 | n/a | Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that is affected is 8.5.8. Easily exploitable v |
-| CVE-2026-91349 | 7.5 | n/a | Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that is affected is 8.5.8. Easily exploitable v |
-| CVE-2026-91350 | 7.5 | n/a | Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that is affected is 8.5.8. Easily exploitable v |
-| CVE-2026-91377 | 7.5 | n/a | Vulnerability in the Siebel CRM Integration product of Oracle Siebel CRM (component: Open Integration).  Supported versions that are affected are 25.12-26.9. Easily exploitable vulnerability allows un |
-| CVE-2026-91405 | 7.5 | n/a | Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In PDF Export SDK).   The supported version that is affected is 8.5.8. Difficult to exploit vu |
-| CVE-2026-91406 | 7.5 | n/a | Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In PDF Export SDK).   The supported version that is affected is 8.5.8. Difficult to exploit vu |
-| CVE-2026-91447 | 7.5 | n/a | Vulnerability in the Siebel CRM Deployment product of Oracle Siebel CRM (component: Server Infrastructure).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows |
-| CVE-2026-91448 | 7.5 | n/a | Vulnerability in the Siebel CRM Deployment product of Oracle Siebel CRM (component: Server Infrastructure).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows |
-| CVE-2026-91465 | 7.5 | n/a | Vulnerability in the PeopleSoft Enterprise FIN Common Objects Argentina product of Oracle PeopleSoft (component: Integration).   The supported version that is affected is 9.1. Easily exploitable vulne |
-| CVE-2026-91484 | 7.5 | n/a | Vulnerability in Oracle Java SE (component: Java plugin).  Supported versions that are affected are Oracle Java SE: 8u503 and  8u503-perf. Difficult to exploit vulnerability allows low privileged atta |
-| CVE-2026-91493 | 7.5 | n/a | Vulnerability in the Oracle Identity Manager Connector product of Oracle Fusion Middleware (component: LDAP Gateway).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily explo |
-| CVE-2026-91496 | 7.5 | n/a | Vulnerability in the Workflow product of Oracle E-Business Suite (component: Workflow Notification Mailer).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability |
-| CVE-2026-91504 | 7.5 | n/a | Vulnerability in the Oracle WebCenter Content product of Oracle Fusion Middleware (component: Content Portal Suite).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Difficult to  |
-| CVE-2026-91515 | 7.5 | n/a | Vulnerability in the Oracle Agile Product Lifecycle Management for Process product of Oracle Supply Chain (component: Product Quality Management).   The supported version that is affected is 6.2.4. Di |
-| CVE-2026-91542 | 7.5 | n/a | Vulnerability in the Oracle WebCenter Sites product of Oracle Fusion Middleware (component: WebCenter Sites).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable v |
-| CVE-2026-91552 | 7.5 | n/a | Vulnerability in the Oracle WebCenter Sites product of Oracle Fusion Middleware (component: WebCenter Sites).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable v |
-| CVE-2026-91604 | 7.5 | n/a | Vulnerability in the Oracle Agile Product Lifecycle Management for Process product of Oracle Supply Chain (component: Product Quality Management).   The supported version that is affected is 6.2.4. Di |
-| CVE-2026-91608 | 7.5 | n/a | Vulnerability in the Oracle BI Publisher product of Oracle Analytics (component: Web Server).  Supported versions that are affected are 8.2.0.0.0, 12.2.1.4.0 and  26.01.0.0.0. Easily exploitable vulne |
-| CVE-2026-91664 | 7.5 | n/a | Vulnerability in Oracle Essbase (component: Security).   The supported version that is affected is 21.8.3.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via  |
-| CVE-2026-114050 | 7.5 | n/a | vLLM before 0.31.0 uses a client-supplied multimodal uuid verbatim as cache identity with no consistency check on cache hits, allowing engine crashes. Unauthenticated attackers can desynchronize the P |
-| CVE-2026-114051 | 7.5 | n/a | vLLM before 0.31.0 skips the min_tokens <= max_tokens check for /inference/v1/generate requests with a null max_tokens, so the EngineCore input thread later dies on an uncaught VLLMValidationError whi |
-| CVE-2026-114052 | 7.5 | n/a | vLLM after 0.24.0 and before 0.31.0 contains a memory exhaustion vulnerability in MOSS-Audio model serving that caches a processor for every distinct request-controlled mm_processor_kwargs value in an |
-| CVE-2026-114055 | 7.5 | n/a | vLLM from 0.7.3 before 0.31.0 contains an uncontrolled resource consumption vulnerability that allows remote clients to control multimodal processor parameters by supplying per-request mm_processor_kw |
-| CVE-2026-114059 | 7.5 | n/a | ArcadeDB before 26.10.1 contains a remote code execution vulnerability that allows authenticated users, including read-only reader role holders, to execute Groovy code because GremlinQueryEngine.comma |
-| CVE-2026-114063 | 7.5 | n/a | SvelteKit (@sveltejs/kit) from 2.10.0 before 3.0.0 contains a path traversal vulnerability in the vite preview server on Windows that allows unauthenticated attackers to read files outside the prerend |
-| CVE-2026-114102 | 7.5 | n/a | adm-zip before 0.6.1 contains a denial of service vulnerability that allows unauthenticated attackers to crash the Node.js process via a malformed ZIP file, because inflateAsync in methods/inflater.js |
-| CVE-2026-114106 | 7.5 | n/a | HKUDS Vibe-Trading from 0.1.0 before 0.1.7 contains a path traversal vulnerability that allows remote attackers to read sensitive server files through LLM agent file-read tools. Attackers can prompt t |
-| CVE-2026-113394 | 7.4 | n/a | A vulnerability was identified in DrayTek Vigor2960 1.5.1.6 Revision 8218. Impacted is the function setSWMProfile of the file /cgi-bin/mainfunction.cgi. The manipulation of the argument setSWMProfile  |
-| CVE-2026-113682 | 7.4 | n/a | Networknt light-4j from 2.1.5 before 2.4.0 contains an authentication bypass vulnerability in BasicAuthHandler that allows unauthenticated attackers to log in as LDAP/AD-delegated users. Attackers can |
-| CVE-2026-101467 | 7.4 | n/a | Vulnerability in the Siebel CRM End User product of Oracle Siebel CRM (component: Portal Framework).  Supported versions that are affected are 17.0-26.9. Difficult to exploit vulnerability allows unau |
-| CVE-2026-101636 | 7.4 | n/a | Vulnerability in the Oracle Mobile Field Service product of Oracle E-Business Suite (component: Admin UI).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability  |
-| CVE-2026-101658 | 7.4 | n/a | Vulnerability in the Oracle Mobile Field Service product of Oracle E-Business Suite (component: Admin UI).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability  |
-| CVE-2026-101661 | 7.4 | n/a | Vulnerability in the Oracle Mobile Field Service product of Oracle E-Business Suite (component: Admin UI).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability  |
-| CVE-2026-101680 | 7.4 | n/a | Vulnerability in the Oracle Communications Billing and Revenue Management product of Oracle Communications (component: Platform).  Supported versions that are affected are 15.0.0.0.0, 15.0.1.0.0, 15.1 |
-| CVE-2026-101707 | 7.4 | n/a | Vulnerability in the Oracle Concurrent Processing product of Oracle E-Business Suite (component: Other Issues).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerabi |
-| CVE-2026-101736 | 7.4 | n/a | Vulnerability in the Primavera Unifier product of Oracle Construction and Engineering (component: Core).  Supported versions that are affected are 21.12.0-21.12.17. Difficult to exploit vulnerability  |
-| CVE-2026-101775 | 7.4 | n/a | Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Server: Replication).  Supported versions that are affected are MySQL Server: 8.4.0-8.4.12, 9.7.0-9.7.3, 26.7.0-26. |
-| CVE-2026-101783 | 7.4 | n/a | Vulnerability in the MySQL Router product of Oracle MySQL (component: Router: General).   The supported version that is affected is 26.7.0. Difficult to exploit vulnerability allows unauthenticated at |
-| CVE-2026-101829 | 7.4 | n/a | Vulnerability in the Oracle Mobile Application Server product of Oracle E-Business Suite (component: MWA Terminal Server).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploi |
-| CVE-2026-83366 | 7.4 | n/a | Vulnerability in the Oracle Shipping Execution product of Oracle E-Business Suite (component: Workflow Events).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerabi |
-| CVE-2026-83367 | 7.4 | n/a | Vulnerability in the Oracle Shipping Execution product of Oracle E-Business Suite (component: Workflow Events).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerabi |
-| CVE-2026-87314 | 7.4 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Interoperability SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Difficult to exploit vul |
-| CVE-2026-91242 | 7.4 | n/a | Vulnerability in the Oracle Solaris product of Oracle Systems (component: Plugins).   The supported version that is affected is 11.4. Easily exploitable vulnerability allows high privileged attacker w |
-| CVE-2026-91272 | 7.4 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Interoperability SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Difficult to exploit vul |
-| CVE-2026-91288 | 7.4 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Interoperability SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Difficult to exploit vul |
-| CVE-2026-91337 | 7.4 | n/a | Vulnerability in the iProcurement product of Oracle E-Business Suite (component: Internal operations).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability allo |
-| CVE-2026-91449 | 7.4 | n/a | Vulnerability in the Siebel CRM Deployment product of Oracle Siebel CRM (component: Server Infrastructure).  Supported versions that are affected are 17.0-26.9. Difficult to exploit vulnerability allo |
-| CVE-2026-91450 | 7.4 | n/a | Vulnerability in the Siebel CRM Deployment product of Oracle Siebel CRM (component: Server Infrastructure).  Supported versions that are affected are 17.0-26.9. Difficult to exploit vulnerability allo |
-| CVE-2026-91494 | 7.4 | n/a | Vulnerability in the Oracle Identity Manager Connector product of Oracle Fusion Middleware (component: LDAP Gateway).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Difficult to |
-| CVE-2026-91623 | 7.4 | n/a | Vulnerability in the Oracle Agile Product Lifecycle Management for Process product of Oracle Supply Chain (component: Product Quality Management).   The supported version that is affected is 6.2.4. Di |
-| CVE-2021-48018 | 7.4 | n/a | Vyper from 0.2.13 before 0.2.15 allocates storage slots for @nonreentrant reentrancy locks at the same locations as contract storage variables. When a function using @nonreentrant is called, setting t |
-| CVE-2026-101638 | 7.3 | n/a | Vulnerability in the Applications DBA product of Oracle E-Business Suite (component: AD Utilities).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows lo |
-| CVE-2026-101746 | 7.3 | n/a | Vulnerability in the Oracle Agile Engineering Data Management product of Oracle Supply Chain (component: Install).   The supported version that is affected is 6.2.1. Easily exploitable vulnerability a |
-| CVE-2026-113704 | 7.3 | n/a | A vulnerability has been found in a2aproject a2a-rs up to 0.4.3. This affects the function HttpPushSender of the file crates/server/src/push_notification_sender.rs of the component Push Notification H |
-| CVE-2026-87402 | 7.3 | n/a | Vulnerability in the Applications DBA product of Oracle E-Business Suite (component: AD Utilities).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows lo |
-| CVE-2026-91502 | 7.3 | n/a | Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Easily  |
-| CVE-2026-91642 | 7.3 | n/a | Vulnerability in Oracle Essbase (component: Security).   The supported version that is affected is 21.8.3.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via  |
-| CVE-2026-101466 | 7.2 | n/a | Vulnerability in the Oracle EDI Gateway product of Oracle E-Business Suite (component: All Miscellaneous EDI Issues).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulne |
-| CVE-2026-101519 | 7.2 | n/a | Vulnerability in the Oracle EDI Gateway product of Oracle E-Business Suite (component: All Miscellaneous EDI Issues).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulne |
-| CVE-2026-101532 | 7.2 | n/a | Vulnerability in the Oracle EDI Gateway product of Oracle E-Business Suite (component: All Miscellaneous EDI Issues).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulne |
-| CVE-2026-101579 | 7.2 | n/a | Vulnerability in the Helidon product of Oracle Fusion Middleware (component: helidon-grpc-server).  Supported versions that are affected are 3.0.0-3.2.21. Easily exploitable vulnerability allows unaut |
-| CVE-2026-101585 | 7.2 | n/a | Vulnerability in the Helidon product of Oracle Fusion Middleware (component: helidon-cors).  Supported versions that are affected are 3.0.0-3.2.21. Easily exploitable vulnerability allows unauthentica |
-| CVE-2026-101646 | 7.2 | n/a | Vulnerability in the Oracle iSetup product of Oracle E-Business Suite (component: General Ledger Update Transform, Reports).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitabl |
-| CVE-2026-101694 | 7.2 | n/a | Vulnerability in the Oracle Mobile Field Service product of Oracle E-Business Suite (component: Admin UI).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability al |
-| CVE-2026-101786 | 7.2 | n/a | Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Server: Optimizer).  Supported versions that are affected are MySQL Server: 26.7.0-26.7.1; MySQL Cluster: 26.7.0-26 |
-| CVE-2026-101816 | 7.2 | n/a | Vulnerability in the Oracle Product Hub product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability  |
-| CVE-2026-101822 | 7.2 | n/a | Vulnerability in the Oracle Bills of Material product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulner |
-| CVE-2026-101840 | 7.2 | n/a | Vulnerability in the Oracle Contract Lifecycle Management for Public Sector product of Oracle E-Business Suite (component: Award/PO).  Supported versions that are affected are 12.2.3-12.2.15. Easily e |
-| CVE-2026-87357 | 7.2 | n/a | Vulnerability in the Order Capture product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allow |
-| CVE-2026-91260 | 7.2 | n/a | Vulnerability in the iProcurement product of Oracle E-Business Suite (component: E-Content Manager Catalog).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability  |
-| CVE-2026-91316 | 7.2 | n/a | Vulnerability in the iProcurement product of Oracle E-Business Suite (component: E-Content Manager Catalog).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability  |
-| CVE-2026-91433 | 7.2 | n/a | Vulnerability in the Siebel Apps - Field Service product of Oracle Siebel CRM (component: Smart Answer).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows hi |
-| CVE-2026-91512 | 7.2 | n/a | Vulnerability in the Oracle Agile Product Lifecycle Management for Process product of Oracle Supply Chain (component: Product Quality Management).   The supported version that is affected is 6.2.4. Ea |
-| CVE-2026-113606 | 7.1 | n/a | Stirling-PDF 3.0.0 through 3.2.0 contains an authorization bypass vulnerability that allows authenticated users to access other users' stored files by pointing a processing folder at the server storag |
-| CVE-2026-101388 | 7.1 | n/a | Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Portal).  Supported versions that are affected are 8.61-8.63. Easily exploitable vulnerability allows lo |
-| CVE-2026-101447 | 7.1 | n/a | Vulnerability in the Siebel CRM Development product of Oracle Siebel CRM (component: Workflow).  Supported versions that are affected are 25.12-26.9. Difficult to exploit vulnerability allows low priv |
-| CVE-2026-101450 | 7.1 | n/a | Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Integration Broker).  Supported versions that are affected are 8.61-8.63. Easily exploitable vulnerabili |
-| CVE-2026-101464 | 7.1 | n/a | Vulnerability in the Siebel CRM Deployment product of Oracle Siebel CRM (component: Server Infrastructure).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows |
-| CVE-2026-101560 | 7.1 | n/a | Vulnerability in the Oracle Commerce Platform product of Oracle Commerce (component: Dynamo Commerce Server).   The supported version that is affected is 11.4.0. Easily exploitable vulnerability allow |
-| CVE-2026-101642 | 7.1 | n/a | Vulnerability in the Oracle Report Manager product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerabili |
-| CVE-2026-101643 | 7.1 | n/a | Vulnerability in the Oracle Sales Online product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability |
-| CVE-2026-101649 | 7.1 | n/a | Vulnerability in the Oracle Partner Management product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnera |
-| CVE-2026-101650 | 7.1 | n/a | Vulnerability in the Oracle Partner Management product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnera |
-| CVE-2026-101662 | 7.1 | n/a | Vulnerability in the Oracle Mobile Field Service product of Oracle E-Business Suite (component: Admin UI).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability al |
-| CVE-2026-101735 | 7.1 | n/a | Vulnerability in the Primavera Unifier product of Oracle Construction and Engineering (component: Project Control).  Supported versions that are affected are 23.12.0-23.12.16. Easily exploitable vulne |
-| CVE-2026-101773 | 7.1 | n/a | Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Server: Group Replication Plugin).  Supported versions that are affected are MySQL Server: 8.4.0-8.4.12, 9.7.0-9.7. |
-| CVE-2026-101827 | 7.1 | n/a | Vulnerability in the Oracle HCM Common Architecture product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit  |
-| CVE-2026-101851 | 7.1 | n/a | Vulnerability in the Installed Base product of Oracle E-Business Suite (component: Data Provider UI).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows  |
-| CVE-2026-87307 | 7.1 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Interoperability SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploitable vulne |
-| CVE-2026-87308 | 7.1 | n/a | Vulnerability in the JD Edwards EnterpriseOne Tools product of Oracle JD Edwards (component: Enterprise Infrastructure SEC).  Supported versions that are affected are 9.2.0.0-9.2.26.5. Easily exploita |
-| CVE-2026-87358 | 7.1 | n/a | Vulnerability in the Oracle General Ledger product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerabi |
-| CVE-2026-87403 | 7.1 | n/a | Vulnerability in the Applications DBA product of Oracle E-Business Suite (component: AD Utilities).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows lo |
-| CVE-2026-87421 | 7.1 | n/a | Vulnerability in the Oracle Solaris product of Oracle Systems (component: Image Packaging System).   The supported version that is affected is 11.4. Easily exploitable vulnerability allows unauthentic |
-| CVE-2026-91228 | 7.1 | n/a | Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerabil |
-| CVE-2026-91238 | 7.1 | n/a | Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerabil |
-| CVE-2026-91256 | 7.1 | n/a | Vulnerability in the Oracle Solaris product of Oracle Systems (component: Services).   The supported version that is affected is 11.4. Easily exploitable vulnerability allows low privileged attacker w |
-| CVE-2026-91338 | 7.1 | n/a | Vulnerability in the iSupport product of Oracle E-Business Suite (component: Internal operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low |
-| CVE-2026-91438 | 7.1 | n/a | Vulnerability in the Siebel CRM Deployment product of Oracle Siebel CRM (component: Server Infrastructure).  Supported versions that are affected are 17.0-26.9. Easily exploitable vulnerability allows |
-| CVE-2026-91488 | 7.1 | n/a | Vulnerability in the Oracle Identity Manager Connector product of Oracle Fusion Middleware (component: Generic REST).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily explo |
-| CVE-2026-91489 | 7.1 | n/a | Vulnerability in the Oracle Identity Manager Connector product of Oracle Fusion Middleware (component: LDAP Gateway).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily explo |
-| CVE-2026-91511 | 7.1 | n/a | Vulnerability in the Oracle Purchasing product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability |
-| CVE-2026-114077 | 7.1 | n/a | Trigger.dev before 4.5.6 contains an authorization bypass vulnerability in createDeploymentBackgroundWorkerV4 that resolves a WorkerDeployment by friendlyId alone, without environment, project, or org |
-| CVE-2026-114090 | 7.1 | n/a | Trigger.dev cli-v3 from 3.0.0 before 4.5.4 contains a missing authentication vulnerability in the trigger dev --mcp server, which binds all network interfaces and exposes the /sse and /messages endpoi |
-| CVE-2026-101429 | 7.0 | n/a | Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: SQR).  Supported versions that are affected are 8.61-8.63. Difficult to exploit vulnerability allows una |
-| CVE-2026-101544 | 7.0 | n/a | Vulnerability in the Oracle Payroll product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability al |
-| CVE-2026-101545 | 7.0 | n/a | Vulnerability in the Oracle Inventory Management product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vul |
-| CVE-2026-101548 | 7.0 | n/a | Vulnerability in Oracle Application Testing Suite (component: OpenScript).   The supported version that is affected is 13.3.0.1. Difficult to exploit vulnerability allows low privileged attacker with  |
-| CVE-2026-101583 | 7.0 | n/a | Vulnerability in the Helidon product of Oracle Fusion Middleware (component: helidon-common-mapper).  Supported versions that are affected are 4.0.0-4.5.5 and 27.0.0. Difficult to exploit vulnerabilit |
-| CVE-2026-101681 | 7.0 | n/a | Vulnerability in the Applications DBA product of Oracle E-Business Suite (component: AD Utilities).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability allows  |
-| CVE-2026-101683 | 7.0 | n/a | Vulnerability in the Applications DBA product of Oracle E-Business Suite (component: AD Utilities).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability allows  |
-| CVE-2026-101739 | 7.0 | n/a | Vulnerability in the Oracle Agile Engineering Data Management product of Oracle Supply Chain (component: Engineering Communication Interface).   The supported version that is affected is 6.2.1. Diffic |
-| CVE-2026-101769 | 7.0 | n/a | Vulnerability in the MySQL Cluster product of Oracle MySQL (component: Cluster: General).  Supported versions that are affected are 26.7.0-26.7.1. Difficult to exploit vulnerability allows unauthentic |
-| CVE-2026-91415 | 7.0 | n/a | Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: 2D).  Supported versions that are affected are Oracle Java SE: 8u50 |
-| CVE-2026-91557 | 7.0 | n/a | Vulnerability in the Oracle Business Intelligence Enterprise Edition product of Oracle Analytics (component: BI Foundation).   The supported version that is affected is 12.2.1.4.0. Difficult to exploi |
+| CVE-2026-113744 | 10.0 | 0.6% | A security vulnerability has been detected in Tenda AC19 16.03.10.07. The impacted element is the function formSetFirewallCfg of the file /goform/SetFirewallCfg of the component httpd Web Management S |
+| CVE-2026-114382 | 10.0 | n/a | A security flaw has been discovered in TOTOLINK EX200 5.2.3c.7200. This affects the function setStaticDhcpConfig of the file /cgi-bin/cstecgi.cgi of the component lan.so. The manipulation of the argum |
+| CVE-2026-114383 | 10.0 | n/a | A weakness has been identified in TOTOLINK EX200 5.2.3c.7200. This impacts the function setWiFiAclAddConfig of the file /cgi-bin/cstecgi.cgi of the component wireless.so. This manipulation of the argu |
+| CVE-2026-114575 | 10.0 | n/a | A flaw has been found in TOTOLINK A950RG 4.1.2cu.5268_B20221104. Affected by this issue is the function UploadCustomModule of the file lib/cste_modules/product.so. Executing a manipulation of the argu |
+| CVE-2026-114268 | 9.9 | n/a | A flaw has been found in Tenda BE3L Pro 16.03.60.62. Affected by this vulnerability is the function formWifiBasicSet of the file /goform/WifiBasicSet. This manipulation of the argument security_5g cau |
+| CVE-2026-113736 | 9.8 | 0.9% | A vulnerability has been found in D-Link DHP-W610AV 1.02EUb03. The impacted element is the function login_prepare_hnap of the file etc/defnodes/defaultvalue.xml of the component HNAP Login. The manipu |
+| CVE-2026-114108 | 9.8 | 0.4% | HKUDS Vibe-Trading from 0.1.0 before 0.1.7 contains a missing authentication vulnerability that allows unauthenticated attackers to access the FastAPI surface because require_auth() returns early when |
+| CVE-2026-114119 | 9.8 | 0.4% | Best Practice Software Bp Premier before 1.14.1.1128 uses a hardcoded Microsoft SQL Server administrative password that is shared across all installations and cannot be changed without breaking the ap |
+| CVE-2026-109618 | 9.8 | n/a | PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an |
+| CVE-2026-109619 | 9.8 | n/a | PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then |
+| CVE-2026-76473 | 9.8 | n/a | As part of Cisco's ongoing commitment to proactive security and product quality, engineering teams for Cisco Emergency Responder, Cisco Prime Collaboration Deployment, Cisco Unified Communications Man |
+| CVE-2026-76474 | 9.8 | n/a | As part of Cisco's ongoing commitment to proactive security and product quality, engineering teams for Cisco Emergency Responder, Cisco Prime Collaboration Deployment, Cisco Unified Communications Man |
+| CVE-2026-76475 | 9.3 | n/a | As part of Cisco's ongoing commitment to proactive security and product quality, engineering teams for Cisco Emergency Responder, Cisco Prime Collaboration Deployment, Cisco Unified Communications Man |
+| CVE-2026-91403 | 9.1 | n/a | Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: JSSE).  Supported versions that are affected are Oracle Java SE: 8u |
+| CVE-2026-114220 | 9.1 | n/a | NT OneAPP developed by NewType Infortech has an Improper Certificate Validation vulnerability. Unauthenticated network-adjacent attackers can perform a man-in-the-middle attack by failing to validate  |
+| CVE-2026-20043 | 9.0 | n/a | As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco owned Open Source Snort 3 Software engineering team has conducted a comprehensive internal security review. T |
+| CVE-2026-114089 | 8.8 | 0.1% | Trigger.dev before 4.5.2 contains a cross-site request forgery vulnerability in the CLI authorization-code flow because loading /account/authorization-code/<code> mints a Personal Access Token without |
+| CVE-2026-114094 | 8.8 | 0.7% | Dulwich before 1.2.9 fails to validate DOS drive letter prefixes in Git tree path elements on Windows, allowing arbitrary file write. Attackers can craft a malicious repository with a tree entry named |
+| CVE-2026-114107 | 8.8 | 0.5% | HKUDS Vibe-Trading from 0.1.0 before 0.1.7 contains an indirect prompt injection vulnerability that allows remote attackers to execute shell commands as root by planting instructions in documents or w |
+| CVE-2026-114109 | 8.8 | 0.4% | uv before 0.11.15 contains a path traversal vulnerability that allows malicious wheels to write files outside the scripts directory via crafted console_scripts or gui_scripts entry point names. Attack |
+| CVE-2026-82814 | 8.8 | 0.5% | The Duplicator and Duplicator Pro plugins for WordPress are vulnerable to PHP Object Injection in all versions up to, and including, 1.5.17 and 4.6.10, respectively, via deserialization of untrusted d |
+| CVE-2026-114387 | 8.8 | n/a | Shopper from 2.0.0 before 2.6.0 contains a missing authorization vulnerability that allows admin-panel users holding only access_dashboard to create administrators and grant permissions. Attackers can |
+| CVE-2026-76476 | 8.8 | n/a | As part of Cisco's ongoing commitment to proactive security and product quality, engineering teams for Cisco Emergency Responder, Cisco Prime Collaboration Deployment, Cisco Unified Communications Man |
+| CVE-2026-76477 | 8.8 | n/a | As part of Cisco's ongoing commitment to proactive security and product quality, engineering teams for Cisco Emergency Responder, Cisco Prime Collaboration Deployment, Cisco Unified Communications Man |
+| CVE-2026-76478 | 8.8 | n/a | As part of Cisco's ongoing commitment to proactive security and product quality, engineering teams for Cisco Emergency Responder, Cisco Prime Collaboration Deployment, Cisco Unified Communications Man |
+| CVE-2026-76291 | 8.8 | n/a | In Splunk Enterprise versions below 10.4.4, 10.2.8, 10.0.11, and 9.4.16, a user that holds a role with the schedule_search capability could bypass the expected safeguards in the scheduled search workf |
+| CVE-2026-76298 | 8.8 | n/a | In Splunk Enterprise versions below 10.4.4 and 10.2.8, a user who does not hold the "admin" or "power" Splunk roles could derive the PostgreSQL sidecar database superuser password and run arbitrary op |
+| CVE-2026-114658 | 8.8 | n/a | Grav Login plugin from 3.6.0 before 3.9.13 contains a missing authorization vulnerability in the login.invite task that allows page authors to obtain super user accounts. Attackers can define an invit |
+| CVE-2026-114635 | 8.7 | n/a | Traefik before v2.11.58 and v3.7.14 contains an authentication bypass vulnerability in its SNI check, which is skipped when request TLS state is nil. Unauthenticated clients can send HTTP/2 requests w |
+| CVE-2026-114636 | 8.7 | n/a | Traefik v3.7.13 before v3.7.14 contains an access-control bypass in the Kubernetes Ingress NGINX provider, where the HTTP router generated for ssl-passthrough Ingresses on non-TLS entry points never a |
+| CVE-2026-114637 | 8.7 | n/a | Traefik from v3.2.0 before v3.7.14 contains an authentication bypass vulnerability in the experimental FastProxy connection pool, which fails to pin NTLM/Negotiate-authenticated backend connections to |
+| CVE-2026-114638 | 8.7 | n/a | Traefik v3.7.0 before v3.7.14 contains an improper authentication vulnerability in the Kubernetes Ingress NGINX provider that merges client CAs when auth-tls-secret names collide after dot-to-dash nor |
+| CVE-2026-114639 | 8.7 | n/a | Traefik 2.11.0 before 2.11.58 and 3.0.0 before 3.7.14 contains an authentication bypass because a first request preauthenticated with an Authorization: Negotiate token authenticates a socket in the gl |
+| CVE-2026-114640 | 8.7 | n/a | Traefik from v3.7.0 before v3.7.14 contains an authentication bypass vulnerability in its Kubernetes Ingress-NGINX provider that forwards client-supplied Ssl-Client-* headers on the plaintext HTTP rou |
+| CVE-2026-114642 | 8.7 | n/a | Traefik 2.11.0 before 2.11.58 and 3.0.0 before 3.7.14 stores its NTLM/Kerberos backend round tripper in a client-connection slot not keyed by ServersTransport, so one service's TLS client configuratio |
+| CVE-2026-76490 | 8.6 | n/a | As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Expressway Series software engineering team has conducted a comprehensive internal security review. This revi |
+| CVE-2026-114661 | 8.5 | n/a | OpenRemote 1.2.0 before 1.31.0 contains a missing authorization vulnerability in GatewayServiceResource that allows any authenticated user to start, stop and query gateway tunnels without an administr |
+| CVE-2026-114663 | 8.4 | n/a | Vyper 0.4.0b1 through 0.5.0b1 miscompiles unfoldable constants and omitted default arguments from imported modules, because parse_Name resolves their names in the using function's scope rather than at |
+| CVE-2026-114068 | 8.3 | 0.3% | Trigger.dev before 4.6.0 contains a missing authorization vulnerability in the waitpoint token wait endpoint that allows authenticated attackers to block runs belonging to other organizations. Attacke |
+| CVE-2026-114053 | 8.1 | 0.5% | vLLM from 0.7.3 before 0.31.0 forwards the request-supplied mm_processor_kwargs.code_revision to Transformers AutoProcessor.from_pretrained, letting clients select which revision of a model's dynamic  |
+| CVE-2026-114066 | 8.1 | 0.3% | Trigger.dev before 4.7.0 contains a missing authorization vulnerability that allows holders of unrestricted environment API keys to block runs they do not own by supplying a foreign parentRunId to bat |
+| CVE-2026-114069 | 8.1 | 0.3% | Trigger.dev before 4.6.0 contains an improper authorization vulnerability in the GET /api/v1/projects/:projectRef/envvars endpoint, which returns the environment's root API key as TRIGGER_SECRET_KEY f |
+| CVE-2026-114078 | 8.1 | 0.3% | Trigger.dev before 4.5.6 contains an authorization bypass vulnerability in DeleteTaskScheduleService and SetActiveOnTaskScheduleService that allows authenticated users to delete or disable other organ |
+| CVE-2026-114082 | 8.1 | 0.3% | Trigger.dev before 4.6.2 contains an authorization vulnerability that allows public-token holders with session write access to obtain environment-wide S2 stream credentials via session input initializ |
+| CVE-2026-114083 | 8.1 | 0.4% | Trigger.dev before 4.5.0-rc.3 contains a path traversal vulnerability in the api/v1/packets and api/v2/packets endpoints that allows authenticated tenants to escape their object key prefix through an  |
+| CVE-2026-114087 | 8.1 | 0.3% | Trigger.dev before 4.5.6 self-hosted Docker Compose deployments using the default secrets from hosting/docker/.env.example allow authentication bypass because the hardcoded MAGIC_LINK_SECRET lets anyo |
+| CVE-2026-114403 | 8.1 | n/a | PHPOffice PHPPresentation through 1.2.0 contains an insecure deserialization vulnerability that allows attackers to instantiate arbitrary PHP objects by supplying a crafted presentation file. Attacker |
+| CVE-2026-114662 | 8.1 | n/a | Obot before 0.26.0 contains an authentication bypass vulnerability in the CLI login flow that allows unauthenticated attackers to steal API keys by choosing token request IDs. Attackers can create a t |
+| CVE-2026-114096 | 7.8 | 0.2% | Dulwich from 0.24.0 before 1.2.8 contains a symlink following vulnerability in porcelain.checkout(paths=[...]) that allows attackers to write arbitrary files by abusing raw os.open without O_NOFOLLOW. |
+| CVE-2026-114097 | 7.8 | 0.2% | Dulwich from 0.23.1 before 1.2.8 contains a path traversal vulnerability in CommitFilter._apply_index_filter() that allows attackers to write files outside the working directory via symlinks persistin |
+| CVE-2026-114098 | 7.8 | 0.2% | Dulwich from 0.22.5 before 1.2.8 contains a path traversal vulnerability in stash.py pop() that allows attackers to write arbitrary files outside the worktree through intermediate directory symlinks.  |
+| CVE-2026-20291 | 7.8 | n/a | As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco owned Open Source Snort 3 Software engineering team has conducted a comprehensive internal security review. T |
+| CVE-2026-76479 | 7.8 | n/a | As part of Cisco's ongoing commitment to proactive security and product quality, engineering teams for Cisco Emergency Responder, Cisco Prime Collaboration Deployment, Cisco Unified Communications Man |
+| CVE-2026-76494 | 7.8 | n/a | As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Expressway Series software engineering team has conducted a comprehensive internal security review. This revi |
+| CVE-2026-76495 | 7.8 | n/a | As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Expressway Series software engineering team has conducted a comprehensive internal security review. This revi |
+| CVE-2026-76524 | 7.8 | n/a | A vulnerability in the control channel socket implementation of&nbsp;Open Source Snort 3 could allow an authenticated, local attacker with low privileges to execute arbitrary commands as the Snort 3 p |
+| CVE-2026-114081 | 7.7 | 0.3% | Trigger.dev before 4.5.6 contains an SQL injection vulnerability in the TSQL query compiler, which concatenates window-function names into generated ClickHouse SQL without allowlisting or escaping. Au |
+| CVE-2026-114084 | 7.7 | 0.3% | Trigger.dev before 4.5.6 contains an SQL injection vulnerability in the /realtime/v1/runs endpoint, which concatenates the unescaped tags query parameter into the ElectricSQL shape where clause and de |
+| CVE-2026-114051 | 7.5 | 0.4% | vLLM before 0.31.0 skips the min_tokens <= max_tokens check for /inference/v1/generate requests with a null max_tokens, so the EngineCore input thread later dies on an uncaught VLLMValidationError whi |
+| CVE-2026-114052 | 7.5 | 0.4% | vLLM after 0.24.0 and before 0.31.0 contains a memory exhaustion vulnerability in MOSS-Audio model serving that caches a processor for every distinct request-controlled mm_processor_kwargs value in an |
+| CVE-2026-114059 | 7.5 | 0.4% | ArcadeDB before 26.10.1 contains a remote code execution vulnerability that allows authenticated users, including read-only reader role holders, to execute Groovy code because GremlinQueryEngine.comma |
+| CVE-2026-114063 | 7.5 | 0.4% | SvelteKit (@sveltejs/kit) from 2.10.0 before 3.0.0 contains a path traversal vulnerability in the vite preview server on Windows that allows unauthenticated attackers to read files outside the prerend |
+| CVE-2026-114102 | 7.5 | 0.3% | adm-zip before 0.6.1 contains a denial of service vulnerability that allows unauthenticated attackers to crash the Node.js process via a malformed ZIP file, because inflateAsync in methods/inflater.js |
+| CVE-2026-114106 | 7.5 | 0.4% | HKUDS Vibe-Trading from 0.1.0 before 0.1.7 contains a path traversal vulnerability that allows remote attackers to read sensitive server files through LLM agent file-read tools. Attackers can prompt t |
+| CVE-2026-20236 | 7.5 | n/a | As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco owned Open Source Snort 3 Software engineering team has conducted a comprehensive internal security review. T |
+| CVE-2026-20356 | 7.5 | n/a | As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco owned Open Source Snort 3 Software engineering team has conducted a comprehensive internal security review. T |
+| CVE-2026-76491 | 7.5 | n/a | As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Expressway Series software engineering team has conducted a comprehensive internal security review. This revi |
+| CVE-2026-76492 | 7.5 | n/a | As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Expressway Series software engineering team has conducted a comprehensive internal security review. This revi |
+| CVE-2026-76493 | 7.5 | n/a | As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Expressway Series software engineering team has conducted a comprehensive internal security review. This revi |
+| CVE-2026-76505 | 7.5 | n/a | A vulnerability in the IPv4 packet processing functionality of Cisco IOS XR Software that affects Cisco ASR 9000 and 9900 Series Aggregation Services Routers as well as Cisco ASR 9902 and 9903 Compact |
+| CVE-2026-76288 | 7.5 | n/a | In Splunk Enterprise versions below 10.4.4, 10.2.8, 10.0.11, and 9.4.16, an unauthenticated user could send a single crafted request to the Splunk Web JavaScript logger endpoint and cause Splunk Web t |
+| CVE-2026-76290 | 7.5 | n/a | In Splunk Enterprise versions below 10.4.4, 10.2.8, and 10.0.11, an unauthenticated user could send repeated requests to the Edge Processor package download endpoint in the Splunk Pipeline Builders ap |
+| CVE-2026-76306 | 7.5 | n/a | In Splunk SOAR versions below 8.7.0, a user that has the "Observer" role could use query filters in the Representational State Transfer (REST) API to infer password hashes and authorization tokens for |
+| CVE-2026-114656 | 7.5 | n/a | Traefik before 2.11.58 and 3.7.13 contains an authentication bypass vulnerability that allows unauthenticated clients to skip client-certificate checks because negated Host matchers are counted as ser |
+| CVE-2021-48018 | 7.4 | 0.3% | Vyper from 0.2.13 before 0.2.15 allocates storage slots for @nonreentrant reentrancy locks at the same locations as contract storage variables. When a function using @nonreentrant is called, setting t |
+| CVE-2026-114397 | 7.4 | n/a | Trudesk through 1.2.11 contains a missing authentication vulnerability in debug routes enabled whenever NODE_ENV is unset, letting unauthenticated attackers invoke them remotely. Attackers can call /d |
+| CVE-2026-89035 | 7.4 | n/a | MikroTik RouterOS through 7.24.5 contains a session token replay vulnerability in the WebFig interface that allows attackers to bypass authentication by replaying captured session tokens across new EC |
+| CVE-2026-114219 | 7.4 | n/a | NT OneAPP developed by NewType Infortech has a Hard-coded Credentials vulnerability. Unauthenticated remote attackers can obtain the hard-coded cryptographic key and decrypt login request contents, th |
+| CVE-2026-114221 | 7.4 | n/a | NT OneAPP developed by NewType Infortech has a Credential Disclosure vulnerability. Unauthenticated remote attackers can trigger an HTTP Basic Authentication challenge from an unvalidated source in th |
+| CVE-2026-114242 | 7.3 | n/a | A vulnerability was identified in dhikshitha29 Insurance-Management-System 91de5edda5baa109ad8e9baf03ce6a3ceda84183/125362cc21dca20d74091a4913a5096bb58dd837. Affected is the function mysqli_query of t |
+| CVE-2026-114243 | 7.3 | n/a | A security flaw has been discovered in dhikshitha29 Insurance-Management-System 91de5edda5baa109ad8e9baf03ce6a3ceda84183/125362cc21dca20d74091a4913a5096bb58dd837. Affected by this vulnerability is the |
+| CVE-2026-114249 | 7.3 | n/a | A vulnerability was detected in dhikshitha29 Insurance-Management-System 91de5edda5baa109ad8e9baf03ce6a3ceda84183/125362cc21dca20d74091a4913a5096bb58dd837. This vulnerability affects unknown code of t |
+| CVE-2026-114254 | 7.3 | n/a | A vulnerability was identified in oretnom23 file-management-system-php up to 2e3c1ebe60f121e8df4fb3f544f0e9591d9a01e4. This affects the function Login of the file admin_class.php. The manipulation of  |
+| CVE-2026-114255 | 7.3 | n/a | A security flaw has been discovered in oretnom23 file-management-system-php up to 2e3c1ebe60f121e8df4fb3f544f0e9591d9a01e4. This impacts the function save_user of the file admin_class.php of the compo |
+| CVE-2026-114256 | 7.3 | n/a | A weakness has been identified in oretnom23 file-management-system-php up to 2e3c1ebe60f121e8df4fb3f544f0e9591d9a01e4. Affected is the function save_folder/delete_folder/delete_file/file_rename/save_f |
+| CVE-2026-114257 | 7.3 | n/a | A security vulnerability has been detected in oretnom23 file-management-system-php up to 2e3c1ebe60f121e8df4fb3f544f0e9591d9a01e4. Affected by this vulnerability is the function readfile of the file d |
+| CVE-2026-114258 | 7.3 | n/a | A vulnerability was detected in oretnom23 file-management-system-php up to 2e3c1ebe60f121e8df4fb3f544f0e9591d9a01e4. Affected by this issue is some unknown functionality of the file files.php of the c |
+| CVE-2026-114259 | 7.3 | n/a | A flaw has been found in oretnom23 file-management-system-php up to 2e3c1ebe60f121e8df4fb3f544f0e9591d9a01e4. This affects the function save_files of the file admin_class.php. Executing a manipulation |
+| CVE-2026-114261 | 7.3 | n/a | A vulnerability was found in MomoTommy file-management-system dc9ce1bf27f94b23d906cb1e86ce374dc94ca5df. This issue affects the function index/store/update/destroy of the file app/Http/Controllers/File |
+| CVE-2026-114262 | 7.3 | n/a | A vulnerability was determined in file-management-system dc9ce1bf27f94b23d906cb1e86ce374dc94ca5df. Impacted is the function store of the file app/Http/Controllers/FileController.php. This manipulation |
+| CVE-2026-114263 | 7.3 | n/a | A vulnerability was identified in ProjectWorlds Advanced Library Management System 1.0. The affected element is the function mysqli_query of the file individual_report_search.php. Such manipulation of |
+| CVE-2026-114267 | 7.3 | n/a | A vulnerability was detected in SourceCodester Food Order Management System 1.0. Affected is an unknown function of the component Admin Endpoint. The manipulation results in missing authorization. The |
+| CVE-2026-114439 | 7.3 | n/a | A vulnerability was determined in oretnom23 php-travel-agency-system. Affected by this issue is some unknown functionality of the file admin/session.php of the component Session Handler. Executing a m |
+| CVE-2026-114440 | 7.3 | n/a | A vulnerability was identified in oretnom23 php-travel-agency-system. This affects an unknown part of the file admin/delete.php. The manipulation of the argument costomer_id/ticket_id/payment_id/id/do |
+| CVE-2026-114441 | 7.3 | n/a | A weakness has been identified in oretnom23 php-travel-agency-system. This issue affects some unknown processing of the file admin/update.php. This manipulation of the argument action/full_name/visa_n |
+| CVE-2026-114577 | 7.3 | n/a | A vulnerability was found in oretnom23 php-travel-agency-system. This vulnerability affects unknown code of the file admin/insert.php of the component Insertion Handler. The manipulation of the argume |
+| CVE-2026-110744 | 7.2 | n/a | A flaw was found in multicluster-global-hub-operator-bundle. The operator is configured with overly broad role-based access control (RBAC) permissions that grant cluster-wide impersonation of arbitrar |
+| CVE-2026-29001 | 7.2 | n/a | TastyIgniter through 4.4.5 contain a PHP object injection vulnerability that allows authenticated administrators to achieve arbitrary code execution by submitting a serialized PHP object as a settings |
+| CVE-2026-76293 | 7.2 | n/a | In Splunk Enterprise versions below 10.4.3, 10.2.8, 10.0.11, and 9.4.16, a user that holds a role with the edit_manager_xml capability could execute arbitrary operating-system commands using the permi |
+| CVE-2026-76307 | 7.2 | n/a | In Splunk SOAR versions below 8.7.0, a user that holds a role with the Users and Roles view permission could use the Representational State Transfer (REST) API to infer authentication token values for |
+| CVE-2026-114077 | 7.1 | 0.2% | Trigger.dev before 4.5.6 contains an authorization bypass vulnerability in createDeploymentBackgroundWorkerV4 that resolves a WorkerDeployment by friendlyId alone, without environment, project, or org |
+| CVE-2026-114664 | 7.1 | n/a | Frappe Framework before 16.33.0 contains a blind SQL injection vulnerability in the frappe.desk.doctype.event.event.get_events method, which fails to properly neutralize user-supplied input before inc |
+| CVE-2026-76496 | 7.0 | n/a | As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Expressway Series software engineering team has conducted a comprehensive internal security review. This revi |
 
 ## GitHub Security Advisories — new since yesterday
 | GHSA | CVE | Severity | Summary |
 |---|---|---|---|
-| GHSA-x439-gf26-v2wp | CVE-2026-96901 | unknown | The Cart Abandonment Recovery for WooCommerce  WordPress plugin before 2.2.0 does not verify the... |
-| GHSA-rgvg-xc9j-2jxv | CVE-2026-93856 | medium | In OpenStack Cinder through 29.0.0, cross-project information disclosure can occur in the... |
-| GHSA-q54c-xpfc-w532 | CVE-2026-92999 | unknown | The Click n Chat (Chat Widget Integration) WordPress plugin before 1.1.3 does not perform any... |
-| GHSA-xhvc-grwf-wxq3 | CVE-2026-92998 | unknown | The Click n Chat (Chat Widget Integration) WordPress plugin before 1.1.3 does not sanitise sort... |
-| GHSA-v5cq-8fvv-9wcc | CVE-2026-88784 | unknown | The Translate WordPress with Weglot 2.0  WordPress plugin before 6.4.3 does not escape the URLs... |
-| GHSA-hqf7-665r-7343 | CVE-2026-87838 | unknown | The Wava Payment Plugin WordPress plugin before 0.3.10 does not perform any authorisation, nonce... |
-| GHSA-8mpv-23rw-jfjx | CVE-2026-87837 | unknown | The Wava Payment Plugin WordPress plugin before 0.3.10 does not verify the authenticity of... |
-| GHSA-f9pm-pfcr-fr64 | CVE-2026-111956 | unknown | The WholesaleX  WordPress plugin before 3.0.9 does not protect or remove the user-import file it... |
-| GHSA-r6r9-jfqh-hrq2 | CVE-2026-111957 | unknown | The SUMIT Payment Gateway for WooCommerce WordPress plugin before 4.0.0 does not bind the payment... |
-| GHSA-xm5m-h552-37c3 | CVE-2026-111955 | unknown | The WholesaleX  WordPress plugin before 3.0.9 does not check that a stored account confirmation... |
-| GHSA-grh6-fqc7-f8f5 | CVE-2026-81813 | unknown | The Elementor Website Builder  WordPress plugin before 4.3.5 does not sanitize the text content... |
-| GHSA-4w7f-p9m2-jxgx | CVE-2026-85642 | unknown | The Formidable Forms  WordPress plugin before 7.0 does not verify the identity of the caller... |
-| GHSA-79v7-2xfm-2p77 | CVE-2026-111949 | unknown | The miniOrange 2FA  WordPress plugin before 6.3.1 does not prevent a pending passkey login from... |
-| GHSA-2f6h-f6g2-jxwq | CVE-2026-86611 | unknown | The Download Manager WordPress plugin before 3.3.71, Download Manager WordPress plugin before 7.5... |
-| GHSA-3846-mpmc-4v59 | CVE-2026-79627 | unknown | The Advanced File Manager  WordPress plugin before 6.0.0 does not correctly determine whether a... |
-| GHSA-mr45-fp3c-4768 | CVE-2026-92997 | unknown | The Click n Chat (Chat Widget Integration) WordPress plugin before 1.1.3 does not properly... |
-| GHSA-hrxv-m5x6-xfpv | CVE-2026-111596 | unknown | The Kliken: Ads + Pixel for Meta WordPress plugin before 1.2.3 does not verify that a visitor... |
-| GHSA-42jx-58g4-6w6f | CVE-2026-111947 | unknown | The Pricing Table WordPress Plugin  WordPress plugin before 4.1.3 does not perform authorisation... |
-| GHSA-cwqx-v6j9-jf65 | CVE-2026-81812 | unknown | The Elementor Website Builder  WordPress plugin before 4.3.5 does not sanitize uploaded SVG files... |
-| GHSA-7x28-fvqf-5c5h | CVE-2026-111948 | unknown | The User Profile Builder  WordPress plugin before 4.0.1 does not escape the current page URL... |
-| GHSA-fm6v-w7hr-3xm4 | CVE-2026-111574 | unknown | The Redirection for Contact Form 7 WordPress plugin before 3.2.12 does not sanitise or escape... |
-| GHSA-7phx-x376-59jf | CVE-2026-110982 | unknown | The AI Engine  WordPress plugin before 3.8.6 does not check that the caller is allowed to edit... |
-| GHSA-fq22-x2c4-x739 | CVE-2026-110514 | unknown | The WPZOOM Portfolio Lite  WordPress plugin before 1.4.34 does not check that a user is allowed... |
-| GHSA-84p5-6x2c-h74j | CVE-2026-15261 | unknown | The TI WooCommerce Wishlist WordPress plugin before 2.13.0 does not enforce the same owner-only... |
-| GHSA-cw23-46x9-m6xg | CVE-2026-108073 | unknown | The SureCart  WordPress plugin before 4.9.5 does not restrict which related objects an anonymous... |
+| GHSA-rhhx-6v4c-mf5v | CVE-2026-78392 | unknown | The Link Library WordPress plugin before 7.9.6 does not sanitise and escape a link field before... |
+| GHSA-3hr8-rx2p-fg8c | CVE-2026-97328 | unknown | The WebP Express WordPress plugin before 0.25.16 does not escape values that its bundled HTML... |
+| GHSA-x2jm-76mq-q2pc | CVE-2026-88849 | unknown | The MasterStudy LMS WordPress Plugin  WordPress plugin before 3.7.55 does not verify that a user... |
+| GHSA-v6pr-7m68-qg32 | CVE-2026-114570 | medium | WordPress Core is vulnerable to Stored Cross-Site Scripting via Quick Edit in all versions up to,... |
+| GHSA-fqh5-mr22-f9g4 | CVE-2026-109927 | unknown | The HIPAA Forms WordPress plugin before 3.3.2 does not perform a capability check when handling a... |
+| GHSA-m595-x4xx-r4vx | CVE-2026-100142 | unknown | The FluentCart A New Era of eCommerce  WordPress plugin before 2.2.0 does not verify that a... |
+| GHSA-47v3-4v4g-79h5 | CVE-2026-111972 | unknown | The Photo Engine (Media Organizer & Lightroom) WordPress plugin before 6.5.8 does not verify that... |
+| GHSA-9g52-cg59-7f5p | CVE-2026-111971 | unknown | The Photo Engine (Media Organizer & Lightroom) WordPress plugin before 6.5.8 does not sanitise... |
+| GHSA-cv43-3m98-pxjc | CVE-2026-109931 | unknown | The Infility Global WordPress plugin before 2.16.25 does not perform any authorisation or nonce... |
+| GHSA-r9xx-rhcx-ph2x | CVE-2026-110011 | unknown | The MB Custom Post Types & Custom Taxonomies WordPress plugin before 2.12.3 does not perform a... |
+| GHSA-vwmv-9mxc-35hf | CVE-2026-109987 | unknown | The PixelYourSite  WordPress plugin before 11.4.3, PixelYourSite Pro WordPress plugin before 12.6... |
+| GHSA-5h77-wc4p-vj34 | CVE-2026-111958 | unknown | The Royal MCP  WordPress plugin before 1.5.7 does not limit a preview-link token to the single... |
+| GHSA-95fw-7pmc-68c4 | CVE-2026-110010 | unknown | The MB Custom Post Types & Custom Taxonomies WordPress plugin before 2.12.3 does not perform any... |
+| GHSA-mq79-9v7w-xc5w | CVE-2026-103234 | unknown | The WP Ultimate Review WordPress plugin before 2.4.5 does not neutralise shortcodes in all of the... |
+| GHSA-3g57-fjv2-jxx4 | CVE-2026-114222 | medium | NT OneAPP developed by NewType Infortech has an Authentication Bypass vulnerability.... |
+| GHSA-899f-6cww-cvcv | CVE-2026-114223 | medium | NT OneAPP developed by NewType Infortech has an Exposure of Sensitive Information vulnerability.... |
+| GHSA-q6g4-8jxr-rp9c | CVE-2026-114219 | critical | NT OneAPP developed by NewType Infortech has a Hard-coded Credentials vulnerability.... |
+| GHSA-j3f5-7crv-v65c | CVE-2026-114220 | critical | NT OneAPP developed by NewType Infortech has an Improper Certificate Validation vulnerability.... |
+| GHSA-w9gq-v5qh-882r | CVE-2026-114221 | medium | NT OneAPP developed by NewType Infortech has a Credential Disclosure vulnerability.... |
+| GHSA-qc6m-xxcv-cwh2 | CVE-2026-114732 | medium | Roundcube Webmail before 1.6.20 and 1.7.x before 1.7.5 is affected by an improper authentication... |
+| GHSA-38c9-3phj-gg36 | CVE-2026-114729 | medium | Roundcube Webmail before 1.6.20 and 1.7.x before 1.7.5 is affected by a remote content blocking... |
+| GHSA-mpw2-q5qr-3w4j | CVE-2026-114731 | medium | Roundcube Webmail before 1.6.20 and 1.7.x before 1.7.5 is affected by an uncontrolled resource... |
+| GHSA-8f6h-w7cq-8q8h | CVE-2026-114730 | high | Roundcube Webmail 1.6.14 before 1.6.20 and 1.7.0 before 1.7.5 is affected by a server-side... |
+| GHSA-vqpp-w68q-p3f5 | CVE-2026-110354 | high | HAProxy 3 before 3.4.6 allows a remote unauthenticated attacker to cause a denial of service ... |
+| GHSA-xxh3-46q2-4vrc | CVE-2026-96392 | unknown | Improper Neutralization of Special Elements Used in a Template Engine vulnerability in Drupal AI... |
 
 ## Ransomware — new leak-site victim postings (ransomware.live)
 | Victim | Group | Country | Date |
 |---|---|---|---|
-| GSE-M Technology Sdn. Bhd. | bravox | MY | 2026-10-21T02:12:33.335286+00:00 |
-| Bruin Group LLC | emperador | US | 2026-10-21T01:55:09.972426+00:00 |
-| M... M... | SilentRansomGroup |  | 2026-10-20T20:05:34.681618+00:00 |
-| P... H... | SilentRansomGroup |  | 2026-10-20T20:04:24.366142+00:00 |
-| Graves Fireplaces, Inc. | Global Secret Group | US | 2026-10-20T19:53:23.930848+00:00 |
-| Asensus Surgical | Dark Project | US | 2026-10-20T17:53:03.802698+00:00 |
-| The Excalibur Group | Dark Project | US | 2026-10-20T17:52:21.347217+00:00 |
-| P...S...R... | SilentRansomGroup |  | 2026-10-20T16:56:29.357983+00:00 |
-| 51Ridge (Newark NJ hosting/IT) | N0n | US | 2026-10-20T13:59:48.673218+00:00 |
-| OpenText | Mimori | CA | 2026-10-20T13:45:09.514140+00:00 |
-| Aveva | Mimori | GB | 2026-10-20T13:44:30.016847+00:00 |
-| City Hall - Everett, MA | Booba Project | US | 2026-10-20T13:55:01.614958+00:00 |
-| City of Mt. Angel, Oregon | Booba Project | US | 2026-10-20T13:55:24.974692+00:00 |
-| Pearland Pediatrics | Booba Project | US | 2026-10-20T13:55:45.993462+00:00 |
-| Chicago Vein Institute | Booba Project | US | 2026-10-20T13:56:07.059848+00:00 |
-| Research Foundation of The City University of New York | Booba Project | US | 2026-10-20T13:56:28.213736+00:00 |
-| COASTAL CAROLINA NEUROPSYCHIATRIC CENTER, PA | Booba Project | US | 2026-10-20T12:21:07.013508+00:00 |
-| centralrogers.com | incransom | US | 2026-10-20T19:23:14.547366+00:00 |
-| Company #98 | N0n | ET | 2026-10-20T09:28:30.225343+00:00 |
-| Company #97 | N0n | TN | 2026-10-20T05:54:05.013090+00:00 |
+| Linebarger Goggan Blair & Sampson | everest | US | 2026-10-22T03:36:22.187070+00:00 |
+| K.r.a. ...s | SilentRansomGroup |  | 2026-10-22T01:30:31.743420+00:00 |
+| Gräfliches Hofbrauhaus Freising | lamashtu | DE | 2026-10-22T00:45:12.522650+00:00 |
+| VERGI Muenster | lamashtu | DE | 2026-10-22T00:44:36.019322+00:00 |
+| Heritage Senior Living | N0n | US | 2026-10-21T23:56:37.985836+00:00 |
+| FuG-Gruppe | lamashtu | DE | 2026-10-21T23:12:19.257551+00:00 |
+| MECA-PRECIS | lamashtu | FR | 2026-10-21T23:11:42.083695+00:00 |
+| WEPOS Chemie | lamashtu | DE | 2026-10-21T23:11:03.071755+00:00 |
+| bereskinparr.com smartbiggar.ca | incransom | CA | 2026-10-22T02:15:06.971498+00:00 |
+| K.r.. ...s | SilentRansomGroup |  | 2026-10-21T21:08:32.977462+00:00 |
+| novagroupgbc.com | BrainCipher | GB | 2026-10-21T20:55:59.593611+00:00 |
+| oflaherty-law.com | BrainCipher | IE | 2026-10-21T20:55:23.367768+00:00 |
+| clinicaromero.com | BrainCipher | AR | 2026-10-21T20:54:47.561918+00:00 |
+| sodali.com | BrainCipher | US | 2026-10-21T20:54:08.535201+00:00 |
+| srsnodgrass.com | BrainCipher | US | 2026-10-21T20:53:28.795043+00:00 |
+| prosomnus.com | BrainCipher | US | 2026-10-21T20:52:52.404024+00:00 |
+| olyortho.com | BrainCipher | US | 2026-10-21T20:52:16.151344+00:00 |
+| mvjllp.com | BrainCipher |  | 2026-10-21T20:51:40.629098+00:00 |
+| Hanjin Information Systems & Telecommunication Co., Ltd. | N0n | KR | 2026-10-21T19:54:47.947489+00:00 |
+| Coastal Alabama Community College | interlock | US | 2026-10-21T19:29:49.091231+00:00 |
 
 ## IOCs
 ### ThreatFox (recent, abuse.ch)
-| Indicator | Type | Malware |
-|---|---|---|
-| 102.220.161.230:425 | ip:port | win.tofsee |
-| 46.151.182.129:430 | ip:port | win.tofsee |
-| 102.220.161.230:430 | ip:port | win.tofsee |
-| 46.151.182.129:420 | ip:port | win.tofsee |
-| 102.220.161.230:420 | ip:port | win.tofsee |
-| 46.151.182.129:423 | ip:port | win.tofsee |
-| 102.220.161.230:423 | ip:port | win.tofsee |
-| 46.151.182.129:425 | ip:port | win.tofsee |
-| 8d31f0250660fee1e936b8de6fb3d05c059a00cb2e3fcbec475e46f48444d95b | sha256_hash | osx.amos |
-| https://ci.abblbet.org/v1/ | url | win.vidar |
-| 66c8c5608b33584b77762dfce9954f7282cc5d67836f6f03a78b8d0f5b22aa45 | sha256_hash | osx.amos |
-| 91.92.41.120:2026 | ip:port | win.remcos |
-| https://ci.abblbet.org/ar/ | url | win.vidar |
-| astp.africa.com | domain | win.asyncrat |
-| 2c5035d373762bfb96044a1b3fc9fce65f38025b771103d58a8621210e1d6855 | sha256_hash | osx.amos |
-| https://ci.abblbet.org/mz/ | url | win.vidar |
-| 156.240.41.136:8877 | ip:port | win.vshell |
-| 156.240.41.137:8877 | ip:port | win.vshell |
-| 156.240.41.133:8877 | ip:port | win.vshell |
-| 156.240.41.134:8877 | ip:port | win.vshell |
+_No data returned this run._
 
 ### URLhaus (recent malicious URLs, abuse.ch)
-| URL | Threat | Status |
-|---|---|---|
-| http://39.88.70.223:33717/i | malware_download | online |
-| http://112.242.63.35:36563/i | malware_download | online |
-| http://175.172.171.251:37806/bin.sh | malware_download | online |
-| http://24.191.64.49:37009/bin.sh | malware_download | online |
-| http://39.88.70.223:33717/bin.sh | malware_download | online |
-| http://60.19.210.229:58823/bin.sh | malware_download | online |
-| http://195.246.231.125:45876/b | malware_download | online |
-| http://195.246.231.125:45876/b.gz | malware_download | online |
-| http://153.76.163.75:8888/m.sh | malware_download | offline |
-| http://123.4.237.186:37220/i | malware_download | online |
-| http://195.85.114.192:8080/xmrig.tar.gz | malware_download | offline |
-| http://46.16.34.248:24381/bins/payloads/o.xml | malware_download | offline |
-| http://159.223.92.101/sysupdate.apk | malware_download | offline |
-| http://166.0.100.70/poc.xml | malware_download | offline |
-| https://metrics-relay.net/agent.gz | malware_download | online |
-| http://58.253.129.91:46735/i | malware_download | online |
-| https://github.com/Aakanksha011/Personalised-TODO-with-AI/raw/master/creatrix/Personalised-TOD-with-AI-v1.9.zip | malware_download | online |
-| http://195.85.114.192/xmrig.tar.gz | malware_download | online |
-| http://94.154.43.37/l_mips.sh | malware_download | offline |
-| https://node-status-sync.net/agent.gz | malware_download | online |
+_No data returned this run._
 
 ### MalwareBazaar (recent samples, abuse.ch)
-| SHA256 | File type | Signature |
-|---|---|---|
-| f2c4b5291a531b411d8b7414ca3bd741304fb72235ee16dfd23c8d8e2bad01c1 | Bitsight | n/a |
-| 9bf680e3edfbb245d5abce4d81ccf31f7afaf65a44da82bab73a4dcbc9b7fd3f | Bitsight | n/a |
-| b3aeb1895d497230d433d7e9a7e3dba49be39d9b78be7ebd6efa32ef73f9b985 | Bitsight | n/a |
-| 405fa135b6bf920b21791936965ceb1d61504869a1c748db7ce7ce838d72e538 | Bitsight | n/a |
-| cbf806ad0896c9ee40e9cbbc959630a1b4cb70429de40d08d9010a2da26522ea | lowmal3 | n/a |
-| 875f6a62a688be65218a01734a35984772f9f0c613101c97ab7f826cf292d3ec | Bitsight | CoinMiner |
-| af97a21425a18a86fe7310e4c96616fb8b6fffb03df0b1c0b4edf235989722b4 | lowmal3 | n/a |
-| 266ed3c21bfcf9002396fc9457ce9a35bc5b42e83d2e8ff8ab9526aae0d0df9d | abuse_ch | n/a |
-| 8c95c07d55959731bc6649916f1947c5a6d1ffeab2d4a0fe4d7d87d6ffda5dc7 | abuse_ch | Mirai |
-| 97ca6a10020c8a44a17f75ffd56cf21867ac70dc3cc11317a8d5b88e5d6109f9 | abuse_ch | Mirai |
-| 3e001959d739a0863ee841795a449fc80d8d185374a19b6509a65ae5960e7da1 | abuse_ch | Mirai |
-| 754fb80ed6d976d4505b9a405db94326fa0389f5bc9e838163d9b2ca7aea555f | Bitsight | n/a |
-| a96995f324d2eaacb92edf3f7337ebabbef17f6032bfab59e9cca922a2f45864 | Bitsight | n/a |
-| dc123e0b175af0705b536808884d9365e155f523e6bf1ba7e3a365ae13f387d7 | c4ffeine | n/a |
-| 0d0509d786d37000bad5ac3efbf18556e26a5430d00413427ed6f169a0b9baad | abuse_ch | n/a |
-| 898a138ef42c7846cd641bd8406a9ec940991b26113389bbc847648a76cf104c | abuse_ch | n/a |
-| 4b131b802b89561b8deb26a06cd6d73fc209420c3bb7b6503d8d84649cc2467f | abuse_ch | ConnectWise |
-| fb400cd6def8ec282a15fe269f100b71d0bf91c26c714e864430f3103a80d728 | Bitsight | CoinMiner |
-| fa2e33c7b781c4491ea42391d015e8c3dc6780de202d0950cf5a8cf73c8b960d | Bitsight | n/a |
-| a045b2b66aa63b74141000485105a468629693951dee8de272425e3543fd0cbf | Bitsight | n/a |
+_No data returned this run._
 
 ### Feodo Tracker (active botnet C2 IPs, abuse.ch)
 | IP | Malware |
@@ -700,75 +191,96 @@ _Sorted by CVSS (highest first). EPSS = probability of real-world exploitation i
 ### IPsum (IPs flagged by 5+ independent blocklists)
 | IP | Lists flagging it |
 |---|---|
-| 77.90.185.20 | 11 |
+| 138.226.239.233 | 12 |
+| 138.226.239.234 | 12 |
+| 58.182.58.128 | 10 |
+| 77.90.185.20 | 10 |
+| 80.94.95.115 | 10 |
 | 152.32.225.117 | 10 |
 | 160.250.132.238 | 10 |
-| 167.94.146.51 | 10 |
 | 2.57.122.238 | 9 |
-| 45.137.194.154 | 9 |
-| 66.132.172.142 | 9 |
+| 45.43.36.172 | 9 |
+| 45.148.10.141 | 9 |
+| 46.151.178.14 | 9 |
+| 66.132.195.104 | 9 |
+| 80.94.95.116 | 9 |
 | 103.159.2.113 | 9 |
-| 103.159.51.70 | 9 |
-| 167.94.146.62 | 9 |
-| 190.171.189.85 | 9 |
-| 193.24.211.219 | 9 |
-| 16.5.0.197 | 8 |
-| 16.5.0.217 | 8 |
-| 36.66.16.233 | 8 |
-| 45.148.10.151 | 8 |
-| 45.172.152.74 | 8 |
-| 46.151.178.14 | 8 |
-| 50.221.56.52 | 8 |
-| 51.68.226.87 | 8 |
+| 107.150.123.48 | 9 |
+| 167.94.146.54 | 9 |
+| 167.94.146.59 | 9 |
+| 169.239.75.138 | 9 |
+| 195.178.110.228 | 9 |
+| 216.180.246.143 | 9 |
 
 ### OpenPhish (live phishing URLs)
-- https://nus.nbt.mybluehost.me/website_9f694753/055/Newcorreos%20(1)/cc/login.php?clckid=4e6f526c
-- https://www.roblox.com.ml/users/346612762043/profile
-- https://sp20ct10-davrelo-biz-kunima.pages.dev/send_appeal_request
-- https://sp18ct10-nurlek-biz-zavuno.pages.dev/send_appeal_request
-- https://cont17ct-suneri-biz-mavok-telra.pages.dev/send_appeal_request
-- https://mavzelo-mpt-firqanu-r6x9pe27.pages.dev/send_appeal_request
-- https://sp18ct10-burvak-biz-qazelo.pages.dev/send_appeal_request
-- https://sp11ct-renvok-biz8-zelmir-panvek.pages.dev/send_appeal_request
-- https://cont17ct-keluna-biz-vemor-tazli.pages.dev/send_appeal_request
-- https://marnavi-kxt-belfavi-c5x9dw32.pages.dev/send_appeal_request
-- https://sp11ct-melsar-biz8-ronvek-ladrix.pages.dev/send_appeal_request
-- https://vormela-kxt-zarveta-r9t6fc13.pages.dev/send_appeal_request
-- https://sp11ct-monzar-biz8-frenok-lavtri.pages.dev/send_appeal_request
-- https://sp11ct-varsik-biz8-melzor-tranek.pages.dev/send_appeal_request
-- https://sp11ct-ronmel-biz8-kastor-velnix.pages.dev/send_appeal_request
-- https://sp11ct-vasrel-biz8-cormix-jalven.pages.dev/send_appeal_request
-- https://sp11ct-selvik-biz8-tormex-janlor.pages.dev/send_appeal_request
-- https://sp26ct-nulvo-biz-kesma-rutik.pages.dev/send_appeal_request
-- https://sp18ct10-warnok-biz-lavemi.pages.dev/send_appeal_request
-- https://sp26ct-kurva-biz-zemik-lorta.pages.dev/send_appeal_request
+- https://www.anz-internetbanking.blogspot.com/
+- http://www.authenticateuseridentity.vercel.app/
+- https://aminu-gal-expenses.netlify.app/
+- http://sp28ct-dureq-biz-qamel-ranek.pages.dev/
+- https://sp26ct10-zulvako-biz-taremi.pages.dev/
+- https://lfax-y8p8-5gbqr3-l2gc4j-89bu.pages.dev/
+- https://sp28ct-garem-biz-zumel-qitek.pages.dev/
+- https://murvik-tensha-e4a8d1-gb1504hh-h2406wne.pages.dev/
+- http://sp24ct-nelo-biz-kavor-muki.pages.dev/
+- http://qavfari-mpt-xelzoro-k6d3pe95.pages.dev/
+- http://b00j6-ec8l0f-kv2u-vfpn-tn4.pages.dev/
+- http://sp20ct10-korvemo-biz-lunati.pages.dev/
+- https://index-catty-neww.vercel.app/
+- http://sp28ct-dunav-biz-zorel-qatek.pages.dev/
+- http://sp28ct-fanur-biz-qozem-vitek.pages.dev/
+- https://sp28ct-vunor-biz-qalem-zirek.pages.dev/
+- http://sp26ct10-davmelo-biz-kunati.pages.dev/
+- https://sp26ct10-melvemi-biz-dunaro.pages.dev/
+- http://sp26ct10-rumrako-biz-lumeni.pages.dev/
+- https://sp26ct10-velvako-biz-kumari.pages.dev/
 
 ### PhishStats (recent phishing/malicious URLs, scored)
-_No data returned this run._
+| Score | URL |
+|---|---|
+| N/A | https://marviel.cfd/LOGIN/#/index |
+| N/A | https://aexshorthood.cactx5.info/2ymmlo/hepe |
+| N/A | https://away.vk.ru/away.php?rh=0345a4bb-0023-4208-a6f6-c0bc1a8f19cc |
+| N/A | https://vercel.com/login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Finterface-uniswap.vercel.app%252F%26nonce%3D075b953ad0adf80efa4be00066bbf7082182804c41537885a9b5100223ed9f6d |
+| N/A | https://away.vk.ru/away.php?rh=6310a8da-5f51-4a72-8dc9-e3ae6a109c60 |
+| N/A | https://away.vk.ru/away.php?rh=77a89a3f-e23d-422a-9a49-eccf82355964 |
+| N/A | https://pageseuc1.actmkt.com/(S(v3tbshwf3r4az1xxveyzfqpv))/l/c5X8MfZz6j9Y7Fto3LAd |
+| N/A | https://41brtx.share-na2.hsforms.com/2BvjHv7K_S5y9Rn6E3_IlcQ |
+| N/A | https://away.vk.ru/away.php?rh=b3412063-356e-4ac2-a271-50a38dc65c45 |
+| N/A | https://away.vk.ru/away.php?rh=4d86c81e-299c-4e35-90e6-d10bc5a121fc |
+| N/A | https://away.vk.ru/away.php?rh=891003d1-cf17-40e4-bb44-b9b09cce7a3d |
+| N/A | https://prime-clients-be.com/index.php |
+| 4.8 | http://43.156.0.130/v3/signin/identifier?amp%3Bfollowup=https%3A%2F%2Faccounts.google.com%2F&amp%3Bifkv=AQMjQ7TPKu6R4w93VRXMPKeD3zeOl4EoNrOdcsDBPMv7m30JK47iKcBvHB2Y608BaGxX8bX4kwt6sA&amp%3Bpassive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AWt06SQkU12tbFCo9V93QhlLU3bgY-kLS4wLAJoneMhCXVmjvyXhtE0HvuROThN-DcnVnKMQitOOTg&dsh=S369322616%3A1792652412404830 |
+| N/A | https://2fjf69.share-eu1.hsforms.com/2A1lEkELGQaCl24Ck9MBMfQ |
+| N/A | https://yandex.ru/showcaptcha?cc=1&form-fb-hint=2.1&mt=C2EE0C67D70DF2E344800894603C7440980E91735639110C9DFD4BFC2498CEE123E30496502EF2D18868648888AB1BC34CDA98C3E2E3C835849F35C5614C47DBB025833B11735C1F18C447AFA43B0EF720BB03BA1EA832B8A4985EB16C872A4923A29EBB48AFECAF3015B92EA20FE011C51505CF56D3E00A1CEA5C4DF275F44F1F70563D8F858CCFD8&retpath=aHR0cHM6Ly95YW5kZXgucnUvc2VhcmNoP3RleHQ9MjExNjg3MTc%2C_9e32ea590f1152ceb4677b92f96f1e0c&t=2%252F1792651980%252Fa68fa022c94e12e3023832a8a5ac3507&u=9622373488597846614&s=4cbfeaa2e446595073e915952bea1fd1 |
+| N/A | https://apps-uuser433accepts.start.page/ |
+| 7.7 | http://43.156.0.130/v3/signin/identifier?amp%3Bfollowup=https%3A%2F%2Faccounts.google.com%2F&amp%3Bifkv=AaSxoQyQ_ZSuXpSvue0UfKrOXnU6mQAuN0RcLmvWGTqSCzhKlOsPyDT7wQQH6ra2Rhdw1PE87iTB&amp%3Bpassive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AWt06SRkQessjzU6jtJlAqvPnQeKUv4-6eOsCLHYfXn-lgsrxqG7gPorXRjTbxzIaFm7r_ftgO7Fyg&dsh=S556430177%3A1792651810300291 |
+| N/A | https://away.vk.ru/away.php?rh=bd1efd4c-6551-470d-9f4b-23a04e05caed |
+| N/A | https://xml-v4.pushub.net/click?i=kDigrfMKviI_0 |
+| N/A | https://away.vk.ru/away.php?rh=c2594cee-266a-47cc-84f6-bcd28ea8caec |
 
 ### SSL Blacklist (abuse.ch — certs tied to malware/botnet C2)
 | SHA1 | Info |
 |---|---|
+| 79928c5b3aaa3ea9d05750ba6b2af2aa6cbea154 | PureRAT C&C |
+| 7a5cbff9325f0ca3de3f020b3ba02e51390807cf | Malware C&C |
+| 7ed29169b508169575d0d26850aca8a93044067c | QuasarRAT C&C |
+| 082cdbff4a21322dcf87bbc200976465f072ae6e | QuasarRAT C&C |
+| a546ecee7425b15ec2b0b63cd012b897d627cdc9 | ConnectWise C&C |
+| 815ef869856dfa28c55e7c5e07f1d0cce6a4e426 | ConnectWise C&C |
+| 9eabf92b1ca6728e2a32c3a090b11c177ac686c3 | ConnectWise C&C |
+| ad4757ff933072cc46f34e8c2935df4a2835905f | OffLoader C&C |
+| be6dd6d95188274b338310b78e2bc1315a90f64f | PureLogsStealer C&C |
+| c5dac4c5a4feb2fec8886ae4e28e8c9bb87b19e9 | Vidar C&C |
+| e4c69c59c688b6b22688718fd601e7a3bc6e2c8a | OffLoader C&C |
+| c2cc28a75ec95c7f4109d6af0e02b9c1273fb774 | Vidar C&C |
+| ee44c0aa609918ca30691fe0f49b87945d450bcd | Malware C&C |
+| 3f00a128af6109bb4ba928f2a73caeb1820f561d | Malware C&C |
+| e86dd566921f2733639879ecd1a3be715644cec6 | PureLogsStealer C&C |
+| 5c5c6ce618ac3209dcb239bafd6151d86ca490b4 | OffLoader C&C |
+| 107c3b396e9e46f137c02484e2fdcf9b59d99daa | QuasarRAT C&C |
 | 498a4921e2950bf327566b8bc94ebe88188ba48e | Meterpreter C&C |
 | c0af8a04dbfca38a9c436cac6afe37edf603a2a8 | Malware C&C |
 | 891676e8c7f77b79942835d2079e1ea1bcb6a7ae | PureRAT C&C |
-| 4c39539092e64bddb231466dd8cce629b0ab53fc | Vidar C&C |
-| f142b6f4bf3a29d39c2491bdca1e7f7bf5a06d1b | Vidar C&C |
-| 700d7a5261f2ea5f9f4777e37cf2cb68518ae919 | Vidar C&C |
-| 1c7f33ad355642475fd0ce679cd224ea3b2709ab | Vidar C&C |
-| e10fe9007408391e4c3a808ae4b7c4cb6e7df1a3 | OnyxC2 C&C |
-| 9061737b3e3cb6dae0a02abe33346d72ccd27af4 | RatonRAT C&C |
-| 59fb8a90649cac57e345fbd3af9f76d6a73fac12 | OffLoader C&C |
-| 9a2205a15c886d6278d9e0d60747e8ad287b6c7b | PureLogsStealer C&C |
-| 75964711a6e10849d232b5df09f428a4eaa48a68 | PureRAT C&C |
-| 9001ac2344ddd1b2e32f5d25b5e56b323e6fc862 | Vidar C&C |
-| 38151a6b2438b2b645a27a891e1e15786f11a783 | PureLogsStealer C&C |
-| eaefd82da94ee8839666b2a42d24dcc412d7de3c | Malware C&C |
-| e2234aa66c80b118b69211f6e8f4efbd578a7587 | PureLogsStealer C&C |
-| e2dbc11a546d739d12e547c38cdb4fd6cfacd4c4 | PureLogsStealer C&C |
-| b97f1ae860fce04e1aae480e10b884da9826b17b | PureLogsStealer C&C |
-| 97001686e56437dda319c71d5b0deeb8647de6e3 | QuasarRAT C&C |
-| ad71014e839f794407e155508ce8ba98bf9556f7 | PureRAT C&C |
 
 ### Spamhaus DROP (hijacked/leased malicious netblocks)
 - 1.10.16.0/20
@@ -794,145 +306,158 @@ _No data returned this run._
 
 ### blocklist.de (recent SSH/mail/web attack sources)
 - 1.10.160.143
-- 1.117.73.220
+- 1.117.72.220
 - 1.12.36.175
+- 1.12.48.131
+- 1.12.55.42
 - 1.12.55.80
-- 1.12.70.212
-- 1.14.110.231
 - 1.14.240.247
 - 1.14.94.193
 - 1.14.97.120
 - 1.15.106.134
 - 1.15.14.87
 - 1.15.179.199
-- 1.15.221.192
 - 1.15.30.237
+- 1.152.109.139
 - 1.159.54.33
 - 1.162.208.58
 - 1.174.232.253
 - 1.179.44.7
-- 1.187.169.38
-- 1.20.104.8
+- 1.212.225.99
+- 1.214.214.114
 
 ### CINS Army (poorly-rated IPs)
-- 1.14.149.30
-- 1.215.138.43
-- 1.24.16.159
-- 1.24.16.21
-- 1.24.16.28
-- 1.24.16.40
-- 1.24.16.43
-- 1.24.16.8
-- 1.24.16.91
+- 1.12.229.231
+- 1.145.89.105
+- 1.168.172.140
+- 1.183.41.171
+- 1.188.100.173
+- 1.214.29.155
+- 1.215.43.201
+- 1.221.65.174
+- 1.24.16.111
+- 1.24.16.134
+- 1.24.16.139
+- 1.24.16.151
+- 1.24.16.182
+- 1.24.16.35
+- 1.24.16.42
+- 1.24.16.59
+- 1.24.16.88
+- 1.24.16.98
+- 1.24.16.99
 - 1.24.24.66
-- 1.30.80.145
-- 1.34.143.217
-- 1.58.108.110
-- 1.83.125.105
-- 1.83.125.156
-- 1.83.125.225
-- 1.83.125.227
-- 1.83.125.231
-- 1.83.125.44
-- 1.83.125.79
 
 ## News (last ~36h, across outlets)
 ### The Hacker News
-- [State Bank of India Confirms Data Leak After 3,897 Customer Records Found on Dark Web](https://thehackernews.com/2026/10/state-bank-of-india-confirms-data-leak.html)
-- [CISA Orders Federal Agencies to Patch Exploited Plex2Shell, Siemens, and SiteGuard Flaws](https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html)
-- [Hackers Hid Vasilek Backdoor in VMware Tools During 2-Year Russian Healthcare Intrusion](https://thehackernews.com/2026/10/hackers-hid-vasilek-backdoor-in-vmware.html)
+- [China-Linked Hackers Use ARTEX AI Agents in ConnectWise Supply Chain Attack](https://thehackernews.com/2026/10/china-linked-hackers-use-artex-ai.html)
+- [Critical GitLab Flaw (CVSS 10.0) Could Allow Unauthenticated RCE Across 12 Years of Releases](https://thehackernews.com/2026/10/critical-gitlab-flaw-cvss-100-could.html)
+- [LiteLLM Compromised in Supply Chain Attack Delivering Credential Stealer and Backdoor](https://thehackernews.com/2026/10/litellm-compromised-in-supply-chain.html)
+- [OpenAI's GPT-6 Agent Removed Safety Monitoring, Then Falsely Denied Doing So](https://thehackernews.com/2026/10/openais-gpt-6-agent-removed-safety.html)
+- [PHP Issues Emergency Patches for Two Critical PHP2Shell RCE Flaws as Exploit Attempts Emerge](https://thehackernews.com/2026/10/php-issues-emergency-patches-for-two.html)
+- [Google Chrome Adds ClickFix Warnings to Stop Users From Running Malicious Commands](https://thehackernews.com/2026/10/google-chrome-adds-clickfix-warnings-to.html)
+- [China-Aligned Bronze Sandcastle Abuses Sandboxie DLL Sideloading to Deploy Backdoors](https://thehackernews.com/2026/10/china-aligned-bronze-sandcastle-abuses.html)
+- [Generative AI Is Erasing Behavioral Tells, Weakening Behavior-Only Detection, Proofpoint Reports](https://thehackernews.com/2026/10/generative-ai-is-erasing-behavioral.html)
+- [PHP2Shell: What Actually Protects You Before the 14:00 UTC PHP RCE Patch, and What Doesn't](https://thehackernews.com/2026/10/php2shell-what-actually-protects-you.html)
+- [The Harness Is the Hard Part of Agentic Pentesting](https://thehackernews.com/2026/10/the-harness-is-hard-part-of-agentic.html)
+- [Attackers Hijacked Over 300 Tor Exit Relays to Intercept SSH Connections](https://thehackernews.com/2026/10/attackers-hijacked-over-300-tor-exit.html)
 - [PHP2Shell: Two Unpatched Critical PHP RCE Flaws (CVSS 9.2) Trigger Emergency Security Alert](https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html)
-- [Eight eMudhra CA Keys Compromised, Triggering Emergency Fixes Across Browsers and Software](https://thehackernews.com/2026/10/eight-emudhra-ca-keys-compromised.html)
-- [Critical FortiSIEM Flaw Gets Public Exploit PoC for Unauthenticated Remote Code Execution](https://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html)
-- [Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA](https://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html)
-- [Hackers Use Autonomous AI Agents to Breach Company Websites, Target Over 1,200 Sites](https://thehackernews.com/2026/10/hackers-use-autonomous-ai-agents-to.html)
-- [Pegasus Spyware Infection Confirmed on Serbian University Rector's iPhone Days Before Election](https://thehackernews.com/2026/10/pegasus-spyware-infection-confirmed-on.html)
-- [WhatsApp Hid Instructions in Help Pages Telling Its AI Chatbot Not to Recommend Privacy Regulators](https://thehackernews.com/2026/10/whatsapp-hid-instructions-in-help-pages.html)
-- [What Security Teams Can Do To Tame Wild Code](https://thehackernews.com/2026/10/what-security-teams-can-do-to-tame-wild.html)
-- [Go Issues Emergency Update Blocking Eight CA Keys Over Undisclosed Security Concerns](https://thehackernews.com/2026/10/go-issues-emergency-update-blocking.html)
-- [Russian APT28 Breaches NATO Naval Shipbuilder in NATO Country, Deploys New Reflective Loader](https://thehackernews.com/2026/10/russian-apt28-breaches-nato-naval.html)
-- [ConnectWise Resets Credentials as Cloud Backup Remains Offline After Security Incident](https://thehackernews.com/2026/10/connectwise-resets-credentials-as-cloud.html)
-- [Hackers Hijack Five OVHcloud CLI Releases to Distribute Secret-Stealing Malware](https://thehackernews.com/2026/10/hackers-hijack-five-ovhcloud-cli.html)
+- [Attackers Abuse UpdraftCentral Keys to Plant Backdoors on WordPress Sites](https://thehackernews.com/2026/10/attackers-abuse-updraftcentral-keys-to.html)
+- [U.S. Orders DeepSeek Removed From Federal Civilian Systems, Bans New Purchases](https://thehackernews.com/2026/10/us-orders-deepseek-removed-from-federal.html)
+- [State Bank of India Confirms Data Leak After 3,897 Customer Records Found on Dark Web](https://thehackernews.com/2026/10/state-bank-of-india-confirms-data-leak.html)
 
 ### BleepingComputer
+- [Google Chrome adds Gemini-powered scam detection, warns users of ClickFix attacks](https://www.bleepingcomputer.com/news/google/google-chrome-adds-gemini-powered-scam-detection-warns-users-of-clickfix-attacks/)
+- [Japan's Onamae Desktop Cloud hacked, up to 27,000 servers affected](https://www.bleepingcomputer.com/news/security/japans-onamae-desktop-cloud-hacked-up-to-27-000-servers-affected/)
+- [Lazarus hackers use post-quantum cryptography for malware delivery](https://www.bleepingcomputer.com/news/security/lazarus-hackers-use-post-quantum-cryptography-for-malware-delivery/)
+- [CISA: Hackers chain Plex flaws in Plex2Shell attacks to breach servers](https://www.bleepingcomputer.com/news/security/cisa-hackers-chain-plex-flaws-in-plex2shell-attacks-to-breach-servers/)
+- [OpenAI agents disabled safety monitoring, one lied about it](https://www.bleepingcomputer.com/news/security/openai-agents-disabled-safety-monitoring-one-lied-about-it/)
+- [PHP ships emergency patches for critical PHP2Shell flaws](https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/)
+- [ClickFix has never been bigger, and AI tools are its most convincing lure yet](https://www.bleepingcomputer.com/news/security/clickfix-has-never-been-bigger-and-ai-tools-are-its-most-convincing-lure-yet/)
+- [Microsoft PowerToys adds CursorHide, Button Lock mouse tools](https://www.bleepingcomputer.com/news/microsoft/microsoft-powertoys-adds-cursorhide-button-lock-mouse-tools/)
+- [Microsoft says October updates didn’t actually fix VPN issues](https://www.bleepingcomputer.com/news/microsoft/microsoft-didnt-actually-fix-vpn-issues-caused-by-windows-updates/)
+- [CISA: SafePay ransomware hit over 600 critical infrastructure orgs](https://www.bleepingcomputer.com/news/security/cisa-and-fbi-safepay-ransomware-has-hit-over-600-critical-infrastructure-organizations/)
 - [Stolen UpdraftCentral keys used to backdoor WordPress sites](https://www.bleepingcomputer.com/news/security/stolen-updraftcentral-keys-used-to-backdoor-wordpress-sites/)
 - [Mozilla, Google, Apple block compromised eMudhra CA certificates](https://www.bleepingcomputer.com/news/security/mozilla-google-apple-block-compromised-emudhra-ca-certificates/)
 - [PHP warns admins of two critical flaws, emergency patches coming tomorrow](https://www.bleepingcomputer.com/news/security/php-warns-admins-of-two-critical-flaws-emergency-patches-coming-tomorrow/)
-- [Zeabur shutting down after second security breach in two months](https://www.bleepingcomputer.com/news/security/zeabur-shutting-down-after-second-security-breach-in-two-months/)
-- [OpenAI says GPT-6.1 Sol is dramatically better at migrating legacy code](https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-gpt-61-sol-is-dramatically-better-at-migrating-legacy-code/)
-- [DHS bans DeepSeek products across US federal civilian agencies](https://www.bleepingcomputer.com/news/security/dhs-bans-deepseek-products-across-us-federal-civilian-agencies/)
-- [CJIS v6.1 Compliance: 5 Practical Priorities for Agencies](https://www.bleepingcomputer.com/news/security/cjis-v61-compliance-5-practical-priorities-for-agencies/)
-- [Hacker gets 8 years for stealing $3.3 million from taxpayers](https://www.bleepingcomputer.com/news/security/hacker-gets-8-years-for-stealing-33-million-from-taxpayers/)
-- [Windows Server 2025 gets support for quick machine recovery](https://www.bleepingcomputer.com/news/microsoft/windows-server-2025-gets-support-for-quick-machine-recovery/)
-- [OVHcloud CLI releases backdoored on GitHub to steal developer secrets](https://www.bleepingcomputer.com/news/security/ovhcloud-cli-releases-backdoored-on-github-to-steal-developer-secrets/)
-- [Ahold Delhaize: Cyberattack affects services across US and Europe](https://www.bleepingcomputer.com/news/security/ahold-delhaize-cyberattack-affects-services-across-us-and-europe/)
-- [Revolut outage disrupts online banking operations worldwide](https://www.bleepingcomputer.com/news/security/revolut-outage-disrupts-online-banking-operations-worldwide/)
-- [Nikkei discloses third data breach in a month, 1.8M records exposed](https://www.bleepingcomputer.com/news/security/nikkei-discloses-third-data-breach-in-a-month-18m-records-exposed/)
-- [WordPress SEO plugin Rank Math compromised to backdoor websites](https://www.bleepingcomputer.com/news/security/wordpress-seo-plugin-rank-math-compromised-to-backdoor-websites/)
 
 ### Krebs on Security
-_No new items / feed unavailable this run._
+- [Widespread PHP Flaw May Cause Many Site Outages Today](https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/)
 
 ### Dark Reading
+- [UAE Transitions 50% of Gov't Services to Agentic AI](https://www.darkreading.com/cybersecurity-operations/uae-transitions-50-government-services-agentic-ai)
+- [TiDB Breach Exposes Flawed Cloud Security Assumptions](https://www.darkreading.com/cloud-security/tidb-breach-flawed-cloud-security)
+- [Marvell, Microsoft &amp; Oracle Work to Standardize Data Center Hardware Security](https://www.darkreading.com/cloud-security/marvell-microsoft-oracle-standardize-data-center-hardware-security)
+- [Cloud Security Alliance Survey Finds Data Loss Prevention Often Detects Data Loss Only After It Happens](https://www.darkreading.com/cloud-security/cloud-security-alliance-survey-data-loss-prevention-detects-data-loss)
+- ['PHP2Shell' Bugs Signal Red Alert for Security Industry](https://www.darkreading.com/application-security/php2shell-bugs-red-alert-security-industry)
+- [OVHcloud GitHub Compromise Tied to GlassWorm Threat Actors](https://www.darkreading.com/cyberattacks-data-breaches/ovhcloud-github-compromise-glassworm-threat-actors)
+- [Optiv Launches CyberBOT Cybersecurity Awareness Training Program](https://www.darkreading.com/cybersecurity-operations/optiv-launches-cyberbot-cybersecurity-awareness-training-program)
+- [Survey Finds High-Profile Executives Feel Untouchable as Digital Exposure Turns Into Physical Risk](https://www.darkreading.com/cybersecurity-operations/360-privacy-survey-high-profile-executives-feel-untouchable)
+- [Decades-Old Windows Utility Powers Modern ClickFix Attack](https://www.darkreading.com/cyberattacks-data-breaches/decades-old-windows-utility-modern-clickfix-attack)
 - [Tech Giants Block eMudhra Certificates Tied to 8 Compromised Keys](https://www.darkreading.com/cyber-risk/tech-giants-emudhra-certificates-compromised-keys)
-- [Ex-OpenAI Engineer Detained After Planting Secret Recorder at HQ](https://www.darkreading.com/insider-threats/ex-openai-engineer-secret-recorder-saudi-ties)
-- [Close Identity Gaps in Software Development Before Unleashing AI](https://www.darkreading.com/application-security/close-identity-gaps-sdlc-before-ai)
-- [Hackers Abuse AI Pen-Test Tool Cairn to Automate Massive Attack Spree](https://www.darkreading.com/cyberattacks-data-breaches/hackers-abuse-ai-pen-test-tool-cairn)
-- [Researchers Infiltrate Microsoft Tech Support Scam Operation](https://www.darkreading.com/threat-intelligence/microsoft-tech-support-scam-operation)
 
 ### SecurityWeek
-- [PHP2Shell: Mass Exploitation Looms for Leaked Critical PHP Flaws](https://www.securityweek.com/php2shell-mass-exploitation-looms-for-leaked-critical-php-flaws/)
-- [Hijacked Developer Account Used to Plant Stealer in OVHcloud CLI](https://www.securityweek.com/hijacked-developer-account-used-to-plant-stealer-in-ovhcloud-cli/)
-- [Accenture, Dragos, SANS Launch $10M Initiative to Defend Small US Utilities](https://www.securityweek.com/accenture-dragos-sans-launch-10m-initiative-to-defend-small-us-utilities/)
-- [US Agencies Detail Incident Response Practices for Rogue AI Agents](https://www.securityweek.com/us-agencies-detail-incident-response-practices-for-rogue-ai-agents/)
-- [AOMEI Backupper Compromised in Short-Burst Supply Chain Campaign](https://www.securityweek.com/aomei-backupper-compromised-in-short-burst-supply-chain-campaign/)
-- [The Key to AI Software Security Isn’t Speed, It’s Maturity](https://www.securityweek.com/the-key-to-ai-software-security-isnt-speed-its-maturity/)
-- [Ahold Delhaize Restoring Services Disrupted by Cyberattack](https://www.securityweek.com/ahold-delhaize-restoring-services-disrupted-by-cyberattack/)
-- [AI Platform Cairn Abused to Hack Over 100 Organizations](https://www.securityweek.com/ai-platform-cairn-abused-to-hack-over-100-organizations/)
-- [Ex-OpenAI Worker Accused of Bugging Conference Room Planned to Fly to Saudi Arabia, Prosecutors Say](https://www.securityweek.com/ex-openai-worker-accused-of-bugging-conference-room-planned-to-fly-to-saudi-arabia-prosecutors-say/)
-- [Microsoft Targets Rogue AI Agents With Dynamic Permissions, Risk Scoring](https://www.securityweek.com/microsoft-targets-rogue-ai-agents-with-dynamic-permissions-risk-scoring/)
+- [Oracle Patches Over 1,200 Vulnerabilities With October 2026 CPU](https://www.securityweek.com/oracle-patches-over-1200-vulnerabilities-with-october-2026-cpu/)
+- [Meta Ordered to Pay New Mexico $25 Billion for Deceiving Users About Privacy on Facebook](https://www.securityweek.com/meta-ordered-to-pay-new-mexico-25-billion-for-deceiving-users-about-privacy-on-facebook/)
+- [Google Hardens Chrome Against ClickFix Attacks, Insecure HTTP Connections](https://www.securityweek.com/google-hardens-chrome-against-clickfix-attacks-insecure-http-connections/)
+- [PHP2Shell Patches Land as First Exploitation Attempts Hit Sensors](https://www.securityweek.com/php2shell-patches-land-as-first-exploitation-attempts-hit-sensors/)
+- [‘Context Bombs’ Cut AI Attack Success by Misleading Agents With Fake Targets](https://www.securityweek.com/context-bombs-cut-ai-attack-success-by-misleading-agents-with-fake-targets/)
+- [High-Severity Flaws Exploited in Three Days as Ransomware Dominates Q3: Rapid7](https://www.securityweek.com/high-severity-flaws-exploited-in-three-days-as-ransomware-dominates-q3-rapid7/)
+- [Asymptote Labs Lands $5.5 Million Seed for AI Agent Runtime Security](https://www.securityweek.com/asymptote-labs-lands-5-5-million-seed-for-ai-agent-runtime-security/)
+- [Memory Bugs Account for Most of Chrome’s 353 New Security Fixes](https://www.securityweek.com/memory-bugs-account-for-most-of-chromes-353-new-security-fixes/)
+- [OpenAI Agents Silenced Security Team Alerts, Removed Misalignment Monitor](https://www.securityweek.com/openai-agents-silenced-security-team-alerts-removed-misalignment-monitor/)
+- [Browsers Block eMudhra Intermediate CAs Over Recoverable Private Keys](https://www.securityweek.com/browsers-block-emudhra-intermediate-cas-over-recoverable-private-keys/)
 
 ### The Record
-- [FBI says SafePay ransomware gang ‘among most active’ with more than 600 victims since 2024](https://therecord.media/fbi-says-safepay-ransomware-gang-among-most-active-600-victims)
-- [California warns all public school students of data stolen in contractor breach](https://therecord.media/california-warns-all-public-school-students-of-data-breach)
-- [23andMe successor settles with California for $6 million over cybersecurity failings](https://therecord.media/23andme-california-data-breach-settlement)
-- [Nigerian national given 8-year sentence for tax business hacks](https://therecord.media/nigerian-given-8-year-sentenc-tax-hacks)
-- [EU cyber law won’t force fixes for fridge controllers hit in French attack](https://therecord.media/eu-cyber-law-wont-force-fixes-for-fridges-in-french-attack)
+- [Meta on the spot for $25 billion under New Mexico privacy ruling](https://therecord.media/meta-new-mexico-penalty-cambridge-analytica-privacy-case)
+- [Tech trio launches $10 million initiative to help under-resourced utilities bolster cybersecurity](https://therecord.media/utilities-cybersecurity-initiative-accenture)
+- [Democrat lawmakers say Russia is aiming to undermine party ahead of midterms](https://therecord.media/democrat-lawmakers-say-russia-is-aiming-to-undermine-party)
+- [PHP says AI review of critical bugs first sparked alarm in August, but signs surfaced in 2024](https://therecord.media/php-foundation-statement-critical-vulnerabilities)
+- [Hundreds of websites taken offline as concern grows over two PHP vulnerabilities](https://therecord.media/php-script-vulnerabilities-warnings)
 
 ### Infosecurity Magazine
-- [Head of AI Security Roles Surge in Large Organizations](https://www.infosecurity-magazine.com/news/head-ai-security-roles/)
-- [Researchers Warn OpenCode Quietly Patched Critical RCE Flaw, Leaving Users At Risk](https://www.infosecurity-magazine.com/news/opencode-quietly-patched-critical/)
-- [AI Agent Adoption Creates Risk as Oversight Struggles to Keep Pace, Splunk Finds](https://www.infosecurity-magazine.com/news/ai-agent-adoption-oversight/)
-- [Siemens Customers Targeted by ClickFix Attackers Exploiting DLL Side-Loading Flaw](https://www.infosecurity-magazine.com/news/siemens-clickfix-exploiting-side/)
+- [Cloud Security Maturity Lags Despite Widespread Adoption, SANS Warns](https://www.infosecurity-magazine.com/news/cloud-security-maturity-lags-sans/)
+- [New PhaaS Platform Uses AI to Craft Phishing Lures and Mask Malicious Activity](https://www.infosecurity-magazine.com/news/new-phaas-uses-ai-phishing-lures/)
+- [Symantec Uncovers AI Agent Hijacking Models for Autonomous Cyber-Attacks](https://www.infosecurity-magazine.com/news/symantec-ai-agent-llmjacking/)
+- [Ransomware Attacks Rise as Rival Gangs Vie For Market Supremacy](https://www.infosecurity-magazine.com/news/rival-gangs-vie-for-market/)
+- [SafePay Has Compromised 600 Critical Infrastructure Victims Worldwide, CISA Warns](https://www.infosecurity-magazine.com/news/safepay-compromised-critical/)
+- [Critical PHP Vulnerabilities Leaked Ahead of Scheduled Security Patches](https://www.infosecurity-magazine.com/news/critical-php-vulnerabilities-leaked/)
+- [Children’s Data Stolen After Ransomware Attack Compromises ‘Password1’ Account](https://www.infosecurity-magazine.com/news/children-data-stolen-password1/)
 
 ### CyberScoop
+- [Microsoft pins ConnectWise supply-chain attack to China-state aligned threat group](https://cyberscoop.com/microsoft-attributes-connectwise-supply-chain-attack-china-storm-0940/)
+- [PHP releases emergency fixes for 2 critical vulnerabilities](https://cyberscoop.com/php-emergency-patches-php2shell-vulnerabilities/)
 - [Philippines-based American pleads guilty to running expansive fraud scheme targeting US servicemembers](https://cyberscoop.com/identity-theft-fraud-military-servicemembers-veterans-guilty-robert-boling/)
-- [Nigerian sentenced to 8 years for long-running tax business hacking and fraud scheme](https://cyberscoop.com/nigerian-sentenced-hacking-fraud-tax-investment-scheme/)
-- [Russian GRU hackers hit NATO shipbuilder, aircraft engine maker, law enforcement agency in espionage campaign](https://cyberscoop.com/russian-hackers-apt28-target-nato-defense-firms/)
-- [ConnectWise customers hit by supply-chain attack linked to compromised API secret](https://cyberscoop.com/connectwise-cloud-backup-supply-chain-attack/)
-- [DOJ escalates fight for election supremacy with California raids](https://cyberscoop.com/justice-department-california-voter-arrests-noncitizen-claims/)
 
 ### Cisco Talos
-- [There's only so much code: the rise in vulnerability numbers](https://blog.talosintelligence.com/theres-only-so-much-code-the-rise-in-vulnerability-numbers/)
+- [Compromised eMudhra intermediate certificates](https://blog.talosintelligence.com/compromised-intermediate-certificates/)
+- [Two critical RCEs in PHP core](https://blog.talosintelligence.com/two-critical-rces-in-php-core/)
+- [Parasitizing trust: How legitimate infrastructure becomes a delivery pipeline for attackers](https://blog.talosintelligence.com/parasitizing-trust-how-legitimate-infrastructure-becomes-a-delivery-pipeline-for-attackers/)
 
 ### Unit 42 (Palo Alto)
+- [Threat Brief: Critical Vulnerabilities in PHP: CVE-2026-109618, CVE-2026-109619](https://unit42.paloaltonetworks.com/cve-2026-109618-cve-2026-109619/)
+- [“Next Exploit Opportunities”: How a Threat Actor Used AI to Help Plan and Execute Multiple Types of Cybercrime Activities](https://unit42.paloaltonetworks.com/ai-assisted-cybercrime-analysis/)
 - [Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257 (Updated October 20)](https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/)
 
 ### Microsoft Security Blog
-_No new items / feed unavailable this run._
+- [AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise](https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/)
 
 ### Google Cloud Threat Intel
 _No new items / feed unavailable this run._
 
 ### SANS Internet Storm Center
+- [ISC Stormcast For Thursday, October 22nd, 2026 https://isc.sans.edu/podcastdetail/10146, (Thu, Oct 22nd)](https://isc.sans.edu/diary/rss/33446)
+- [Critical PHP Vulnerability (CVE-2026-109618, CVE-2026-109619) &#x5b;infocon yellow&#x5d;, (Wed, Oct 21st)](https://isc.sans.edu/diary/rss/33440)
 - [ISC Stormcast For Wednesday, October 21st, 2026 https://isc.sans.edu/podcastdetail/10144, (Wed, Oct 21st)](https://isc.sans.edu/diary/rss/33438)
-- [ISC Stormcast For Tuesday, October 20th, 2026 https://isc.sans.edu/podcastdetail/10142, (Tue, Oct 20th)](https://isc.sans.edu/diary/rss/33436)
 
 ### Securelist (Kaspersky)
+- [How APT41 revived the BlackLotus bootkit to attack diplomatic organizations in Central Asia](https://securelist.com/uefi-bootkit-blackx/121539/)
+- [Critical RCE vulnerabilities in PHP (CVE-2026-109618, CVE-2026-109619)](https://securelist.com/tr/php2shell-critical-vulnerabilities-in-php/121596/)
 - [Operation FlashHole: Lazarus breaks security, defies control](https://securelist.com/lazarus-operation-flashhole/121541/)
-- [The journey of a paper unicorn: adventures inside a modern warehouse](https://securelist.com/paper-unicorn-warehouse-security/121537/)
 
 ### CrowdStrike Blog
+- [CrowdStrike Uncovers New Agentic AI Campaigns](https://www.crowdstrike.com/en-us/blog/crowdstrike-uncovers-new-agentic-ai-campaigns/)
+- [CrowdStrike Protects Customers from Threats Delivered via PHP2Shell](https://www.crowdstrike.com/en-us/blog/crowdstrike-protects-customers-from-php-rce-zero-days/)
 - [CrowdStrike Achieves NCSC CIR Enhanced Level Assurance](https://www.crowdstrike.com/en-us/blog/crowdstrike-achieves-uk-ncsc-cir-enhanced-level-assurance/)
 - [U.S. Government Disrupts FAMOUS CHOLLIMA Operation with CrowdStrike Assistance](https://www.crowdstrike.com/en-us/blog/fbi-disrupts-famous-chollima-operation-with-crowdstrike-assistance/)
 - [October 2026 Patch Tuesday: 1,413 CVEs Include Three Zero-Days and 75 Critical Vulnerabilities](https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-october-2026/)
@@ -941,14 +466,14 @@ _No new items / feed unavailable this run._
 - [Unknown Threat Actor Uses AI-Driven ARTEX to Target South Korean Finance](https://www.crowdstrike.com/en-us/blog/unknown-threat-actor-uses-artex-to-target-south-korean-finance/)
 - [CrowdStrike Named a Leader in the 2026 IDC MarketScape for Worldwide Modern Endpoint Security for Enterprises Vendor Assessment](https://www.crowdstrike.com/en-us/blog/crowdstrike-named-leader-2026-idc-marketscape-worldwide-modern-endpoint-security-for-enterprises/)
 - [Request, Aggregate, Bypass: How Attackers Can Evade LLM Safety Classifiers](https://www.crowdstrike.com/en-us/blog/how-attackers-can-bypass-llm-safety-classifiers/)
-- [Falcon Data Security for SaaS Secures Sensitive Data in Microsoft 365](https://www.crowdstrike.com/en-us/blog/falcon-data-security-for-saas-secures-sensitive-data/)
-- [New in Falcon Cloud Security: Third-Party App Insights and AI-Enhanced Remediation](https://www.crowdstrike.com/en-us/blog/falcon-cloud-security-third-party-app-insights-ai-enhanced-remedation/)
 
 ### FortiGuard Threat Signal
-- [Atlassian Arbitrary File Access Vulnerability](https://fortiguard.fortinet.com/threat-signal-report/6548)
+- [PHP2Shell Remote Code Execution Vulnerabilities](https://fortiguard.fortinet.com/threat-signal-report/6551)
 
 ## Fetch issues this run
-- https://api.phishstats.info/api/phishing?_sort=-id&_size=30 -> HTTPSConnectionPool(host='api.phishstats.info', port=443): Read timed out. (read timeout=25)
+- https://urlhaus.abuse.ch/downloads/csv_recent/ -> 410 Client Error: Gone for url: https://urlhaus.abuse.ch/downloads/csv_recent/
+- https://threatfox.abuse.ch/export/csv/recent/ -> 410 Client Error: Gone for url: https://threatfox.abuse.ch/export/csv/recent/
+- https://bazaar.abuse.ch/export/csv/recent/ -> 410 Client Error: Gone for url: https://bazaar.abuse.ch/export/csv/recent/
 
 ---
 Sources: CISA KEV · NVD · GitHub Security Advisories · abuse.ch (URLhaus/ThreatFox/MalwareBazaar/Feodo Tracker/SSL Blacklist) · IPsum · Spamhaus DROP · blocklist.de · CINS Army · OpenPhish · PhishStats · ransomware.live · The Hacker News, BleepingComputer, Krebs on Security, Dark Reading, SecurityWeek, The Record, Infosecurity Magazine, CyberScoop, Cisco Talos, Unit 42 (Palo Alto), Microsoft Security Blog, Google Cloud Threat Intel, SANS Internet Storm Center, Securelist (Kaspersky), CrowdStrike Blog, FortiGuard Threat Signal
