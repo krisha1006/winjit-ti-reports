@@ -1,113 +1,164 @@
-# Winjit Daily TI Digest — 2026-10-27
+# Winjit Daily TI Digest — 2026-10-28
 
-_Auto-generated. Window: last ~24h. Fetched at 2026-10-27T08:47:28.968317+00:00Z_
+_Auto-generated. Window: last ~24h. Fetched at 2026-10-28T09:27:43.084736+00:00Z_
 
-**At a glance:** 2 new KEV · 40 new HIGH/CRITICAL CVEs · 25 new GitHub advisories · 20 new ransomware victims posted
+**At a glance:** 2 new KEV · 87 new HIGH/CRITICAL CVEs · 25 new GitHub advisories · 20 new ransomware victims posted
 _Note: CISA KEV, NVD, GitHub Advisories and ransomware.live are genuinely "new since yesterday." The IOC blocklists below (Spamhaus DROP, blocklist.de, CINS Army, IPsum, SSL Blacklist, Feodo Tracker) are current full-list snapshots from each provider, not day-over-day diffs -- expect a lot of overlap with yesterday's report there, that's expected, not a bug._
 
 ## CISA KEV — newly added actively-exploited CVEs
 | CVE | Vendor | Product | Name | Ransomware use | Required action |
 |---|---|---|---|---|---|
-| CVE-2026-109618 | PHP Group | PHP | PHP Memory Corruption Vulnerability | Unknown | Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. |
-| CVE-2026-109619 | PHP Group | PHP | PHP Stale Internal Request-State Vulnerability | Unknown | Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. |
+| CVE-2026-48356 | Adobe | Commerce and Magento | Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability | Unknown | Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. |
+| CVE-2026-111497 | Google | Brotli | Google Brotli Unchecked Return Value Vulnerability | Unknown | Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines. |
 
 ## NVD — new HIGH/CRITICAL CVEs published
 _Sorted by CVSS (highest first). EPSS = probability of real-world exploitation in the next 30 days (FIRST.org)._
 | CVE | CVSS | EPSS | Description |
 |---|---|---|---|
-| CVE-2026-116508 | 10.0 | n/a | A security flaw has been discovered in TOTOLINK A950RG 4.1.2cu.5268_B20221104. Affected by this issue is the function sub_402340 of the file infostat.cgi of the component Device-Information CGI. Perfo |
-| CVE-2026-116231 | 9.9 | 0.4% | A security flaw has been discovered in Oray Pugongying X5 Pro 7.6.1. The impacted element is an unknown function of the component Ser2net. Performing a manipulation of the argument regmsg results in c |
-| CVE-2026-116504 | 9.9 | n/a | A vulnerability has been found in TOTOLINK A950RG 4.1.2cu.5268_B20221104. This affects the function setCloudUpgradeFW of the file lib/cste_modules/upgrade.so of the component Cloud Upgrade. The manipu |
-| CVE-2026-116506 | 9.9 | n/a | A vulnerability was determined in TOTOLINK A950RG 4.1.2cu.5268_B20221104. Affected is the function apmib_set of the file firewall.so. This manipulation causes command injection. The attack may be init |
-| CVE-2026-116485 | 9.8 | n/a | danmu_api before 1.21.7 contains an authentication bypass vulnerability that allows unauthenticated attackers to modify server environment configuration when the default TOKEN is used and ADMIN_TOKEN  |
-| CVE-2026-112346 | 9.8 | n/a | OpenHands Software Agent SDK before 1.52.0 contains an unauthenticated remote code execution vulnerability where the DockerWorkspace and Apptainer workspace launchers bind the sandbox agent server to  |
-| CVE-2026-116233 | 9.1 | 0.5% | A security vulnerability has been detected in Oray Pugongying X5 Pro 7.6.1. This impacts an unknown function of the component Dnsmasq. The manipulation of the argument rent_time leads to crlf injectio |
-| CVE-2026-116234 | 9.1 | 0.5% | A vulnerability was detected in Oray Pugongying X5 Pro 7.6.1. Affected is an unknown function of the file /etc/ipsec.conf of the component IPsec Policy Handler. The manipulation of the argument secpro |
-| CVE-2026-116214 | 9.1 | n/a | MacCMS v10 before 2026.1000.4054 contains an authentication bypass vulnerability that allows unauthenticated attackers to reset any member's password because check_msg() never compares msg_to. Attacke |
-| CVE-2026-116505 | 9.1 | n/a | A vulnerability was found in TOTOLINK A950RG 4.1.2cu.5268_B20221104. This impacts the function getDeviceInfo of the file /var/lib/misc/udhcpd.leases of the component device-information Handler. The ma |
-| CVE-2026-116738 | 8.8 | n/a | VMime through 0.9.2 contains an integer underflow in the uuEncoder::decode function that allows remote attackers to trigger a stack-based buffer overflow via crafted uuencoded MIME parts. Attackers ca |
-| CVE-2026-116748 | 8.8 | n/a | Transmission 4.0.0 before 4.1.3 contains a permissive CORS vulnerability in handle_request() in rpc-server.cc that exposes the X-Transmission-Session-Id anti-CSRF token to any web origin. Malicious we |
-| CVE-2026-116811 | 8.8 | n/a | OpenPanel before 3.0.0 contains a sandbox escape vulnerability in the js-runtime validator that allows a project member to bypass the AST allowlist by aliasing the Function constructor. Attackers with |
-| CVE-2026-116843 | 8.8 | n/a | Mistral Vibe before 3.0.3 contains a remote code execution vulnerability that allows attackers to run commands by defining git filter drivers in an untrusted repository's .git/config. When started wit |
-| CVE-2026-75891 | 8.8 | n/a | The Kirki plugin for WordPress is vulnerable to Privilege Escalation via PHP Object Injection in all versions up to, and including, 6.2.5 via deserialization of untrusted input through the 'get-single |
-| CVE-2026-116819 | 8.5 | n/a | OpenPanel before 3.0.0 contains an information disclosure vulnerability that allows read-level project members to obtain plaintext integration secrets because the notification.rules query skips redact |
-| CVE-2026-116237 | 8.4 | 0.7% | A vulnerability was found in Oray Pugongying X5 Pro 7.6.1. This affects an unknown part of the component Dnsmasq. Performing a manipulation results in crlf injection. Remote exploitation of the attack |
-| CVE-2026-116116 | 8.2 | 0.1% | A vulnerability was detected in Yoosee GM8135S Camera 21.00.01.36. Affected is an unknown function of the component Secure Boot. Performing a manipulation results in improper verification of cryptogra |
-| CVE-2026-116818 | 8.2 | n/a | OpenPanel before 3.0.0 contains an unauthenticated ClickHouse sql injection vulnerability that allows remote attackers to inject SQL through the projectId parameter of the /live/visitors/:projectId We |
-| CVE-2024-58400 | 8.2 | n/a | llama.cpp before b3701 contains an out-of-bounds read vulnerability in llama_decode_internal and llama_encode_internal that allows remote unauthenticated attackers to read memory by supplying unvalida |
-| CVE-2026-112343 | 8.1 | n/a | Syncplify Server! before 8.8.0 contains an access control bypass vulnerability that allows authenticated SFTP users to evade per-path permission overrides by exploiting case-insensitive filesystem pat |
-| CVE-2026-116747 | 8.1 | n/a | Kener 3.0.0 before 4.1.10 contains an authentication bypass vulnerability that allows unauthenticated attackers to forge session tokens by using the hardcoded DUMMY_SECRET fallback key. When KENER_SEC |
-| CVE-2026-116723 | 7.8 | n/a | FLTK through 1.4.5 contains a stack-based buffer overflow vulnerability in Fl_BMP_Image::load_bmp_() that allows attackers to corrupt stack memory by supplying an oversized BMP colors_used field. Atta |
-| CVE-2026-116724 | 7.8 | n/a | FLTK through 1.4.5 contains an integer overflow vulnerability in Fl_BMP_Image::load_bmp_() that causes undersized pixel buffer allocation from file-supplied width and height. Attackers can supply a cr |
-| CVE-2026-116816 | 7.8 | n/a | llama.cpp b5899 before b10261 contains a heap out-of-bounds write vulnerability in llm_tokenizer_plamo2::build that allows attackers to corrupt heap memory via crafted GGUF models. Attackers can suppl |
-| CVE-2026-115717 | 7.7 | n/a | Frappe Builder versions before 1.36.1 contain a server-side request forgery vulnerability in the convert_to_webp API endpoint, which lacks the has_page_write access control applied to similar asset-in |
-| CVE-2026-116218 | 7.6 | n/a | Dolibarr ERP CRM 19.0.0 before 23.0.4 contains an SQL injection vulnerability that allows authenticated API users to inject SQL via the type field of the third-party bankaccounts REST endpoint. Attack |
-| CVE-2026-116489 | 7.5 | n/a | Timescale pgvectorscale before 0.9.1 contains a type confusion vulnerability that allows low-privileged database users to corrupt memory by shadowing pgvector's vector type or operators. Attackers wit |
-| CVE-2026-116543 | 7.5 | n/a | Open5GS 1.3.0 through 2.8.0 contains a heap out-of-bounds write vulnerability in parse_multipart() that allows unauthenticated attackers to corrupt memory by supplying an empty multipart boundary. Att |
-| CVE-2026-116110 | 7.3 | 0.4% | A vulnerability was found in GiantappMan LiveWallPaper 2.6.8.0 on Windows. This issue affects some unknown processing of the file /LiveWallpaper/UploadFile of the component SignalR Hub. Performing a m |
-| CVE-2026-116112 | 7.3 | 0.3% | A vulnerability was identified in HashenUdara edoc-doctor-appointment-system up to cc258425b915d1af9e298777ccd26d160493e68d. The affected element is an unknown function of the file admin/add-new.php.  |
-| CVE-2026-116257 | 7.3 | n/a | A vulnerability was determined in BillaBear up to 2025.01.03. Affected by this issue is the function processInstall of the file src/BillaBear/Controller/InstallController.php of the component Installa |
-| CVE-2026-116260 | 7.3 | n/a | A weakness has been identified in libimobiledevice up to 1.4.0. This issue affects the function service_receive of the file src/afc.c of the component AFC Service. Executing a manipulation can lead to |
-| CVE-2014-125135 | 7.3 | n/a | A security vulnerability has been detected in OctoPrint 1.0.0/1.1.0. Affected is an unknown function of the component Flask Secret Key Handler. Such manipulation leads to use of hard-coded cryptograph |
-| CVE-2026-116620 | 7.3 | n/a | A security vulnerability has been detected in Tencent RapidJSON up to 1.1.0. This issue affects the function GenericStringStream<UTF8<char>>::Take in the library include/rapidjson/stream.h of the comp |
-| CVE-2026-116623 | 7.3 | n/a | A vulnerability was detected in code-projects Simple Content Management System 1.0. Impacted is an unknown function of the file /web/admin/welcome.php of the component Admin Interface. The manipulatio |
-| CVE-2026-116236 | 7.2 | 0.4% | A vulnerability has been found in Oray Pugongying X5 Pro 7.6.1. Affected by this issue is the function plugin_init of the file /tmp/upload_files of the component PPPoE WAN Setting Handler. Such manipu |
-| CVE-2026-116219 | 7.2 | n/a | Dolibarr ERP CRM before 24.0.0 contains an OS command injection vulnerability in htdocs/admin/tools/export.php that lets authenticated administrators bypass the restrict_os_commands allowlist. Attacke |
-| CVE-2026-116808 | 7.2 | n/a | OpenPanel before 3.0.0 contains an sql injection vulnerability that allows authenticated users to read cross-tenant data by supplying a crafted property parameter to profile.values. Attackers can inje |
-| CVE-2026-111820 | 7.2 | n/a | The Analytics Insights – Google Analytics Dashboard for WordPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Page Title in all versions up to, and including, 6.3.12 due  |
+| CVE-2026-105781 | 10.0 | n/a | Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability that could result in arbitrary code execution in the c |
+| CVE-2026-104351 | 9.9 | n/a | Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. |
+| CVE-2026-104353 | 9.9 | n/a | Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability that could result in arbitrary code execution in |
+| CVE-2026-105489 | 9.9 | n/a | Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability that could result in arbitrary code execution in the c |
+| CVE-2026-105780 | 9.9 | n/a | Adobe Campaign Classic (ACC) is affected by an Incorrect Authorization vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could e |
+| CVE-2026-117532 | 9.8 | n/a | REDAXO core from 5.3.0 before 5.21.4 contains an authentication bypass vulnerability in the structure/history plugin that allows unauthenticated attackers to forge temporary login tokens. Attackers ca |
+| CVE-2026-117564 | 9.8 | n/a | nest-admin before 1.0.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to forge administrator tokens by using a hardcoded JWT_SECRET committed in .env.production |
+| CVE-2026-106013 | 9.8 | n/a | The Jupiter X Core plugin for WordPress is vulnerable to Authentication Bypass via the Twitter/X Social Login handler in all versions up to and including 4.61.0. The vulnerability exists within the ve |
+| CVE-2026-84999 | 9.8 | n/a | The Pie Register Premium plugin for WordPress is vulnerable to Unrestricted File Type Upload in all versions up to, and including, 3.8.4.0 via the piereg_file_upload function. This is due to the plugi |
+| CVE-2026-109218 | 9.8 | n/a | The Contact Manager plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 9.1.2 via the add_message function. This is due to an incomplete extension blackli |
+| CVE-2026-48360 | 9.6 | n/a | Adobe Connect is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. An attacker co |
+| CVE-2026-104350 | 9.3 | n/a | Adobe Campaign Classic (ACC) is affected by a reflected Cross-Site Scripting (XSS) vulnerability. An attacker could exploit this vulnerability to inject malicious scripts into a web page, potentially  |
+| CVE-2026-104354 | 9.1 | n/a | Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability that could result in arbitrary code execution in the c |
+| CVE-2026-105779 | 9.1 | n/a | Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability that could result in a Security feature bypass. A low- |
+| CVE-2026-112352 | 9.1 | n/a | Sunhillo SureLine before 9.1.5 contains an authentication bypass vulnerability that allows an unauthenticated remote attacker to impersonate any user with an active web session by forging a session co |
+| CVE-2026-116811 | 8.8 | 0.5% | OpenPanel before 3.0.0 contains a sandbox escape vulnerability in the js-runtime validator that allows a project member to bypass the AST allowlist by aliasing the Function constructor. Attackers with |
+| CVE-2026-116843 | 8.8 | 0.4% | Mistral Vibe before 3.0.3 contains a remote code execution vulnerability that allows attackers to run commands by defining git filter drivers in an untrusted repository's .git/config. When started wit |
+| CVE-2026-75891 | 8.8 | 0.3% | The Kirki plugin for WordPress is vulnerable to Privilege Escalation via PHP Object Injection in all versions up to, and including, 6.2.5 via deserialization of untrusted input through the 'get-single |
+| CVE-2026-117536 | 8.8 | n/a | REDAXO before 5.21.3 contains a cross-site request forgery vulnerability in the backend user administration page (users/users) because the CSRF token check only runs when the save parameter is set, wh |
+| CVE-2026-107672 | 8.8 | n/a | A maliciously crafted .stack.json file can trigger a trusted Markdown injection vulnerability in Autodesk Fusion Post Processor Utility Extension. A malicious actor may exploit this vulnerability to e |
+| CVE-2026-112351 | 8.8 | n/a | Sunhillo SureLine before 9.1.5 contains an OS command injection vulnerability in the networkDiag.cgi endpoint that allows an authenticated remote attacker with any web account to execute arbitrary com |
+| CVE-2026-83831 | 8.8 | n/a | Double free in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network. |
+| CVE-2026-85898 | 8.8 | n/a | Access of resource using incompatible type ('type confusion') in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network. |
+| CVE-2014-125138 | 8.8 | n/a | C97net qEngine CMS through 6.0.0, Kemana Directory through 1.5.6, and Cart Engine through 3.0.0 contain an unrestricted file upload vulnerability in administrative image fields. Editor-role users can  |
+| CVE-2015-20129 | 8.8 | n/a | CrushFTP before 7.3.0 contains a cross-site request forgery vulnerability that allows attackers to perform administrative actions because CSRF protection is disabled by default. Attackers can lure an  |
+| CVE-2026-1928 | 8.8 | n/a | The Rank Math SEO – AI SEO Tools to Dominate SEO Rankings plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 1.0.276 via deserialization of untrusted inpu |
+| CVE-2026-109384 | 8.8 | n/a | The The Innovative Form Builder – IvyForms plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 1.5.1 via the filterFiletypeAndExt function. This is due to |
+| CVE-2026-111120 | 8.8 | n/a | The VikRentCar Car Rental Management System plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 1.4.8. This is due to missing or incorrect nonce vali |
+| CVE-2026-92797 | 8.8 | n/a | The MemberPress plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions up to, and including, 1.14.1. This is due to a bypassable nonce verification check in the save_profile_fiel |
+| CVE-2026-116819 | 8.5 | 0.3% | OpenPanel before 3.0.0 contains an information disclosure vulnerability that allows read-level project members to obtain plaintext integration secrets because the notification.rules query skips redact |
+| CVE-2026-117602 | 8.4 | n/a | Electrum 4.6.0 before 4.7.2 contains an authorization bypass in the external plugin loader, which executes a plugin's __init__.py module when the plugin is marked enabled in the config file, without v |
+| CVE-2026-112353 | 8.2 | n/a | GFI KerioConnect (Kerio Connect) before 10.0.8 Patch 2 contains a stored cross-site scripting vulnerability in the Webmail component that allows a remote attacker to run JavaScript in a victim's authe |
+| CVE-2026-118375 | 8.1 | n/a | llama.cpp b8841 before b11865 contains an out-of-bounds write vulnerability in the ggml-rpc RDMA transport rdma_recv() function that allows unauthenticated peers to overflow the rpc-server stack. Atta |
+| CVE-2026-116816 | 7.8 | 0.1% | llama.cpp b5899 before b10261 contains a heap out-of-bounds write vulnerability in llm_tokenizer_plamo2::build that allows attackers to corrupt heap memory via crafted GGUF models. Attackers can suppl |
+| CVE-2026-117558 | 7.8 | n/a | The ai-sdlc plugin MCP server through 0.31.2 contains an OS command injection vulnerability that allows attackers to execute commands by supplying shell metacharacters in the repo argument. The unvali |
+| CVE-2026-117559 | 7.8 | n/a | DroidMind through 0.4.0 contains a command injection vulnerability that allows MCP clients to bypass the shell command allowlist by using $(...) or backtick substitution. Attackers, including prompt-i |
+| CVE-2026-117560 | 7.8 | n/a | ATXP Gemini CLI extension through 1.0.0 contains an OS command injection vulnerability in runAtxp() that allows attackers to execute shell commands through unsanitized MCP tool parameters. Attackers c |
+| CVE-2026-117561 | 7.8 | n/a | Codefriar sf-mcp through 1.3.2 contains an OS command injection vulnerability that allows attackers to execute shell commands by supplying crafted Salesforce CLI tool flag values. Because escapeValue( |
+| CVE-2026-117567 | 7.8 | n/a | esp-mcp through commit 28afddf contains an OS command injection vulnerability that allows attackers to run arbitrary commands by supplying shell metacharacters in MCP tool parameters. Attackers influe |
+| CVE-2026-117569 | 7.8 | n/a | Kali-GPT through commit a608c74 contains an OS command injection vulnerability in execute_tool() in kali_gpt/tools/mcp_server.py that allows MCP clients to run commands via unsanitized scanner paramet |
+| CVE-2026-117573 | 7.8 | n/a | hagent through commit 761eec6 contains an OS command injection vulnerability that allows MCP clients to execute shell commands by injecting metacharacters into the args parameter of the hagent_arduino |
+| CVE-2026-113775 | 7.8 | n/a | A maliciously crafted dynamic library, when loaded from an arbitrary path through the TextCommands.LoadDll command exposed by the Autodesk Fusion API, can trigger an Exposed Dangerous Function vulnera |
+| CVE-2026-48379 | 7.8 | n/a | Substance3D - Painter is affected by a Stack-based Buffer Overflow vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires u |
+| CVE-2026-118378 | 7.8 | n/a | Tabularis before 0.28.0 contains an SQL injection vulnerability in its SQLite driver that allows MCP clients to execute stacked statements by supplying a crafted table_name to the describe_table tool. |
+| CVE-2026-116871 | 7.5 | n/a | Semantic MediaWiki 3.0.0 before 7.3.1 contains an uncontrolled recursion vulnerability in LegacyParser::getSubqueryDescription() that processes nested query tokens before depth limits apply. Unauthent |
+| CVE-2026-116872 | 7.5 | n/a | Semantic MediaWiki from 3.0.0 before 7.3.1 contains an algorithmic complexity vulnerability in TermParser::normalize_compact_form() that allows unauthenticated attackers to cause quadratic CPU consump |
+| CVE-2026-116896 | 7.5 | n/a | REDAXO before 5.21.5 contains a missing authorization vulnerability in the backup addon export that accepts any database table, allowing non-admin users with the backup[export] permission to export re |
+| CVE-2026-117540 | 7.5 | n/a | svg-sanitizer from 0.5.3 before 1.1.0 contains a denial of service vulnerability in Sanitizer::sanitize() that repeatedly rescans the whole input while stripping PHP tags. Unauthenticated attackers ca |
+| CVE-2026-100164 | 7.5 | n/a | Observable response discrepancy vulnerability in Rolantis Information Technologies Tourism Industry and Trade Co. Ltd. Agentis allows Account Footprinting.
+
+This issue affects Agentis: before 4.8. |
+| CVE-2026-92546 | 7.5 | n/a | Authentication bypass by spoofing vulnerability in Keepnet Labs Cybersecurity Inc. Agentic AI / Agentic Ally allows Authentication Bypass.
+
+This issue affects Agentic AI / Agentic Ally: before 0ef61f2 |
+| CVE-2026-117553 | 7.5 | n/a | Umbraco CMS before 17.7.2 and 18.2.2 contains an authentication bypass vulnerability that allows unauthenticated attackers to register attacker-controlled OAuth redirect URIs by poisoning the Host hea |
+| CVE-2026-117601 | 7.5 | n/a | Electrum before 4.8.3 fails to verify signatures of wallet-owned inputs in unconfirmed mempool transactions, allowing malicious servers to replace a just-broadcast transaction with a conflicting one.  |
+| CVE-2026-117604 | 7.5 | n/a | Grav from 1.7.53.3 before 1.7.53.6 contains an authorization bypass in Debugger::isDebuggerRequestAuthorized() that allows unauthenticated visitors to read /__clockwork/ profiler data via a loopback R |
+| CVE-2026-112350 | 7.5 | n/a | Sunhillo SureLine before 9.1.5 contains a path traversal vulnerability in the radarUpdater.cgi endpoint that allows unauthenticated remote attackers to read arbitrary files with root privileges due to |
+| CVE-2026-112355 | 7.5 | n/a | The MembershipWorks plugin for WordPress before 6.17 contains an information disclosure vulnerability that allows unauthenticated attackers to access member-only content through the WordPress REST API |
+| CVE-2026-62765 | 7.5 | n/a | Access of resource using incompatible type ('type confusion') in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network. |
+| CVE-2026-118377 | 7.5 | n/a | mews/pos through 2.0.0 contains an insufficient verification of data authenticity vulnerability that allows unauthenticated attackers to forge payment results by submitting unverified callbacks. Garan |
+| CVE-2026-111255 | 7.5 | n/a | The affiliate-toolkit – Multi-Network Affiliate & Amazon Product Display plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 3.9.2 via the upload_image fu |
+| CVE-2026-116613 | 7.5 | n/a | The Animated Text Block plugin for WordPress is vulnerable to Sensitive Information Exposure in versions up to, and including, 1.2.6 via the 'animated-text' shortcode. This is due to the atb_shortcode |
+| CVE-2026-15323 | 7.5 | n/a | The Product Designer for WooCommerce WordPress | Lumise plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 2.1.2 via the process_checkout function. This ma |
+| CVE-2026-116623 | 7.3 | 0.4% | A vulnerability was detected in code-projects Simple Content Management System 1.0. Impacted is an unknown function of the file /web/admin/welcome.php of the component Admin Interface. The manipulatio |
+| CVE-2026-116873 | 7.3 | n/a | Semantic MediaWiki from 7.3.0 before 7.3.1 contains a missing authorization vulnerability in the smwtask API module that allows unauthenticated attackers to run queued jobs and force store updates. At |
+| CVE-2026-117511 | 7.3 | n/a | A vulnerability has been found in desmondmorris node-tesseract up to 0.2.7. Affected by this issue is the function process of the file lib/tesseract.js of the component Command Builder. Such manipulat |
+| CVE-2026-104349 | 7.3 | n/a | Creative Cloud Desktop is affected by an Uncontrolled Search Path Element vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker coul |
+| CVE-2026-117512 | 7.3 | n/a | A vulnerability was found in oretnom23 php-travel-agency-system. This affects an unknown part of the file admin/employee_insert.php. Performing a manipulation of the argument employee photo results in |
+| CVE-2026-117513 | 7.3 | n/a | A vulnerability was determined in oretnom23 php-travel-agency-system. This vulnerability affects unknown code of the file admin/customer_search.php of the component Admin Search Pages. Executing a man |
+| CVE-2026-117514 | 7.3 | n/a | A vulnerability was identified in oretnom23 php-travel-agency-system. This issue affects some unknown processing of the file admin/customer_detail.php of the component Admin Record Pages. The manipula |
+| CVE-2026-117515 | 7.3 | n/a | A security flaw has been discovered in oretnom23 php-travel-agency-system 4e28b8f84d72420373dd15c3ae32900beb7e0635. Impacted is an unknown function of the file traceapplication.php. The manipulation o |
+| CVE-2026-117516 | 7.3 | n/a | A weakness has been identified in oretnom23 php-travel-agency-system. The affected element is an unknown function of the file contact_insert.php of the component Contact Form Handler. This manipulatio |
+| CVE-2026-116808 | 7.2 | 0.4% | OpenPanel before 3.0.0 contains an sql injection vulnerability that allows authenticated users to read cross-tenant data by supplying a crafted property parameter to profile.values. Attackers can inje |
+| CVE-2026-111820 | 7.2 | 0.2% | The Analytics Insights – Google Analytics Dashboard for WordPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Page Title in all versions up to, and including, 6.3.12 due  |
+| CVE-2026-109995 | 7.2 | n/a | The Advanced Views – Display Framework for Gutenberg & Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'comment' parameter in all versions up to, and including, 3.9 |
+| CVE-2013-20007 | 7.2 | n/a | Linksys WAG200G through 1.01.06 contains an OS command injection vulnerability that allows authenticated attackers to execute commands by injecting backtick-delimited input into the timer_interval par |
+| CVE-2026-109999 | 7.2 | n/a | The AI Marketing Expert — AI Email Marketing, AI Content Generator, SEO Analyzer, AI Workflow Automation, Social Media & Ai Chatbot plugin for WordPress is vulnerable to Stored DOM-Based Cross-Site Sc |
+| CVE-2026-111314 | 7.2 | n/a | The affiliate-toolkit – Multi-Network Affiliate & Amazon Product Display plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'atkp_product_producturl' parameter in all versions u |
+| CVE-2026-117607 | 7.2 | n/a | Xerte Online Toolkits through 3.15.5 contains a remote code execution vulnerability that allows authenticated users with system permission to run PHP by importing a crafted language pack. Attackers ca |
+| CVE-2026-97019 | 7.2 | n/a | The AMP for WP – Accelerated Mobile Pages plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 'headline-*' Shortcode Attribute in all versions up to, and including, 1.1.17 due to ins |
+| CVE-2026-109381 | 7.2 | n/a | The Mage Eventpress plugin for WordPress is vulnerable to privilege escalation in versions up to, and including, 5.7.8 This is due to the mep_grant_shop_manager_access() function hooking user_has_cap  |
+| CVE-2026-110662 | 7.2 | n/a | The MxChat – AI Chatbot & Content Generation for WordPress plugin for WordPress is vulnerable to Stored DOM-Based Cross-Site Scripting via the 'feedback' parameter in all versions up to, and including |
+| CVE-2026-111111 | 7.2 | n/a | The Prime Slider – Hero Slider, Carousel, WooCommerce & Post Slider Elementor Addons plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'comment' parameter in all versions up to |
+| CVE-2026-116876 | 7.1 | n/a | Semantic MediaWiki from 2.5.0 before 7.3.1 contains an improper authorization vulnerability that allows ordinary editors to permanently protect pages by adding an Is edit protected annotation. When $s |
+| CVE-2026-116880 | 7.1 | n/a | Semantic MediaWiki from 3.0.0 before 7.3.1 contains a cross-site request forgery vulnerability in Special:SMWAdmin because it overwrites the wpEditToken with a freshly generated valid token. Attackers |
+| CVE-2026-102636 | 7.1 | n/a | A maliciously crafted HTML payload in a design name, when displayed after another user opens the manipulated design, can trigger a Stored Cross-site Scripting (XSS) vulnerability in the Autodesk Fusio |
+| CVE-2026-102637 | 7.1 | n/a | A maliciously crafted HTML payload in the documentName parameter of a Fusion protocol URL, when the protocol URL is invoked by a user, can trigger a Reflected Cross-site Scripting (XSS) vulnerability  |
+| CVE-2026-102638 | 7.1 | n/a | A maliciously crafted HTML payload in the description of an electronic library (.lbr) file, when displayed in the Library Manager after the library is imported, can trigger a Stored Cross-site Scripti |
+| CVE-2026-117609 | 7.1 | n/a | rtl_433 through 25.12 contains a stack-based buffer overflow vulnerability in proflame2_mc() that allows nearby attackers to write past a 7-byte stack buffer by sending more than seven valid Mancheste |
+| CVE-2026-117568 | 7.0 | n/a | mcp-ffmpeg through 1.0.5 contains an OS command injection vulnerability that allows attackers to run shell commands by supplying crafted videoPath or outputDir values to the resize-video, extract-audi |
 
 ## GitHub Security Advisories — new since yesterday
 | GHSA | CVE | Severity | Summary |
 |---|---|---|---|
-| GHSA-jg7j-q6m4-7gq5 | CVE-2026-117469 | medium | Psono Server (CE & EE) versions 1.0.0 through 7.2.3 did not enforce the direction of file... |
-| GHSA-4hh2-mhpm-69h3 | CVE-2026-117472 | medium | Psono Server CE && EE versions 4.0.33 through 7.2.3 compared the request path for the bulk-secret... |
-| GHSA-897w-6p63-7p9g | CVE-2026-117468 | medium | Psono Server versions 5.3.5 through 7.2.3 used a permission class that did not enforce token... |
-| GHSA-f39h-p64c-xrvv | CVE-2026-103312 | unknown | The Payment Integration Wompi WordPress plugin through 4.0.1 does not verify the authenticity of... |
-| GHSA-q3ph-3gv2-g5wq | CVE-2026-117471 | medium | Psono Server CE && EE versions 0.1.0 through 7.2.3 accepted a user-controlled host when... |
-| GHSA-3gq2-hx4p-69qc | CVE-2026-117470 | medium | Psono Server CE & EE versions 3.1.0 through 7.2.3 did not consume a stored WebAuthn challenge... |
-| GHSA-qxp3-7pvj-q7qx | CVE-2026-103332 | unknown | The Payex Payment Gateway for Woocommerce WordPress plugin through 1.2.10 does not properly... |
-| GHSA-3jq2-63r2-vgw4 | CVE-2026-111820 | high | The Analytics Insights – Google Analytics Dashboard for WordPress plugin for WordPress is... |
-| GHSA-4vq8-3jwp-cxgv | CVE-2026-116640 | low | A flaw has been found in Saruf-Ratul HR-Payroll-Management-System... |
-| GHSA-r2vp-5h4m-7j3c | CVE-2026-88781 | medium | Untrusted Pointer Dereference in ASUS certain motherboards firmware allows a kernel-level... |
-| GHSA-2r7q-339v-2m8g | CVE-2026-116639 | low | A vulnerability was detected in MD-MAFUJUL-HASAN Online-Payroll-Management-System up to... |
-| GHSA-xwx6-2mm7-g8wj | CVE-2026-116843 | high | Mistral Vibe before 3.0.3 contains a remote code execution vulnerability that allows attackers to... |
-| GHSA-j2x3-vcc8-r98q | CVE-2026-116844 | medium | Fclairamb ftpserverlib through 0.32.4 contains a cleartext transmission vulnerability because... |
-| GHSA-g75x-vcw6-3m3f | CVE-2026-116842 | medium | DevilutionX 1.4.0 through 1.5.5 contains a heap buffer overflow vulnerability in the bundled... |
-| GHSA-f5q2-p5c3-3xqr | CVE-2026-116605 | medium | A vulnerability was found in SourceCodester Online Food Ordering System 1.0. The impacted element... |
-| GHSA-w426-2r79-q458 | CVE-2026-116623 | medium | A vulnerability was detected in code-projects Simple Content Management System 1.0. Impacted is... |
-| GHSA-jjjq-27hc-2q7x | CVE-2026-116838 | high | A malicious actor who lures an authenticated user to a malicious page could exploit a Cross-Site... |
-| GHSA-3jhp-qv93-3428 | CVE-2026-116829 | medium | llama.cpp b10398 before b11301 contains an integer overflow vulnerability in... |
-| GHSA-rff6-86qf-mmc2 | CVE-2026-97028 | unknown | Rejected reason: Maintainers determined it is not a vulnerability. |
-| GHSA-hqgg-6cxc-95g7 | CVE-2026-116839 | high | A malicious actor who lures an authenticated user to a malicious page could exploit a Cross-Site... |
-| GHSA-52pf-v9gp-98qj | CVE-2026-116840 | medium | llama.cpp b5854 before b11275 contains an integer overflow vulnerability in gguf_init_from_reader... |
-| GHSA-xfhf-c35f-773q | CVE-2026-116620 | medium | A security vulnerability has been detected in Tencent RapidJSON up to 1.1.0. This issue affects... |
-| GHSA-98hf-f439-379p | CVE-2026-116608 | low | A security vulnerability has been detected in DAMO Academy VideoLLaMA2 up to 1.1. Affected by... |
-| GHSA-5c39-2376-cxh9 | CVE-2026-116836 | high | A malicious actor with access to the adjacent network and under certain conditions could exploit... |
-| GHSA-4qpr-vwfh-qwp4 | CVE-2025-71439 | medium | llama.cpp before b5649 contains a heap out-of-bounds read vulnerability in llama_vocab::impl:... |
+| GHSA-23m5-26m5-cmpf | CVE-2026-15323 | high | The Product Designer for WooCommerce WordPress | Lumise plugin for WordPress is vulnerable to... |
+| GHSA-cr7x-4whh-v74w | CVE-2026-115281 | unknown | The Recipe Card Blocks Lite WordPress plugin before 3.6.4 does not sanitize and cast a block and... |
+| GHSA-pp3q-4jh2-gvr2 | CVE-2026-113813 | unknown | The PayPlug for WooCommerce (Official) WordPress plugin before 3.1.1 does not perform any... |
+| GHSA-j835-2vx3-j669 | CVE-2026-115255 | unknown | The WP Roster WordPress plugin before 2.35 does not perform any capability or nonce checks on one... |
+| GHSA-66pc-wp83-p27g | CVE-2026-115224 | unknown | The Customer Engagement System  WordPress plugin before 2.0.2 does not safely build the SQL... |
+| GHSA-4r9j-p4gw-x3hm | CVE-2026-115225 | unknown | The Customer Engagement System  WordPress plugin before 2.0.2 does not restrict access to its... |
+| GHSA-x4hx-935f-mhv9 | CVE-2026-111031 | unknown | The Welcart e-Commerce WordPress plugin before 2.12.6 does not validate a user-supplied URL... |
+| GHSA-p42q-6x3c-7prr | CVE-2026-110292 | unknown | The PayPlug for WooCommerce (Official) WordPress plugin before 3.1.1 does not verify that the... |
+| GHSA-94r9-pgqm-7rh9 | CVE-2026-111961 | unknown | The Royal MCP  WordPress plugin before 1.5.10 does not perform an object-level permission check... |
+| GHSA-mc48-45x9-jh54 | CVE-2026-110506 | unknown | The Page Builder by SiteOrigin WordPress plugin before 2.38.0 does not sanitize or escape a... |
+| GHSA-8xjg-cmc9-35px | CVE-2026-111577 | unknown | The GoSMTP  WordPress plugin before 1.2.5 does not perform a settings-management authorization... |
+| GHSA-cw3q-m3wh-782r | CVE-2026-110509 | unknown | The Essential Addons for Elementor  WordPress plugin before 6.8.7 does not restrict the post type... |
+| GHSA-vj27-pxm6-rv65 | CVE-2026-113485 | unknown | The Media Library Assistant WordPress plugin before 3.42 does not consistently validate its CSRF... |
+| GHSA-334j-cwwv-qmmh | CVE-2026-111960 | unknown | The Royal MCP  WordPress plugin before 1.5.10 does not perform object-level or post-type... |
+| GHSA-v689-9j43-xq5j | CVE-2026-107100 | unknown | The Royal Addons for Elementor  WordPress plugin before 1.7.1070 does not verify that a requested... |
+| GHSA-m4h7-mwp4-h59c | CVE-2026-110524 | unknown | The Copy Anything to Clipboard for WordPress  WordPress plugin before 5.5.5 does not sanitize and... |
+| GHSA-8x4j-963r-3gx3 | CVE-2026-113488 | unknown | The GeoDirectory  WordPress plugin before 2.8.196 does not properly escape a post badge shortcode... |
+| GHSA-w3vc-5h78-6ggp | CVE-2026-107097 | unknown | The Royal Addons for Elementor  WordPress plugin before 1.7.1070 does not perform any... |
+| GHSA-r747-x6cp-8vgw | CVE-2026-111027 | unknown | The Welcart e-Commerce WordPress plugin before 2.12.6 does not properly sanitise and escape a... |
+| GHSA-gv8j-xg52-fqpf | CVE-2026-106647 | unknown | The Royal Addons for Elementor  WordPress plugin before 1.7.1070 does not scope a contact form's... |
+| GHSA-j4v8-4289-whj4 | CVE-2026-111021 | unknown | The افزونه پیامک ووکامرس | Persian WooCommerce SMS WordPress plugin before 7.3.2 does not... |
+| GHSA-3rmh-w7g6-4jgh | CVE-2026-111032 | unknown | The Welcart e-Commerce WordPress plugin before 2.12.6 does not properly verify authorization... |
+| GHSA-f65r-566x-cp6v | CVE-2026-110691 | unknown | The WPOrLogin  WordPress plugin before 3.1.0 does not perform a capability check or validate a... |
+| GHSA-fmvc-698m-vpm5 | CVE-2026-109236 | medium | The Customer Email Verification for WooCommerce plugin for WordPress is vulnerable to... |
+| GHSA-2m52-8826-2mqp | CVE-2026-110507 | unknown | The Page Builder by SiteOrigin WordPress plugin before 2.38.0 does not restrict the query... |
 
 ## Ransomware — new leak-site victim postings (ransomware.live)
 | Victim | Group | Country | Date |
 |---|---|---|---|
-| DATEM, Inc. | crypto24 | PH | 2026-10-27T04:11:17.674706+00:00 |
-| Burris & MacOmber | everest |  | 2026-10-27T04:33:27.978594+00:00 |
-| Energy Storage Terminal in Singapore | everest | SG | 2026-10-27T04:32:51.124991+00:00 |
-| Point Robotics | everest |  | 2026-10-27T04:32:17.013209+00:00 |
-| Natuzzi | everest | IT | 2026-10-27T04:31:41.695092+00:00 |
-| TECNA ICE | everest | IT | 2026-10-27T04:31:06.242991+00:00 |
-| MediSolution | everest |  | 2026-10-27T04:30:31.961924+00:00 |
-| SleepEx LabRetriever | everest |  | 2026-10-27T04:29:56.461196+00:00 |
-| gamblinglore | Whitearmor |  | 2026-10-27T04:05:36.281691+00:00 |
-| Verification | Whitearmor |  | 2026-10-27T03:07:40.796568+00:00 |
-| zzq-test | ULose |  | 2026-10-27T01:08:42.042582+00:00 |
-| probe-011637cabbf94076- | ULose |  | 2026-10-27T01:08:22.327260+00:00 |
-| Morrison Cohen | SilentRansomGroup | US | 2026-10-26T23:07:56.396007+00:00 |
-| MISC Group | rhysida | MY | 2026-10-26T20:27:18.651315+00:00 |
-| Afflelou | emperador | FR | 2026-10-26T21:52:29.796720+00:00 |
-| Ingelectus Innovative Electrical Solutions S.L. | N0n | ES | 2026-10-26T18:57:11.389460+00:00 |
-| Beasley Allen Law Firm | Falcon | US | 2026-10-26T16:54:28.340940+00:00 |
-| Gamdom | Whitearmor |  | 2026-10-26T18:00:10.433408+00:00 |
-| Delta Electric Power Association | qilin | US | 2026-10-26T12:03:57.071068+00:00 |
-| Bangor Wholesale Laminates | qilin | GB | 2026-10-26T12:03:03.384731+00:00 |
+| Echo.com | Whitearmor | DE | 2026-10-28T02:10:02.050465+00:00 |
+| wagyu.xyz unfairness | Whitearmor |  | 2026-10-28T02:10:42.771753+00:00 |
+| Ryder | Whitearmor | US | 2026-10-28T01:09:16.806823+00:00 |
+| Machelen (Belgium) | rhysida | BE | 2026-10-27T22:25:47.522037+00:00 |
+| https://t.me/whitearmorxd | Whitearmor |  | 2026-10-27T23:18:42.871402+00:00 |
+| TWICE SRL | emperador |  | 2026-10-27T21:22:05.818826+00:00 |
+| Tailormade Logistics | play | DK | 2026-10-27T19:51:56.059899+00:00 |
+| Coast 2 Coast | play | US | 2026-10-27T19:51:00.885314+00:00 |
+| VPC Builders | play | US | 2026-10-27T19:50:08.859781+00:00 |
+| Hygiena | play | US | 2026-10-27T18:27:11.459416+00:00 |
+| Money Concepts Capital | play | US | 2026-10-27T18:26:34.660553+00:00 |
+| MicroSearch | play |  | 2026-10-27T17:30:26.723125+00:00 |
+| QLC | play | US | 2026-10-27T17:29:53.098004+00:00 |
+| wagyu.xyz | Whitearmor |  | 2026-10-27T15:06:27.903414+00:00 |
+| Horizon Eye Specialists & LASIK Center | Booba Project | US | 2026-10-27T13:51:17.574190+00:00 |
+| GRUPO PETROIL | direwolf | MX | 2026-10-27T14:11:50.212201+00:00 |
+| Hudson River Museum | Booba Project | US | 2026-10-27T13:51:38.611490+00:00 |
+| BASS Medical Group | Booba Project | US | 2026-10-27T13:51:59.761206+00:00 |
+| Kerckstede vzw | Booba Project | BE | 2026-10-27T13:52:20.590995+00:00 |
+| RCOA- Regent Christian Online Academy | Booba Project | CA | 2026-10-27T13:52:40.373871+00:00 |
 
 ## IOCs
 ### ThreatFox (recent, abuse.ch)
@@ -131,76 +182,88 @@ _No data returned this run._
 ### IPsum (IPs flagged by 5+ independent blocklists)
 | IP | Lists flagging it |
 |---|---|
-| 45.148.10.121 | 9 |
-| 45.148.10.157 | 9 |
-| 64.62.197.48 | 9 |
-| 91.92.43.221 | 9 |
-| 138.226.239.90 | 9 |
+| 2.57.122.238 | 10 |
+| 152.32.225.117 | 10 |
+| 190.171.189.85 | 10 |
+| 195.178.110.26 | 10 |
+| 196.189.236.67 | 10 |
+| 14.34.249.175 | 9 |
+| 45.148.10.151 | 9 |
+| 46.151.178.14 | 9 |
+| 66.132.172.99 | 9 |
+| 66.132.172.135 | 9 |
+| 80.82.77.139 | 9 |
+| 93.152.221.37 | 9 |
+| 93.152.221.206 | 9 |
+| 94.154.43.63 | 9 |
+| 102.220.161.85 | 9 |
 | 138.226.239.233 | 9 |
 | 138.226.239.234 | 9 |
-| 152.32.225.117 | 9 |
-| 157.245.84.42 | 9 |
-| 160.250.132.238 | 9 |
 | 185.136.15.80 | 9 |
 | 185.136.15.81 | 9 |
-| 185.136.15.110 | 9 |
-| 185.136.15.111 | 9 |
-| 193.47.62.69 | 9 |
-| 193.187.110.159 | 9 |
-| 196.189.236.67 | 9 |
-| 2.57.122.238 | 8 |
-| 45.148.10.5 | 8 |
-| 45.148.10.141 | 8 |
+| 209.99.190.186 | 9 |
 
 ### OpenPhish (live phishing URLs)
-- https://www.roblox.com.et/users/4243002378/profile
-- http://bofa-login.vercel.app/
-- https://chatgpt0005.eu.org/blog/discord-patch-notes-february-4-2026/
-- https://chatgpt0005.eu.org/blog/save-and-display-your-faves-add-discord-shop-marvel-rivals-items-to-your-profiles-wishlist/
-- https://chatgpt0005.eu.org/blog/discord-is-now-on-meta-quest-reach-out-to-your-servers-while-in-vr/
-- https://chatgpt0005.eu.org/blog/discord-update-december-13-2023-changelog/
-- https://chatgpt0005.eu.org/category/community/
-- https://www.it-supportdesk.com/signin?t=eyJhbGciOiJIUzI1NiJ9.eyJ0cmFja2luZ190b2tlbiI6ImJhNDFiOWE1LTUxMDgtNDhhZC1hN2YzLTZhNjRkNTUxNDI4OCIsImNlbGwiOiJodHRwczovLzIxZzZqZnZoeTYuZXhlY3V0ZS1hcGkudXMtZWFzdC0yLmFtYXpvbmF3cy5jb20vcHJvZC9hcGkvcGhpc2hpbmdjYW1wYWlnbiIsImNhbXBhaWduX3Rva2VuIjoiNWZmNTE3ZTItNWI4NS00ZjU3LTk4ODYtY2UwMzAzZTBiNzlhIiwidGVzdF90b2tlbiI6ZmFsc2UsImV4dGVybmFsX3RyYWluaW5nIjpmYWxzZSwiZGlyZWN0X2RlbGl2ZXJ5Ijp0cnVlLCJpYXQiOjE3OTI5NDUzMjYsImlzcyI6Imh0dHBzOi8vYXBwLnBoaXNodGhyZWF0LmNvbSIsImV4cCI6MTgwMDcyMTMyNn0.ZjE0oQrgVuD_L_gTWb-i1UIT1dFmj2B1X3BuZ2dXeUw
-- https://www.id-cms.work/verify/xug2eay6d3ompbaha
-- https://www.id-cms.work/
-- https://www.roblox.et/users/6765120257/profile
-- https://comptecaweb-001-site1.ktempurl.com/Agris-Webconnexions/
-- http://www.mlnk.vn/asuar/
-- https://statelawfirm.weupdaa.workers.dev/
-- https://1url.at/www/robloxuser-951099195-profile
-- http://pub-cf8243e496b946db82fa4374d900d030.r2.dev/30064354gs4.html
-- https://www.roblox.com.et/users/4486801085/profile
-- https://1kak1anzas.pages.dev/
-- https://amuento-3278--aumento35.replit.app/
-- https://confrmpges-pgesacct.github.io/
+- https://2017-facebook.blogspot.com/
+- https://www.2017-facebook.blogspot.com/
+- http://microfis-password-recovery.wasmer.app/
+- https://account-security-notification.at-us.therelayservice.com/matpwp/#/main?type=LiveEmail&locale=en&token=GcRCorP2TGBfKv2HKw6ye5hKk-AeOhN5hv1a5vOAVJAltw8RwAu1LH_C8hfzhdDAr7PNqAb3gq1ZelCsdwLW_K65BmXwJZqKm3rnThroG684Z1Y0lSA2su8EQuoknGhQMRctAGRpTLi3jGt7aHzwv9fI84P7twmWwX_9g0k1ZkQUqLp-wmQX4DWHiUwK-2eu9NxCMnZAr08qeaTgvkGLGL09prt_sWL_OWh414PkKaYoEIVqWprPCXGCJfhkWF_x3mDRhqCvtcovxqrR0qj87M9D5ccJNFia0Pf7dnRpPDPD0zdB1x7U_3I9ZOZ9_CpF6WpGT8c_DWHAyRJf1mWT56C0kV_xsC8Bdvz7XWPuJI18z_CErG_mrqt4lUsssys8uBh5r8Zz4O_qL62uYTFmorsuJLb1Fph5Q3p0rIxGDvWJppoEg97pJpqk0_slipkNERwtjljswqECcl68-jYP2DFVj8iiubIwQA_ncOvj5OW2IJCWPQ76HHVeGBDMo41e0BbPdrAf6a7Zyh-bBGjJgWsx3s3KS-NKLcVkk8jCmprFgfC4OQHQYWxPyDWObV3xWXd03TKwX2LuCFWBL95ATvX6FXOHYvvLAfSDAhuwI-QZIVZvAyn3qq_gnKkvLJuEeSuiV-JLo67YjCx_g7OTVi4RHBLC_sentRtQulZ7CjCLennMi8g6svaWrSaxnO9t2fdjs3zolqUDYoJ_5-Wauwdfzuapy_xM5fqKYd86YeWO8F5wzaR_Wjpu4ScwX9xLiYnNSp3SCKGskGX3ZHRHkLaakd7rb2WlN4-3-noeUCs
+- http://g4gx8.com/
+- http://www.flhealthlicense.vercel.app/
+- https://vortex-auth-proxy.pages.dev/category/safety
+- https://vortex-auth-proxy.pages.dev/category/community
+- http://www.robiox.com.tw/login?returnUrl=2076255335
+- https://bitmartbit.com/m/
+- https://instagrams.com.vn/b00dxs6bnu5?uc
+- https://dgfcourier.de/Account/LogOn?ReturnUrl=%2f
+- http://jasapickuptiktok.gratisongkir.web.id/k
+- https://mining-itself-theaters-hewlett.trycloudflare.com/link/usaa2026/usaa2026D/usaa2026D/web/captcha.php
+- https://u.to/nUnhIg?ssxnxx.com
+- http://www.edytryyde.com/
+- https://facebook-login-redirect.blogspot.com/
+- http://www.xfinityy111.weebly.com/
+- http://www.loginn-orangnews.vercel.app/
+- http://loginn-orangnews.vercel.app/
 
 ### PhishStats (recent phishing/malicious URLs, scored)
 | Score | URL |
 |---|---|
-| N/A | https://centraldoacoarclrmittonline.ferrosescritorioaeroaco.workers.dev/?gad_source=1 |
-| N/A | https://away.vk.ru/away.php?rh=78de4361-86b3-4aa4-b738-79513f7e0c1d |
-| N/A | https://trnsace.site/oferta/l/-251586969?id=9b8b772b-1f5a-4eb1-bdd5-9817be0566e3 |
-| N/A | https://app.bonificacaocliente.info/ |
-| N/A | https://suportenetgerentejuridico.digital/ |
-| N/A | https://acesso.appgerentepj.digital/ |
-| N/A | https://away.vk.ru/away.php?rh=3b004800-697b-4fd4-83f0-c10ff6529f4d |
-| N/A | https://allegrolokalnie.pl-618402.sbs/ |
-| N/A | https://atualizacaonetempresas.app/ |
-| N/A | https://allegrolokalnie.pl-lokalna-ofeta9xv17yj75v0.shop/ |
-| N/A | https://away.vk.ru/away.php?rh=12e8a246-16ae-43e9-97c9-6dbbbe576fd1 |
-| N/A | https://away.vk.ru/away.php?rh=232b0841-7d07-4888-b005-9d4917507c44 |
-| N/A | https://ersfilter-my.sharepoint.com/personal/nradonich_ersfilter_com/_layouts/15/doc.aspx?guestaccesstoken=t6T%2FHN1dKbYHlYX%2BeIMbaZufA43rrGZ6%2FaAAewNocDI%3D&docid=1_18168db23429e45f29fdf2e7be120efc4&wdFormId=%7BB9970F62-44C3-4D09-9929-6E1EB652DA57%7D&action=formsubmit&CID=f877e52e-d963-44e6-a5e3-58c108a8f195 |
-| N/A | https://away.vk.ru/away.php?rh=f5015da1-4b8b-420c-a558-3a7295c3e5be |
-| N/A | https://bradesco.pjatualizacaosegura.live/ |
-| N/A | https://allegrolokalnie.pl-bnmj5.sbs/ |
-| N/A | https://sesja-3p5h-pkobiznes.pl-firma.net/-/logowanie?sid=1370668d3415fe5851d0fb125b560707 |
-| N/A | https://bradesco.validacaoempresas.pro/ |
-| N/A | https://app.clienteonline.shop/ |
-| N/A | https://allegro.pl-hdwnd72nxiw92nr9xg3.shop/ |
+| N/A | http://43.156.0.130/v3/signin/identifier?amp%3Bfollowup=https%3A%2F%2Faccounts.google.com%2F&amp%3Bifkv=AaSxoQyQ_ZSuXpSvue0UfKrOXnU6mQAuN0RcLmvWGTqSCzhKlOsPyDT7wQQH6ra2Rhdw1PE87iTB&amp%3Bpassive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AWt06SSD97003oP0xYfPa_y2_MmFw6rvJtqmBhHHaZ2tqGrlr5Y899Z7oBdYS9OaZuejbkIS63g2ng&dsh=S1980082563%3A1793177962580611 |
+| N/A | https://away.vk.ru/away.php?rh=c7b2d5cf-5734-4486-926b-68beccd1823a |
+| N/A | https://away.vk.ru/away.php?rh=589363ea-f726-4f91-9c7f-0b6550ff8f2b |
+| N/A | https://secure-xdomain-82343.w-group.shop/ |
+| N/A | https://6a6fe68687.nxcli.io/payo/auth/log.php |
+| N/A | https://www.ccpcusco.org/archivos |
+| N/A | https://www.ccpcusco.org/archivos/ |
+| N/A | https://www.troc.com/fr |
+| N/A | http://away.vk.ru/away.php?rh=cbb44f27-23a9-4c03-93f3-c9c7740544da |
+| N/A | https://away.vk.ru/away.php?rh=5bcb50bb-802c-4d0b-a0bf-c5d3fae780ca |
+| N/A | http://43.156.0.130/v3/signin/identifier?amp%3Bfollowup=https%3A%2F%2Faccounts.google.com%2F&amp%3Bifkv=AWnogHfrcMjMJOA5-x4JjU2A_H62FL5Ipip8qUn0FfsVqhu1vrUBPxBl4JpnqCjPGKNrTfaShVnNJQ&amp%3Bpassive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AWt06SSzyvfXGwvuKCcHO1k7EOClDpiuJ2e73MYdj0AaneDy5gftmMFb2pdwMvWmU0kfoa9W0oRLaw&dsh=S1814340082%3A1793176003819185 |
+| N/A | https://away.vk.ru/away.php?rh=ff945ae9-7349-4599-924c-802a9003a528 |
+| N/A | https://away.vk.ru/away.php?rh=342e348f-3279-4f98-94ac-acad9a736c30 |
+| N/A | https://xml-v4.pushub.net/click?i=mrtZVPHkmTY_0 |
+| N/A | http://49.51.43.12/v3/signin/identifier?amp%3Bfollowup=https%3A%2F%2Faccounts.google.com%2F&amp%3Bifkv=ASKXGp36_CB8HzfrpuLLHTVjXxiUGDwO6Tj8yz4QrsaGyc3I4H4G7NxTTQJtpw0j07g9O5T5Tx4uyQ&amp%3Bpassive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AWt06SQz4o_kw4oz0hY3sBp17O67x9nTEdg8uAdjyQzEi-GT1FqukH--DCx4i7Upi93vYDma0tVFkw&dsh=S-818642163%3A1793175744969117 |
+| N/A | https://away.vk.ru/away.php?rh=6a5d3f39-df81-4d6f-9cc0-2f480cf2a6ee |
+| N/A | https://away.vk.ru/away.php?rh=356c83d3-dbb4-4849-8587-15bb2cb0cd89 |
+| N/A | https://ersfilter-my.sharepoint.com/personal/nradonich_ersfilter_com/_layouts/15/doc.aspx?guestaccesstoken=t6T%2FHN1dKbYHlYX%2BeIMbaZufA43rrGZ6%2FaAAewNocDI%3D&docid=1_18168db23429e45f29fdf2e7be120efc4&wdFormId=%7BB9970F62-44C3-4D09-9929-6E1EB652DA57%7D&action=formsubmit&CID=bf196fdf-f2a4-4d77-be42-fcb946a846b3 |
+| N/A | https://away.vk.ru/away.php?rh=762dd488-9dfb-4df8-89df-b950463b537e |
+| N/A | https://www.eyeearhospital.com/bnd/ |
 
 ### SSL Blacklist (abuse.ch — certs tied to malware/botnet C2)
 | SHA1 | Info |
 |---|---|
+| b3419f377a0765d386af3f3a61bede653db873f7 | ArvionRAT C&C |
+| 891b265025da1fe909b4792dfe0f3df462694bef | ConnectWise C&C |
+| d8d068667512bafa6720747c23266764f70638a9 | ConnectWise C&C |
+| f7c6d6e9767952571df5b177956e71f6e664711d | ConnectWise C&C |
+| 9c1e389a6cea4a7eb32b2e1d89acedfd5b7a52f9 | ConnectWise C&C |
+| 8a6380c8c1857ae5e6c215fc9593e152d2350c87 | ConnectWise C&C |
+| 33f97c9513d957c407b1fb86aee23c20f9145680 | ConnectWise C&C |
+| b850658af6eba65201db37e5e0491bc33b8bba8e | ConnectWise C&C |
+| d7ab2ab9aa49099722347f16ecdebd91097d1aa0 | ConnectWise C&C |
+| bea642be1361616c46c371216f52414d41ad58d7 | ConnectWise C&C |
+| 6ea4447a4cff2bc512fc4d7ccc412111d64f8af8 | ConnectWise C&C |
+| 4f77e6691513a2677569524e2331ab29238f07b2 | Malware C&C |
 | e5eefcb70e310314c73361c957aa2a1f970fbd65 | PureRAT C&C |
 | a54ad395d86f7e564d4c23c150ce28359538d64d | OffLoader C&C |
 | 9aa781171a4918d3e4069dd810fb846797806db7 | PureLogsStealer C&C |
@@ -209,18 +272,6 @@ _No data returned this run._
 | 4500afbacb26f57137b330589027e0560957267f | PureLogsStealer C&C |
 | 4d319fb9760ff822c5079e3ddbda8304de89f565 | Vidar C&C |
 | 4269a895d221ce05070c61672e42fc549739137e | Vidar C&C |
-| 5570df9517e8673cf294c4ae0314ff1e95e10c7a | Vidar C&C |
-| b59fc9b78f8adfb12404d606d32f189309dcffdb | Vidar C&C |
-| 92ebef95bba7efc76f713e8b4aa8d40d45478645 | PureRAT C&C |
-| 72551f187ace5de0909186afdfea0756e9e3cd6d | XoriumStealer C&C |
-| bd8eb13b5f944ac4c4a03a22d8c1b574bd02ee4f | QuasarRAT C&C |
-| a41e8528d9b464b9620f4cc5900c444f291366e7 | BridgeAgent C&C |
-| e6500b535b03160f06f2ca5c663ae180275dbb3b | Vidar C&C |
-| 52c7bf8fd5f6312e161c6fe20c68edfa90e137eb | Vidar C&C |
-| 6f373dd650805f118832ae3c618d10f0402ea6fe | Vidar C&C |
-| f6f18a9147a66682618c0255dd3d376ccbcfed94 | Vidar C&C |
-| 882b92d7a268237df18813ca7349fd2092f47618 | DCRat C&C |
-| 6d96859790e57d9a9d1acb20ff920a508eb96e1c | PureRAT C&C |
 
 ### Spamhaus DROP (hijacked/leased malicious netblocks)
 - 1.10.16.0/20
@@ -246,121 +297,125 @@ _No data returned this run._
 
 ### blocklist.de (recent SSH/mail/web attack sources)
 - 1.10.242.248
-- 1.12.55.80
+- 1.117.72.220
 - 1.12.64.109
 - 1.14.105.177
 - 1.14.149.30
 - 1.14.192.95
 - 1.14.240.247
+- 1.144.106.82
 - 1.147.62.60
-- 1.15.106.134
 - 1.159.54.33
-- 1.162.216.37
+- 1.162.208.86
+- 1.179.238.84
 - 1.187.165.30
-- 1.187.214.31
+- 1.187.213.56
 - 1.187.238.219
 - 1.192.80.17
-- 1.20.172.162
+- 1.2.252.192
+- 1.20.243.85
 - 1.212.225.99
 - 1.214.214.114
-- 1.215.233.74
-- 1.220.198.126
 
 ### CINS Army (poorly-rated IPs)
-- 1.15.14.29
-- 1.193.57.144
-- 1.193.63.224
-- 1.220.119.115
+- 1.12.229.231
+- 1.214.29.155
+- 1.223.11.69
 - 1.236.254.202
-- 1.24.16.117
-- 1.24.16.119
-- 1.24.16.145
-- 1.24.16.163
-- 1.24.16.54
-- 1.24.16.55
-- 1.24.16.91
-- 1.24.16.97
-- 1.244.184.137
-- 1.28.125.52
+- 1.24.16.121
+- 1.24.16.134
+- 1.24.16.135
+- 1.24.16.17
+- 1.24.16.191
+- 1.24.16.44
+- 1.24.16.67
+- 1.24.16.98
+- 1.24.16.99
 - 1.30.28.182
 - 1.30.80.145
+- 1.31.32.6
 - 1.32.57.245
-- 1.36.198.249
-- 1.83.125.149
+- 1.58.108.110
+- 1.64.197.229
+- 1.83.125.60
 
 ## News (last ~36h, across outlets)
 ### The Hacker News
-- [Attackers Hijack Dahua IP Cameras in Ukraine Using P2P Access and Auth Weaknesses](https://thehackernews.com/2026/10/attackers-hijack-dahua-ip-cameras-in.html)
-- [CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution](https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html)
-- [Hackers Infect 953 Online Stores With Scanner-Evading JavaScript, Mostly on Magento](https://thehackernews.com/2026/10/hackers-infect-953-online-stores-with.html)
-- [PHP Issues Second Windows Security Update in Five Days to Fix Brotli Code Execution Flaw](https://thehackernews.com/2026/10/php-issues-second-windows-security.html)
-- [Attackers Use Microsoft Teams IT Support Scams to Deploy Malware and Ransomware](https://thehackernews.com/2026/10/attackers-use-microsoft-teams-it.html)
-- [⚡ Weekly Recap: This2Shell, That2Shell, Everything's an RCE? Rogue AI, Supply Chain Chaos and More](https://thehackernews.com/2026/10/weekly-recap-this2shell-that2shell.html)
-- [Two Critical Wasmtime Flaws Could Let Malicious WebAssembly Modules Escape Sandboxes](https://thehackernews.com/2026/10/two-critical-wasmtime-flaws-could-let.html)
-- [Between alerts: What Attackers Do in the Spaces Ordinary Detection Misses](https://thehackernews.com/2026/10/between-alerts-what-attackers-do-in.html)
-- [uCreator Android Spyware Can Steal Telegram 2FA Passwords and Clone WeChat Accounts](https://thehackernews.com/2026/10/ucreator-android-spyware-can-steal.html)
-- [Microsoft 365 Token-Replay Attacks Compromise 97 Accounts at 79 Organizations](https://thehackernews.com/2026/10/microsoft-365-token-replay-attacks.html)
-- [Gheist Uses Stolen GitHub Tokens to Steal Private Repository Secrets via Actions Logs](https://thehackernews.com/2026/10/gheist-uses-stolen-github-tokens-to.html)
-- [Malicious File in Downloads Folder Tries to Trick AI Coding Agent Into Installing Malware](https://thehackernews.com/2026/10/malicious-file-in-downloads-folder.html)
+- [Anthropic's Unreleased AI Model Chains Flaws Into Working Chrome, Safari, Windows and Linux Exploits](https://thehackernews.com/2026/10/anthropics-unreleased-ai-model-chains.html)
+- [FBI Seizes Virtualine Domain Over Alleged Criminal Hosting and Bitcoin Money Laundering](https://thehackernews.com/2026/10/fbi-seizes-virtualine-domain-over.html)
+- [Japan's GMO Offers $1 Million Bounty to Catch Hackers Behind FX Trading Cloud Breach](https://thehackernews.com/2026/10/japans-gmo-offers-1-million-bounty-to.html)
+- [Tailscale Patches SSH Flaws That Could Let Hacked Devices Gain Root Access on Other Servers](https://thehackernews.com/2026/10/tailscale-patches-ssh-flaws-that-could.html)
+- [ShinyHunters-Exploited Oracle PeopleSoft Zero-Day Turns Out to Be Three Chained Flaws](https://thehackernews.com/2026/10/shinyhunters-exploited-oracle.html)
+- [Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges](https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html)
+- [CyberStrikeAI Uses 44 AI Agents to Automate Hacking Operations Against Japan Targets](https://thehackernews.com/2026/10/cyberstrikeai-uses-44-ai-agents-to.html)
+- [GoAhead TLS Flaws Allow Revoked Client Certificates and Enable Session Decryption](https://thehackernews.com/2026/10/goahead-tls-flaws-allow-revoked-client.html)
+- [Apple Backports Fix for Exploited CoreGraphics Flaw to Older iPhones and iPads](https://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html)
+- [Microsoft Authenticator Flaw Let Permissionless Android Apps Steal Work Account Tokens](https://thehackernews.com/2026/10/microsoft-authenticator-flaw-let.html)
+- [Keystone to Destroy 18,835 Hardware Wallets After Hackers Steal Device Verification Key](https://thehackernews.com/2026/10/keystone-to-destroy-18835-hardware.html)
+- [AI-Generated Fake Login Pages Are Making Account Takeovers Easier](https://thehackernews.com/2026/10/ai-generated-fake-login-pages-are.html)
+- [Lazarus Abuses South Korean Security Software to Deploy Malware Using Post-Quantum Encryption](https://thehackernews.com/2026/10/lazarus-abuses-south-korean-security.html)
+- [Australia Gets Into Amadey Malware Backend, Cuts Off Access to 180,000 Infected Computers](https://thehackernews.com/2026/10/australia-gets-into-amadey-malware.html)
+- [OpenAI Compaction Flaw Let Researchers Bypass Hidden Reasoning Protections](https://thehackernews.com/2026/10/openai-compaction-flaw-let-researchers.html)
 
 ### BleepingComputer
+- [Japan's GMO urges customers to shut down PCs amid ransomware threat](https://www.bleepingcomputer.com/news/security/japans-gmo-urges-customers-to-shut-down-pcs-amid-ransomware-threat/)
+- [OpenAI's GPT-6.1 Terra is safer overall, but shows more destructive-action flags in tests](https://www.bleepingcomputer.com/news/artificial-intelligence/openais-gpt-61-terra-is-safer-overall-but-shows-more-destructive-action-flags-in-tests/)
+- [UNM Health ransomware attack disrupts patient care, surgeries](https://www.bleepingcomputer.com/news/security/unm-health-ransomware-attack-disrupts-patient-care-surgeries/)
+- [Hackers hijack Convertr analytics script to steal payment card data](https://www.bleepingcomputer.com/news/security/hackers-hijack-convertr-analytics-script-to-steal-payment-card-data/)
+- [Microsoft releases Windows OOB updates to distrust eMudhra certificates](https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-oob-updates-to-distrust-emudhra-certificates/)
+- [Warp discloses breach exposing AI agent logs, user telemetry data](https://www.bleepingcomputer.com/news/security/warp-discloses-breach-exposing-ai-agent-logs-user-telemetry-data/)
+- [Tailscale warns of SSH flaws allowing root privilege escalation](https://www.bleepingcomputer.com/news/security/tailscale-warns-of-serious-ssh-flaws-allowing-root-privilege-escalation/)
+- [The Huntress Tragic Quadrant: Ranking Threats Hitting Businesses Hardest](https://www.bleepingcomputer.com/news/security/the-huntress-tragic-quadrant-ranking-threats-hitting-businesses-hardest/)
+- [Apple backports CoreGraphics zero-day patches to older iPhones](https://www.bleepingcomputer.com/news/apple/apple-backports-coregraphics-zero-day-patches-to-older-iphones/)
+- [Energy giant ENGIE discloses data breach affecting customers](https://www.bleepingcomputer.com/news/security/energy-giant-engie-discloses-data-breach-affecting-customers/)
 - [CISA confirms PHP2Shell vulnerabilities now exploited in attacks](https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/)
 - [University of Copenhagen data breach exposes data of 525,000 people](https://www.bleepingcomputer.com/news/security/university-of-copenhagen-data-breach-exposes-data-of-525-000-people/)
-- [Former pentester used ARTEX AI to steal 8.2 million data records](https://www.bleepingcomputer.com/news/security/former-pentester-used-artex-ai-to-steal-82-million-data-records/)
-- [OpenAI launches GPT-6.1 Terra with 3x faster AI agents, 50% lower pricing](https://www.bleepingcomputer.com/news/artificial-intelligence/openai-launches-gpt-61-terra-with-3x-faster-ai-agents-50-percent-lower-pricing/)
-- [DreamHost forces password resets in ongoing "incident"](https://www.bleepingcomputer.com/news/security/dreamhost-forces-email-ftp-sftp-password-resets-in-ongoing-incident/)
-- [Critical 'HTTP2Shell' Brotli vulnerability triggers emergency patches](https://www.bleepingcomputer.com/news/security/critical-http2shell-brotli-vulnerability-triggers-emergency-patches/)
-- [Microsoft releases emergency .NET patches for critical Brotli flaw](https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-emergency-net-patches-for-critical-brotli-flaw/)
-- [When an AI Agent Is the Incident, the Identity Record Is the Evidence](https://www.bleepingcomputer.com/news/security/when-an-ai-agent-is-the-incident-the-identity-record-is-the-evidence/)
-- [Chinese man extradited for role in $36 million cryptocurrency scam](https://www.bleepingcomputer.com/news/security/chinese-man-extradited-for-role-in-36-million-cryptocurrency-scam/)
-- [Kali Linux 2026.3 released with 6 new tools, desktop updates](https://www.bleepingcomputer.com/news/linux/kali-linux-20263-released-with-6-new-tools-desktop-updates/)
-- [PHP2Shell security flaws now sucessfully exploited in the wild](https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/)
 
 ### Krebs on Security
 _No new items / feed unavailable this run._
 
 ### Dark Reading
+- [Third Serengeti Sweep Tops 1,400 Arrests as Investigations Mature](https://www.darkreading.com/cybersecurity-operations/third-serengeti-sweep-1400-arrests-investigations-mature)
+- [3 Frameworks to Protect CISOs &amp; Orgs Against AI Liability](https://www.darkreading.com/cyber-risk/3-frameworks-cisos-ai-liability)
+- [External Teams Chats Anchor 15-Minute Malware Delivery](https://www.darkreading.com/cloud-security/email-bombing-external-teams-chats-repeatable-access-path)
+- [SBOMs Alone Can't Reveal the Scope of a Supply Chain Attack](https://www.darkreading.com/cyber-risk/sboms-alone-scope-supply-chain-attack)
+- [Beware the Slasher: AI Could Kill Off Cybersecurity Pros' Skills](https://www.darkreading.com/cybersecurity-operations/ai-kill-off-cybersecurity-pros-skills)
+- ['Aokigahara' Stealer Targets 'Developer Keyrings' &amp; AI Assistants](https://www.darkreading.com/endpoint-security/aokigahara-stealer-developer-keyrings-ai-assistants)
 - [So Many AI Security Benchmarks, But None Tell the Whole Story](https://www.darkreading.com/cybersecurity-analytics/benchmarking-security-of-ai-models-poses-challenges)
 - [Risks &amp; Rewards: How AI Is Redefining the CISO's Role](https://www.darkreading.com/cybersecurity-careers/risks-rewards-ai-redefining-ciso-role)
-- [In-the-Wild Attack Abuses AI Agents' Trust in Markdown](https://www.darkreading.com/application-security/in-the-wild-attack-ai-agents-trust-markdown)
-- ['Gheist' Weaponizes GitHub Tokens to Steal Cloud Secrets](https://www.darkreading.com/cyberattacks-data-breaches/gheist-stolen-github-tokens-cloud-secrets)
-- [10 Software Security Practices Built for the Next 250 Years](https://www.darkreading.com/cyberattacks-data-breaches/10-software-security-practices-built-250-years)
 
 ### SecurityWeek
-- [Maritime Coalition Launches Free Vulnerability Database for Ship and Port Systems](https://www.securityweek.com/maritime-coalition-launches-free-vulnerability-database-for-ship-and-port-systems/)
-- [Cybersecurity Issue Forces a Major New Mexico Hospital to Divert Patients and Close Clinics](https://www.securityweek.com/cybersecurity-issue-forces-a-major-new-mexico-hospital-to-divert-patients-and-close-clinics/)
-- [Anthropic Files for Potentially the Biggest IPO Ever as CEO Warns of Risk to Humanity From AI](https://www.securityweek.com/anthropic-files-for-potentially-the-biggest-ipo-ever-as-ceo-warns-of-risk-to-humanity-from-ai/)
-- [Industrial Vendors Check Products for PHP2Shell Vulnerabilities](https://www.securityweek.com/industrial-vendors-check-products-for-php2shell-vulnerabilities/)
-- [Genesys Hack Exposes Customer Data From Internal Systems](https://www.securityweek.com/genesys-hack-exposes-customer-data-from-internal-systems/)
-- [Stolen AI Reasoning Could Help China Build Cheaper Rivals](https://www.securityweek.com/stolen-ai-reasoning-could-help-china-build-cheaper-rivals/)
-- [PHP2Shell Exploitation Moves From Probes to Working Shells](https://www.securityweek.com/php2shell-exploitation-moves-from-probes-to-working-shells/)
-- [953 Online Stores Infected in Long-Lasting Malware Campaign](https://www.securityweek.com/953-online-stores-infected-in-long-lasting-malware-campaign/)
-- [Dutch Police Arrest Two Over NFC Relay Attacks That Drained $400,000+ From Bank Accounts](https://www.securityweek.com/dutch-police-arrest-two-over-nfc-relay-attacks-that-drained-400000/)
-- [Node2Shell: Brotli Flaw Triggers Patching Across Microsoft, Node.js, Python Packages](https://www.securityweek.com/node2shell-brotli-flaw-triggers-patching-across-microsoft-node-js-python-packages/)
+- [Hackers Start Probing Fresh Oracle EBS Vulnerability](https://www.securityweek.com/hackers-start-probing-fresh-oracle-ebs-vulnerability/)
+- [CISA Warns of Node2Shell Exploitation as Honeypots Log Attack Attempts](https://www.securityweek.com/cisa-warns-of-node2shell-exploitation-as-honeypots-log-attack-attempts/)
+- [Tailscale Rushes Patches After Uncoordinated Disclosure of ‘Tailworm’ Flaws](https://www.securityweek.com/tailscale-rushes-patches-after-uncoordinated-disclosure-of-tailworm-flaws/)
+- [Vendor Key Leak Puts Data of 238,000 Denver Health Plan Members at Risk](https://www.securityweek.com/vendor-key-leak-puts-data-of-238000-denver-health-plan-members-at-risk/)
+- [HPE Patches Dozens of Critical Flaws in Networking Products](https://www.securityweek.com/hpe-patches-dozens-of-critical-flaws-in-networking-products/)
+- [Unexplained DreamHost Incident Prompts Email, FTP Password Resets](https://www.securityweek.com/unexplained-dreamhost-incident-prompts-email-ftp-password-resets/)
+- [iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18](https://www.securityweek.com/ios-macos-27-2-patch-286-bugs-fix-for-exploited-flaw-backported-to-ios-18/)
+- [Risks Spelled Out for Anthropic Investors Include Possible Harms From Runaway AI](https://www.securityweek.com/risks-spelled-out-for-anthropic-investors-include-possible-harms-from-runaway-ai/)
+- [This is Fine: What NetScaler Zero-Days Tell Us About the New Normal](https://www.securityweek.com/this-is-fine-what-netscaler-zero-days-tell-us-about-the-new-normal/)
+- [Dead Popcorn Time Updater Put Millions of Computers at Risk of Takeover](https://www.securityweek.com/dead-popcorn-time-updater-put-millions-of-computers-at-risk-of-takeover/)
 
 ### The Record
-- [Texas sues OpenAI for deceiving consumers about safety, seeks sweeping reforms and fines](https://therecord.media/texas-sues-openai-deceiving-customers)
-- [Serbian autocrat loses election following widespread reports of digital repression](https://therecord.media/serbia-election-spyware-vucic)
-- [Ukraine disputes Musk's claims of Starlink misuse as military connectivity restored](https://therecord.media/ukraine-disputes-musk-claims-of-starlink-misuse)
-- [Dutch police extradite Chinese national accused of laundering Cambodian investment scam funds](https://therecord.media/dutch-police-extradite-chinese-national-money-laundering-scams)
-- [Ukraine warns hackers are exploiting Chinese-made Dahua surveillance cameras](https://therecord.media/ukraine-cert-ua-warning-chinese-dahua-cameras-hacked)
+- [Nefilim, Hive ransomware operator given five-year-plus sentence after guilty plea](https://therecord.media/nefilim-hive-ransomware-operator-70-months-prison)
+- [US indicts Malaysian national after Madagascar scam operation uncovered](https://therecord.media/malaysian-national-indicted-after-scam-centers-raid-madagascar)
+- [Hackers repeatedly breached suppliers holding UK police data, watchdog finds](https://therecord.media/uk-police-data-breached-from-suppliers-watchdog-report)
+- [University of New Mexico hospital diverts ambulances after cyberattack](https://therecord.media/university-of-new-mexico-hospital-diverts-cyber-incident)
+- [Malicious apps prey on Russians’ anxiety about fuel prices, drone strikes](https://therecord.media/malicious-apps-russian-anxiety-gas-prices-drone-strikes)
 
 ### Infosecurity Magazine
-- [CISA 2030 Sets Out ‘Aggressive, Anticipatory’ Cyber Defense Strategy for Critical Infrastructure](https://www.infosecurity-magazine.com/news/cisa-aggressive-strategy-critical/)
-- [Gheist Attackers Stumble in Attempt to Abuse GitHub Tokens](https://www.infosecurity-magazine.com/news/gheist-attackers-abuse-stolen/)
-- [Linux Flaws Exposed Before Fixes as Root Exploit Goes Public](https://www.infosecurity-magazine.com/news/linux-flaws-exposed-before-fixes/)
-- [Microsoft Issues Emergency Patch Update for Critical .NET Buffer Overflow Flaw](https://www.infosecurity-magazine.com/news/microsoft-patch-update-net-flaw/)
-- [Blue Initiative Offers Maritime Sector Dedicated Vulnerability Database](https://www.infosecurity-magazine.com/news/blue-initiative-maritime/)
-- [PHP Publishes Mitigation Advice for New RCE Flaw](https://www.infosecurity-magazine.com/news/php-publishes-mitigation-advice/)
+_No new items / feed unavailable this run._
 
 ### CyberScoop
+- [Before you file that AI bug report, OpenAI has some advice](https://cyberscoop.com/openai-ai-generated-bug-reports/)
+- [All the security risks Anthropic is worried about before its IPO](https://cyberscoop.com/anthropic-ipo-filing-cybersecurity-risks/)
+- [Prolific Hive and Nefilim ransomware affiliate sentenced to 70 months in prison](https://cyberscoop.com/nefilim-hive-ransomware-affiliate-artem-stryzhak-sentenced/)
+- [National cyber director rolls out latest pilot in South Carolina, this time for rural hospitals](https://cyberscoop.com/oncd-rural-hospital-cybersecurity-pilot-project-lifeline-250/)
+- [What happens when security tools go dark before the ransomware](https://cyberscoop.com/warlock-ransomware-storm-2603-sharepoint-attacks-op-ed/)
 - [Experts temper emergency-level alarms over critical Brotli defect](https://cyberscoop.com/brotli-critical-vulnerability-decompression-library-node2shell-broccoli2shell/)
-- [Senators, rights groups say Trump administration breaking law by withholding surveillance court opinion](https://cyberscoop.com/wyden-schiff-fisa-section-702-declassification/)
-- [Authorities extradite Chinese national for alleged $37M investment scam](https://cyberscoop.com/chinese-national-extradited-investment-scam/)
-- [CISA publishes strategy with eye on the next four years](https://cyberscoop.com/cisa-2030-cybersecurity-strategy/)
 
 ### Cisco Talos
-_No new items / feed unavailable this run._
+- [From federal SOCs to Talos: Ryan Fetterman on practical security research](https://blog.talosintelligence.com/from-federal-socs-to-talos-ryan-fetterman-on-practical-security-research/)
 
 ### Unit 42 (Palo Alto)
 _No new items / feed unavailable this run._
@@ -372,13 +427,12 @@ _No new items / feed unavailable this run._
 _No new items / feed unavailable this run._
 
 ### SANS Internet Storm Center
+- [ISC Stormcast For Wednesday, October 28th, 2026 https://isc.sans.edu/podcastdetail/10154, (Wed, Oct 28th)](https://isc.sans.edu/diary/rss/33464)
 - [ISC Stormcast For Tuesday, October 27th, 2026 https://isc.sans.edu/podcastdetail/10152, (Tue, Oct 27th)](https://isc.sans.edu/diary/rss/33462)
 - [Apple Patches for October 2026, (Mon, Oct 26th)](https://isc.sans.edu/diary/rss/33458)
-- [Looking for a Language &#x5b;Guest Diary&#x5d;, (Wed, Oct 21st)](https://isc.sans.edu/diary/rss/33442)
-- [ISC Stormcast For Monday, October 26th, 2026 https://isc.sans.edu/podcastdetail/10150, (Mon, Oct 26th)](https://isc.sans.edu/diary/rss/33456)
 
 ### Securelist (Kaspersky)
-- [Deploying AI agents securely: how Kaspersky products mitigate AI threats](https://securelist.com/tr/how-to-secure-ai-agents/121444/)
+- [An insecure neighbor: how a vulnerability chain led to an isolation bypass in cloud infrastructure](https://securelist.com/cloud-infrastructure-isolation-bypass/121609/)
 
 ### CrowdStrike Blog
 - [Why Organizations Secure AI Agents with Falcon Guardian](https://www.crowdstrike.com/en-us/blog/why-organizations-secure-ai-agents-with-falcon-guardian/)
@@ -393,12 +447,14 @@ _No new items / feed unavailable this run._
 - [Unknown Threat Actor Uses AI-Driven ARTEX to Target South Korean Finance](https://www.crowdstrike.com/en-us/blog/unknown-threat-actor-uses-artex-to-target-south-korean-finance/)
 
 ### FortiGuard Threat Signal
-- [Node.js Brotli Remote Code Execution (Nodel2Shell)](https://fortiguard.fortinet.com/threat-signal-report/6556)
+- [Node.js Brotli Remote Code Execution (Node2Shell)](https://fortiguard.fortinet.com/threat-signal-report/6556)
+- [PHP2Shell Remote Code Execution Vulnerabilities](https://fortiguard.fortinet.com/threat-signal-report/6551)
 
 ## Fetch issues this run
 - https://urlhaus.abuse.ch/downloads/csv_recent/ -> 410 Client Error: Gone for url: https://urlhaus.abuse.ch/downloads/csv_recent/
 - https://threatfox.abuse.ch/export/csv/recent/ -> 410 Client Error: Gone for url: https://threatfox.abuse.ch/export/csv/recent/
 - https://bazaar.abuse.ch/export/csv/recent/ -> 410 Client Error: Gone for url: https://bazaar.abuse.ch/export/csv/recent/
+- Infosecurity Magazine RSS -> malformed/unparseable feed (<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>)
 
 ---
 Sources: CISA KEV · NVD · GitHub Security Advisories · abuse.ch (URLhaus/ThreatFox/MalwareBazaar/Feodo Tracker/SSL Blacklist) · IPsum · Spamhaus DROP · blocklist.de · CINS Army · OpenPhish · PhishStats · ransomware.live · The Hacker News, BleepingComputer, Krebs on Security, Dark Reading, SecurityWeek, The Record, Infosecurity Magazine, CyberScoop, Cisco Talos, Unit 42 (Palo Alto), Microsoft Security Blog, Google Cloud Threat Intel, SANS Internet Storm Center, Securelist (Kaspersky), CrowdStrike Blog, FortiGuard Threat Signal
