@@ -1,8 +1,8 @@
-# Winjit Daily TI Digest — 2026-11-08
+# Winjit Daily TI Digest — 2026-11-09
 
-_Auto-generated. Window: last ~24h. Fetched at 2026-11-08T09:59:52.400512+00:00Z_
+_Auto-generated. Window: last ~24h. Fetched at 2026-11-09T11:08:47.980022+00:00Z_
 
-**At a glance:** 0 new KEV · 179 new HIGH/CRITICAL CVEs · 25 new GitHub advisories · 20 new ransomware victims posted
+**At a glance:** 0 new KEV · 119 new HIGH/CRITICAL CVEs · 25 new GitHub advisories · 20 new ransomware victims posted
 _Note: CISA KEV, NVD, GitHub Advisories and ransomware.live are genuinely "new since yesterday." The IOC blocklists below (Spamhaus DROP, blocklist.de, CINS Army, IPsum, SSL Blacklist, Feodo Tracker) are current full-list snapshots from each provider, not day-over-day diffs -- expect a lot of overlap with yesterday's report there, that's expected, not a bug._
 
 ## CISA KEV — newly added actively-exploited CVEs
@@ -12,238 +12,180 @@ _No new KEV entries in this window._
 _Sorted by CVSS (highest first). EPSS = probability of real-world exploitation in the next 30 days (FIRST.org)._
 | CVE | CVSS | EPSS | Description |
 |---|---|---|---|
-| CVE-2026-123966 | 10.0 | n/a | A vulnerability was determined in Tenda AC19 16.03.10.07. Affected by this issue is the function saveParentControlInfo of the file /goform/saveParentControlInfo. This manipulation of the argument devi |
-| CVE-2026-123551 | 10.0 | n/a | OpenAM from 14.0.0 before 16.1.4 contains an information disclosure vulnerability that allows unauthenticated attackers to read live session tokens from the notification WebSocket. Attackers can bypas |
-| CVE-2026-16884 | 9.9 | 0.5% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote attacker to obtain sensitive information due to an XML external entity (XXE) injection. |
-| CVE-2026-16920 | 9.9 | 0.5% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to bypass security restrictions due to a confused deputy vulnerability. |
-| CVE-2026-17049 | 9.9 | 0.5% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information and modify arbitrary documents due to authorization bypass through user-controlled |
-| CVE-2026-17117 | 9.9 | 0.8% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to execute arbitrary code due to improperly controlled modification of object attri |
-| CVE-2026-17132 | 9.9 | 0.6% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to execute arbitrary SQL commands due to improper neutralization of special elements used in an SQL command. |
-| CVE-2026-17134 | 9.9 | 0.5% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to execute arbitrary SQL commands due to SQL injection. |
-| CVE-2026-17146 | 9.9 | 0.7% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to execute arbitrary JavaScript and obtain sensitive information due to improper in |
-| CVE-2026-17147 | 9.9 | 0.9% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to execute arbitrary code and perform unauthorized administrative actions due to a  |
-| CVE-2026-17150 | 9.9 | 0.8% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to execute arbitrary code and access sensitive information from other tenants due t |
-| CVE-2026-17158 | 9.9 | 0.7% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to gain elevated privileges due to improper authentication. |
-| CVE-2026-17239 | 9.9 | 0.8% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to execute arbitrary code due to a path traversal vulnerability. |
-| CVE-2026-17298 | 9.9 | 0.5% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to server-side request forgery. |
-| CVE-2026-17336 | 9.9 | 0.6% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to execute arbitrary SQL commands due to improper neutralization of special elements used in an SQL command. |
-| CVE-2026-17342 | 9.9 | 0.9% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to execute arbitrary code due to improper control of generation of code. |
-| CVE-2026-17354 | 9.9 | 0.7% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to perform arbitrary file writes due to path traversal. |
-| CVE-2026-17359 | 9.9 | 0.9% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to execute arbitrary code due to improper control of generation of code. A user-sup |
-| CVE-2026-17392 | 9.9 | 0.7% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to gain unauthorized administrative access to other tenants due to LDAP injection.  |
-| CVE-2026-17399 | 9.9 | 0.8% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to execute arbitrary code due to insufficient validation of uploaded content. Conte |
-| CVE-2026-17402 | 9.9 | 1.9% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to execute arbitrary commands due to OS command injection. User-supplied input is n |
-| CVE-2026-17410 | 9.9 | 0.7% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to access and modify other tenants' portal data due to improper neutralization of a |
-| CVE-2026-123957 | 9.9 | 0.5% | A vulnerability was determined in TOTOLINK CA300-PoE 6.2c.884. Impacted is the function setIpQosRules of the file /cgi-bin/cstecgi.cgi. This manipulation of the argument ipStart causes buffer overflow |
-| CVE-2026-123958 | 9.9 | 0.5% | A vulnerability was identified in TOTOLINK CA300-PoE 6.2c.884. The affected element is the function setLanConfig of the file /cgi-bin/cstecgi.cgi. Such manipulation of the argument lanDns/lanSecDns/la |
-| CVE-2026-123960 | 9.9 | 0.8% | A weakness has been identified in TOTOLINK CA300-PoE 6.2c.884. This affects the function setWanConfig of the file /cgi-bin/cstecgi.cgi. Executing a manipulation of the argument pppoeUser/priDns/secDns |
-| CVE-2026-123961 | 9.9 | n/a | A security vulnerability has been detected in TOTOLINK CA300-PoE 6.2c.884. This impacts the function setWiFiBasicConfig of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument KeyStr leads  |
-| CVE-2026-93754 | 9.8 | 0.9% | The payever – WooCommerce Gateway plugin for WordPress is vulnerable to arbitrary file upload leading to remote code execution in various versions up to, and including, 4.8.0. Three WooCommerce-API ca |
-| CVE-2026-123218 | 9.8 | 0.4% | IBM Aspera Faspex 5.0.0 through 5.0.19 could allow an authorized user to craft a specific message to bypass user authorization and gain full administrative privileges. |
-| CVE-2026-19803 | 9.8 | 1.0% | The Printcart Store – Web to Print Product Designer for WooCommerce plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 2.13.2. This is due to the `nbu_cr |
-| CVE-2026-16720 | 9.8 | 0.8% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote attacker to obtain valid access tokens for other users due to improper authentication. Authentication agai |
-| CVE-2026-17278 | 9.8 | 0.7% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote attacker to gain unauthorized access to sensitive API catalog and runtime configuration data due to improper authentication. Information  |
-| CVE-2026-17301 | 9.8 | 0.4% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow an unauthenticated attacker to bypass authentication due to improper verification of a cryptographic signature. |
-| CVE-2026-17313 | 9.8 | 0.8% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote attacker to obtain sensitive information and take control of gateway configuration due to authentication bypass via an alternate path. |
-| CVE-2026-17340 | 9.8 | 0.9% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote attacker to execute arbitrary code due to a path traversal vulnerability. |
-| CVE-2026-17360 | 9.8 | 0.6% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote attacker to gain full administrative control due to the use of hard-coded credentials. |
-| CVE-2026-17408 | 9.8 | 0.9% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote attacker to execute arbitrary code due to improper neutralization of special elements in an OS command. |
-| CVE-2026-123549 | 9.8 | n/a | OpenAM before 16.1.4 fails to enforce the Valid Creation Attributes list during self-registration, allowing anonymous attackers to set restricted attributes including group membership. Attackers can r |
-| CVE-2026-123550 | 9.8 | n/a | OpenAM before 16.1.4 contains an authentication bypass vulnerability in its SAML v2.0 service provider that accepts unsigned assertions on the ECP (PAOS) and HTTP-Artifact bindings when WantAssertions |
-| CVE-2026-123614 | 9.8 | n/a | imgproxy from 4.0.0 before 4.0.16 contains an integer overflow in the ICO loader that allows remote attackers to trigger a heap buffer overflow via a crafted data_size value. Attackers can submit a cr |
-| CVE-2026-17296 | 9.6 | 0.4% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to server-side request forgery. |
-| CVE-2026-17297 | 9.6 | 0.6% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote attacker to perform an account takeover due to an open redirect vulnerability. The redirect address used d |
-| CVE-2026-17299 | 9.6 | 0.4% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to perform arbitrary file reads and server-side request forgery due to unrestricted |
-| CVE-2026-17353 | 9.6 | 0.5% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information and bypass security restrictions due to server-side request forgery. |
-| CVE-2026-17394 | 9.6 | 0.5% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to improperly controlled modification of object |
-| CVE-2026-17396 | 9.6 | 0.5% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to SQL injection. |
-| CVE-2026-18838 | 9.4 | 0.7% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote attacker to obtain sensitive information and modify API configurations due to improper authentication. Identity information supplied in r |
-| CVE-2026-16918 | 9.3 | 0.4% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote attacker to access internal network resources due to server-side request forgery. |
-| CVE-2026-17131 | 9.3 | 0.4% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote attacker to obtain sensitive information due to server-side request forgery. Restrictions on outbound requests can be bypassed, so the se |
-| CVE-2026-17329 | 9.3 | 0.4% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote attacker to obtain sensitive information due to improper validation of endpoint URLs. |
-| CVE-2026-17344 | 9.3 | 0.5% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote attacker to obtain sensitive information due to server-side request forgery. A service that can be reached without authentication could b |
-| CVE-2026-18836 | 9.3 | 0.4% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote attacker to obtain sensitive information due to server-side request forgery. The affected component can be |
-| CVE-2026-17066 | 9.1 | 0.6% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information and modify or delete data belonging to other tenants due to missing authorization. |
-| CVE-2026-17292 | 9.1 | 0.4% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to take over ownership of other organizations due to broken object-level authorizat |
-| CVE-2026-17338 | 9.1 | 0.4% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to broken object-level authorization. |
-| CVE-2026-17339 | 9.1 | 0.5% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to access or delete resources belonging to other tenants due to path traversal. |
-| CVE-2026-123959 | 9.1 | 0.8% | A security flaw has been discovered in TOTOLINK CA300-PoE 6.2c.884. The impacted element is the function setLanguageCfg of the file /cgi-bin/cstecgi.cgi. Performing a manipulation of the argument lang |
-| CVE-2026-118066 | 9.1 | n/a | The Appointment Booking Plugin – LatePoint | Calendar & Scheduling for WordPress plugin for WordPress is vulnerable to Authentication Bypass via Account Takeover in all versions up to, and including,  |
-| CVE-2026-120984 | 9.1 | n/a | A flaw was found in the Keycloak server's client management component. When a client is created or imported with authorization services enabled, the system fails to properly clear an internal session  |
-| CVE-2026-124057 | 9.1 | n/a | A security flaw has been discovered in TOTOLINK CA300-PoE 6.2c.884. This impacts the function setWiFiMultipleConfig of the file /cgi-bin/cstecgi.cgi. Performing a manipulation of the argument Key1Str1 |
-| CVE-2026-124058 | 9.1 | n/a | A weakness has been identified in TOTOLINK CA300-PoE 6.2c.884. Affected is the function setWiFiRepeaterConfig of the file /cgi-bin/cstecgi.cgi. Executing a manipulation of the argument ApCliKeyStr can |
-| CVE-2026-124059 | 9.1 | n/a | A security vulnerability has been detected in TOTOLINK CA300-PoE 6.2c.884. Affected by this vulnerability is the function setWiFiWdsAddConfig of the file /cgi-bin/cstecgi.cgi. The manipulation of the  |
-| CVE-2026-124060 | 9.1 | n/a | A vulnerability was detected in TOTOLINK CA300-PoE 6.2c.884. Affected by this issue is the function UploadCustomModule of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument File results i |
-| CVE-2026-17403 | 9.0 | 0.5% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote attacker to gain full administrative control due to the use of hard-coded credentials. |
-| CVE-2026-17280 | 8.9 | 0.5% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote attacker to perform unauthenticated brute-force attacks to obtain valid credentials due to improper restri |
-| CVE-2026-16716 | 8.8 | 0.6% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to bypass security restrictions to access and modify sensitive information due to i |
-| CVE-2026-17335 | 8.8 | 0.8% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to execute arbitrary code due to path traversal. File paths in uploaded content are not sufficiently validated, wh |
-| CVE-2026-17405 | 8.8 | 0.5% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to broken object-level authorization. Access ch |
-| CVE-2026-87112 | 8.8 | 0.8% | The QA Assistants – Driven by data plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 5.3.0 via the 'dlevent_ver' parameter. This is due to unrestricted P |
-| CVE-2026-123531 | 8.8 | n/a | Vikunja from 1.0.0 before 2.7.1 contains an uncontrolled resource consumption vulnerability that allows authenticated users to bypass service.maxitemsperpage by sending page=0 to /api/v1 list endpoint |
-| CVE-2026-123595 | 8.8 | n/a | Hickory DNS hickory-proto 0.25 through 0.26.0-alpha.1 and hickory-net 0.26.0-beta.1 before 0.26.2 contain a DNSSEC validation flaw in the validating recursor's NSEC3 handler, which matches the closest |
-| CVE-2026-123596 | 8.8 | n/a | Hickory DNS hickory-proto through 0.26.0-alpha.1 and hickory-net 0.26.0-beta.1 before 0.26.2 contain a DNSSEC validation flaw in the validating recursor's NSEC handler that accepts parent-side ancesto |
-| CVE-2026-123605 | 8.8 | n/a | Hickory DNS hickory-proto 0.1 through 0.25.0-alpha.3 and hickory-net before 0.26.2 contain a DNSSEC validation bypass because the validator verifies an RRSIG against the DNSKEY of whatever name appear |
-| CVE-2026-16709 | 8.7 | 0.4% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to execute arbitrary JavaScript in the victim's browser due to cross-site scripting |
-| CVE-2026-17190 | 8.7 | 0.4% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to execute arbitrary JavaScript due to cross-site scripting. HTML content supplied  |
-| CVE-2026-17291 | 8.7 | 0.5% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to perform account takeover due to an open redirect vulnerability. The redirect add |
-| CVE-2026-17332 | 8.7 | 0.3% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote attacker to bypass security restrictions due to improper certificate validation. |
-| CVE-2026-17356 | 8.7 | 0.3% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a local attacker to obtain sensitive information due to the use of a hard-coded cryptographic key. |
-| CVE-2026-16880 | 8.5 | 0.6% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to path traversal. |
-| CVE-2026-16912 | 8.5 | 0.4% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to server-side request forgery. |
-| CVE-2026-17108 | 8.5 | 0.4% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to server-side request forgery. |
-| CVE-2026-17172 | 8.5 | 0.6% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to bypass security restrictions due to improper authentication. Information supplie |
-| CVE-2026-17187 | 8.5 | 0.4% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to improper validation of user-supplied URLs. |
-| CVE-2026-17188 | 8.5 | 0.4% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to server-side request forgery. When service definitions are imported, referen |
-| CVE-2026-17228 | 8.5 | 0.4% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to server-side request forgery. Destination restrictions on outbound requests  |
-| CVE-2026-17287 | 8.5 | 0.4% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to server-side request forgery. User-supplied a |
-| CVE-2026-17288 | 8.5 | 0.4% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to server-side request forgery. |
-| CVE-2026-17290 | 8.5 | 0.4% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to create unauthorized user accounts due to improper verification of cryptographic  |
-| CVE-2026-17293 | 8.5 | 0.4% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to modify user profile information due to broken object-level authorization. Access |
-| CVE-2026-17294 | 8.5 | 0.4% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to server-side request forgery. |
-| CVE-2026-17325 | 8.5 | 0.4% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to improper validation of user-supplied URLs. |
-| CVE-2026-17327 | 8.5 | 0.4% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to server-side request forgery. |
-| CVE-2026-17328 | 8.5 | 0.4% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to improper input validation. Input checks are incomplete, which could allow t |
-| CVE-2026-17330 | 8.5 | 0.4% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to server-side request forgery. |
-| CVE-2026-17334 | 8.5 | 0.4% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to improper authorization via user-controlled keys. |
-| CVE-2026-17352 | 8.5 | 0.4% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to server-side request forgery. |
-| CVE-2026-17365 | 8.5 | 0.4% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to server-side request forgery. |
-| CVE-2026-17380 | 8.5 | 0.5% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to access sensitive information belonging to other tenants due to improper validati |
-| CVE-2026-17381 | 8.5 | 0.4% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to improper authorization validation using user |
-| CVE-2026-17382 | 8.5 | 0.6% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to a path traversal vulnerability. |
-| CVE-2026-17384 | 8.5 | 0.4% | IBM API Connect 10.0.8.0 through 10.0.8.12 could allow a remote authenticated attacker to obtain sensitive information due to a server-side request forgery vulnerability. |
-| CVE-2026-17385 | 8.5 | 0.4% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to server-side request forgery. |
-| CVE-2026-17388 | 8.5 | 0.4% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to broken object-level authorization. |
-| CVE-2026-17397 | 8.5 | 0.4% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to server-side request forgery. |
-| CVE-2026-17398 | 8.5 | 0.4% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to server-side request forgery. |
-| CVE-2026-17404 | 8.5 | 0.4% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to server-side request forgery. |
-| CVE-2026-17406 | 8.5 | 0.4% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information due to server-side request forgery. Address checks  |
-| CVE-2026-17407 | 8.5 | 0.5% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to execute arbitrary SQL commands due to SQL injection. Values received during sign |
-| CVE-2026-17324 | 8.3 | 0.5% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote attacker to access sensitive configuration data and perform unauthorized actions due to missing authentication for a critical function. |
-| CVE-2026-19121 | 8.3 | 0.4% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow an authenticated attacker to gain unauthorized access due to improper authorization. Tenant context is not sufficiently verified against the authe |
-| CVE-2026-17355 | 8.2 | 0.4% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information from internal network resources due to server-side request forgery. Destination ch |
-| CVE-2026-17358 | 8.2 | 0.5% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to bypass authentication across tenants due to improper authentication. Authenticat |
-| CVE-2026-17321 | 8.1 | 0.5% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to delete or overwrite arbitrary control-plane assets due to an insecure direct object reference. |
-| CVE-2026-17326 | 8.1 | 0.6% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to bypass security restrictions due to improper authentication. |
-| CVE-2026-17343 | 8.1 | 0.5% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to bypass authorization checks to access or modify sensitive information due to improper authorization. |
-| CVE-2026-17386 | 8.1 | 0.5% | IBM API Connect 10.0.8.0 through 10.0.8.12 could allow a remote attacker to gain full administrative control due to the use of a cryptographically weak pseudo-random number generator. |
-| CVE-2026-104738 | 8.1 | 0.4% | The Advanced Form Integration — Connect Forms to 300+ Apps plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 2.10.2 via deserialization of untrusted inpu |
-| CVE-2026-103900 | 8.1 | 0.6% | The WPJAM Basic plugin for WordPress is vulnerable to Privilege Escalation in versions up to, and including, 7.1 This is due to the WPJAM_User_Signup::signup() function unpacking attacker-supplied `da |
-| CVE-2026-17309 | 8.0 | 0.1% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote attacker to obtain sensitive information and tamper with configuration due to improper certificate validation. |
-| CVE-2026-17333 | 8.0 | 0.2% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote attacker to bypass authentication and inject unauthorized configuration changes due to improper certificat |
-| CVE-2026-17129 | 7.6 | 0.4% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information and cause a denial of service due to an insecure direct object reference. |
-| CVE-2026-17357 | 7.6 | 0.4% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to access internal network services due to server-side request forgery. |
-| CVE-2026-17411 | 7.6 | 0.3% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow an authenticated attacker to view, add, modify, or delete information in the back-end database due to SQL injection |
-| CVE-2026-105002 | 7.5 | 0.3% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow arbitrary code to be executed by the management service in certain non-default configurations due to improper contr |
-| CVE-2026-120043 | 7.5 | 0.4% | The Affiliate Program Suite — SliceWP Affiliates plugin for WordPress is vulnerable to generic SQL Injection via the 'email' parameter in all versions up to, and including, 1.2.14 due to insufficient  |
-| CVE-2026-16714 | 7.5 | 0.5% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote attacker to overwrite arbitrary files due to a path traversal vulnerability. |
-| CVE-2026-107616 | 7.5 | 0.5% | The Amelia plugin for WordPress is vulnerable to unauthorized access of attendee data due to a missing authorization check on the GetEventAttendeesCommandHandler::handle() function in versions up to,  |
-| CVE-2026-119155 | 7.5 | 0.6% | The wpForo Forum plugin for WordPress is vulnerable to time-based SQL Injection via the 'href[locale]' parameter in all versions up to, and including, 3.2.2 due to insufficient escaping on the user su |
-| CVE-2026-119164 | 7.5 | 0.5% | The wpForo Forum plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 3.2.2 via the `data[secondary_groupids]` parameter of the `wpforo_action_profile_updat |
-| CVE-2026-95870 | 7.5 | 0.5% | The wpForo Forum plugin for WordPress is vulnerable to generic SQL Injection via the 'data' parameter in all versions up to, and including, 3.2.1 due to insufficient escaping on the user supplied para |
-| CVE-2026-116751 | 7.5 | n/a | The Booking for Appointments and Events Calendar – Amelia Pro plugin for WordPress is vulnerable to time-based SQL Injection via the 'tag[] (array KEYS)' parameter in all versions up to, and including |
-| CVE-2026-123543 | 7.5 | n/a | OpenAM before 16.1.4 contains a denial of service vulnerability that allows unauthenticated attackers to exhaust server resources by sending serialized Java data without size or structure limits. Atta |
-| CVE-2026-123554 | 7.5 | n/a | Zebra zebrad 6.4.0 before 7.0.0 performs quadratic work in the mempool coinbase-maturity check because Transaction::coinbase_spend_restriction() rebuilds the transaction's output list once per spent o |
-| CVE-2026-123555 | 7.5 | n/a | Zebra from 2.3.0 before 7.0.0 contains a denial of service vulnerability that allows unauthenticated peers to evade misbehavior scoring by sending transactions or blocks with invalid transparent scrip |
-| CVE-2026-123558 | 7.5 | n/a | Zebra zebrad before 7.0.0 contains a denial of service vulnerability that allows a malicious peer to stall checkpoint sync by cancelling the verifier rewind after a failed commit. Attackers can serve  |
-| CVE-2026-123559 | 7.5 | n/a | Zebra before 7.0.0 contains an inefficient algorithmic complexity vulnerability that allows unauthenticated peers to exhaust verification threads by submitting transactions with many transparent input |
-| CVE-2026-123560 | 7.5 | n/a | Zebra before 7.0.0 contains an incomplete cleanup vulnerability that allows unauthenticated peers to stall initial sync by serving a forged checkpoint block body. Attackers can supply a body with forg |
-| CVE-2026-123562 | 7.5 | n/a | devalue (sveltejs/devalue) 5.8.0 before 5.9.3 contains an unhandled promise rejection in stringifyAsync: when serializing multiple promises, a later promise rejecting before an earlier one settles lea |
-| CVE-2026-123563 | 7.5 | n/a | Devalue before 5.9.3 contains a validation bypass vulnerability that allows custom ArrayBuffer revivers to skip typed-array allocation checks in the parse function. Attackers can supply very small cra |
-| CVE-2026-123564 | 7.5 | n/a | Sveltejs devalue from 1.0.0 before 5.9.3 contains a memory exhaustion flaw in uneval, whose generated code for sparse arrays allocates memory proportional to the array's declared length when evaluated |
-| CVE-2026-123565 | 7.5 | n/a | Sveltejs devalue before 5.9.3 contains a resource exhaustion vulnerability where repeated primitive strings cause quadratic expansion in the uneval function. Attackers can supply a small crafted paylo |
-| CVE-2026-123566 | 7.5 | n/a | Sveltejs devalue before 5.9.3 contains a denial of service vulnerability that allows attackers to cause CPU amplification by supplying sparse arrays to uneval. Attackers who influence sparse values pa |
-| CVE-2026-123569 | 7.5 | n/a | The devalue package for npm before 5.6.3 can consume excessive CPU and memory when serializing sparse arrays with uneval or stringify. An attacker who manages to get a sparse array created on the serv |
-| CVE-2026-123570 | 7.5 | n/a | The DNS wire-format message parser in hickory-proto (Hickory DNS) 0.18 before 0.26.2 preallocates record vectors sized by the untrusted ANCOUNT, NSCOUNT, and ARCOUNT header fields before reading recor |
-| CVE-2026-123571 | 7.5 | n/a | Hickory DNS from 0.26.0 before 0.26.2 contains an integer underflow vulnerability in TSIG RDATA decoding that allows remote attackers to trigger a panic via malformed records. Attackers can send a cra |
-| CVE-2026-123572 | 7.5 | n/a | Hickory-dns from 0.20.1 before 0.26.2 contains a denial of service vulnerability in the hickory-proto SVCB and HTTPS record presentation format parser, which panics on malformed alpn values. Attackers |
-| CVE-2026-123573 | 7.5 | n/a | hickory-dns from 0.20.1 before 0.26.2 contains a denial of service vulnerability in the hickory-proto SVCB and HTTPS record presentation format parser. Attackers can supply untrusted zone files where  |
-| CVE-2026-123574 | 7.5 | n/a | The zone file parser in the hickory-proto crate of Hickory DNS 0.24.0 before 0.26.2 panics when a single token in a zone file is 4096 bytes or longer. Attackers who can supply untrusted zone files to  |
-| CVE-2026-123575 | 7.5 | n/a | Hickory DNS before 0.26.2 contains a resource exhaustion vulnerability in its DNS-over-HTTPS HTTP/2 server that lacks sufficient timeouts or limits for incomplete request bodies. Remote attackers can  |
-| CVE-2026-123576 | 7.5 | n/a | Hickory DNS 0.24.0 through 0.26.1 contains a memory exhaustion vulnerability that allows remote attackers to consume server resources by sending incomplete DNS-over-QUIC request bodies. Attackers can  |
-| CVE-2026-123577 | 7.5 | n/a | Hickory DNS from 0.24.0 before 0.26.2 contains a resource exhaustion vulnerability that allows remote attackers to consume server memory via unbounded DoH request bodies. Attackers can send large requ |
-| CVE-2026-123580 | 7.5 | n/a | Hickory DNS hickory-net 0.26.0-beta.1 before 0.26.2 and hickory-proto through 0.26.0-alpha.1 perform insufficient checks on NSEC3 record names during DNSSEC verification, comparing only the hashed lab |
-| CVE-2026-123586 | 7.5 | n/a | Hickory DNS 0.25.0-alpha.3 through 0.25.2 contains a query amplification vulnerability in its recursive resolver, which mishandles cyclic sibling name server referrals that lack glue records. Attacker |
-| CVE-2026-123588 | 7.5 | n/a | The recursive resolver in Hickory DNS (all versions of the hickory-recursor crate, and hickory-resolver 0.26.0 before 0.26.2) caches an empty connection pool when it follows a referral with no glue re |
-| CVE-2026-123604 | 7.5 | n/a | Hickory DNS hickory-resolver 0.26.0-beta.1 before 0.26.2 contains an unbounded retry loop in NameServerPool::try_send, which re-queues truncated (TC) responses without checking the answering transport |
-| CVE-2026-123606 | 7.5 | n/a | The hickory-dns recursor in hickory-recursor 0.25.0-alpha.3 through 0.25.2 and hickory-resolver 0.26.0-alpha.1 before 0.26.2 iterates every out-of-bailiwick NS target lacking glue in a referral withou |
-| CVE-2026-123607 | 7.5 | n/a | Hickory DNS hickory-proto 0.25.0-alpha.3 through 0.25.2 and hickory-net before 0.26.1 contain an unbounded loop vulnerability in DnssecDnsHandle NSEC3 closest-encloser proof validation when the SOA ow |
-| CVE-2026-123608 | 7.5 | n/a | Hickory DNS hickory-proto from 0.3.1 before 0.26.1 contains a denial of service vulnerability in BinEncoder that allows remote attackers to exhaust CPU through quadratic-time name compression. Attacke |
-| CVE-2026-123615 | 7.5 | n/a | imgproxy 3.3.0 before 4.0.17 contains an out-of-bounds heap read and write in the ICO loader's BMP header reconstruction (vips_foreign_load_ico_header in vips/icoload.c) when an ICO entry declares a t |
-| CVE-2026-123616 | 7.5 | n/a | imgproxy from 3.3.0 before 4.0.16 contains an unbounded memory allocation vulnerability in the ICO loader that fails to validate the data_size field. Attackers can supply a crafted 23-byte ICO file de |
-| CVE-2026-17244 | 7.4 | 0.3% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to perform unauthorized actions and obtain sensitive information due to missing aut |
-| CVE-2026-17337 | 7.4 | 0.2% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to bypass authentication due to improper certificate validation. A certificate check is not performed reliably in  |
-| CVE-2026-17379 | 7.4 | 0.3% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote attacker to bypass authentication and assign arbitrary roles due to improper verification of cryptographic |
-| CVE-2026-123881 | 7.3 | 0.3% | A vulnerability was found in OpenBMB Internet of Agents up to 9d78e88e47160eb42ee1ee8538c05e1c2c47877a. This issue affects the function fetch_chat_record of the file im_server/app.py of the component  |
-| CVE-2026-123963 | 7.3 | n/a | A security vulnerability has been detected in OpenBMB Internet of Agents up to 9d78e88e47160eb42ee1ee8538c05e1c2c47877a. The impacted element is the function register of the file im_server/app.py of t |
-| CVE-2026-123990 | 7.3 | n/a | A security vulnerability has been detected in DataEase up to 2.10.27/3.1.0. Affected is the function ExtWhere2Str.extWhere2sqlOjb of the file engine/trans/ExtWhere2Str.java of the component Chart Data |
-| CVE-2026-123991 | 7.3 | n/a | A vulnerability was detected in DataEase up to 2.10.27. Affected by this vulnerability is the function WhitelistUtils.endsWithAny of the file WhitelistUtils.java of the component Authentication Filter |
-| CVE-2026-17316 | 7.2 | 0.3% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote attacker to perform server-side request forgery due to improper validation of user-supplied input. |
-| CVE-2026-17341 | 7.2 | 0.3% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote attacker to perform server-side request forgery and relay unauthorized email messages due to improper neutralization of user-supplied inp |
-| CVE-2026-17401 | 7.2 | 0.9% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to execute arbitrary code due to a stack-based buffer overflow. |
-| CVE-2026-75590 | 7.2 | 0.4% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote attacker to access internal network resources and obtain sensitive information due to server-side request forgery. A protection that bloc |
-| CVE-2026-124318 | 7.2 | n/a | Treeio through 2.0 contains an insecure deserialization vulnerability in UpdateRecord.get_format_strings and ModuleSetting.loads that allows staff users to execute code via unverified pickle data. Att |
-| CVE-2026-120531 | 7.2 | n/a | The Subscribe2 – Form, Email Subscribers & Newsletters plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the ‘data[ip]’ parameter in all versions up to, and including, 10.47 due to |
-| CVE-2026-17284 | 7.1 | 0.3% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to perform unauthorized operations in other tenants' environments due to improper v |
-| CVE-2026-17311 | 7.1 | 0.4% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to modify application API subscriptions due to broken object-level authorization. |
-| CVE-2026-17319 | 7.1 | 0.2% | IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to modify tool configuration and cause a denial of service due to improper authorization. Information supplied by  |
-| CVE-2026-17322 | 7.1 | 0.2% | IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a local attacker to obtain sensitive credentials and compromise accounts due to insertion of sensitive information  |
-| CVE-2026-123520 | 7.1 | n/a | Vikunja from 0.18.0 before 2.7.1 contains a privilege escalation vulnerability that allows team owners to gain admin or ownership of read-only shared projects by deleting accounts. Attackers can creat |
-| CVE-2026-123522 | 7.1 | n/a | Vikunja before 2.7.1 contains an authorization bypass vulnerability that allows authenticated users to read any task by injecting a crafted task object into a no-op Kanban bucket move. Attackers can s |
-| CVE-2026-123545 | 7.1 | n/a | OpenAM from 14.5.1 before 16.1.4 contains a cross-site request forgery vulnerability in the OAuth 2.0 device authorization flow that allows attackers to approve device codes when consent is skipped fo |
+| CVE-2026-123551 | 10.0 | 0.4% | OpenAM from 14.0.0 before 16.1.4 contains an information disclosure vulnerability that allows unauthenticated attackers to read live session tokens from the notification WebSocket. Attackers can bypas |
+| CVE-2026-124580 | 10.0 | n/a | A vulnerability was found in Chengdu Feiyuxing Technology VW2100 and VEC10GP 1.0 B-MB3W202-210825-r11775. This impacts the function handle_wechat_cn_wifi of the file var/html/webserver of the componen |
+| CVE-2026-124440 | 9.9 | n/a | Kyverno from 1.19.1 before 1.19.2 contains an authorization bypass vulnerability in the apiCall namespace clamp that allows namespace tenants to issue cross-namespace and cluster-scoped API requests b |
+| CVE-2026-124450 | 9.9 | n/a | OpenEMR before 8.3.0 contains a broken access control and path traversal vulnerability in the fax/sms module disposeDocument action via an unvalidated file_path parameter. Authenticated low-privilege  |
+| CVE-2026-124469 | 9.9 | n/a | OpenEMR before 8.3.0 contains an SQL injection vulnerability in the Fee Sheet drug-inventory lookup (DrugSalesService::sellDrug) that interpolates the prod[N][warehouse] POST field into an ORDER BY cl |
+| CVE-2026-107331 | 9.9 | n/a | IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to obtain sensitive information due to an absolute-path traversal vulnerability. |
+| CVE-2026-124585 | 9.9 | n/a | A vulnerability was found in Chengdu Feiyuxing Technology VW2100 and VEC10GP 1.0 B-MB3W202-210825-r11775. This issue affects the function add_expmac of the file var/html/webserver of the component Web |
+| CVE-2026-123549 | 9.8 | 0.4% | OpenAM before 16.1.4 fails to enforce the Valid Creation Attributes list during self-registration, allowing anonymous attackers to set restricted attributes including group membership. Attackers can r |
+| CVE-2026-123550 | 9.8 | 0.6% | OpenAM before 16.1.4 contains an authentication bypass vulnerability in its SAML v2.0 service provider that accepts unsigned assertions on the ECP (PAOS) and HTTP-Artifact bindings when WantAssertions |
+| CVE-2026-123614 | 9.8 | 0.7% | imgproxy from 4.0.0 before 4.0.16 contains an integer overflow in the ICO loader that allows remote attackers to trigger a heap buffer overflow via a crafted data_size value. Attackers can submit a cr |
+| CVE-2026-124427 | 9.8 | n/a | Craft CMS from 5.0.0 before 5.11.2 contains an authorization bypass vulnerability that allows anonymous GraphQL clients to read out-of-scope section entries via prev/next fields. Attackers can chain n |
+| CVE-2026-124445 | 9.8 | n/a | OpenEMR from 7.0.1 before 8.4.0 contains a flaw in src/Common/Auth/OneTimeAuth.php that ignores the enforce_onetime_use and max_access_count flags, never revokes consumed service_auth tokens, and chec |
+| CVE-2026-15266 | 9.8 | n/a | IBM Concert 1.0 through 3.0.1.1 contains components that allow potentially unsafe command execution, which could be exploited to run arbitrary system commands on the host. |
+| CVE-2026-6715 | 9.8 | n/a | IBM Concert 1.0 through 3.0.1.1 allows an attacker can supply crafted input that is incorporated into an operating system command without adequate validation or sanitization. Successful exploitation a |
+| CVE-2026-124560 | 9.8 | n/a | A vulnerability was found in D-Link DIR-878 1.20B05. This affects the function GetCAPTCHAsetting of the file bin/prog.cgi of the component HNAP Handler. Performing a manipulation of the argument uid r |
+| CVE-2026-124577 | 9.8 | n/a | A weakness has been identified in Intelbras SG 2404 PoE L2+ 1.00.70/1.00.72. The affected element is an unknown function of the file /EXCU_SHELL of the component Web Management Interface. Executing a  |
+| CVE-2026-114464 | 9.3 | n/a | IBM Process Mining 2.0.0 through 2.2.1 could allow a remote attacker to obtain sensitive information due to improper access control. |
+| CVE-2026-124490 | 9.1 | n/a | OpenEMR before 8.3.0 contains a path traversal vulnerability in the RingCentral RCFaxClient disposeDocument() method of oe-module-faxsms that allows authenticated attackers to read and write arbitrary |
+| CVE-2026-101117 | 9.1 | n/a | IBM WebSphere Extreme Scale 8.6.1.0 through 8.6.2.2 could allow a remote attacker to bypass security restrictions due to improper Content Security Policy configuration. |
+| CVE-2026-17466 | 9.1 | n/a | IBM Optim 1.0.0, 1.1.0, and 1.2.0 could allow a remote authenticated attacker to obtain sensitive information due to path traversal. |
+| CVE-2026-123531 | 8.8 | 0.4% | Vikunja from 1.0.0 before 2.7.1 contains an uncontrolled resource consumption vulnerability that allows authenticated users to bypass service.maxitemsperpage by sending page=0 to /api/v1 list endpoint |
+| CVE-2026-123595 | 8.8 | 0.2% | Hickory DNS hickory-proto 0.25 through 0.26.0-alpha.1 and hickory-net 0.26.0-beta.1 before 0.26.2 contain a DNSSEC validation flaw in the validating recursor's NSEC3 handler, which matches the closest |
+| CVE-2026-123596 | 8.8 | 0.2% | Hickory DNS hickory-proto through 0.26.0-alpha.1 and hickory-net 0.26.0-beta.1 before 0.26.2 contain a DNSSEC validation flaw in the validating recursor's NSEC handler that accepts parent-side ancesto |
+| CVE-2026-123605 | 8.8 | 0.2% | Hickory DNS hickory-proto 0.1 through 0.25.0-alpha.3 and hickory-net before 0.26.2 contain a DNSSEC validation bypass because the validator verifies an RRSIG against the DNSKEY of whatever name appear |
+| CVE-2026-124430 | 8.8 | n/a | Craft CMS from 5.10.0 before 5.11.2 contains a remote code execution vulnerability that allows non-administrator control panel users to obtain HMAC-signed Twig templates via the app/render-elements en |
+| CVE-2026-124441 | 8.8 | n/a | Kyverno before 1.19.2 contains an authorization bypass vulnerability that allows namespaced tenants to generate any resource kind in any namespace by templating the generate rule's kind and namespace  |
+| CVE-2026-124446 | 8.8 | n/a | OpenEMR before 8.3.0 contains a path traversal vulnerability in the FaxSMS module's RCFaxClient and SignalWireClient disposeDocument functions that allows authenticated low-privilege users to read and |
+| CVE-2026-124467 | 8.8 | n/a | OpenEMR before 8.4.0 contains a local file inclusion in the ESign router (library/ESign/Router.php), which passes the unsanitized module parameter into a require_once of '<module>/Controller.php', and |
+| CVE-2026-124477 | 8.8 | n/a | OpenEMR before 8.3.0 contains a missing authorization vulnerability that allows low-privileged authenticated users to delete arbitrary patient recall records via the delete_Recall action. Attackers ca |
+| CVE-2026-124480 | 8.8 | n/a | OpenEMR before 8.4.0 contains an authorization bypass vulnerability that allows low-privileged authenticated users to read cross-patient FHIR QuestionnaireResponse data by sending the APICSRFTOKEN hea |
+| CVE-2026-124484 | 8.8 | n/a | OpenEMR before 8.4.0 contains a missing authorization vulnerability in portal onsite-document APIs that allows any authenticated core user to access cross-patient documents. Attackers can omit the pat |
+| CVE-2026-124486 | 8.8 | n/a | OpenEMR before 8.3.0 contains a missing authorization vulnerability in the classic document controller that allows low-privilege authenticated users to recategorize other patients' documents. Attacker |
+| CVE-2026-117545 | 8.8 | n/a | IBM webMethods Integration Server 12.1 could allow a remote authenticated attacker to bypass security restrictions due to improper authentication. |
+| CVE-2026-9764 | 8.8 | n/a | IBM Bob 1.0.4 through 2.0.1 could allow a remote attacker to inject arbitrary code on the system, due to the improper control of user input code. |
+| CVE-2026-124463 | 8.7 | n/a | OpenEMR before 8.3.0 contains a stored cross-site scripting vulnerability that allows authenticated users with CAMOS access to inject HTML by saving malicious CAMOS content through ajax_save.php. Atta |
+| CVE-2026-124483 | 8.3 | n/a | OpenEMR before 8.4.0 contains an incorrect authorization vulnerability because the prescription REST API routes check the patients.med ACL instead of patients.rx and request no specific permission bit |
+| CVE-2026-124447 | 8.1 | n/a | OpenEMR before 8.3.0 contains an insecure direct object reference vulnerability in OnsitePortalActivityController::Update() that checks the request's patientId instead of the stored record's owner. Au |
+| CVE-2026-124459 | 8.1 | n/a | OpenEMR before 8.3.0 contains an insecure direct object reference vulnerability in many encounter-form view and save endpoints that lack patient/encounter ownership checks. Authenticated clinical user |
+| CVE-2026-124461 | 8.1 | n/a | OpenEMR before 8.3.0 contains a missing authorization vulnerability in library/ajax/upload.php that allows any authenticated user to read and overwrite document data by supplying an arbitrary doc_id.  |
+| CVE-2026-124471 | 8.1 | n/a | OpenEMR before 8.3.0 contains a missing authorization vulnerability in interface/billing/sl_eob_invoice.php that allows any authenticated user to read and modify billing data for any encounter. Attack |
+| CVE-2026-124472 | 8.1 | n/a | OpenEMR before 8.3.0 contains a missing authorization vulnerability in interface/billing/sl_eob_patient_note.php that allows any authenticated user to read and modify patient billing notes. Attackers  |
+| CVE-2026-124488 | 8.1 | n/a | OpenEMR before 8.3.0 contains an authorization bypass vulnerability that allows authenticated clinicians lacking high-sensitivity permission to read and modify encounter-bound forms via load_form.php. |
+| CVE-2026-105467 | 8.1 | n/a | IBM QRadar 7.5.0 through 7.5.0 Update Pack 16 Interim Fix 02, and 7.6.0.0 through 7.6.0.5 is vulnerable to Reflected XSS. A victim must open a specifically crafted URL while authenticated to QRadar to |
+| CVE-2026-19133 | 8.1 | n/a | IBM Storage TS4500 Library 1.1.1.6 through 1.12.0.3 could allow a remote authenticated attacker to perform unauthorized account takeover due to improper authorization. |
+| CVE-2026-97677 | 8.1 | n/a | IBM Langflow OSS 1.0.0 through 1.12.2 An authenticated flow author could write attacker-controlled file content into any directory writable by the service account, bypassing the platform's local file  |
+| CVE-2026-118904 | 8.1 | n/a | IBM webMethods Integration Server 12.1 could allow a remote authenticated attacker to bypass security restrictions due to improper authentication. |
+| CVE-2026-94249 | 8.1 | n/a | Missing Authorization vulnerability in TÜBİTAK BİLGEM Software Technologies Research Institute Liderahenk allows Privilege Abuse.
+
+This issue affects Liderahenk: before 2.0.3. |
+| CVE-2026-124436 | 8.0 | n/a | OpenRemote before 1.32.2 contains an improper authorization vulnerability that allows realm administrators to access and modify global resources by calling admin endpoints lacking super administrator  |
+| CVE-2026-107330 | 7.7 | n/a | IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to obtain sensitive information due to a Server-Side Request Forgery (SSRF) vulnerability. |
+| CVE-2026-124448 | 7.6 | n/a | OpenEMR before 8.3.0 contains a stored cross-site scripting vulnerability in the CCDA/CCD preview stylesheets, where cda.xsl copies event-handler attributes whose values evade a character denylist and |
+| CVE-2026-124457 | 7.6 | n/a | OpenEMR before 8.3.0 contains a path traversal vulnerability in interface/billing/sl_eob_process.php that allows authenticated users to write and read files by supplying unsanitized eraname values. At |
+| CVE-2026-124492 | 7.6 | n/a | SunEditor before 3.4.0 contains a stored cross-site scripting vulnerability in ModalAnchorEditor's #createBookmarkList, which inserts entity-decoded h1-h6 header textContent into the bookmark list via |
+| CVE-2026-123543 | 7.5 | 0.4% | OpenAM before 16.1.4 contains a denial of service vulnerability that allows unauthenticated attackers to exhaust server resources by sending serialized Java data without size or structure limits. Atta |
+| CVE-2026-123554 | 7.5 | 0.4% | Zebra zebrad 6.4.0 before 7.0.0 performs quadratic work in the mempool coinbase-maturity check because Transaction::coinbase_spend_restriction() rebuilds the transaction's output list once per spent o |
+| CVE-2026-123555 | 7.5 | 0.4% | Zebra from 2.3.0 before 7.0.0 contains a denial of service vulnerability that allows unauthenticated peers to evade misbehavior scoring by sending transactions or blocks with invalid transparent scrip |
+| CVE-2026-123558 | 7.5 | 0.3% | Zebra zebrad before 7.0.0 contains a denial of service vulnerability that allows a malicious peer to stall checkpoint sync by cancelling the verifier rewind after a failed commit. Attackers can serve  |
+| CVE-2026-123559 | 7.5 | 0.3% | Zebra before 7.0.0 contains an inefficient algorithmic complexity vulnerability that allows unauthenticated peers to exhaust verification threads by submitting transactions with many transparent input |
+| CVE-2026-123560 | 7.5 | 0.3% | Zebra before 7.0.0 contains an incomplete cleanup vulnerability that allows unauthenticated peers to stall initial sync by serving a forged checkpoint block body. Attackers can supply a body with forg |
+| CVE-2026-123562 | 7.5 | 0.3% | devalue (sveltejs/devalue) 5.8.0 before 5.9.3 contains an unhandled promise rejection in stringifyAsync: when serializing multiple promises, a later promise rejecting before an earlier one settles lea |
+| CVE-2026-123563 | 7.5 | 0.4% | Devalue before 5.9.3 contains a validation bypass vulnerability that allows custom ArrayBuffer revivers to skip typed-array allocation checks in the parse function. Attackers can supply very small cra |
+| CVE-2026-123564 | 7.5 | 0.3% | Sveltejs devalue from 1.0.0 before 5.9.3 contains a memory exhaustion flaw in uneval, whose generated code for sparse arrays allocates memory proportional to the array's declared length when evaluated |
+| CVE-2026-123565 | 7.5 | 0.3% | Sveltejs devalue before 5.9.3 contains a resource exhaustion vulnerability where repeated primitive strings cause quadratic expansion in the uneval function. Attackers can supply a small crafted paylo |
+| CVE-2026-123566 | 7.5 | 0.3% | Sveltejs devalue before 5.9.3 contains a denial of service vulnerability that allows attackers to cause CPU amplification by supplying sparse arrays to uneval. Attackers who influence sparse values pa |
+| CVE-2026-123569 | 7.5 | 0.3% | The devalue package for npm before 5.6.3 can consume excessive CPU and memory when serializing sparse arrays with uneval or stringify. An attacker who manages to get a sparse array created on the serv |
+| CVE-2026-123570 | 7.5 | 0.4% | The DNS wire-format message parser in hickory-proto (Hickory DNS) 0.18 before 0.26.2 preallocates record vectors sized by the untrusted ANCOUNT, NSCOUNT, and ARCOUNT header fields before reading recor |
+| CVE-2026-123571 | 7.5 | 0.4% | Hickory DNS from 0.26.0 before 0.26.2 contains an integer underflow vulnerability in TSIG RDATA decoding that allows remote attackers to trigger a panic via malformed records. Attackers can send a cra |
+| CVE-2026-123572 | 7.5 | 0.3% | Hickory-dns from 0.20.1 before 0.26.2 contains a denial of service vulnerability in the hickory-proto SVCB and HTTPS record presentation format parser, which panics on malformed alpn values. Attackers |
+| CVE-2026-123573 | 7.5 | 0.3% | hickory-dns from 0.20.1 before 0.26.2 contains a denial of service vulnerability in the hickory-proto SVCB and HTTPS record presentation format parser. Attackers can supply untrusted zone files where  |
+| CVE-2026-123574 | 7.5 | 0.3% | The zone file parser in the hickory-proto crate of Hickory DNS 0.24.0 before 0.26.2 panics when a single token in a zone file is 4096 bytes or longer. Attackers who can supply untrusted zone files to  |
+| CVE-2026-123575 | 7.5 | 0.4% | Hickory DNS before 0.26.2 contains a resource exhaustion vulnerability in its DNS-over-HTTPS HTTP/2 server that lacks sufficient timeouts or limits for incomplete request bodies. Remote attackers can  |
+| CVE-2026-123576 | 7.5 | 0.4% | Hickory DNS 0.24.0 through 0.26.1 contains a memory exhaustion vulnerability that allows remote attackers to consume server resources by sending incomplete DNS-over-QUIC request bodies. Attackers can  |
+| CVE-2026-123577 | 7.5 | 0.4% | Hickory DNS from 0.24.0 before 0.26.2 contains a resource exhaustion vulnerability that allows remote attackers to consume server memory via unbounded DoH request bodies. Attackers can send large requ |
+| CVE-2026-123580 | 7.5 | 0.3% | Hickory DNS hickory-net 0.26.0-beta.1 before 0.26.2 and hickory-proto through 0.26.0-alpha.1 perform insufficient checks on NSEC3 record names during DNSSEC verification, comparing only the hashed lab |
+| CVE-2026-123586 | 7.5 | 0.3% | Hickory DNS 0.25.0-alpha.3 through 0.25.2 contains a query amplification vulnerability in its recursive resolver, which mishandles cyclic sibling name server referrals that lack glue records. Attacker |
+| CVE-2026-123588 | 7.5 | 0.3% | The recursive resolver in Hickory DNS (all versions of the hickory-recursor crate, and hickory-resolver 0.26.0 before 0.26.2) caches an empty connection pool when it follows a referral with no glue re |
+| CVE-2026-123604 | 7.5 | 0.3% | Hickory DNS hickory-resolver 0.26.0-beta.1 before 0.26.2 contains an unbounded retry loop in NameServerPool::try_send, which re-queues truncated (TC) responses without checking the answering transport |
+| CVE-2026-123606 | 7.5 | 0.4% | The hickory-dns recursor in hickory-recursor 0.25.0-alpha.3 through 0.25.2 and hickory-resolver 0.26.0-alpha.1 before 0.26.2 iterates every out-of-bailiwick NS target lacking glue in a referral withou |
+| CVE-2026-123607 | 7.5 | 0.3% | Hickory DNS hickory-proto 0.25.0-alpha.3 through 0.25.2 and hickory-net before 0.26.1 contain an unbounded loop vulnerability in DnssecDnsHandle NSEC3 closest-encloser proof validation when the SOA ow |
+| CVE-2026-123608 | 7.5 | 0.4% | Hickory DNS hickory-proto from 0.3.1 before 0.26.1 contains a denial of service vulnerability in BinEncoder that allows remote attackers to exhaust CPU through quadratic-time name compression. Attacke |
+| CVE-2026-123615 | 7.5 | 0.5% | imgproxy 3.3.0 before 4.0.17 contains an out-of-bounds heap read and write in the ICO loader's BMP header reconstruction (vips_foreign_load_ico_header in vips/icoload.c) when an ICO entry declares a t |
+| CVE-2026-123616 | 7.5 | 0.5% | imgproxy from 3.3.0 before 4.0.16 contains an unbounded memory allocation vulnerability in the ICO loader that fails to validate the data_size field. Attackers can supply a crafted 23-byte ICO file de |
+| CVE-2026-124429 | 7.5 | n/a | Craft CMS from 5.0.0 before 5.11.2 contains a privilege escalation vulnerability that allows unauthenticated public registrants to reclaim deactivated non-admin accounts while retaining their direct p |
+| CVE-2026-124437 | 7.5 | n/a | Scriban before 7.5.3 contains a resource exhaustion vulnerability that allows untrusted template authors to exhaust memory and CPU because builtins like math.format, regex.replace and string.escape sk |
+| CVE-2026-124439 | 7.5 | n/a | Scriban and Scriban.Signed before 7.5.3 contain uncontrolled recursion flaws in which postfix member, indexer, and call chains bypass ExpressionDepthLimit, array comparison lacks depth and cycle check |
+| CVE-2026-124553 | 7.5 | n/a | BabelDOC from 0.3.61 before 0.7.0 contains a resource exhaustion vulnerability that allows remote attackers to exhaust CPU and memory by supplying unbounded bfrange and cidrange spans. Attackers can s |
+| CVE-2026-18093 | 7.5 | n/a | IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2 could allow a remote attacker to obtain sensitive information due to broken access control. |
+| CVE-2026-93879 | 7.5 | n/a | Hibernate Validator could allow a remote attacker to cause a denial of service due to uncontrolled resource consumption resulting from improper escaping of user-controlled data in Expression Language  |
+| CVE-2026-96146 | 7.5 | n/a | IBM SevOne Network Performance Management 7.0.0 through 8.2.2 could allow a remote attacker to cause a denial of service due to uncontrolled resource consumption. |
+| CVE-2026-124561 | 7.5 | n/a | A vulnerability was determined in D-Link DIR-878 1.20B05. This impacts the function SetVLANSettings of the file prog.cgi of the component HNAP Handler. Executing a manipulation of the argument VID can |
+| CVE-2026-124562 | 7.5 | n/a | A vulnerability was identified in D-Link DIR-878 1.20B05. Affected is the function SetWanSettings of the component HNAP Handler. The manipulation of the argument ConfigDNS/Primary/ConfigDNS/Secondary  |
+| CVE-2026-124563 | 7.5 | n/a | A security flaw has been discovered in D-Link DIR-878 1.20B05. Affected by this vulnerability is the function SetWanSettings of the component HNAP Handler. The manipulation of the argument Primary/Sec |
+| CVE-2026-124328 | 7.4 | n/a | A vulnerability has been found in FlowCI flow-core-x up to 1.23.49. The affected element is the function ConditionManagerImpl.run of the file core/src/main/java/com/flowci/core/common/manager/Conditio |
+| CVE-2026-124438 | 7.4 | n/a | Scriban before 7.5.2 contains an information disclosure and object manipulation vulnerability that allows template authors to access .NET internals of function values through reflection member accesso |
+| CVE-2026-124579 | 7.4 | n/a | A vulnerability was determined in aaPanel BillionMail up to 4.9. Affected by this issue is some unknown functionality of the file core/api/relay/v1/relay.go of the component Relay Configuration API. E |
+| CVE-2026-124331 | 7.3 | n/a | A vulnerability was identified in Jinher OA C6. This impacts an unknown function of the file /C6/JHSoft.Web.Project/OfficeReadOnly/ProjectAfficheManage.aspx. Such manipulation of the argument ProjID l |
+| CVE-2026-124432 | 7.3 | n/a | phpMyFAQ 4.1.9 before 4.1.11 and 4.2.0 pre-releases before 4.2.0-beta.3 contain an account enumeration vulnerability in the unauthenticated POST /api/webauthn/prepare-login endpoint, which returns sta |
+| CVE-2026-124501 | 7.3 | n/a | A weakness has been identified in Tidelift moto up to 5.2.4. Affected is an unknown function of the file moto/batch/models.py of the component AWS Batch Emulation. This manipulation of the argument pr |
+| CVE-2026-124509 | 7.3 | n/a | A vulnerability was identified in floci-io Floci up to 2.1.0. The affected element is the function S3Destination.bucketName of the file services/firehose/model/DeliveryStreamDescription.java of the co |
+| CVE-2026-124554 | 7.3 | n/a | A security flaw has been discovered in JeecgBoot 3.9.5. This affects an unknown part of the file /jeecg-boot/drag/onlDragDatasetHead/getAllChartData of the component JimuBI. Performing a manipulation  |
+| CVE-2026-124557 | 7.3 | n/a | A vulnerability was detected in OtterMind Chat2DB up to 5.3.8. Impacted is the function DbMybatisGenerateServiceImpl.generateClass of the file DbMybatisGenerateServiceImpl.java of the component Class  |
+| CVE-2026-124558 | 7.3 | n/a | A vulnerability has been found in DataLinkDC Dinky up to 1.2.5. The impacted element is the function SqlGateway.onOpen of the file SqlGateway.java of the component sql-gateway Endpoint. Such manipulat |
+| CVE-2026-124573 | 7.3 | n/a | A vulnerability was found in logseq 2.0.1/2.0.2. This affects the function validate-auth-token of the file src/electron/electron/server.cljs of the component Local HTTP API. The manipulation results i |
+| CVE-2026-124576 | 7.3 | n/a | A security flaw has been discovered in BeikeShop up to 2.0.0.31. Impacted is the function OrderRepo::getOrderByNumber of the file beike/Repositories/OrderRepo.php of the component Guest Order Lookup.  |
+| CVE-2026-124581 | 7.3 | n/a | A vulnerability was determined in itsourcecode Airline Reservation System 1.0. Affected is an unknown function of the file /admin/manage_flight.php. This manipulation of the argument ID causes sql inj |
+| CVE-2026-124586 | 7.3 | n/a | A vulnerability was determined in Tencent RapidJSON 1.1.0. Impacted is the function GetCachedPowerByIndex in the library include/rapidjson/internal/diyfp.h. This manipulation of the argument decimalPo |
+| CVE-2026-124466 | 7.2 | n/a | OpenEMR before 8.4.0 contains a server-side request forgery vulnerability that allows unauthenticated attackers to make the server send HTTP requests by registering an OAuth2 client with an unvalidate |
+| CVE-2026-123520 | 7.1 | 0.3% | Vikunja from 0.18.0 before 2.7.1 contains a privilege escalation vulnerability that allows team owners to gain admin or ownership of read-only shared projects by deleting accounts. Attackers can creat |
+| CVE-2026-123522 | 7.1 | 0.3% | Vikunja before 2.7.1 contains an authorization bypass vulnerability that allows authenticated users to read any task by injecting a crafted task object into a no-op Kanban bucket move. Attackers can s |
+| CVE-2026-123545 | 7.1 | 0.1% | OpenAM from 14.5.1 before 16.1.4 contains a cross-site request forgery vulnerability in the OAuth 2.0 device authorization flow that allows attackers to approve device codes when consent is skipped fo |
+| CVE-2026-124424 | 7.1 | n/a | WWBN AVideo contains a path traversal vulnerability in plugin/AI/receiveAsync.json.php that allows holders of any valid AI token to write arbitrary .vtt files by injecting traversal sequences into the |
+| CVE-2026-124434 | 7.1 | n/a | Grav Lightbox Gallery plugin 1.1.0 before 1.3.2 on Grav 2.x calls any medium method named in image, thumb or thumb_options shortcode values without core's allowed media action check. A page editor can |
+| CVE-2026-124444 | 7.1 | n/a | OpenEMR before 8.4.0 contains a mass assignment vulnerability in the patient portal OnsiteDocument query API that lets request parameters set bitwise criteria filters whose values are placed unquoted  |
+| CVE-2026-124453 | 7.1 | n/a | OpenEMR before 8.3.0 contains an insecure direct object reference vulnerability in portal/lib/persist.php that allows authenticated portal patients to write settings for other patients. Attackers can  |
+| CVE-2026-124456 | 7.1 | n/a | OpenEMR before 8.3.0 contains missing authorization and insecure direct object reference vulnerabilities in the oe-module-prior-authorizations module that allow authenticated low-privilege users to ac |
+| CVE-2026-124468 | 7.1 | n/a | OpenEMR before 8.3.0 contains an SQL injection vulnerability in the Standard REST API patient insurance and employer search, which concatenates query-string parameter names into SQL as column identifi |
+| CVE-2026-124473 | 7.1 | n/a | OpenEMR before 8.3.0 contains a broken object-level authorization vulnerability in the SOAP note update API, which does not verify that the supplied SOAP note ID (sid) belongs to the supplied patient  |
+| CVE-2026-124475 | 7.1 | n/a | OpenEMR before 8.3.0 contains an insecure direct object reference vulnerability in portal/lib/persist.php that allows authenticated portal patients to modify other patients' settings by supplying an a |
+| CVE-2026-124489 | 7.1 | n/a | OpenEMR before 8.3.0 contains a broken access control vulnerability in portal/portal_payment.php that allows low-privilege authenticated users to bypass billing ACL checks by tampering patient identif |
+| CVE-2026-18893 | 7.1 | n/a | IBM CockroachDB PostgreSQL for IBM VPC 26.2.0 through 26.2.3, 25.4.0 through 25.4.12, and 25.2.0 through 25.2.20 is vulnerable to privilege escalation via user-defined function. |
 
 ## GitHub Security Advisories — new since yesterday
 | GHSA | CVE | Severity | Summary |
 |---|---|---|---|
-| GHSA-9f68-g44h-hw2f | CVE-2026-122085 | unknown | The Event Tickets Manager for WooCommerce WordPress plugin before 1.6.0 does not perform... |
-| GHSA-2mgp-38q6-99x9 | CVE-2026-96963 | unknown | The Pie Register  WordPress plugin through 3.8.4.15 does not perform an authorisation check in... |
-| GHSA-g6hq-r9gh-7r48 | CVE-2026-97194 | unknown | The Secure Custom Fields WordPress plugin before 6.9.8 does not perform a read-permission check... |
-| GHSA-2j9h-chv5-8537 | CVE-2026-97193 | unknown | The Secure Custom Fields WordPress plugin before 6.9.8 does not verify that a user is allowed to... |
-| GHSA-47pm-jg2m-gx97 | CVE-2026-97195 | unknown | The Secure Custom Fields WordPress plugin before 6.9.8 does not sanitize a persisted field... |
-| GHSA-m587-3v6q-xg7x | CVE-2026-96961 | unknown | The Pie Register  WordPress plugin through 3.8.4.15 does not perform any capability, nonce or... |
-| GHSA-488p-3q24-423r | CVE-2026-97192 | unknown | The Secure Custom Fields WordPress plugin before 6.9.8 does not re-apply its field-group location... |
-| GHSA-m836-p73r-8pm6 | CVE-2026-85344 | unknown | The FV Flowplayer Video Player WordPress plugin before 7.5.57.7212 does not perform any... |
-| GHSA-78p4-p67c-wwv7 | CVE-2026-110963 | unknown | The Userplace  WordPress plugin through 1.2.0 does not perform authorization checks on an AJAX... |
-| GHSA-xvqw-hjj4-j538 | CVE-2026-105970 | unknown | The Thanh Toán Quét Mã QR Code Tự Động  WordPress plugin through 2.0.1 does not properly verify... |
-| GHSA-4435-94rm-8hr8 | CVE-2026-122062 | unknown | The Pronamic Pay WordPress plugin before 11.1.0, Pronamic Pay doneren met Mollie WordPress plugin... |
-| GHSA-fq3w-qx64-29mp | CVE-2026-110132 | unknown | The Sync Post With Other Site WordPress plugin before 1.9.4 does not properly authorize a content... |
-| GHSA-vj5w-qq84-5r93 | CVE-2026-104639 | unknown | The Razorpay for WooCommerce WordPress plugin before 4.8.9 does not sanitize and escape a value... |
-| GHSA-xxh9-x8mr-vqr4 | CVE-2026-106015 | unknown | The Ecommerce Affiliate WordPress plugin through 1.0.0 does not restrict one-time password... |
-| GHSA-prj8-x666-xqff | CVE-2026-122060 | unknown | The WP Recipe Maker WordPress plugin before 10.9.2 does not check whether the post a recipe is... |
-| GHSA-v95p-x24p-5c2m | CVE-2026-114432 | unknown | The Contact Form 7 WordPress plugin before 6.2.4 does not validate the type or extension of files... |
-| GHSA-r5m7-h2q9-5j9j | CVE-2026-109925 | unknown | The Productive Commerce  WordPress plugin before 1.1.54 does not sanitise and escape a parameter... |
-| GHSA-6vqr-9fh5-xmwj | CVE-2026-104337 | unknown | The Razorpay for WooCommerce WordPress plugin before 4.8.9 does not verify ownership of an order... |
-| GHSA-3g9w-x4v7-974v | CVE-2026-104338 | unknown | The Razorpay for WooCommerce WordPress plugin before 4.8.9 does not perform an authorization... |
-| GHSA-vg9h-3m8c-7g2h | CVE-2026-103375 | unknown | The Antom Payments WordPress plugin through 2.0.11 does not perform any ownership or... |
-| GHSA-3hhc-3pgw-rhv3 | CVE-2026-103303 | unknown | The Turisbook Booking System WordPress plugin through 1.3.8 does not have authorisation and CSRF... |
-| GHSA-q8gp-6fc4-wgxp | CVE-2026-104307 | unknown | The BackUpWordPress plugin before 3.15 does not perform a capability or nonce check on an AJAX... |
-| GHSA-fvm2-c629-pcjf | CVE-2026-124422 | medium | SunEditor from 3.0.0 before 3.4.0 contains a stored cross-site scripting vulnerability in html... |
-| GHSA-237f-p9h6-wq4r | CVE-2026-114713 | high | The labeled-response module in UnrealIRCd 6.0.0 before 6.2.7.1 does not escape the IRCv3 "label"... |
-| GHSA-p65x-p3jr-w89f | CVE-2026-123614 | critical | imgproxy from 4.0.0 before 4.0.16 contains an integer overflow in the ICO loader that allows... |
+| GHSA-4frq-3c52-pfc8 | CVE-2026-124580 | critical | A vulnerability was found in Chengdu Feiyuxing Technology VW2100 and VEC10GP 1.0 B-MB3W202-210825... |
+| GHSA-vhgw-c286-8gqg | CVE-2026-124584 | medium | A vulnerability has been found in wummel patool 4.1.0. This vulnerability affects the function... |
+| GHSA-crmj-h347-23x8 | CVE-2026-124579 | low | A vulnerability was determined in aaPanel BillionMail up to 4.9. Affected by this issue is some... |
+| GHSA-q97r-7gmj-rv8g | CVE-2026-124582 | low | A vulnerability was identified in WebTorrent up to 2.8.5/3.0.21. Affected by this vulnerability... |
+| GHSA-jgxp-544v-xp58 | CVE-2026-92606 | medium | Time-of-check time-of-use (TOCTOU) race condition vulnerability in TÜBİTAK BİLGEM Software... |
+| GHSA-pcqp-9m3v-8mfc | CVE-2026-124581 | medium | A vulnerability was determined in itsourcecode Airline Reservation System 1.0. Affected is an... |
+| GHSA-x7mj-p5qg-3rcg | CVE-2026-94249 | high | Missing Authorization vulnerability in TÜBİTAK BİLGEM Software Technologies Research Institute... |
+| GHSA-vw5w-mm6p-3m38 | CVE-2026-124585 | high | A vulnerability was found in Chengdu Feiyuxing Technology VW2100 and VEC10GP 1.0 B-MB3W202-210825... |
+| GHSA-9vm4-3239-475g | CVE-2026-116337 | low | Uncontrolled resource consumption vulnerability in the Qt Framework HTTP response handling... |
+| GHSA-v7j8-qp7g-hgm2 | CVE-2026-124575 | medium | A vulnerability was identified in SiteServer SSCMS up to 7.1.3/7.2.1/7.4.0. This issue affects... |
+| GHSA-3p42-pj8h-255g | CVE-2026-124577 | high | A weakness has been identified in Intelbras SG 2404 PoE L2+ 1.00.70/1.00.72. The affected element... |
+| GHSA-5g96-mq2h-p82p | CVE-2026-124578 | medium | A security vulnerability has been detected in Pantum BP5100DW 3.A.4.7. The impacted element is an... |
+| GHSA-5952-4gv2-m5gj | CVE-2026-124572 | medium | A vulnerability has been found in DataLinkDC dinky up to 1.2.5. Affected by this issue is the... |
+| GHSA-956h-hcvx-725f | CVE-2026-113437 | medium | Path Traversal vulnerability exists in SS1/ SS1 Cloud provided by DOS Co., Ltd. and the ODM... |
+| GHSA-8xq4-4x26-rxrw | CVE-2026-124574 | low | A vulnerability was determined in chenyme grok2api up to 3.1.6. This vulnerability affects the... |
+| GHSA-5655-hp8h-9ffj | CVE-2026-124576 | medium | A security flaw has been discovered in BeikeShop up to 2.0.0.31. Impacted is the function... |
+| GHSA-2f7g-3rp5-238m | CVE-2026-109582 | medium | Insecure storage of sensitive information issue exists in SS1 provided by DOS Co., Ltd. Sensitive... |
+| GHSA-v9cp-82qp-rrj6 | CVE-2026-123751 | unknown | The WP Duplicate  WordPress plugin through 1.1.11 does not properly verify a request... |
+| GHSA-g285-q6c3-f488 | CVE-2026-120386 | medium | Effekseer improperly validates "effect" files. When a crafted effect file is loaded to the... |
+| GHSA-frjm-xwcq-24jh | CVE-2026-123131 | unknown | The GemBooking  WordPress plugin before 1.7.1 does not properly verify that a REST request is... |
+| GHSA-45wf-gcw8-5mwr | CVE-2026-124573 | medium | A vulnerability was found in logseq 2.0.1/2.0.2. This affects the function validate-auth-token of... |
+| GHSA-93w9-c7qv-9m7x | CVE-2026-81422 | unknown | The Advanced Appointment Booking & Scheduling WordPress plugin before 2.7 does not verify the... |
+| GHSA-rxc3-24xx-6g22 | CVE-2026-123088 | unknown | The UniPAY Payment Gateway For WooCommerce WordPress plugin before 2.4 does not perform any... |
+| GHSA-vh4g-j777-hw5v | CVE-2026-123064 | unknown | The WP BASE Booking of Appointments, Services and Events WordPress plugin before 6.5.1 does not... |
+| GHSA-gqcc-52m4-8mqh | CVE-2026-123129 | unknown | The Event Tickets Manager for WooCommerce WordPress plugin before 1.6.0 does not validate the... |
 
 ## Ransomware — new leak-site victim postings (ransomware.live)
 | Victim | Group | Country | Date |
 |---|---|---|---|
+| Cuomo LLC | anubis |  | 2026-11-09T03:59:31.354287+00:00 |
+| Expedia Group, Inc. | N0n | US | 2026-11-09T00:52:31.602271+00:00 |
+| Grupa ABS | Panzer | PL | 2026-11-09T00:55:15.649045+00:00 |
+| ADG Blatt | Barracuda | DE | 2026-11-08T22:50:42.119031+00:00 |
+| Fidex | Deadlock | MX | 2026-11-08T19:51:54.679870+00:00 |
+| NoseTea | Deadlock | US | 2026-11-08T19:51:32.761876+00:00 |
+| Coopebis | Deadlock | CR | 2026-11-08T18:21:29.011582+00:00 |
+| Trinity Custom Homes - USA | Deadlock | US | 2026-11-08T15:21:58.987917+00:00 |
+| Chonlatee | Deadlock | TH | 2026-11-08T15:21:38.545972+00:00 |
+| Kadick | Deadlock | US | 2026-11-08T15:21:17.135662+00:00 |
+| sunclinicallaboratories.com | lockbit5 | US | 2026-11-08T23:28:39.584061+00:00 |
+| yatra.com | lockbit5 | IN | 2026-11-08T23:30:44.922271+00:00 |
+| grupotelles.com | lockbit5 | BR | 2026-11-08T23:32:52.232773+00:00 |
+| starmark.co.th | lockbit5 | TH | 2026-11-08T23:34:54.344818+00:00 |
 | Twitter | BYOD | US | 2026-11-08T03:20:51.920702+00:00 |
 | www.bogard.com.mx | incransom | MX | 2026-11-08T03:47:21.145552+00:00 |
 | bpcm.com | incransom | US | 2026-11-08T03:48:13.488273+00:00 |
 | Clínica La Sagrada Familia (Colombia) | Whitearmor | CO | 2026-11-08T03:33:23.256858+00:00 |
 | q-technicians.be | incransom | BE | 2026-11-08T03:49:05.694674+00:00 |
-| Company #147 | N0n | US | 2026-11-07T21:30:05.102300+00:00 |
-| Company #146 | N0n | US | 2026-11-07T21:29:29.587919+00:00 |
-| Company #145 | N0n | US | 2026-11-07T21:28:54.175017+00:00 |
-| Company #144 | N0n | US | 2026-11-07T21:28:19.494267+00:00 |
-| Company #143 | N0n | US | 2026-11-07T21:27:44.709856+00:00 |
-| Company #142 | N0n | KR | 2026-11-07T21:27:09.983250+00:00 |
-| Company #141 | N0n | US | 2026-11-07T21:26:34.828856+00:00 |
-| Company #140 | N0n | CA | 2026-11-07T21:25:59.003387+00:00 |
-| Company #139 | N0n | US | 2026-11-07T21:25:24.510834+00:00 |
-| Company #138 | N0n | CA | 2026-11-07T21:24:49.353889+00:00 |
-| by.zivor.co.il | safepay | IL | 2026-11-07T19:48:15.476860+00:00 |
-| Tribunal de Justica do Estado de Minas Gerais | rhysida | BR | 2026-11-07T13:16:04.118621+00:00 |
-| Autohaus Arnold | payload | DE | 2026-11-07T13:15:06.266313+00:00 |
-| Brauco | payload |  | 2026-11-07T13:13:44.569461+00:00 |
-| Schroers Ingenieure | payload | DE | 2026-11-07T13:12:23.416578+00:00 |
+| IE & E Industries | Orova | US | 2026-11-09T00:53:07.359272+00:00 |
 
 ## IOCs
 ### ThreatFox (recent, abuse.ch)
@@ -268,47 +210,47 @@ _No data returned this run._
 | IP | Lists flagging it |
 |---|---|
 | 3.129.187.38 | 9 |
-| 46.151.178.14 | 9 |
-| 64.62.197.77 | 9 |
-| 179.43.153.10 | 9 |
-| 199.165.159.209 | 9 |
+| 18.218.118.203 | 9 |
+| 45.148.10.141 | 9 |
+| 64.62.197.227 | 9 |
+| 66.132.172.194 | 9 |
+| 66.132.172.214 | 9 |
+| 66.132.195.53 | 9 |
+| 167.94.146.50 | 9 |
+| 167.94.146.56 | 9 |
+| 167.94.146.58 | 9 |
+| 193.32.162.15 | 9 |
+| 193.47.62.69 | 9 |
+| 2.57.121.25 | 8 |
 | 2.57.121.112 | 8 |
-| 2.57.122.209 | 8 |
 | 3.130.168.2 | 8 |
-| 5.2.69.86 | 8 |
-| 18.116.101.220 | 8 |
-| 18.218.118.203 | 8 |
-| 35.210.122.25 | 8 |
-| 51.68.226.87 | 8 |
-| 51.159.4.12 | 8 |
-| 58.182.58.128 | 8 |
-| 64.62.197.167 | 8 |
-| 66.132.159.117 | 8 |
-| 66.132.172.206 | 8 |
-| 66.132.172.209 | 8 |
-| 66.132.172.214 | 8 |
+| 35.210.191.203 | 8 |
+| 45.148.10.151 | 8 |
+| 45.148.10.152 | 8 |
+| 46.151.178.14 | 8 |
+| 64.62.197.32 | 8 |
 
 ### OpenPhish (live phishing URLs)
-- https://www.ucsg365.vercel.app/
-- https://www.365973.top/downapp
-- https://sprl.me/aZlTSEN
-- https://www.roblox.com.ss/users/5757654538/profile
-- https://icloud-jp8.xyz/apple-jp-card/jp/login.html
-- https://eng-coinsquare.apper.so/
-- https://p56e.top/downapp/r/p56e.top/r/p56e.topr/p56e.top
-- https://p56e.top/downapp/r/p56e.top/r/p56e.top
-- https://p56e.top/downapp/r/p56e.top/
-- https://www.roblox.com.ml/users/118673527115/profile
-- https://dashboard.phantom-wallet.to/home/import/index.html
-- https://systemecuzen--sistemeculo.replit.app/
-- https://server-security-page-2--barbnone.replit.app/
-- https://neuricardo.click/
-- http://promocaoblackdaamazon-h9b5ceb6fghgbtdr.eastus2-01.azurewebsites.net/
-- https://store.communitycharts.com/workshop/Brassbounds-Fury/
-- https://www.16654422.com/403.html?i=164.92.212.136&c=NL
-- https://16654422.com/m/
-- https://8r5p6e-qw644c24y-7k1z9p8m2s-2s9m.pages.dev/
-- https://088wk-ete-fhrc-8tho6-10-09-2026-hh.pages.dev/
+- https://www.r.oblox.com.et/users/893593163/profile
+- https://hkdiscord.antsoon.com/blog/iwd-2023-two-women-owned-servers
+- https://hkdiscord.antsoon.com/blog/how-we-used-discord-to-build-a-dream-community-for-our-game-descenders
+- https://hkdiscord.antsoon.com/blog/how-discord-celebrated-pride-month-2024
+- https://hkdiscord.antsoon.com/ads/quests-success-stories
+- https://hkdiscord.antsoon.com/company
+- https://hkdiscord.antsoon.com/terms
+- https://hkdiscord.antsoon.com/category/how-to-discord
+- https://hkdiscord.antsoon.com/press-releases/wicked-saints-turns-players-into-irl-superheroes-with-e-l-f-beauty-and-discord
+- https://hkdiscord.antsoon.com/press-releases/discord-zach-cregger-resident-evil-missions-quest-activation
+- https://hkdiscord.antsoon.com/press-releases/discord-launches-teen-by-default-settings-globally
+- https://hkdiscord.antsoon.com/download
+- https://hkdiscord.antsoon.com/safety-privacy
+- https://hkdiscord.antsoon.com/safety-transparency
+- http://sp29ct-zamvi-biz-felun-rakti.pages.dev/
+- https://instanoreply11-sudo.github.io/instagramweb
+- https://steanmcomnnunituy.ru/id/765678242749728
+- https://is.gd/steamcommunity765678242749728
+- https://www.roblox.com.ml/users/237525484580/profile/
+- https://www.j115f.vip/downapp
 
 ### PhishStats (recent phishing/malicious URLs, scored)
 _No data returned this run._
@@ -316,26 +258,26 @@ _No data returned this run._
 ### SSL Blacklist (abuse.ch — certs tied to malware/botnet C2)
 | SHA1 | Info |
 |---|---|
-| 680c5817193fcc2bc6514e111225b43aa56dc231 | Vidar C&C |
-| 14d5e3c11ac5c5c5228c1365b20e383cffae0140 | Vidar C&C |
-| 9c43558bb0f7fe4afdeb6ed73197abe2365589c3 | Vidar C&C |
-| 07e76b646820ea12065b4aa925d2a7e31f2b0841 | RevStealer C&C |
-| 662893890b7e8b8f238a39783415f9f744e29175 | RevStealer C&C |
-| 0afd01382371c84a699766d7f0b736e9440faee6 | PureLogsStealer C&C |
-| 7b10bb2a42505df013247e7fde6b36f4f60ee924 | Vidar C&C |
-| de47608bc00bb94984b4e123585b7e8be37bf8b4 | Vidar C&C |
-| 043d265d8ee6e5c1c8954108716125c638f33752 | Vidar C&C |
-| 063a72d2da624ba373a1afe5323a674af705bd02 | RevStealer C&C |
-| e3d64b032db0b875f594b12eb9ad7a624e768383 | Vidar C&C |
-| 788de1386a4226d0993c1434a2d820bc1259b88e | PureLogsStealer C&C |
-| 8fa5d5b8ff264dcc0eb6b1d29b5520beeba1e81f | Malware C&C |
-| dc7784a75bdb59bd6427e9c2a23384e2094dbba0 | PureRAT C&C |
-| 07c4dd65867a3724a96f2525f6ebcf0d2e3dbbf6 | Vidar C&C |
-| 69a2602395b7cf2a39cb87cd82a4ce6c5a65b590 | Malware C&C |
-| 2d10340053833d2b9662dcde0e36b4fee06991b3 | OffLoader C&C |
-| 4ac16d400d5a82f25683361c46f69fbebcbc746a | Vidar C&C |
-| 6b16ed3bacf20a5cb798f5aeafddfdf98936ad33 | OffLoader C&C |
-| 4006b8b2e5cc903cf34d104d4a9557c9cd72474a | PureRAT C&C |
+| abc4b076eb276da57cf8a36e7eeca9df713dd83c | PureLogsStealer C&C |
+| 19191f7bd7d31b4da986d645a6dfba8fef74fdf9 | OffLoader C&C |
+| 4943decccfc5b78cd1d60fab5424bd93d5243aa3 | FunStealer C&C |
+| 699efdab8a4d32ffa62dd1a97261e3edd5c5f87a | PureLogsStealer C&C |
+| d7f8e6d688805e759b5e9346215212cd246a4b3c | PureLogsStealer C&C |
+| 5ccb6f0fb1de883e059a42b51e192eb4fca92373 | PureLogsStealer C&C |
+| fb642f9c2a93001eca125a11326d4ff6c0edd834 | PureLogsStealer C&C |
+| 0a86f564799b68d6daec13f71654431f5bceba37 | ACRStealer C&C |
+| ea53cd87676a1e4bcc32a376166e21c729695daf | Vidar C&C |
+| 9b3e876bcc01d08cdcfaf88ee65cdd0a37d19ac9 | RemusStealer C&C |
+| 105f909fc4a6d331ae1f63b5b85d5260c9bb5dfd | RemusStealer C&C |
+| 54f3060077130ecb0878934a52d37ec9994b2959 | Vidar C&C |
+| 3cca61aae64588c6aeb99e549121bd90845df64b | RemusStealer C&C |
+| 77c2751f1c3f54478af095b519ee9bda9ae6a893 | RemusStealer C&C |
+| 3196a6cb1fa37ee8fccc0ad7e384f3abb7e83116 | RemusStealer C&C |
+| 74dbbbef44c355626c83aa8cedcbb86ea6acec58 | Vidar C&C |
+| bfbccde2f1ab3e71036fa5b002fb9604a078ac48 | Vidar C&C |
+| 2da35ee777136d88d2a5808ab5c9453a40fa8662 | RevStealer C&C |
+| 0ee0b095e959aecfb96297890ea5720c00dbfbc9 | Vidar C&C |
+| f27ee2327532465a3db66496a09ad92e8d47abdb | Malware C&C |
 
 ### Spamhaus DROP (hijacked/leased malicious netblocks)
 - 1.10.16.0/20
@@ -362,56 +304,57 @@ _No data returned this run._
 ### blocklist.de (recent SSH/mail/web attack sources)
 - 1.12.70.212
 - 1.13.181.113
+- 1.14.140.218
 - 1.14.192.95
 - 1.14.240.247
+- 1.15.227.58
 - 1.159.54.33
 - 1.161.133.214
 - 1.162.217.195
+- 1.172.90.41
+- 1.175.131.108
+- 1.180.246.242
 - 1.20.104.16
 - 1.203.149.250
 - 1.212.225.99
 - 1.214.214.114
 - 1.215.233.74
-- 1.220.198.126
-- 1.235.183.146
-- 1.238.106.229
-- 1.24.16.182
-- 1.247.245.61
-- 1.250.67.114
-- 1.250.67.190
-- 1.26.90.14
+- 1.222.42.237
+- 1.226.82.243
+- 1.234.27.159
 
 ### CINS Army (poorly-rated IPs)
 - 1.12.229.231
-- 1.15.14.29
+- 1.169.35.122
 - 1.183.226.72
 - 1.192.129.106
 - 1.20.151.114
-- 1.20.93.114
-- 1.214.29.155
-- 1.214.98.143
-- 1.220.119.115
+- 1.24.16.103
+- 1.24.16.104
 - 1.24.16.108
-- 1.24.16.114
-- 1.24.16.118
-- 1.24.16.126
-- 1.24.16.129
-- 1.24.16.130
-- 1.24.16.136
-- 1.24.16.144
-- 1.24.16.150
-- 1.24.16.151
-- 1.24.16.152
+- 1.24.16.11
+- 1.24.16.12
+- 1.24.16.122
+- 1.24.16.124
+- 1.24.16.125
+- 1.24.16.131
+- 1.24.16.133
+- 1.24.16.145
+- 1.24.16.146
+- 1.24.16.156
+- 1.24.16.16
+- 1.24.16.17
 
 ## News (last ~36h, across outlets)
 ### The Hacker News
-- [Claude Code's “Don't Ask Again” File Exposes Passwords and Keys in 1,122 Public Copies on GitHub](https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html)
+- [LNbits Urges All Operators to Shut Down Their Bitcoin Lightning Wallet Servers Amid Attacks](https://thehackernews.com/2026/11/lnbits-urges-all-operators-to-shut-down.html)
+- [Taiwan-Based Hacker Used BOSSAI AI Agents to Steal Taipei Emergency Dispatch Records](https://thehackernews.com/2026/11/taiwan-based-hacker-used-bossai-ai.html)
+- [Former OpenAI Engineer Pleads Not Guilty to Planting Covert Device in Executive Meeting Room](https://thehackernews.com/2026/11/former-openai-engineer-pleads-not.html)
+- [U.S. Agencies Warn Refrigeration Controller Attacks Could Cause Fires and Inventory Losses](https://thehackernews.com/2026/11/us-agencies-warn-refrigeration.html)
+- [CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation](https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html)
 
 ### BleepingComputer
-- [Hackers pull off $133 million French bank heist via service provider](https://www.bleepingcomputer.com/news/security/hackers-pull-off-133-million-french-bank-heist-via-service-provider/)
-- [CTM360 Exposes Fake Gift Card Scams Exploiting Trusted Brands](https://www.bleepingcomputer.com/news/security/ctm360-exposes-fake-gift-card-scams-exploiting-trusted-brands/)
-- [SonicWall warns of new SSL-VPN MFA bypass flaw exploited in attacks](https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/)
-- [Runaway AI hacking agent behind WorkOS breach after escaping sandbox](https://www.bleepingcomputer.com/news/security/runaway-ai-hacking-agent-behind-workos-breach-after-escaping-sandbox/)
+- [Iris Ohyama data cloud breach exposes info of 7.7 million customers](https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/)
 
 ### Krebs on Security
 _No new items / feed unavailable this run._
@@ -420,16 +363,19 @@ _No new items / feed unavailable this run._
 _No new items / feed unavailable this run._
 
 ### SecurityWeek
-- [SonicWall Patches Exploited SonicOS Vulnerability That Weakens VPN Logins](https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/)
+- [Over 3 Million People Hit by Frontline Education Data Breach](https://www.securityweek.com/3-million-people-hit-by-frontline-education-data-breach/)
+- [Google DeepMind’s AI Agents Make 1024-Bit RSA Keys Cheaper to Attack](https://www.securityweek.com/google-deepminds-ai-agents-make-1024-bit-rsa-keys-cheaper-to-attack/)
+- [Brava Security Emerges From Stealth With $15 Million in Funding](https://www.securityweek.com/brava-security-emerges-from-stealth-with-15-million-in-funding/)
 
 ### The Record
 _No new items / feed unavailable this run._
 
 ### Infosecurity Magazine
-_No new items / feed unavailable this run._
+- [Crédit Mutuel Arkéa Targeted in Reported $133m Heist](https://www.infosecurity-magazine.com/news/crdit-mutuel-arka-targeted/)
+- [Anti-Money Laundering Watchdog FATF Targets Scam Compounds](https://www.infosecurity-magazine.com/news/aml-watchdog-fatf-scam-compounds/)
 
 ### CyberScoop
-_No new items / feed unavailable this run._
+- [AI doesn’t have to go rogue to break the world](https://cyberscoop.com/ai-hacking-risks-loopholes-bruce-schneier-defcon-keynote-op-ed/)
 
 ### Cisco Talos
 _No new items / feed unavailable this run._
@@ -438,13 +384,14 @@ _No new items / feed unavailable this run._
 _No new items / feed unavailable this run._
 
 ### Microsoft Security Blog
-- [ARTEX abuse expands as cybercriminals target financial sector](https://www.microsoft.com/en-us/security/blog/2026/11/06/artex-abuse-expands-as-cybercriminals-target-financial-sector/)
+_No new items / feed unavailable this run._
 
 ### Google Cloud Threat Intel
 _No new items / feed unavailable this run._
 
 ### SANS Internet Storm Center
-_No new items / feed unavailable this run._
+- [ISC Stormcast For Monday, November 9th, 2026 https://isc.sans.edu/podcastdetail/10170, (Mon, Nov 9th)](https://isc.sans.edu/diary/rss/33500)
+- [Scans for Sshole Vulnerability (CVE-2026-123158), (Sun, Nov 8th)](https://isc.sans.edu/diary/rss/33498)
 
 ### Securelist (Kaspersky)
 _No new items / feed unavailable this run._
